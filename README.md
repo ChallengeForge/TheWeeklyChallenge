@@ -32,7 +32,7 @@ This project is a fun and welcoming space for developers of all skill levels to 
 - ## Clone
  Use git to clone this repository
 ```Bash
-git clone https://github.com/manwar/theweeklychallenge.git
+git clone https://github.com/ChallengeForge/TheWeeklyChallenge.git
 ```
 
 - ## Run the Development Server
