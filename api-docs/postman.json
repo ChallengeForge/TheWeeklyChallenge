@@ -1,0 +1,82 @@
+{
+  "info": {
+    "_postman_id": "2a3b3ca7-907c-4a62-8c1d-0474d6f4714a",
+    "name": "TheWeeklyChallenge API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Team Details",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://theweeklychallenge.org/team",
+          "protocol": "https",
+          "host": ["theweeklychallenge", "org"],
+          "path": ["team"]
+        }
+      }
+    },
+    {
+      "name": "About Page",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://theweeklychallenge.org/about",
+          "protocol": "https",
+          "host": ["theweeklychallenge", "org"],
+          "path": ["about"]
+        }
+      }
+    },
+    {
+      "name": "Challenge List",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://theweeklychallenge.org/challenges",
+          "protocol": "https",
+          "host": ["theweeklychallenge", "org"],
+          "path": ["challenges"]
+        }
+      }
+    },
+    {
+      "name": "User Login",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "https://theweeklychallenge.org/auth/login",
+          "protocol": "https",
+          "host": ["theweeklychallenge", "org"],
+          "path": ["auth", "login"]
+        }
+      }
+    },
+    {
+      "name": "Admin Login",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://theweeklychallenge.org/admin/login",
+          "protocol": "https",
+          "host": ["theweeklychallenge", "org"],
+          "path": ["admin", "login"]
+        }
+      }
+    },
+    {
+      "name": "Create Admin",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "https://theweeklychallenge.org/admin/create",
+          "protocol": "https",
+          "host": ["theweeklychallenge", "org"],
+          "path": ["admin", "create"]
+        }
+      }
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
