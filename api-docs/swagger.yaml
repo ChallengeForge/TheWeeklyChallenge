@@ -1,0 +1,193 @@
+openapi: 3.0.0
+info:
+  title: TheWeeklyChallenge API
+  version: 1.0.0
+paths:
+  /team:
+    get:
+      summary: Get Team Details
+      description: Retrieve team information and `TeamList` data.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example:
+                teamList:
+                  - name: John Doe
+                    role: Contributor
+                  - name: Jane Smith
+                    role: Champion
+
+  /about:
+    get:
+      summary: Get About Page
+      description: Retrieve the about page template.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            text/html:
+              example: "<html><body>About Page Content</body></html>"
+
+  /chart:
+    get:
+      summary: Get Chart Details
+      description: Retrieve chart UI template.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            text/html:
+              example: "<html><body>Chart Page Content</body></html>"
+
+  /faqs:
+    get:
+      summary: Get FAQ Page
+      description: Retrieve FAQ page with `faqList` data.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example:
+                faqList:
+                  - question: What is TheWeeklyChallenge?
+                    answer: TheWeeklyChallenge is...
+
+    post:
+      summary: Create FAQ
+      description: Create a new FAQ using `faqList` data.
+      responses:
+        '201':
+          description: FAQ created successfully
+
+  /members:
+    get:
+      summary: Get Members Page
+      description: Retrieve members page and `membersList` data.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example:
+                membersList:
+                  - name: John Doe
+                    role: Contributor
+                  - name: Jane Smith
+                    role: Champion
+
+    post:
+      summary: Create Member
+      description: Create a new member using `membersList` data.
+      responses:
+        '201':
+          description: Member created successfully
+
+  /perl-review:
+    get:
+      summary: Get Perl Reviews
+      description: Retrieve Perl reviews page and `reviewsList` data.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example:
+                reviewsList:
+                  - author: John Doe
+                    content: Great Perl Challenge!
+
+  /raku-review:
+    get:
+      summary: Get Raku Reviews
+      description: Retrieve Raku reviews page and `reviewsList` data.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example:
+                reviewsList:
+                  - author: Jane Smith
+                    content: Awesome Raku Challenge!
+
+  /submissions:
+    get:
+      summary: Get Submissions
+      description: Retrieve a list of user submissions.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example:
+                submissions:
+                  - challenge: Perl Challenge
+                    user: John Doe
+                    submission: Perl code snippet
+
+    post:
+      summary: Create Submission
+      description: Create a new submission.
+      responses:
+        '201':
+          description: Submission created successfully
+
+  /challenges:
+    get:
+      summary: Get Challenges
+      description: Retrieve a list of challenges.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example:
+                challenges:
+                  - title: Perl Challenge 1
+                  - title: Raku Challenge 1
+
+  /challenges/{id}:
+    get:
+      summary: Get Challenge Details
+      description: Retrieve details for a specific challenge.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Challenge ID
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example:
+                title: Perl Challenge 1
+                description: Solve this Perl challenge!
+
+  /challenges/{id}/submit:
+    get:
+      summary: Get Submission Page
+      description: Retrieve submissions page for a specific challenge.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Challenge ID
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            text/html:
+              example: "<html><body>Submission Page Content</body></html>"
+
+    post:
+      summary: Submit Entry
+      description: Submit a new entry for the specified challenge.
+     
