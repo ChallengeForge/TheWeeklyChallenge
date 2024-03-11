@@ -1,4 +1,4 @@
-package Team;
+package Models::Team;
 
 # Implement methods for accessing team data (e.g., database interaction)
 sub get_team_info {

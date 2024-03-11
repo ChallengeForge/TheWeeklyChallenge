@@ -1,4 +1,4 @@
-package TeamController;
+package Controllers::TeamController;
 
 use Dancer2;
 
@@ -7,8 +7,5 @@ get '/team' => sub {
   return template 'team/index';
 };
 
-get '/' => sub {
-    template 'index' => { 'title' => 'PWC' };
-};
 
 1;

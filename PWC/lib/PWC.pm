@@ -2,12 +2,10 @@ package PWC;
 use Dancer2;
 
 use FindBin;
-use lib "$FindBin::Bin/../lib/Controllers";
-use TeamController;
-use lib "$FindBin::Bin/../lib/Models";
-use Team;
+#use lib "$FindBin::Bin/../lib/Controllers";
+use Controllers::TeamController;
 
 our $VERSION = '0.1';
 
-
+dance;
 true;
