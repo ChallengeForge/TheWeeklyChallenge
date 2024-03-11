@@ -1,1 +1,0 @@
-{"vars":[{"range":{"end":{"line":14,"character":9999},"start":{"line":3,"character":0}},"name":"get_team_info","line":3,"definition":"sub","containerName":"main::","kind":12,"children":[]},{"kind":12,"line":8,"name":"members"},{"line":9,"kind":12,"name":"name"},{"name":"name","kind":12,"line":10},{"kind":12,"line":12,"name":"description"}],"version":5}
