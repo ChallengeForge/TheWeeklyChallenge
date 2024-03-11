@@ -1,5 +1,5 @@
 
-package Challenge;
+package Models::PWC::Challenge;
 
 # Challenge Model Logic
 
