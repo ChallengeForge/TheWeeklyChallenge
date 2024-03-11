@@ -1,4 +1,4 @@
-package ChallengesController;
+package Controllers::PWC::Challenge;
 
 use Dancer2;
 

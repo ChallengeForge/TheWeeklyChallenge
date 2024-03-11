@@ -1,4 +1,4 @@
-package FaqsController;
+package Controllers::PWC::FAQs;
 
 use Dancer2;
 

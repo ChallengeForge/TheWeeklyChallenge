@@ -1,4 +1,4 @@
-package AboutController;
+package Controllers::PWC::About;
 
 use Dancer2;
 

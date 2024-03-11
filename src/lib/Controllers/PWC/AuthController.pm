@@ -1,4 +1,4 @@
-package AuthController;
+package Controllers::PWC::Auth;
 
 use Dancer2;
 

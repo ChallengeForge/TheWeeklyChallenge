@@ -1,4 +1,4 @@
-package TeamController;
+package Controllers::PWC::Team;
 
 use Dancer2;
 

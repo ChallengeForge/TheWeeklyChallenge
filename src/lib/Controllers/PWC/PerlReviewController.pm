@@ -1,4 +1,4 @@
-package PerlReviewController;
+package Controllers::PWC::PerlReview;
 
 use Dancer2;
 

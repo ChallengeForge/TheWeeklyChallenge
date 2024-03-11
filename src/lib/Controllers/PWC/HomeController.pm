@@ -1,4 +1,4 @@
-package HomeController;
+package Controllers::PWC::Home;
 
 use Dancer2;
 
