@@ -8,9 +8,9 @@ my $eumm_version = $ExtUtils::MakeMaker::VERSION;
 $eumm_version =~ s/_//;
 
 WriteMakefile(
-    NAME                => 'PWC',
+    NAME                => 'TheWeeklyChallenge',
     AUTHOR              => q{YOUR NAME <youremail@example.com>},
-    VERSION_FROM        => 'lib/PWC.pm',
+    VERSION_FROM        => 'lib/TheWeeklyChallenge.pm',
     ABSTRACT            => 'YOUR APPLICATION ABSTRACT',
     ($eumm_version >= 6.3001
       ? ('LICENSE'=> 'perl')
@@ -22,5 +22,5 @@ WriteMakefile(
         'Dancer2'     => 1.1.0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'PWC-*' },
+    clean               => { FILES => 'TheWeeklyChallenge-*' },
 );

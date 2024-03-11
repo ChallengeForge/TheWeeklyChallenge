@@ -14,9 +14,7 @@ public/dispatch.cgi
 public/500.html
 public/404.html
 public/dispatch.fcgi
-lib/PWC.pm
-lib/Controllers/TeamController.pm
-lib/Models/Team.pm
+lib/TheWeeklyChallenge.pm
 views/index.tt
 public/css/style.css
 public/css/error.css
@@ -24,4 +22,4 @@ public/images/perldancer-bg.jpg
 public/images/perldancer.jpg
 public/javascripts/jquery.js
 views/layouts/main.tt
-Dockerfile
+../TheWeeklyChallenge/Dockerfile

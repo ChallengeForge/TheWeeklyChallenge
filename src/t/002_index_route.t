@@ -1,13 +1,13 @@
 use strict;
 use warnings;
 
-use PWC;
+use TheWeeklyChallenge;
 use Test::More tests => 2;
 use Plack::Test;
 use HTTP::Request::Common;
 use Ref::Util qw<is_coderef>;
 
-my $app = PWC->to_app;
+my $app = TheWeeklyChallenge->to_app;
 ok( is_coderef($app), 'Got app' );
 
 my $test = Plack::Test->create($app);

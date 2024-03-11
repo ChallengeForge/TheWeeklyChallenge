@@ -1,5 +1,5 @@
 FROM perl:latest
-WORKDIR /srv/PWC
+WORKDIR /srv/TheWeeklyChallenge
 COPY . .
 RUN cpanm --installdeps --notest --with-feature=accelerate .
 EXPOSE 4000
