@@ -1,0 +1,1 @@
+{"vars":[{"kind":12,"line":4,"name":"get"},{"name":"Dancer2","containerName":"","kind":2,"line":4},{"line":6,"kind":12,"name":"template"},{"kind":12,"line":9,"name":"get"},{"line":10,"kind":12,"name":"template"}],"version":5}
