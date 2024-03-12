@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login / Sign Up Form</title>
+    <link rel="stylesheet" href="css/admin-login.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <a href="index.html" id="logo"
+        ><img src="/assets/blogs/blog_img_6.jpeg" alt="Logo"
+      /></a>
+      <a id="website-name">THE WEEKLY CHALLENGE - PERL and RAKU </a>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+      <div class="forms-container">
+        <!-- Sign-up Form -->
+        <div class="form-control signup-form">
+          <form action="#">
+            <h2>Admin Sign-up</h2>
+            <input type="text" placeholder="Username" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <input type="password" placeholder="Confirm password" required />
+            <div class="captcha-container">
+              <img id="captcha-image" src="#" alt="CAPTCHA Image" />
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-evenly;
+                  align-items: center;
+                "
+              >
+                <input type="text" placeholder="Enter CAPTCHA" required />
+
+                <button id="refresh-captcha" type="button">
+                  <i class="fas fa-sync-alt"></i>
+                </button>
+              </div>
+            </div>
+            <button>Sign-up</button>
+            <span>or create an account with</span>
+            <div class="socials">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-google-plus-g"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+          </form>
+          <!-- Social login buttons can be added here if required -->
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-control signin-form">
+          <form action="#">
+            <h2>Admin Login</h2>
+            <input type="text" placeholder="Username" required />
+            <input type="password" placeholder="Password" required />
+            <div class="captcha-container">
+              <img id="captcha-image" src="#" alt="CAPTCHA Image" />
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-evenly;
+                  align-items: center;
+                "
+              >
+                <input type="text" placeholder="Enter CAPTCHA" required />
+
+                <button id="refresh-captcha" type="button">
+                  <i class="fas fa-sync-alt"></i>
+                </button>
+              </div>
+            </div>
+            <button>Login</button>
+          </form>
+          <span>or login with</span>
+          <div class="socials">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intros Section -->
+      <div class="intros-container">
+        <!-- Sign-in Intro -->
+        <div class="intro-control signin-intro">
+          <div class="intro-control__inner">
+            <h2>Welcome back!</h2>
+            <p>
+              We are happy to see you again! Are you ready to take this
+              challenge?
+            </p>
+            <p><br />No account yet? Sign-up to create your admin account.</p>
+            <button id="sign-up-btn">Sign-up</button>
+          </div>
+        </div>
+
+        <!-- Sign-up Intro -->
+        <div class="intro-control sign-up-intro">
+          <div class="intro-control__inner">
+            <h2>Come join us!</h2>
+            <p>
+              We are so excited to have you here. If you haven't already, create
+              an admin account to get access to the weekly challenge.
+            </p>
+            <p>
+              <br />
+              Already have an admin account?
+            </p>
+            <button id="login-btn">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script src="js/login.js"></script>
+  </body>
+</html>
