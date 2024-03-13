@@ -1,6 +1,6 @@
 # an instance of interacting with the user_types table in the database
 
-package MyApp::Schema::Result::UserType;
+package PWC::Schema::Result::UserType;
 
 use base qw/DBIx::Class::Core/;
 

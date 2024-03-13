@@ -1,5 +1,5 @@
 
-package MyApp::Schema;
+package PWC::Schema;
 
 use base qw/DBIx::Class::Schema/;
 

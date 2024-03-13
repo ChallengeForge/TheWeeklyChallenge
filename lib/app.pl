@@ -1,9 +1,9 @@
 # app.pl
 use Dancer2;
-use MyApp::Schema qw();
+use PWC::Schema qw();
 
 # Connect to the database
-my $schema = MyApp::Schema->connect(
+my $schema = PWC::Schema->connect(
     'dbi:mysql:database=pwc;host=localhost',
     'username', #replace with database username
     'password', #replace with password or leave empty if no password    
