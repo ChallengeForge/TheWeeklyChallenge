@@ -19,3 +19,7 @@ show_stacktrace: 1
 # print the banner
 startup_info: 1
 
+plugins:
+  DBIC:
+    default:
+      dsn: dbi:SQLite:dbname=pwc.db
