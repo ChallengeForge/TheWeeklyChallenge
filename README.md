@@ -47,5 +47,21 @@ This project is licensed under the `Artistic License 2.0` license. Please refer 
 
 ---
 
+-- ##Prequequisite to Use and Connect to Database 
+ 
+ - Install all of the following modules below
+## Setting Up the Database
+
+```To run the database for this project, you'll need to install the following PERL packages :```
+
+1. Install DBIx::Class**: This module provides a convenient abstraction layer over your database. 
+
+
+2. **Install DBD::mysql**: This module provides the MySQL driver for DBI, enabling connectivity to a MySQL database. 
+
+
+3. **Install Dancer2::Plugin::Database**: This module integrates the Dancer2 web framework with your database. 
+
+
 [![Join us on Slack](https://img.shields.io/badge/Join_us-Slack-informational?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/theweeklychal-udf4770/shared_invite/zt-2em4g2m29-WGd9LQc1YnNLyn_qHi6xLA)
 [![Visit Website](https://img.shields.io/badge/Visit_Website-brightgreen?style=for-the-badge)](https://theweeklychallenge.org)

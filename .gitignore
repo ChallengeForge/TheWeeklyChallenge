@@ -1,2 +1,5 @@
 .vscode
 .DS_Store
+MYMETA.yml
+MYMETA.json
+blib/
