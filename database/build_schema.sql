@@ -25,13 +25,13 @@ CREATE TABLE weeks (
     week_name VARCHAR(255) NOT NULL,
     UNIQUE INDEX idx_weeks_week_name (week_name)
 );
-
 CREATE TABLE users (
     user_id INT PRIMARY KEY AUTO_INCREMENT,
     user_type INT NOT NULL,
     user_password VARCHAR(255) NOT NULL,
     UNIQUE INDEX idx_users_user_type_user_password (user_type, user_password)
 );
+
 
 CREATE TABLE contributions (
     contribution_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -147,7 +147,6 @@ CREATE TABLE task_types (
     task_type_name VARCHAR(255) NOT NULL,
     UNIQUE INDEX idx_task_types_task_type_name (task_type_name)
 );
-
 CREATE TABLE tasks (
     task_id INT PRIMARY KEY AUTO_INCREMENT,
     week_id INT NOT NULL,

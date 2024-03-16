@@ -1,0 +1,12 @@
+Follow these steps to create the ERD of the PWC Database using dbdiagram.io :
+
+1. Access the URL: [https://dbdiagram.io/home](https://dbdiagram.io/home).
+2. On the page, locate and click on the "Create your diagram" button.
+3. After accessing the "Create your diagram" page, click on the "Import" button in the navigation bar dropdown.
+4. From the dropdown options, select "Import from MySQL".
+5. Upload your SQL file containing the PWC Database schema. The tool will automatically generate the ERD based on your SQL file.
+6. Once the ERD has been generated, you can organize the diagram to improve visibility if necessary.
+7. When you are satisfied with the diagram, click on the "Export" button in the navigation bar dropdown.
+8. From the dropdown options, select "Export to PDF".
+
+By following these steps, you can efficiently create the ERD of the PWC Database using dbdiagram.io.
