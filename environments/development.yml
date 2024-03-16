@@ -22,4 +22,4 @@ startup_info: 1
 plugins:
   DBIC:
     default:
-      dsn: dbi:SQLite:dbname=pwc.db
+      dsn: dbi:mysql:dbname=build_schema.sql
