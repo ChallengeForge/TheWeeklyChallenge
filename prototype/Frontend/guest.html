@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>The Weekly Challenge - Perl & Raku</title>
+    <meta
+      content="The Weekly Challenge that includes Perl and Raku programming."
+      name="description"
+    />
+    <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="/public/images/logo/logo.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="/public/css/helpercss/aos.css" rel="stylesheet" />
+    <link
+      href="/public/css/helpercss/bootstrap_css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/glightbox_css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/remixicon/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="/public/css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/css/teamStyle.css" />
+  </head>
+
+  <body>
+    <!-- =============== Header ================== -->
+    <header id="header" class="sticky-top border-bottom">
+      <div class="container d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-center me-auto">
+          <a href="index.html" class="logo me-3">
+            <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
+        </a>
+          <a href="index.html" class="logo me-auto">
+            <img
+              src="/public/images/logo/typography.png"
+              alt="typography"
+              class="img-fluid"/>
+            </a>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="index.html">Home</a>
+            </li>
+            <!-- About Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>About</span> <i class="bi bi-chevron-down"></i>
+            </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="border-bottom">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <!-- Contributions Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Contributions</span> 
+                <i class="bi bi-chevron-down"></i>
+            </a>
+              <ul>
+                <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
+                <li ><a href="blogs.html">Blogs</a></li>
+              </ul>
+            </li>
+            <!-- Team Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Team</span>
+                <i class="bi bi-chevron-down"></i>
+            </a>
+              <ul>
+                <li class="border-bottom"><a href="team.html">Regular</a></li>
+                <li class="border-bottom"><a href="guest.html">Guest</a></li>
+                <li><a href="champions.html">Champions</a></li>
+              </ul>
+            </li>
+            <!-- Reviews Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Reviews</span> 
+                <i class="bi bi-chevron-down"></i>
+            </a>
+              <ul>
+                <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
+                <li><a href="raku.html">Raku</a></li>
+              </ul>
+            </li>
+            <!-- Charts DropDown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Leaderboard</span>
+                <i class="bi bi-chevron-down"></i>
+            </a>
+              <ul>
+                <li class="border-bottom"><a href="chart.html">Charts</a></li>
+                <li class="border-bottom"><a href="#">Team Leader</a></li>
+                <li><a href="#">Guest Leader</a></li>
+              </ul>
+            </li>
+            <!-- Prefernces -->
+            <li class="dropdown">
+              <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="border-bottom theme1"><a href="#">Default</a></li>
+                <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
+                <li class="theme3"><a href="#">Blue Mode</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+    </header>
+
+    <!-- End Header -->
+
+    <!-- =========== Main Section ================= -->
+    <div class="container-fluid py-5 main-section">
+      <div id="teamDiv" style="overflow-x: hidden;">
+        <h2 class="text-center mb-5">Guest Members</h2>
+        <!-- <div id="animation-container" class="globe-anim"style="overflow-x: hidden;"></div> -->
+        <div class="contactDetails mt-3">
+          <div class="row d-flex justify-content-around">
+              <div
+                class="col-lg-3 col-md-5 col-sm-10"
+                style="display: flex; justify-content: center"
+              >
+                <div class="our-team">
+                  <div class="pic">
+                    <img src="/public/images/blank_profile.svg" />
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">name</h3>
+                    <span class="post">description</span>
+                  </div>
+                  <ul class="social">
+                    <li
+                      class="d-flex flex-row justify-content-around align-item-center"
+                    >
+                      <a href="#"
+                        ><i class="fa-regular fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="mailto:rishikesh_2001cs85@iitp.ac.in"
+                        ><i class="fa fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="https://www.facebook.com/rishi.devanathan.5"
+                        ><i class="fa-solid fs-2 fa-phone"></i
+                      ></a>
+                      <a
+                        href="https://www.linkedin.com/in/rishikesh-devanathan/"
+                        ><i class="fa-brands fs-2 fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-5 col-sm-10"
+                style="display: flex; justify-content: center"
+              >
+                <div class="our-team">
+                  <div class="pic">
+                    <img src="/public/images/blank_profile.svg" />
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Name</h3>
+                    <span class="post">description</span>
+                  </div>
+                  <ul class="social">
+                    <li
+                      class="d-flex flex-row justify-content-around align-item-center"
+                    >
+                      <a href="#"
+                        ><i class="fa-regular fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa-solid fs-2 fa-phone"></i
+                      ></a>
+                      <a
+                        href="#"
+                        ><i class="fa-brands fs-2 fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-5 col-sm-10"
+                style="display: flex; justify-content: center"
+              >
+                <div class="our-team">
+                  <div class="pic">
+                    <img src="/public/images/blank_profile.svg" />
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Name</h3>
+                    <span class="post">Description</span>
+                  </div>
+                  <ul class="social">
+                    <li
+                      class="d-flex flex-row justify-content-around align-item-center"
+                    >
+                      <a href="#"
+                        ><i class="fa-regular fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa-solid fs-2 fa-phone"></i
+                      ></a>
+                      <a
+                        href="#"
+                        ><i class="fa-brands fs-2 fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-5 col-sm-10"
+                style="display: flex; justify-content: center"
+              >
+                <div class="our-team">
+                  <div class="pic">
+                    <img src="/public/images/blank_profile.svg" />
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Name</h3>
+                    <span class="post">Description</span>
+                  </div>
+                  <ul class="social">
+                    <li
+                      class="d-flex flex-row justify-content-around align-item-center"
+                    >
+                      <a href="#"
+                        ><i class="fa-regular fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa-solid fs-2 fa-phone"></i
+                      ></a>
+                      <a
+                        href="#"
+                        ><i class="fa-brands fs-2 fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-5 col-sm-10"
+                style="display: flex; justify-content: center"
+              >
+                <div class="our-team">
+                  <div class="pic">
+                    <img src="/public/images/blank_profile.svg" />
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Name</h3>
+                    <span class="post">Description</span>
+                  </div>
+                  <ul class="social">
+                    <li
+                      class="d-flex flex-row justify-content-around align-item-center"
+                    >
+                      <a href="#"
+                        ><i class="fa-regular fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="mailto:rishikesh_2001cs85@iitp.ac.in"
+                        ><i class="fa fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa-solid fs-2 fa-phone"></i
+                      ></a>
+                      <a
+                        href="#"
+                        ><i class="fa-brands fs-2 fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-5 col-sm-10"
+                style="display: flex; justify-content: center"
+              >
+                <div class="our-team">
+                  <div class="pic">
+                    <img src="/public/images/blank_profile.svg" />
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Name</h3>
+                    <span class="post">Description</span>
+                  </div>
+                  <ul class="social">
+                    <li
+                      class="d-flex flex-row justify-content-around align-item-center"
+                    >
+                      <a href="#"
+                        ><i class="fa-regular fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa-solid fs-2 fa-phone"></i
+                      ></a>
+                      <a
+                        href="#"
+                        ><i class="fa-brands fs-2 fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-5 col-sm-10"
+                style="display: flex; justify-content: center"
+              >
+                <div class="our-team">
+                  <div class="pic">
+                    <img src="/public/images/blank_profile.svg" />
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Name</h3>
+                    <span class="post">Description</span>
+                  </div>
+                  <ul class="social">
+                    <li
+                      class="d-flex flex-row justify-content-around align-item-center"
+                    >
+                      <a href="#"
+                        ><i class="fa-regular fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa-solid fs-2 fa-phone"></i
+                      ></a>
+                      <a
+                        href="#"
+                        ><i class="fa-brands fs-2 fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-5 col-sm-10"
+                style="display: flex; justify-content: center"
+              >
+                <div class="our-team">
+                  <div class="pic">
+                    <img src="/public/images/blank_profile.svg" />
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Name</h3>
+                    <span class="post">Description</span>
+                  </div>
+                  <ul class="social">
+                    <li
+                      class="d-flex flex-row justify-content-around align-item-center"
+                    >
+                      <a href="#"
+                        ><i class="fa-regular fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa-solid fs-2 fa-phone"></i
+                      ></a>
+                      <a
+                        href="#"
+                        ><i class="fa-brands fs-2 fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div
+                class="col-lg-3 col-md-5 col-sm-10"
+                style="display: flex; justify-content: center"
+              >
+                <div class="our-team">
+                  <div class="pic">
+                    <img src="./assets/Ashwani assam.jpg" />
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Dr. Ashwani Assam</h3>
+                    <span class="post">Professor-in-charge</span>
+                  </div>
+                  <ul class="social">
+                    <li
+                      class="d-flex flex-row justify-content-around align-item-center"
+                    >
+                      <a href="#"
+                        ><i class="fa-regular fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="mailto:rishikesh_2001cs85@iitp.ac.in"
+                        ><i class="fa fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="https://www.facebook.com/rishi.devanathan.5"
+                        ><i class="fa-solid fs-2 fa-phone"></i
+                      ></a>
+                      <a
+                        href="https://www.linkedin.com/in/rishikesh-devanathan/"
+                        ><i class="fa-brands fs-2 fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-5 col-sm-10"
+                style="display: flex; justify-content: center"
+              >
+                <div class="our-team">
+                  <div class="pic">
+                    <img src="./assets/Kripa shankar singh.jpeg" />
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Mr. Kripa Shankar Singh</h3>
+                    <span class="post">Training and Placement Officer</span>
+                  </div>
+                  <ul class="social">
+                    <li
+                      class="d-flex flex-row justify-content-around align-item-center"
+                    >
+                      <a href="#"
+                        ><i class="fa-regular fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="mailto:rishikesh_2001cs85@iitp.ac.in"
+                        ><i class="fa fs-2 fa-envelope"></i
+                      ></a>
+                      <a href="https://www.facebook.com/rishi.devanathan.5"
+                        ><i class="fa-solid fs-2 fa-phone"></i
+                      ></a>
+                      <a
+                        href="https://www.linkedin.com/in/rishikesh-devanathan/"
+                        ><i class="fa-brands fs-2 fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Preloader ============== -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- =============== Footer ================= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 footer-contact">
+              <img src="/public/images/logo/logo.png" class="footer-logo">
+              <img src="/public/images/logo/typography.png" class="footer-typo">
+                <div class="email my-5">
+                  <strong>Email:</strong> theweeklychallenge@example.com<br />
+                </div>
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="about.html">About us</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="#">Contributions</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 mt-2 mt-lg-0">
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i> <a href="team.html">Teams</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="#">Reviews</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i> <a href="chart.html">Charts</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>The Weekly Challenge</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- ============================ Vendor JS Files ============================ -->
+    <script src="/public/javascripts/vendor/aos/aos.js"></script>
+    <script src="/public/javascripts/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/public/javascripts/vendor/glightbox/glightbox.min.js"></script>
+    <script src="/public/javascripts/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/public/javascripts/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/public/javascripts/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/public/javascripts/index.js"></script>
+
+    <!-- ======================= Lottie JSON script here ======================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+
+    <script>
+      // Setting up Lottie
+      var animationContainer = document.getElementById("animation-container");
+      var anim = bodymovin.loadAnimation({
+        container: animationContainer,
+        renderer: "svg", // You can also use 'canvas' or 'html'
+        loop: true, // Set to true if you want the animation to loop
+        autoplay: true,
+        path: "/public/javascripts/lottiejson/globe.json",
+        // path: 'assets/lottiejson/purple.json',
+      });
+    </script>
+  </body>
+</html>

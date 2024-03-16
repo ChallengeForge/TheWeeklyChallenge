@@ -34,13 +34,13 @@ CREATE TABLE weeks (
     week_id INTEGER PRIMARY KEY AUTOINCREMENT,
     week_name TEXT NOT NULL
 );
-
 CREATE TABLE users (
     user_id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_type INTEGER NOT NULL,
     user_password TEXT NOT NULL,
     FOREIGN KEY (user_type) REFERENCES user_types(user_type_id)
 );
+
 
 CREATE TABLE contributions (
     contribution_id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -144,11 +144,15 @@ CREATE TABLE task_types (
 );
 
 CREATE TABLE tasks (
+
     task_id INTEGER PRIMARY KEY AUTOINCREMENT,
     week_id INTEGER NOT NULL,
     task_master TEXT NOT NULL,
     task_type TEXT NOT NULL,
     task_description TEXT NOT NULL,
     is_active INTEGER NOT NULL,
-    FOREIGN KEY (week_id) REFERENCES weeks(week_id)
+     FOREIGN KEY (week_id) REFERENCES weeks(week_id),
+    FOREIGN KEY (task_master_id) REFERENCES task_masters(task_master_id),
+    FOREIGN KEY (task_type_id) REFERENCES task_types(task_type_id),
+    UNIQUE INDEX idx_tasks_week_task_master_task_type (week_id, task_master_id, task_type_id)
 );
