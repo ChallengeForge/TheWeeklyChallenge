@@ -1,0 +1,37 @@
+#blog-title,
+#tags-input,
+#section-header,
+#article{
+  background-color: #92E3A9 !important;
+  border: 2px solid #92E3A9 !important;
+}
+
+
+#titleFilter{
+    border: 2px solid #cccccc !important;
+  }
+
+#titleFilter:focus {
+
+border: 2px solid #92E3A9 !important;
+box-shadow: none !important;
+}
+  
+
+
+.btn-bg-color{
+  background-color: #92E3A9 !important;
+}
+
+/* #blog-title:hover{
+  border: 2px solid #cccccc !important;
+} */
+
+#blog-title:focus,
+#tags-input:focus,
+#section-header:focus,
+#article:focus{
+
+  border: 2px solid #cccccc !important;
+  box-shadow: none !important;
+}
