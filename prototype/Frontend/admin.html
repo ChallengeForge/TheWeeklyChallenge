@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../public/css/admin.css" />
+    <!-- charts -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- title -->
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <img src="../assets/misc/theweeklychallenge-logo 1.svg" alt="" />
+      </a>
+      <a href="index.html" class="head-link"> The Weekly Challenge</a>
+      <div class="search">
+        <input type="text" id="search" placeholder="search here" />
+        <label for="search"> <i class="fas fa-search"></i></label>
+      </div>
+      <div class="user">
+        <img src="../assets/misc/person.jpg" alt="" class="user-pic" />
+        <div class="sub-menu-wrap">
+          <div class="sub-menu">
+            <a href="#" class="sub-menu-link"
+              ><i class="fa-regular fa-user"></i>NAME</a
+            >
+            <a href="#" class="sub-menu-link"
+              ><i class="fa-regular fa-bell"></i>NOTIFICATIONS</a
+            >
+            <a href="#" class="sub-menu-link"
+              ><i class="fa-regular fa-gears"></i>SETTINGS</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- sidebar -->
+    <div class="sidebar">
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="index.html"
+              ><i class="fa-solid fa-address-card"></i>
+              <div>About</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="chart.html"
+              ><i class="fa-solid fa-chart-simple"></i>
+              <div>Chart</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="team.html"
+              ><i class="fa-solid fa-layer-group"></i>
+              <div>Teams</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="perl-review.html"
+              ><i class="fa-solid fa-magnifying-glass-dollar"></i>
+              <div>Pearl/Review</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="raku.html"
+              ><i class="fa-solid fa-magnifying-glass-location"></i>
+              <div>Raku/Review</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="blogs.html"
+              ><i class="fa-solid fa-blog"></i>
+              <div>Blogs</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="recap.html"
+              ><i class="fa-solid fa-right-left"></i>
+              <div>Recap</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="challenges.html"
+              ><i class="fa-solid fa-list-check"></i>
+              <div>Challenges</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="champions.html"
+              ><i class="fa-solid fa-trophy"></i>
+              <div>Champions</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="faq.html"
+              ><i class="fa-solid fa-circle-question"></i>
+              <div>FAQ</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="contact.html"
+              ><i class="fa-solid fa-address-book"></i>
+              <div>Contact</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-comment"></i>
+              <div>Comment</div></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- main content -->
+    <main>
+      <section class="cards">
+        <a href="#">
+          <div class="card">
+            <i class="fa-solid fa-bars-progress"></i>
+            <h2>Challenge Title</h2>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <h2>Edit Existing Challenge</h2>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card">
+            <i class="fa-solid fa-users"></i>
+            <h2>New Members Request</h2>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card">
+            <i class="fa-solid fa-envelope"></i>
+            <h2>New Mailing List</h2>
+          </div>
+        </a>
+      </section>
+      <!-- charts -->
+      <section class="charts">
+        <div class="donut-chart">
+          <h2>Active Contributors Count</h2>
+          <div id="donutchart"></div>
+        </div>
+        <div class="donut-chart">
+          <h2>Challenge Participation</h2>
+          <div id="donutchart1"></div>
+        </div>
+        <div class="donut-chart">
+          <h2>Competition Rates</h2>
+          <div id="donutchart2"></div>
+        </div>
+      </section>
+
+      <section class="chart2">
+        <div class="bar-chart">
+          <h2>Engagement Rates</h2>
+          <div id="chart_div"></div>
+        </div>
+        <div class="current">
+          <h2>Current Challenges</h2>
+          <div class="flex">
+            <h3>Name of Challenge(Task 1)</h3>
+            <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+          </div>
+          <hr />
+          <div class="flex">
+            <h3>Name of Challenge(Task 2)</h3>
+            <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../../public/javascripts/admin.js"></script>
+    <script src="../../public/javascripts/charts/chart1.js"></script>
+    <script src="../../public/javascripts/charts/chart2.js"></script>
+    <script src="../../public/javascripts/charts/chart3.js"></script>
+    <script src="../../public/javascripts/charts/chart4.js"></script>
+  </body>
+</html>
