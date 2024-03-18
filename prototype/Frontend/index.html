@@ -166,18 +166,22 @@
             class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 task-box"
             data-aos="fade-up"
             data-aos-delay="200">
-            <div class="container ms-lg-5 card task-card">
-              <h2>Task #1</h2>
-              <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur aperiam odio
-              </h3>
-              <h2>Task #2</h2>
-              <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur aperiam odio
-              </h3>
+            <div class="task-container">
+              <button class="tab-button active" onclick="openTab(event, 'task1')">Task 1</button>
+              <button class="tab-button" onclick="openTab(event, 'task2')">Task 2</button>
+            
+              <div id="task1" class="tab active">
+                <h2>Task #1</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aperiam odio</h3>
+              </div>
+            
+              <div id="task2" class="tab">
+                <h2>Task #2</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.magni incidunt,  quam exercitationem labore mollitia illum.</h3>
+              </div>
             </div>
+            
+            
             <div class="d-flex justify-content-center justify-content-lg-start ms-lg-5 my-md-3">
               <a href="Sign-in.html" class="btn-get-started scrollto">Login/Sign up</a>
               <a href="#" class="glightbox btn-watch-video">

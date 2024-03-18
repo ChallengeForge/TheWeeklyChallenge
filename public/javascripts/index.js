@@ -302,3 +302,29 @@ window.addEventListener("resize", function() {
       text.innerText = 'Guest Contribution';
   }
 });
+
+// Tabbed Container for Tasks
+
+
+  function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.opacity = 0;
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab-button");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    setTimeout(function () {
+      document.getElementById(tabName).style.opacity = 1;
+    }, 200); // Adjust the delay as needed for the desired effect
+    evt.currentTarget.className += " active";
+  }
+
+  // Set the default tab to be opened
+  document.getElementById("task1").style.display = "block";
+
+
