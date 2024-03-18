@@ -37,9 +37,9 @@ git clone https://github.com/ChallengeForge/TheWeeklyChallenge.git
 
 - ## Run the Development Server
 
-# Contributing
+# Contribution
 
-We welcome contributions to The Weekly Challenge! If you have an idea for a new feature, want to fix a bug, or improve the website, please feel free to create a pull request. Refer to the [CONTRIBUTING GUIDE](contributing.md) for more details
+We welcome contributions to The Weekly Challenge! If you have an idea for a new feature, want to fix a bug, or improve the website, please feel free to create a pull request. Refer to the [CONTRIBUTION GUIDE](contribution.md) for more details
 
 # License
 
