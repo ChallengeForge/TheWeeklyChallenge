@@ -4,14 +4,8 @@ use strict;
 use warnings;
 use JSON::Parse qw(parse_json);
 use DBI;
-use Try::Tiny;    # Added to handle exceptions
+use Try::Tiny;
 use Crypt::Eksblowfish::Bcrypt qw(bcrypt);
-
-# Dependencies to install:
-# - JSON::Parse (use CPAN: cpan install JSON::Parse)
-# - DBD::mysql (use CPAN: cpan install DBD::mysql, might need MySQL development libraries)
-# - Crypt::Eksblowfish::Bcrypt (use CPAN: cpan install Crypt::Eksblowfish::Bcrypt)
-# - Try::Tiny (use CPAN: cpan install Try::Tiny)
 
 # Database configuration
 my %config = (
