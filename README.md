@@ -39,7 +39,7 @@ git clone https://github.com/ChallengeForge/TheWeeklyChallenge.git
 
 # Contribution
 
-We welcome contributions to The Weekly Challenge! If you have an idea for a new feature, want to fix a bug, or improve the website, please feel free to create a pull request. Refer to the [CONTRIBUTION GUIDE](contribution.md) for more details
+We welcome contributions to The Weekly Challenge! If you have an idea for a new feature, want to fix a bug, or improve the website, please feel free to create a pull request. Refer to the [CONTRIBUTION GUIDE](CONTRIBUTING.md) for more details
 
 # License
 
@@ -61,6 +61,11 @@ This project is licensed under the `Artistic License 2.0` license. Please refer 
 
 
 3. **Install Dancer2::Plugin::Database**: This module integrates the Dancer2 web framework with your database. 
+
+
+## Contributors
+[![](https://contrib.rocks/image?repo=ChallengeForge/TheWeeklyChallenge)](https://github.com/ChallengeForge/TheWeeklyChallenge/graphs/contributors)
+[![](https://contrib.rock-s/image?repo=ChallengeForge/TheWeeklyChallenge)](https://github.com/ChallengeForge/TheWeeklyChallenge/graphs/contributors)
 
 
 [![Join us on Slack](https://img.shields.io/badge/Join_us-Slack-informational?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/theweeklychal-udf4770/shared_invite/zt-2em4g2m29-WGd9LQc1YnNLyn_qHi6xLA)
