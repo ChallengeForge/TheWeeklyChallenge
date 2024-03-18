@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>The Weekly Challenge - Perl & Raku</title>
+    <meta content="The Weekly Challenge that includes Perl and Raku programming." name="description" />
+    <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
+
+    <!-- Data Tbale link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+        rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+
+    <!-- Favicons -->
+    <link href="/public/images/logo/logo.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Vendor CSS Files -->
+    <link href="/public/css/helpercss/aos.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/bootstrap_css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/glightbox_css/glightbox.min.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="/public/css/index.css" rel="stylesheet" />
+    <link href="/public/css/list-autreachy-applicants.css" rel="stylesheet" />
+    <link href="/prototype/Frontend/css/team.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+    <!-- ==================== Header =================== -->
+    <header id="header" class="sticky-top border-bottom">
+        <div class="container d-flex align-items-center">
+            <div class="container d-flex align-items-center justify-content-center me-auto">
+                <a href="index.html" class="logo me-3">
+                    <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid" />
+                </a>
+                <a href="index.html" class="logo me-auto">
+                    <img src="/public/images/logo/typography.png" alt="typography" class="img-fluid" />
+                </a>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li>
+                        <a class="nav-link scrollto " href="index.html">Home</a>
+                    </li>
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="#">
+                            <span>About</span> <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li class="border-bottom">
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="border-bottom">
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <!-- Contributions Dropdown -->
+                    <li class="dropdown">
+                        <a href="#" class="active">
+                            <span>Contributions</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li ><a href="list-autreachy-applicants.html" class="active">Autreachy Applicants</a></li>
+                        </ul>
+                    </li>
+                    <!-- Team Dropdown -->
+                    <li class="dropdown">
+                        <a href="#">
+                            <span>Team</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li class="border-bottom"><a href="team.html">Regular</a></li>
+                            <li class="border-bottom"><a href="guest.html">Guest</a></li>
+                            <li><a href="champions.html">Champions</a></li>
+                        </ul>
+                    </li>
+                    <!-- Reviews Dropdown -->
+                    <li class="dropdown">
+                        <a href="#">
+                            <span>Reviews</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
+                            <li><a href="raku.html">Raku</a></li>
+                        </ul>
+                    </li>
+                    <!-- Charts DropDown -->
+                    <li class="dropdown">
+                        <a href="#">
+                            <span>Leaderboard</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li class="border-bottom"><a href="chart.html">Charts</a></li>
+                            <li class="border-bottom"><a href="#">Team Leader</a></li>
+                            <li><a href="#">Guest Leader</a></li>
+                        </ul>
+                    </li>
+                    <!-- Prefernces -->
+                    <li class="dropdown">
+                        <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li class="border-bottom theme1"><a href="#">Default</a></li>
+                            <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
+                            <li class="theme3"><a href="#">Blue Mode</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- End Navbar -->
+        </div>
+    </header>
+
+    <!-- End Header -->
+
+
+    <!-- ==================== Main Section ==================== -->
+    <div class="container mt-5 mb-5">
+
+
+        <h1 class="display-6">
+            Autreachy Applicants
+        </h1>
+
+
+        <div class="filter-container mb-3">
+            <input type="search" id="customSearchBox1" class="form-control" placeholder="Search for applicant...">
+        </div>
+
+        <div class="container-fluid table-responsive pb-3 border rounded pt-3">
+            <table id="CourseAvailabilityTable" class="table table-striped nowrap responsive" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th> # </th>
+                        <!-- <th> Aqoonsi <span class="icon-arrow">&UpArrow;</span></th> -->
+                        <th> Applicant ID</th>
+                        <th> Full name</th>
+                        <th>
+                            <span class="material-symbols-outlined">
+                                mail
+                            </span>
+                        </th>
+                        <th>
+                            <span class="material-symbols-outlined">
+                                phone_iphone
+                            </span>
+
+                        </th>
+                        <th>
+                            Jinsi
+
+                        </th>
+
+                        <th>
+                            go'aan
+                        </th>
+
+                        <th>
+                            <span class="material-symbols-outlined">
+                                info
+                            </span>
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>#1</td>
+                        <td>25451</td>
+                        <td>Fahad Mohamed Albasrawie</td>
+
+                        <td>cabbaascadde55@gmail.com</td>
+
+                        <td>+252616314492</td>
+
+                        <td>Male</td>
+
+                        <td>
+
+                            Active
+
+                        </td>
+
+                        <td>
+                            <div>
+                                <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
+                                    aria-expanded="false" class="text-muted">
+                                    <img src="https://lh3.googleusercontent.com/a/ACg8ocIAKucv2Q4a0yRtpFZP5YNgvnx0SdUyioWh9a5zLvb9oDw=s288-c-no"
+                                        class="rounded-circle" height="35" alt="Black and White Portrait of a Man"
+                                        loading="lazy">
+                                </a>
+                                <ul class="dropdown-menu p-2 rounded" aria-labelledby="applicant-more-info">
+                                    <div class="container border border-2 mt-3 pt-3 rounded">
+                                        <h4 class="display-9 text-black fs-6">Description</h4>
+                                        <hr>
+                                        <div class="mb-3  ps-0">
+                                            <li class="text-center">
+                                                <img src="https://lh3.googleusercontent.com/a/ACg8ocIAKucv2Q4a0yRtpFZP5YNgvnx0SdUyioWh9a5zLvb9oDw=s288-c-no"
+                                                    class="rounded-circle" height="50"
+                                                    alt="Black and White Portrait of a Man" loading="lazy">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Projects:
+                                                    </span>2
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Contributions:
+                                                    </span>19
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Time:
+                                                    </span>Full time
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Applicant Role:
+                                                    </span>Intern
+                                                </a>
+                                            </li>
+
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+
+
+
+                        </td>
+                    </tr>
+
+                    <!-- Applicant 2 ====================== -->
+                    <tr>
+                        <td>#2</td>
+                        <td>34563</td>
+                        <td>Mohammad Sajid Anwar</td>
+
+                        <td>Mohammad.Anwar@yahoo.com</td>
+
+                        <td>+2521539655</td>
+
+                        <td>Male</td>
+
+                        <td>
+
+                            Active
+
+                        </td>
+
+                        <td>
+                            <div>
+                                <a href="#" role="button" id="applicant-more-info2" data-bs-toggle="dropdown"
+                                    aria-expanded="false" class="text-muted">
+                                    <img src="https://avatars.githubusercontent.com/u/681195?v=4" class="rounded-circle"
+                                        height="35" alt="Black and White Portrait of a Man" loading="lazy">
+                                </a>
+                                <ul class="dropdown-menu p-2 rounded" aria-labelledby="applicant-more-info2">
+                                    <div class="container border border-2 mt-3 pt-3 rounded">
+                                        <h4 class="display-9 text-black fs-6">Description</h4>
+                                        <hr>
+                                        <div class="mb-3  ps-0">
+                                            <li class="text-center">
+                                                <img src="https://avatars.githubusercontent.com/u/681195?v=4"
+                                                    class="rounded-circle" height="50"
+                                                    alt="Black and White Portrait of a Man" loading="lazy">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Projects:
+                                                    </span>55
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Contributions:
+                                                    </span>1458
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Time:
+                                                    </span>Full time
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Applicant Role:
+                                                    </span>Mentor
+                                                </a>
+                                            </li>
+
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Applicant 3 ====================== -->
+                    <tr>
+                        <td>#3</td>
+                        <td>54456</td>
+                        <td>Soniya Prasad
+                        </td>
+
+                        <td>Soniya.prased@yahoo.com</td>
+
+                        <td>+7574564745</td>
+
+                        <td>Female</td>
+
+                        <td>
+
+                            Active
+
+                        </td>
+
+                        <td>
+                            <div>
+                                <a href="#" role="button" id="applicant-more-info2" data-bs-toggle="dropdown"
+                                    aria-expanded="false" class="text-muted">
+                                    <img src="https://avatars.githubusercontent.com/u/63783532?v=4"
+                                        class="rounded-circle" height="35" alt="Black and White Portrait of a Man"
+                                        loading="lazy">
+                                </a>
+                                <ul class="dropdown-menu p-2 rounded" aria-labelledby="applicant-more-info2">
+                                    <div class="container border border-2 mt-3 pt-3 rounded">
+                                        <h4 class="display-9 text-black fs-6">Description</h4>
+                                        <hr>
+                                        <div class="mb-3  ps-0">
+                                            <li class="text-center">
+                                                <img src="https://avatars.githubusercontent.com/u/63783532?v=4"
+                                                    class="rounded-circle" height="50"
+                                                    alt="Black and White Portrait of a Man" loading="lazy">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Projects:
+                                                    </span>25
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Contributions:
+                                                    </span>41
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Time:
+                                                    </span>Full time
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Applicant Role:
+                                                    </span>Intern
+                                                </a>
+                                            </li>
+
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Applicant 4 ====================== -->
+                    <tr>
+                        <td>#4</td>
+                        <td>89076</td>
+                        <td>himanshisrestha
+                        </td>
+
+                        <td>himanshisrestha@yahoo.com</td>
+
+                        <td>+2344567554</td>
+
+                        <td>Female</td>
+
+                        <td>
+
+                            Active
+
+                        </td>
+
+                        <td>
+                            <div>
+                                <a href="#" role="button" id="applicant-more-info2" data-bs-toggle="dropdown"
+                                    aria-expanded="false" class="text-muted">
+                                    <img src="https://avatars.githubusercontent.com/u/135853264?v=4"
+                                        class="rounded-circle" height="35" alt="Black and White Portrait of a Man"
+                                        loading="lazy">
+                                </a>
+                                <ul class="dropdown-menu p-2 rounded" aria-labelledby="applicant-more-info2">
+                                    <div class="container border border-2 mt-3 pt-3 rounded">
+                                        <h4 class="display-9 text-black fs-6">Description</h4>
+                                        <hr>
+                                        <div class="mb-3  ps-0">
+                                            <li class="text-center">
+                                                <img src="https://avatars.githubusercontent.com/u/135853264?v=4"
+                                                    class="rounded-circle" height="50"
+                                                    alt="Black and White Portrait of a Man" loading="lazy">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Projects:
+                                                    </span>74
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Contributions:
+                                                    </span>58
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Time:
+                                                    </span>Full time
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Applicant Role:
+                                                    </span>Intern
+                                                </a>
+                                            </li>
+
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Applicant 4 ====================== -->
+                    <tr>
+                        <td>#5</td>
+                        <td>67443</td>
+                        <td>Noubissi Viany
+                        </td>
+
+                        <td>696607013@gmail.com</td>
+
+                        <td>+2344566464</td>
+
+                        <td>Male</td>
+
+                        <td>
+
+                            Active
+
+                        </td>
+
+                        <td>
+                            <div>
+                                <a href="#" role="button" id="applicant-more-info2" data-bs-toggle="dropdown"
+                                    aria-expanded="false" class="text-muted">
+                                    <img src="https://avatars.githubusercontent.com/u/95907776?v=4"
+                                        class="rounded-circle" height="35" alt="Black and White Portrait of a Man"
+                                        loading="lazy">
+                                </a>
+                                <ul class="dropdown-menu p-2 rounded" aria-labelledby="applicant-more-info2">
+                                    <div class="container border border-2 mt-3 pt-3 rounded">
+                                        <h4 class="display-9 text-black fs-6">Description</h4>
+                                        <hr>
+                                        <div class="mb-3  ps-0">
+                                            <li class="text-center">
+                                                <img src="https://avatars.githubusercontent.com/u/95907776?v=4"
+                                                    class="rounded-circle" height="50"
+                                                    alt="Black and White Portrait of a Man" loading="lazy">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Projects:
+                                                    </span>42
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Contributions:
+                                                    </span>55
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Time:
+                                                    </span>Full time
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Applicant Role:
+                                                    </span>Intern
+                                                </a>
+                                            </li>
+
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Applicant 4 ====================== -->
+                    <tr>
+                        <td>#6</td>
+                        <td>45634</td>
+                        <td>BAIMAM BOUKAR JEAN JACQUES
+                        </td>
+
+                        <td>BAIMAMBOUKARJEANJACQUES@gmail.com</td>
+
+                        <td>+6546757664</td>
+
+                        <td>Male</td>
+
+                        <td>
+
+                            Active
+
+                        </td>
+
+                        <td>
+                            <div>
+                                <a href="#" role="button" id="applicant-more-info2" data-bs-toggle="dropdown"
+                                    aria-expanded="false" class="text-muted">
+                                    <img src="https://avatars.githubusercontent.com/u/49169158?v=4"
+                                        class="rounded-circle" height="35" alt="Black and White Portrait of a Man"
+                                        loading="lazy">
+                                </a>
+                                <ul class="dropdown-menu p-2 rounded" aria-labelledby="applicant-more-info2">
+                                    <div class="container border border-2 mt-3 pt-3 rounded">
+                                        <h4 class="display-9 text-black fs-6">Description</h4>
+                                        <hr>
+                                        <div class="mb-3  ps-0">
+                                            <li class="text-center">
+                                                <img src="https://avatars.githubusercontent.com/u/49169158?v=4"
+                                                    class="rounded-circle" height="50"
+                                                    alt="Black and White Portrait of a Man" loading="lazy">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Projects:
+                                                    </span>42
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#">
+                                                    <span class="text-black fw-bold">Contributions:
+                                                    </span>55
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Time:
+                                                    </span>Full time
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-1" href="#"><span
+                                                        class="text-black fw-bold">Applicant Role:
+                                                    </span>Intern
+                                                </a>
+                                            </li>
+
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th> # </th>
+                        <!-- <th> Aqoonsi <span class="icon-arrow">&UpArrow;</span></th> -->
+                        <th> Applicant ID</th>
+                        <th> Full name</th>
+                        <th>
+                            <span class="material-symbols-outlined">
+                                mail
+                            </span>
+                        </th>
+                        <th>
+                            <span class="material-symbols-outlined">
+                                phone_iphone
+                            </span>
+
+                        </th>
+                        <th>
+                            Jinsi
+
+                        </th>
+
+                        <th>
+                            go'aan
+                        </th>
+
+                        <th>
+                            <span class="material-symbols-outlined">
+                                info
+                            </span>
+                        </th>
+
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============== Preloader ================ -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+
+    <!-- =============== Footer ================= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 footer-contact">
+                        <img src="/public/images/logo/logo.png" class="footer-logo">
+                        <img src="/public/images/logo/typography.png" class="footer-typo">
+                        <div class="email my-5">
+                            <strong>Email:</strong> theweeklychallenge@example.com<br />
+                        </div>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="about.html">About us</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Contributions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 mt-2 mt-lg-0">
+                                <ul>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i> <a href="team.html">Teams</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Reviews</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i> <a href="chart.html">Charts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
+                        </p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>The Weekly Challenge</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- ============================ Vendor JS Files ============================ -->
+    <script src="/public/javascripts/vendor/aos/aos.js"></script>
+    <script src="/public/javascripts/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/public/javascripts/vendor/glightbox/glightbox.min.js"></script>
+    <script src="/public/javascripts/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/public/javascripts/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/public/javascripts/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/public/javascripts/index.js"></script>
+
+    <!-- ======================= Lottie JSON script here ======================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+
+    <script>
+        // Setting up Lottie
+        var animationContainer = document.getElementById("animation-container");
+        var anim = bodymovin.loadAnimation({
+            container: animationContainer,
+            renderer: "svg", // You can also use 'canvas' or 'html'
+            loop: true, // Set to true if you want the animation to loop
+            autoplay: true,
+            path: "/public/javascripts/lottiejson/green.json",
+            // path: 'assets/lottiejson/purple.json',
+        });
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var table = $('#CourseAvailabilityTable').DataTable({
+                "dom": 'lrtip'  // Exclude 'f' which stands for filtering input,
+                , "language": {
+                    "emptyTable": "Sorry, there is no data available in the table",
+                    "zeroRecords": "Sorry, no matching records were found",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoFiltered": "(searched from _MAX_ total entries)",
+                    "paginate": {
+                        "previous": "Previous",
+                        "next": "Next"
+                    },
+                    "lengthMenu": "Show _MENU_ entries per page",
+
+                }
+
+            });
+
+            // Add search functionality to the custom search box
+            $('#customSearchBox1').on('keyup', function () {
+                table.search(this.value).draw();
+            });
+        });
+
+    </script>
+</body>
+
+</html>
