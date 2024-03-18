@@ -15,7 +15,7 @@ my %config = (
     password => 'root'
 );
 
-my $data_source = "members.json";
+my $data_source = "../database/migration/members.json";
 
 # Connect to MySQL database
 try {
