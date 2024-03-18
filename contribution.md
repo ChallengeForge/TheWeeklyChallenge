@@ -132,3 +132,6 @@ After installing Perlbrew, attach it to your terminal:
 Use `ctrl + o` to write to a file and `ctrl + x` to save to a file.
 
 
+
+[![Join us on Slack](https://img.shields.io/badge/Join_us-Slack-informational?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/theweeklychal-udf4770/shared_invite/zt-2em4g2m29-WGd9LQc1YnNLyn_qHi6xLA)
+[![Visit Website](https://img.shields.io/badge/Visit_Website-brightgreen?style=for-the-badge)](https://theweeklychallenge.org)
