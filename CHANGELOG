@@ -1,0 +1,11 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [Unreleased]
+
+### Added
+- Dancer2 Backend: Initialized Dancer2 backend
+- WebUI prototype: Designed Web UI prototype using `HTML, CSS, JS`
+- Database Scheme
+- API-docs
