@@ -77,7 +77,7 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li>
-              <a class="nav-link scrollto active" href="index.html">Home</a>
+              <a class="nav-link scrollto active" href="index.html"><span class="border"><i class="fa-solid fa-house fs-5"></i></span></a>
             </li>
             <!-- About Dropdown -->
             <li class="dropdown">
@@ -103,7 +103,6 @@
               <ul>
                 <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
                 <li ><a href="blogs.html">Blogs</a></li>
-                <li ><a href="list-autreachy-applicants.html">Autreachy Applicants</a></li>
               </ul>
             </li>
             <!-- Team Dropdown -->
@@ -359,14 +358,14 @@
 
     <script>
       // Setting up Lottie
+      var lottiePath = (localStorage.getItem('lottie') && localStorage.getItem('lottie') === 'blue') ? '/public/javascripts/lottiejson/purple.json': '/public/javascripts/lottiejson/green.json';
       var animationContainer = document.getElementById("animation-container");
       var anim = bodymovin.loadAnimation({
         container: animationContainer,
         renderer: "svg", // You can also use 'canvas' or 'html'
         loop: true, // Set to true if you want the animation to loop
         autoplay: true,
-        path: "/public/javascripts/lottiejson/green.json",
-        // path: 'assets/lottiejson/purple.json',
+        path: lottiePath,
       });
     </script>
   </body>
