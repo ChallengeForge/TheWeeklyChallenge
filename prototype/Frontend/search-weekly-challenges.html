@@ -54,11 +54,7 @@
 
     <!-- Template Main CSS File -->
     <link href="/public/css/index.css" rel="stylesheet" />
-    <style>
-      #taskContainer {
-        display: none;
-      }
-    </style>
+    <link href="./css/search-weekly-challenges.css" rel="stylesheet" />
   </head>
   <body>
     <!-- ==================== Header ======================== -->
@@ -174,11 +170,11 @@
     <!-- End Header -->
 
     <div class="container mt-5">
-      <div class="row">
-        <div class="col">
+      <div class="row justify-content-center">
+        <div class="col-2">
           <div class="form-group">
-            <label for="yearDropdown">Year</label>
-            <select class="form-control" id="yearDropdown">
+            <label for="yearDropdown" class="fw-bold label">Year</label>
+            <select class="form-control mt-2 label" id="yearDropdown">
               <option value="">select a year</option>
               <option value="2022">2022</option>
               <option value="2023">2023</option>
@@ -186,16 +182,16 @@
             </select>
           </div>
         </div>
-        <div class="col">
+        <div class="col-2">
           <div class="form-group">
-            <label for="monthDropdown">Month</label>
-            <select class="form-control" id="monthDropdown"></select>
+            <label for="monthDropdown" class="fw-bold label">Month</label>
+            <select class="form-control mt-2 label" id="monthDropdown"></select>
           </div>
         </div>
-        <div class="col">
+        <div class="col-2">
           <div class="form-group">
-            <label for="weekDropdown">Week</label>
-            <select class="form-control" id="weekDropdown"></select>
+            <label for="weekDropdown" class="fw-bold label">Week</label>
+            <select class="form-control mt-2 label" id="weekDropdown"></select>
           </div>
         </div>
       </div>
@@ -204,7 +200,7 @@
         <ul class="nav nav-tabs">
           <li class="nav-item">
             <a
-              class="nav-link active"
+              class="nav-link active fw-bold"
               id="task1-tab"
               data-bs-toggle="tab"
               href="#task1"
@@ -216,7 +212,7 @@
           </li>
           <li class="nav-item">
             <a
-              class="nav-link"
+              class="nav-link fw-bold"
               id="task2-tab"
               data-bs-toggle="tab"
               href="#task2"
@@ -228,7 +224,7 @@
           </li>
           <li class="nav-item">
             <a
-              class="nav-link"
+              class="nav-link fw-bold"
               id="task3-tab"
               data-bs-toggle="tab"
               href="#task3"
@@ -269,7 +265,7 @@
     </div>
     <!-- ================= Footer ==================== -->
     <footer id="footer">
-      <div class="footer-top" style="margin-top: 7rem;">
+      <div class="footer-top ftrMargin">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6 col-12 footer-contact">

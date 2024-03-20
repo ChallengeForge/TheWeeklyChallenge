@@ -1,0 +1,9 @@
+#taskContainer {
+  display: none;
+}
+.label {
+  font-size: large;
+}
+.ftrMargin {
+  margin-top: 7rem;
+}
