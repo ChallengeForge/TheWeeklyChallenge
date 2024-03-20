@@ -1,9 +1,28 @@
 #taskContainer {
   display: none;
+  margin-inline: 15rem;
 }
 .label {
   font-size: large;
 }
 .ftrMargin {
   margin-top: 7rem;
+}
+
+/* Active tab style */
+.nav-tab.active {
+  background-color: #92e3a9 !important;
+  color: black;
+}
+
+/* Inactive tab style */
+.nav-tab:not(.active) {
+  background-color: #f3f5fa;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  #taskContainer {
+    margin-inline: 0;
+  }
 }
