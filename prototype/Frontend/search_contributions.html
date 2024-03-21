@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>The Weekly Challenge - Perl & Raku</title>
+    <meta content="The Weekly Challenge that includes Perl and Raku programming." name="description" />
+    <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
+
+    <!-- Data Tbale link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+        rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+
+    <!-- Favicons -->
+    <link href="/public/images/logo/logo.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Vendor CSS Files -->
+    <link href="/public/css/helpercss/aos.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/bootstrap_css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/glightbox_css/glightbox.min.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="/public/css/index.css" rel="stylesheet" />
+    <link href="/prototype/Frontend/css/team.css" rel="stylesheet" />
+
+    <style>
+
+
+        .btn-primary-effect:hover {
+            background-color: #92E3A9;
+            color: white;
+            border-color: #92E3A9;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <!-- ==================== Header =================== -->
+    <header id="header" class="sticky-top border-bottom">
+        <div class="container d-flex align-items-center">
+            <div class="container d-flex align-items-center justify-content-center me-auto">
+                <a href="index.html" class="logo me-3">
+                    <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid" />
+                </a>
+                <a href="index.html" class="logo me-auto">
+                    <img src="/public/images/logo/typography.png" alt="typography" class="img-fluid" />
+                </a>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li>
+                        <a class="nav-link scrollto " href="index.html">Home</a>
+                    </li>
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="#">
+                            <span>About</span> <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li class="border-bottom">
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="border-bottom">
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <!-- Contributions Dropdown -->
+                    <li class="dropdown">
+                        <a href="#" class="active">
+                            <span>Contributions</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
+                            <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
+                            <li class="border-bottom"><a href="list-autreachy-applicants.html">Autreachy Applicants</a>
+                            </li>
+                            <li><a href="search_contributions.html">Search Contributions</a></li>
+                        </ul>
+                    </li>
+                    <!-- Team Dropdown -->
+                    <li class="dropdown">
+                        <a href="#">
+                            <span>Team</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li class="border-bottom"><a href="team.html">Regular</a></li>
+                            <li class="border-bottom"><a href="guest.html">Guest</a></li>
+                            <li><a href="champions.html">Champions</a></li>
+                        </ul>
+                    </li>
+                    <!-- Reviews Dropdown -->
+                    <li class="dropdown">
+                        <a href="#">
+                            <span>Reviews</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
+                            <li><a href="raku.html">Raku</a></li>
+                        </ul>
+                    </li>
+                    <!-- Charts DropDown -->
+                    <li class="dropdown">
+                        <a href="#">
+                            <span>Leaderboard</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li class="border-bottom"><a href="chart.html">Charts</a></li>
+                            <li class="border-bottom"><a href="#">Team Leader</a></li>
+                            <li><a href="#">Guest Leader</a></li>
+                        </ul>
+                    </li>
+                    <!-- Prefernces -->
+                    <li class="dropdown">
+                        <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li class="border-bottom theme1"><a href="#">Default</a></li>
+                            <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
+                            <li class="theme3"><a href="#">Blue Mode</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- End Navbar -->
+        </div>
+    </header>
+
+    <!-- End Header -->
+
+
+    <!-- Search Contributions start ============ -->
+    <!-- ==================== Main Section ==================== -->
+    <div class="container mt-5 mb-5">
+
+
+        <h1 class="display-6">
+            Search Contributions
+        </h1>
+
+        <!-- Search by year, moth, and week -->
+        <div class="row">
+            <div class="col col-sm-10 col-md-8 col-lg-4 btn-group" role="group" aria-label="Basic example">
+                <select id="year" class="form-select" aria-label="Default select example">
+                    <option selected>Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select>
+                <select id="month" class="form-select" aria-label="Default select example">
+                    <option selected>Month</option>
+                    <option value="January">January</option>
+                    <option value="Febuary">Febuary</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                </select>
+                <select id="week" class="form-select" aria-label="Default select example">
+                    <option selected>Week</option>
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="5th">5th</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                    <option value="9th">9th</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-primary-effect" onclick="filterTable()">Go</button>
+            </div>
+        </div>
+
+        <!-- Search by language -->
+        <div class="row mt-3">
+            <div class="col col-sm-10 col-md-8 col-lg-4 btn-group" role="group" aria-label="Basic example">
+                <select id="language" class="form-select" aria-label="Default select example">
+                    <option selected>Language</option>
+                    <option value="Perl">Perl</option>
+                    <option value="Python">Python</option>
+                    <option value="Js">Js</option>
+                    <option value="Java">Java</option>
+                    <option value="HTML/CSS">HTML/CSS</option>
+                    <option value="React">React</option>
+                    <option value="PHP">PHP</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-primary-effect" onclick="filterTableByLangauge()">Go</button>
+            </div>
+        </div>
+
+        <div class="filter-container mb-3 mt-3">
+            <input type="search" id="customSearchBox1" class="form-control" placeholder="Search by typing user name...">
+        </div>
+
+        <!-- The table container starts here -->
+        <div class="container-fluid table-responsive pb-3 border rounded pt-3 mt-3">
+            <table id="search-contributions" class="table table-striped nowrap responsive" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th> # </th>
+                        <th> Contributor</th>
+                        <th>
+                            week
+                        </th>
+                        <th>
+                            year
+
+                        </th>
+                        <th>
+                            Month
+
+                        </th>
+
+                        <th>
+                            Language
+                        </th>
+
+                        <th>
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span>
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>#1</td>
+                        <td>
+
+                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
+                                aria-expanded="false" class="text-muted">
+                                <img src="https://lh3.googleusercontent.com/a/ACg8ocIAKucv2Q4a0yRtpFZP5YNgvnx0SdUyioWh9a5zLvb9oDw=s288-c-no"
+                                    class="rounded-circle" height="35" alt="Black and White Portrait of a Man"
+                                    loading="lazy">
+                            </a>
+                            Fahad Mohamed Albasrawie
+
+                        </td>
+
+                        <td>1st</td>
+
+                        <td>2015</td>
+
+                        <td>March</td>
+
+                        <td>
+                            Python
+                        </td>
+
+                        <td><!-- Button trigger modal -->
+                            <button type="button" class="btn btn-sm btn-primary btn-primary-effect"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                View code
+                            </button>
+                        </td>
+
+                        <!-- View code model Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Fahad's Contribution on
+                                            Python</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <pre><code class="language-python">
+                                        # Python Script: Data Analysis
+                                        # Author: Fahad
+                                        
+                                        import pandas as pd
+                                        
+                                        # Load the dataset
+                                        df = pd.read_csv('data.csv')
+                                        
+                                        # Basic Data Analysis
+                                        print("Basic Statistics:")
+                                        print(df.describe())
+                                        
+                                        # Data Cleaning
+                                        df_cleaned = df.dropna()
+                                        print("Data after cleaning:")
+                                        print(df_cleaned.head())
+                                        
+                                        # Data Transformation
+                                        df_transformed = df_cleaned.apply(lambda x: x*2 if x.name in ['Column1', 'Column2'] else x)
+                                        print("Data after transformation:")
+                                        print(df_transformed.head())
+                                        
+                                        # Save the transformed data to a new CSV
+                                        df_transformed.to_csv('transformed_data.csv', index=False)
+                                        
+                                        print("The transformed data is saved to 'transformed_data.csv'.")
+                                        </code></pre>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary btn-sm"
+                                            data-bs-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </tr>
+
+                    <!-- Entry 2 -->
+                    <tr>
+                        <td>#2</td>
+                        <td>
+                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
+                                aria-expanded="false" class="text-muted">
+                                <img src="https://static.generated.photos/vue-static/face-generator/landing/demo-previews/age.jpg"
+                                    class="rounded-circle" height="35" alt="Profile Picture 2" loading="lazy">
+                            </a>
+                            Jane Doe
+                        </td>
+                        <td>2nd</td>
+                        <td>2024</td>
+                        <td>April</td>
+                        <td>
+                            JavaScript
+                        </td>
+                        <td><!-- Button trigger modal -->
+                            <button type="button" class="btn btn-sm btn-primary btn-primary-effect"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                View code
+                            </button>
+                        </td>
+                        <!-- View code model Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel2">Jane's Contribution on
+                                            JavaScript</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <pre><code class="language-javascript">
+                                        // JavaScript Code: Frontend Development
+                                        // Author: Jane
+                                        
+                                        console.log("Hello, world!");
+                                        
+                                        // Function to add two numbers
+                                        function add(a, b) {
+                                            return a + b;
+                                        }
+                                        
+                                        // Usage of the add function
+                                        console.log("5 + 3 =", add(5, 3));
+                    </code></pre>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary btn-sm"
+                                            data-bs-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <!-- Repeat the above block for 18 more entries, adjusting details as necessary -->
+
+                    <!-- Entry 3 -->
+                    <tr>
+                        <td>#3</td>
+                        <td>
+                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
+                                aria-expanded="false" class="text-muted">
+                                <img src="https://static.generated.photos/vue-static/face-generator/landing/wall/23.jpg"
+                                    class="rounded-circle" height="35" alt="Profile Picture 3" loading="lazy">
+                            </a>
+                            Emily Smith
+                        </td>
+                        <td>3rd</td>
+                        <td>2019</td>
+                        <td>May</td>
+                        <td>
+                            HTML/CSS
+                        </td>
+                        <td><!-- Button trigger modal -->
+                            <button type="button" class="btn btn-sm btn-primary btn-primary-effect"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                View code
+                            </button>
+                        </td>
+                        <!-- View code model Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel3">Emily's Contribution on
+                                            HTML/CSS</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <pre><code class="language-html">
+                                        <!-- HTML Code: Website Layout -->
+                                        <!-- Author: Emily -->
+                                        
+                                        <!DOCTYPE html>
+                                        <html lang="en">
+                                        
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <title>My Website</title>
+                                            <link rel="stylesheet" href="styles.css">
+                                        </head>
+                                        
+                                        <body>
+                                            <header>
+                                                <h1>Welcome to My Website</h1>
+                                            </header>
+                                            <nav>
+                                                <ul>
+                                                    <li><a href="#">Home</a></li>
+                                                    <li><a href="#">About</a></li>
+                                                    <li><a href="#">Services</a></li>
+                                                    <li><a href="#">Contact</a></li>
+                                                </ul>
+                                            </nav>
+                                            <section>
+                                                <h2>About Us</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </section>
+                                            <footer>
+                                                <p>&copy; 2024 My Website</p>
+                                            </footer>
+                                        </body>
+                                        
+                                        </html>
+                    </code></pre>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary btn-sm"
+                                            data-bs-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <!-- Entry 4 -->
+                    <tr>
+                        <td>#4</td>
+                        <td>
+                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
+                                aria-expanded="false" class="text-muted">
+                                <img src="https://static.generated.photos/vue-static/face-generator/landing/wall/20.jpg"
+                                    class="rounded-circle" height="35" alt="Profile Picture 4" loading="lazy">
+                            </a>
+                            John Williams
+                        </td>
+                        <td>4th</td>
+                        <td>2024</td>
+                        <td>June</td>
+                        <td>
+                            Java
+                        </td>
+                        <td><!-- Button trigger modal -->
+                            <button type="button" class="btn btn-sm btn-primary btn-primary-effect"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                View code
+                            </button>
+                        </td>
+                        <!-- View code model Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel4">John's Contribution on Java
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <pre><code class="language-java">
+                                        // Java Code: Object-Oriented Programming
+                                        // Author: John
+                                        
+                                        public class Main {
+                                            public static void main(String[] args) {
+                                                System.out.println("Hello, world!");
+                                            }
+                                        }
+                    </code></pre>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary btn-sm"
+                                            data-bs-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <!-- Repeat the above block for more entries, adjusting details as necessary -->
+
+                    <!-- Entry 5 -->
+                    <tr>
+                        <td>#5</td>
+                        <td>
+                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
+                                aria-expanded="false" class="text-muted">
+                                <img src="https://static.generated.photos/vue-static/face-generator/landing/demo-previews/sex.jpg"
+                                    class="rounded-circle" height="35" alt="Profile Picture 5" loading="lazy">
+                            </a>
+                            Maria Garcia
+                        </td>
+                        <td>1st</td>
+                        <td>2020</td>
+                        <td>July</td>
+                        <td>
+                            C++
+                        </td>
+                        <td><!-- Button trigger modal -->
+                            <button type="button" class="btn btn-sm btn-primary btn-primary-effect"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                View code
+                            </button>
+                        </td>
+                        <!-- View code model Modal -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel5">Maria's Contribution on C++
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <pre><code class="language-cpp">
+                                        // C++ Code: Data Structures
+                                        // Author: Maria
+                                        
+                                        #include <iostream>
+                                        
+                                        int main() {
+                                            std::cout << "Hello, world!" << std::endl;
+                                            return 0;
+                                        }
+                    </code></pre>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary btn-sm"
+                                            data-bs-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <!-- Entry 6 -->
+                    <tr>
+                        <td>#6</td>
+                        <td>
+                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
+                                aria-expanded="false" class="text-muted">
+                                <img src="https://images.nightcafe.studio//assets/man-in-suit.jpg?tr=w-1600,c-at_max"
+                                    class="rounded-circle" height="35" alt="Profile Picture 6" loading="lazy">
+                            </a>
+                            Michael Brown
+                        </td>
+                        <td>2nd</td>
+                        <td>2010</td>
+                        <td>August</td>
+                        <td>
+                            PHP
+                        </td>
+                        <td><!-- Button trigger modal -->
+                            <button type="button" class="btn btn-sm btn-primary btn-primary-effect"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                                View code
+                            </button>
+                        </td>
+                        <!-- View code model Modal -->
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel6">Michael's Contribution on
+                                            PHP</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <pre><code class="language-php">
+                                        // PHP Code: Web Development
+                                        // Author: Michael
+                                        
+                                        <?php
+                                            echo "Hello, world!";
+                                        ?>
+                    </code></pre>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary btn-sm"
+                                            data-bs-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <!-- Entry 7 -->
+                    <tr>
+                        <td>#7</td>
+                        <td>
+                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
+                                aria-expanded="false" class="text-muted">
+                                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Nt39X5uC-FW8A94OtpgbJg.jpeg"
+                                    class="rounded-circle" height="35" alt="Profile Picture 7" loading="lazy">
+                            </a>
+                            Sarah Johnson
+                        </td>
+                        <td>3rd</td>
+                        <td>2024</td>
+                        <td>September</td>
+                        <td>
+                            Ruby
+                        </td>
+                        <td><!-- Button trigger modal -->
+                            <button type="button" class="btn btn-sm btn-primary btn-primary-effect"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                View code
+                            </button>
+                        </td>
+                        <!-- View code model Modal -->
+                        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel7">Sarah's Contribution on
+                                            Ruby</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <pre><code class="language-ruby">
+                                        # Ruby Code: Scripting
+                                        # Author: Sarah
+                                        
+                                        puts "Hello, world!"
+                    </code></pre>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary btn-sm"
+                                            data-bs-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <!-- Repeat the above block for more entries, adjusting details as necessary -->
+
+
+
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th> # </th>
+                        <th> Full name</th>
+                        <th>
+                            <span class="material-symbols-outlined">
+                                mail
+                            </span>
+                        </th>
+                        <th>
+                            <span class="material-symbols-outlined">
+                                phone_iphone
+                            </span>
+
+                        </th>
+                        <th>
+                            Sex
+
+                        </th>
+
+                        <th>
+                            <span class="material-symbols-outlined">
+                                info
+                            </span>
+                        </th>
+                        <th>
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span>
+                        </th>
+
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============== Preloader ================ -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+
+    <!-- =============== Footer ================= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 footer-contact">
+                        <img src="/public/images/logo/logo.png" class="footer-logo">
+                        <img src="/public/images/logo/typography.png" class="footer-typo">
+                        <div class="email my-5">
+                            <strong>Email:</strong> theweeklychallenge@example.com<br />
+                        </div>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="about.html">About us</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Contributions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 mt-2 mt-lg-0">
+                                <ul>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i> <a href="team.html">Teams</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Reviews</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i> <a href="chart.html">Charts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
+                        </p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>The Weekly Challenge</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- ============================ Vendor JS Files ============================ -->
+    <script src="/public/javascripts/vendor/aos/aos.js"></script>
+    <script src="/public/javascripts/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/public/javascripts/vendor/glightbox/glightbox.min.js"></script>
+    <script src="/public/javascripts/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/public/javascripts/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/public/javascripts/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/public/javascripts/index.js"></script>
+    <script src="/public/javascripts/search_contributions.js"></script>
+
+    <!-- ======================= Lottie JSON script here ======================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+
+    <script>
+        // Setting up Lottie
+        var animationContainer = document.getElementById("animation-container");
+        var anim = bodymovin.loadAnimation({
+            container: animationContainer,
+            renderer: "svg", // You can also use 'canvas' or 'html'
+            loop: true, // Set to true if you want the animation to loop
+            autoplay: true,
+            path: "/public/javascripts/lottiejson/green.json",
+            // path: 'assets/lottiejson/purple.json',
+        });
+    </script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            var table = $('#search-contributions').DataTable({
+                "dom": 'lrtip'  // Exclude 'f' which stands for filtering input,
+                , "language": {
+                    "emptyTable": "Sorry, there is no data available in the table",
+                    "zeroRecords": "Sorry, no matching records were found",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoFiltered": "(searched from _MAX_ total entries)",
+                    "paginate": {
+                        "previous": "Previous",
+                        "next": "Next"
+                    },
+                    "lengthMenu": "Show _MENU_ entries per page",
+
+                }
+
+            });
+
+            // Add search functionality to the custom search box
+            $('#customSearchBox1').on('keyup', function () {
+                table.search(this.value).draw();
+            });
+        });
+
+    </script>
+
+    <script>
+        // Function to filter table rows based on selected values
+        function filterTable() {
+            var selectedYear = document.getElementById("year").value;
+            var selectedMonth = document.getElementById("month").value;
+            var selectedWeek = document.getElementById("week").value;
+
+            var tableRows = document.getElementById("search-contributions").getElementsByTagName("tr");
+
+            // Loop through table rows and hide those that do not match the selected values
+            for (var i = 0; i < tableRows.length; i++) {
+                var cells = tableRows[i].getElementsByTagName("td");
+                if (cells.length > 0) {
+                    var rowYear = cells[3].textContent.trim(); // Column index of year data
+                    var rowMonth = cells[4].textContent.trim(); // Column index of month data
+                    var rowWeek = cells[2].textContent.trim(); // Column index of week data
+
+                    // Check if the row matches the selected values
+                    if ((selectedYear == "Year" || rowYear == selectedYear) &&
+                        (selectedMonth == "Month" || rowMonth == selectedMonth) &&
+                        (selectedWeek == "Week" || rowWeek == selectedWeek)) {
+                        tableRows[i].style.display = "";
+                    } else {
+                        tableRows[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        // Initially filter the table by default week
+        document.addEventListener("DOMContentLoaded", function () {
+            filterTable();
+        });
+    </script>
+
+
+    <!-- Filter by lanaguge -->
+    <script>
+        // Function to filter table rows based on selected values
+        function filterTableByLangauge() {
+            var selectedLanguage = document.getElementById("language").value;
+
+            var tableRows = document.getElementById("search-contributions").getElementsByTagName("tr");
+
+            // Loop through table rows and hide those that do not match the selected values
+            for (var i = 0; i < tableRows.length; i++) {
+                var cells = tableRows[i].getElementsByTagName("td");
+                if (cells.length > 0) {
+                    var rowLanguage = cells[5].textContent.trim(); // Column index of Langauge data
+                    // Check if the row matches the selected values
+                    if ((selectedLanguage == "Language" || rowLanguage == selectedLanguage) ) {
+                        tableRows[i].style.display = "";
+                    } else {
+                        tableRows[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        // Initially filter the table by default week
+        document.addEventListener("DOMContentLoaded", function () {
+            filterTable();
+        });
+    </script>
+
+</body>
+
+</html>
