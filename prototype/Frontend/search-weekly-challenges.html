@@ -172,12 +172,14 @@
     <div class="container mt-5">
       <div class="row justify-content-center">
         <div class="col col-md-2">
+          <!-- Year dropdown -->
           <div class="form-group">
             <label
               for="yearDropdown"
               class="fw-bold text-center label d-flex justify-content-center align-items-center"
-              >Year</label
             >
+              Year
+            </label>
             <select class="form-select mt-2 label" id="yearDropdown">
               <option value="">select a year</option>
               <option value="2022">2022</option>
@@ -187,28 +189,33 @@
           </div>
         </div>
         <div class="col col-md-2">
+          <!-- Month dropdown -->
           <div class="form-group">
             <label
               for="monthDropdown"
               class="fw-bold text-center label d-flex justify-content-center align-items-center"
-              >Month</label
             >
+              Month
+            </label>
             <select class="form-select mt-2 label" id="monthDropdown"></select>
           </div>
         </div>
         <div class="col col-md-2">
+          <!-- Week dropdown -->
           <div class="form-group">
             <label
               for="weekDropdown"
               class="fw-bold text-center label d-flex justify-content-center align-items-center"
-              >Week</label
             >
+              Week
+            </label>
             <select class="form-select mt-2 label" id="weekDropdown"></select>
           </div>
         </div>
       </div>
 
       <div id="taskContainer" class="mt-5">
+        <!-- Tab navigation -->
         <ul class="nav nav-tabs">
           <li class="nav-item">
             <a
@@ -219,8 +226,9 @@
               role="tab"
               aria-controls="task1"
               aria-selected="true"
-              >Task 1</a
             >
+              Task 1
+            </a>
           </li>
           <li class="nav-item">
             <a
@@ -231,8 +239,9 @@
               role="tab"
               aria-controls="task2"
               aria-selected="false"
-              >Task 2</a
             >
+              Task 2
+            </a>
           </li>
           <li class="nav-item">
             <a
@@ -243,10 +252,13 @@
               role="tab"
               aria-controls="task3"
               aria-selected="false"
-              >Task 3</a
             >
+              Task 3
+            </a>
           </li>
         </ul>
+
+        <!-- Tab content -->
         <div class="tab-content mt-3">
           <div
             class="tab-pane fade show active"

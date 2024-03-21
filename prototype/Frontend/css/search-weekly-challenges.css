@@ -2,20 +2,34 @@
   display: none;
   margin-inline: 15rem;
 }
+
 .label {
   font-size: large;
 }
+
 .ftrMargin {
   margin-top: 7rem;
 }
 
-/* Active tab style */
+/* Active tab style Default mode */
 .nav-tab.active {
   background-color: #92e3a9 !important;
   color: black;
 }
 
-/* Inactive tab style */
+/* Active tab style Dark mode */
+body.dark-mode .nav-tab.active {
+  background-color: gray !important;
+  color: white;
+}
+
+/* Active tab style Blue mode */
+body.blue-mode .nav-tab.active {
+  background-color: #a4d4fc !important;
+  color: black;
+}
+
+/* Inactive tab style for all mode */
 .nav-tab:not(.active) {
   background-color: #f3f5fa;
   color: black;
