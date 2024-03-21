@@ -745,6 +745,8 @@
     background: var(--bg-sec-dark);
     color: var(--text-color-dark);
   }
+
+  &.dark-mode 
   &.dark-mode #teamDiv h2{
     color: var(--text-color-dark);
   }
@@ -763,10 +765,23 @@
   &.dark-mode .our-team i:hover{
     color: var(--girl);
   }
+  &.dark-mode .info-container{
+    background: var(--bg-dark);
+  }
 
   &.blue-mode{
     background: var(--bg-blue-hero);
   }
+
+  &.blue-mode .info-item{
+    background: var(--btn-color);
+    color: var(--text-color-dark);
+  }
+
+  &.blue-mode .info-item i{
+    color: var(--text-color-dark) !important;
+  }
+
 }
 
 /* 

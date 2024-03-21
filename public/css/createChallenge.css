@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Updated font-family */
+  }
+  
+  body {
+    background: whitesmoke;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  header {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 5fr 1fr;
+    padding-block: 0.5%;
+    font-size: 1rem;
+    position: fixed;
+    cursor: pointer;
+    padding-inline: 2%;
+    z-index: 99;
+  }
+  
+  .head-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .search {
+    position: relative;
+    padding-top: inherit;
+  }
+  
+  .search input {
+    width: 70%;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background: #f5f5f5;
+  }
+  
+  .search i {
+    position: absolute;
+    left: 66%;
+    top: 33%;
+    cursor: pointer;
+  }
+  
+  .user-pic {
+    width: 3%;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+  }
+  
+  /* dropdown menu */
+  .sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 1%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  
+  .sub-menu-wrap.open-menu {
+    max-height: 400px;
+  }
+  
+  .sub-menu {
+    display: flex;
+    flex-direction: column;
+    background: #92e3a9;
+    border-radius: 0.5rem;
+    padding: 1.1rem;
+  }
+  
+  .sub-menu-link {
+    padding: 0.2rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .sub-menu-link:hover {
+    color: black;
+    font-weight: 600;
+  }
+  
+  .fa-regular {
+    padding: 0.6rem;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+    background: #e5e5e5;
+    color: black;
+  }
+  
+  /* sidebar */
+  .sidebar {
+    position: fixed;
+    top: 6%;
+    height: 100%;
+    background: #92e3a9;
+    overflow-x: hidden;
+    transition: top 0.5s;
+  }
+  
+  .sidebar ul {
+    margin-top: 1rem;
+  }
+  
+  .sidebar ul li,
+  .sidebar a {
+    font-size: 1rem;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    padding: 0.4rem 0.7rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link i {
+    color: black;
+    font-size: 1.4rem;
+    min-width: 60px;
+  }
+  
+  /* main */
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top:100px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group textarea { /* Combined styling for inputs and textareas */
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical; /* Allows vertical resizing for textareas */
+  }
+  
+  .btn {
+    background-color: #92e3a9;
+    color: black;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #92e3a9;
+  }
+  @media (max-width: 1115px) {
+    .user-pic {
+      width: 5%;
+    }
+  
+    header {
+      grid-template-columns: 1fr 3fr 5fr 1fr;
+    }
+  
+    .search i {
+      display: none;
+    }
+  
+    .sidebar {
+      top: 5%;
+      width: 80px;
+    }
+  
+    main {
+      left: 80px;
+      width: calc(100% - 80px);
+    }
+  }
+  @media (max-width: 1112px) {
+    .user-pic {
+      width: 5%;
+    }
+  
+    .search i {
+      display: none;
+    }
+  
+    .sidebar {
+      top: 5%;
+      width: 80px;
+    }
+  
+    main {
+      left: 80px;
+      width: calc(100% - 80px);
+    }
+  }
+  
+  @media (max-width: 880px) {
+    .user-pic {
+      width: 5%;
+    }
+  
+    .search i {
+      display: none;
+    }
+    .container {
+        max-width: 600px;
+        padding-top: 80px;
+        padding-left: 100px;
+        padding-right: 10px;
+      }
+  }
+  
+  @media (max-width: 700px) {
+    header {
+      grid-template-columns: 1fr 5fr 1fr;
+    }
+  
+    .search i {
+      display: none;
+    }
+  
+    .search {
+      display: none;
+    }
+  
+    .user-pic {
+      width: 10%;
+    }
+    .container {
+        max-width: 500px;
+        padding-top: 80px;
+        padding-left: 100px;
+        padding-right: 10px;
+      }
+      .input-group {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    
+      .input-group input,
+      .input-group textarea {
+        padding: 8px;
+      }
+  }
+ 
+  
+  @media (max-width: 500px) {
+    .container {
+      padding-top: 60px;
+    }
+  }
+  

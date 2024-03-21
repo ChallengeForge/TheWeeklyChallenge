@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../public/css/admin.css" />
+    <link rel="stylesheet" href="../../public/css/createChallenge.css" />
     <!-- charts -->
     <script
       type="text/javascript"
@@ -27,7 +27,7 @@
       rel="stylesheet"
     />
     <!-- title -->
-    <title>Admin Dashboard</title>
+    <title>create new challenges</title>
   </head>
   <body>
     <header>
@@ -138,71 +138,30 @@
 
     <!-- main content -->
     <main>
-      <section class="cards">
-        <a href="./createChallenge.html">
-          <div class="card">
-            <i class="fa-solid fa-bars-progress"></i>
-            <h2>Create New Challenges</h2>
+        <div class="container">
+            <h2 id="heading">Create New Challenge</h2>
+            <form action="/submit" method="post">
+              <div class="input-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+              </div>
+              <div class="input-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+              </div>
+              <div class="input-group">
+                <label for="Example1">Sample Input & Output 1</label>
+                <textarea id="Example1" name="example2" rows="4" required></textarea>
+              </div>
+              <div class="input-group">
+                <label for="Example2">Sample Input & Output 2</label>
+                <textarea id="Example2" name="Example2" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn">Submit</button>
+            </form>
           </div>
-        </a>
-        <a href="#">
-          <div class="card">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <h2>Edit Existing Challenges</h2>
-          </div>
-        </a>
-        <a href="#">
-          <div class="card">
-            <i class="fa-solid fa-users"></i>
-            <h2>New Members Request</h2>
-          </div>
-        </a>
-        <a href="#">
-          <div class="card">
-            <i class="fa-solid fa-envelope"></i>
-            <h2>Go to Mailing List</h2>
-          </div>
-        </a>
-      </section>
-      <!-- charts -->
-      <section class="charts">
-        <div class="donut-chart">
-          <h2>Active Contributors Count</h2>
-          <div id="donutchart"></div>
-        </div>
-        <div class="donut-chart">
-          <h2>Challenge Participation</h2>
-          <div id="donutchart1"></div>
-        </div>
-        <div class="donut-chart">
-          <h2>Competition Rates</h2>
-          <div id="donutchart2"></div>
-        </div>
-      </section>
-
-      <section class="chart2">
-        <div class="bar-chart">
-          <h2>Engagement Rates</h2>
-          <div id="chart_div"></div>
-        </div>
-        <div class="current">
-          <h2>Current Challenges</h2>
-          <div class="flex">
-            <h3>Name of Challenge(Task 1)</h3>
-            <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
-          </div>
-          <hr />
-          <div class="flex">
-            <h3>Name of Challenge(Task 2)</h3>
-            <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
-          </div>
-        </div>
-      </section>
+          
     </main>
     <script src="../../public/javascripts/admin.js"></script>
-    <script src="../../public/javascripts/charts/chart1.js"></script>
-    <script src="../../public/javascripts/charts/chart2.js"></script>
-    <script src="../../public/javascripts/charts/chart3.js"></script>
-    <script src="../../public/javascripts/charts/chart4.js"></script>
   </body>
 </html>
