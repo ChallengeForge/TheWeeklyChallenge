@@ -1,37 +1,35 @@
-#blog-title,
-#tags-input,
-#section-header,
-#article{
-  background-color: #92E3A9 !important;
-  border: 2px solid #92E3A9 !important;
-}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 
+/* All colors defined here */
+:root{
+    --bg-light : #fcfcfc;
+    --btn-color:#2b83f3;
+    --bg-blue:#a4d4fc;
+    --text-color-def: #000;
+    --bg-sec:#f3f5fa;
+    --bg-sec-dark: #212121;
+    --bg-blue-hero: #edf3ff;
 
-#titleFilter{
-    border: 2px solid #cccccc !important;
+    --girl:#92e3a9;
+
+    --bg-dark: #121212;
+    --text-color-dark: #fcfcfc;
   }
 
-#titleFilter:focus {
+  .light-mode{
+    background-color: var(--bg-light);
+    color: var(--btn-color);
+  }
 
-border: 2px solid #92E3A9 !important;
-box-shadow: none !important;
-}
-  
+  .dark-mode{
+    background-color: var(--bg-dark);
+    color: var(--text-color-dark);
+  }
 
+  .blue-mode{
+    background-color: var(--bg-blue);
+    color: var(--text-color-def);
+  }
 
-.btn-bg-color{
-  background-color: #92E3A9 !important;
-}
-
-/* #blog-title:hover{
-  border: 2px solid #cccccc !important;
-} */
-
-#blog-title:focus,
-#tags-input:focus,
-#section-header:focus,
-#article:focus{
-
-  border: 2px solid #cccccc !important;
-  box-shadow: none !important;
-}

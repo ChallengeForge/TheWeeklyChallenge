@@ -7,20 +7,20 @@ body {
   overflow-x: hidden;
 }
 
-#blog-title,
+/* #blog-title,
 #tags-input,
 #section-header,
 #article,
 #titleFilter{
   background-color: #FFF5E0 !important;
   border: 2px solid #e9e9e9 !important;
-}
+} */
 
 /* #blog-title:hover{
   border: 2px solid #cccccc !important;
 } */
 
-#blog-title:focus,
+/* #blog-title:focus,
 #tags-input:focus,
 #section-header:focus,
 #article:focus,
@@ -28,7 +28,7 @@ body {
 
   border: 2px solid #cccccc !important;
   box-shadow: none !important;
-}
+} */
 
 
 .my-container {

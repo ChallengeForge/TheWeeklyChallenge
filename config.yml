@@ -60,3 +60,13 @@ template: "simple"
 #      cookie_name: eshop.session
 #      is_secure: 1
 #      is_http_only: 1
+
+
+#Database settings
+plugins:
+    DBIC:
+        PForums:
+            schema_class: PWC::Schema
+            dsn: dbi:mysql:PWC  #Database name
+            user: root #database user
+            pass: '' #replace with existing else remove this

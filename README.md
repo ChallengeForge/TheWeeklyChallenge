@@ -37,15 +37,36 @@ git clone https://github.com/ChallengeForge/TheWeeklyChallenge.git
 
 - ## Run the Development Server
 
-# Contributing
+# Contribution
 
-We welcome contributions to The Weekly Challenge! If you have an idea for a new feature, want to fix a bug, or improve the website, please feel free to create a pull request. Refer to the [CONTRIBUTING GUIDE](CONTRIBUTING.md) for more details
+We welcome contributions to The Weekly Challenge! If you have an idea for a new feature, want to fix a bug, or improve the website, please feel free to create a pull request. Refer to the [CONTRIBUTION GUIDE](CONTRIBUTING.md) for more details
 
 # License
 
 This project is licensed under the `Artistic License 2.0` license. Please refer to the [LICENSE](LICENSE) file for details.
 
 ---
+
+-- ##Prequequisite to Use and Connect to Database 
+ 
+ - Install all of the following modules below
+## Setting Up the Database
+
+```To run the database for this project, you'll need to install the following PERL packages :```
+
+1. Install DBIx::Class**: This module provides a convenient abstraction layer over your database. 
+
+
+2. **Install DBD::mysql**: This module provides the MySQL driver for DBI, enabling connectivity to a MySQL database. 
+
+
+3. **Install Dancer2::Plugin::Database**: This module integrates the Dancer2 web framework with your database. 
+
+
+## Contributors
+[![](https://contrib.rocks/image?repo=ChallengeForge/TheWeeklyChallenge)](https://github.com/ChallengeForge/TheWeeklyChallenge/graphs/contributors)
+[![](https://contrib.rock-s/image?repo=ChallengeForge/TheWeeklyChallenge)](https://github.com/ChallengeForge/TheWeeklyChallenge/graphs/contributors)
+
 
 [![Join us on Slack](https://img.shields.io/badge/Join_us-Slack-informational?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/theweeklychal-udf4770/shared_invite/zt-2em4g2m29-WGd9LQc1YnNLyn_qHi6xLA)
 [![Visit Website](https://img.shields.io/badge/Visit_Website-brightgreen?style=for-the-badge)](https://theweeklychallenge.org)
