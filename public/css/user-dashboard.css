@@ -268,7 +268,6 @@ header {
   .stats-chart {
      
   } 
-
  
  .notifications-content {
     display: flex;
@@ -280,7 +279,6 @@ header {
     background-color: #f5f5f5;
     display: block !important;
 } 
-
 
 .avatar {
     height: 40px;
