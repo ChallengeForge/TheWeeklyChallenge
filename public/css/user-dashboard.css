@@ -287,6 +287,14 @@ header {
 }
 
 
+
+
+
+
+
+
+
+/* Media Queries */
 @media (max-width: 880px) {
     .user-pic {
       width: 5%;

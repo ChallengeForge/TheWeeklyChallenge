@@ -107,133 +107,22 @@
                     <div class="mb-4">
                         <h3 class="fw-bold fs-4 mb-3 mt-5">User Dashboard</h3>
 
-                        <div class="row mb-5"> <!--- Row Charts-->
-                            <div class="col-12 col-xs-12 col-md-6 mb-3"> 
-                                <div class="card border-0"> 
-                                    <div class="card-body py-4"> 
-                                        <div class="stats-chart">
-                                            <h2> My Contributions </h2>
-                                            <div id="my_contributions"> </div>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div> <!--- End Col-6-->
-
-                            <div class="col-12 col-xs-12  col-md-6 mb-3"> 
-                                <div class="card border-0"> 
-                                    <div class="card-body py-4"> 
-                                        <div class="stats-chart">
-                                            <h2> General Contributions </h2>
-                                            <div id="general_contributions"> </div>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div> <!--- End Col-6-->
-                        </div><!--- End Row Charts-->
                         
-
-                        <div class="row mb-5">
-                            <div class="col-12 col-md-3 mb-4 ">
-                                <div class="card border-0 analytics-card">
-                                    <div class="card-body py-4 text-center">
-                                        <p class="mb-2 fw-bold">
-                                            <i class="fa-solid fa-message "></i>
-                                        </p>
-                                        <h5 class="mb-2 fw-bold">
-                                           Total Comments
-                                        </h5>
-                                        <div class="mb-0">  
-                                            <span class=" fw-bold">
-                                                5000
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3 mb-3">
-                                <div class="card border-0 analytics-card">
-                                    <div class="card-body py-4 text-center">
-                                        <p class="mb-2 fw-bold">
-                                            <i class="fa-solid fa-reply"></i>
-                                        </p>
-                                        <h5 class="mb-2 fw-bold">
-                                          Total  Replies 
-                                        </h5>
-                                        <div class="mb-0">  
-                                            <span class=" fw-bold">
-                                                5000
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3 mb-3">
-                                <div class="card border-0 analytics-card">
-                                    <div class="card-body py-4 text-center">
-                                        <p class="mb-2 fw-bold">
-                                            <i class="fas fa-bell"></i>
-                                        </p>
-                                        <h5 class="mb-2 fw-bold">
-                                            Notifications
-                                        </h5>
-                                        <div class="mb-0">  
-                                            <span class=" fw-bold">
-                                                5000
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3 mb-3">
-                                <div class="card border-0 analytics-card">
-                                    <div class="card-body py-4 text-center">
-                                        <p class="mb-2 fw-bold">
-                                            <i class="fa-solid fa-business-time"></i>
-                                        </p>
-                                        <h5 class="mb-2 fw-bold">
-                                            Total Contributions
-                                        </h5>
-                                        <div class="mb-0">  
-                                            <span class=" fw-bold">
-                                                5000
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3 mb-3">
-                                <div class="card border-0 analytics-card">
-                                    <div class="card-body py-4 text-center">
-                                        <p class="mb-2 fw-bold">
-                                            <i class="fa-solid fa-trophy"></i>
-                                        </p>
-                                        <h5 class="mb-2 fw-bold">
-                                            Achievements 
-                                        </h5>
-                                        <div class="mb-0">  
-                                            <span class=" fw-bold">
-                                                5000
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!--- End Row Dashboard Stats-->
-
-                        <!-- Beginning of contributions table -->
+                      
+                        <!-- Beginning of Comments table -->
                         
                         <div class="row mt-5">
                             
-                            <div class="col-md-6 col-sm-12 mt-4">
+                            <div class=" col-sm-12 mt-4">
                                 <div class="card">
                                     <div class="card-body"> 
-                                        <h3 class="fw-bold fs-4 my-3">Contributions </h3>
+                                        <h3 class="fw-bold fs-4 my-3">Comments </h3>
                                         <table class="table table-striped">
                                             <thead>
                                                 <tr class="highlight">
                                                     <th scope="col">#</th>
-                                                    <th scope="col">UserName</th>
-                                                    <th scope="col">Contribution Id</th>
+                                                    <th scope="col">User</th>
+                                                    <th scope="col">Post Id</th>
                                                     <th scope="col">Actions</th>
                                                             
                                                 </tr>
@@ -242,7 +131,7 @@
                                                 <tr>
                                                     <th scope="row">1</th>
                                                     <td> Priya </td>
-                                                    <td>#22322525</td>
+                                                    <td><a href="#"> #22322525 </a> </td>
                                                     <td>
                                                         <i class="fas fa-eye"></i> &nbsp;&nbsp;
                                                         <i class="fas fa-comment"></i> 
@@ -299,84 +188,90 @@
                                 
                             </div><!--End colmd-6- col-sm-12 -->
                             
-                            <div class="col-md-6 col-sm-12 mt-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h3 class="fw-bold fs-4 my-3"> Recent Notifications</h3>
-                                                
-                                        <hr>
-                                        <div class="notifications-content">          
-                                            <div class="notification-image ">  
-                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                                    <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
-                                                </a>
-                                            </div> <!-- End of Div image -->
-                                            <div class="notification-text ps-4">
-                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
-                                            </div>       
-                                        </div><hr> <!--End notification content-->
-
-                                        <div class="notifications-content">
-                                            
-                                            <div class="notification-image ">  
-                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                                    <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
-                                                </a>
-                                            </div> <!-- End of Div image -->
-                                            <div class="notification-text ps-4">
-                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
-                                            </div>
-                                            
-                                        </div><hr> <!--End notification content-->
-
-                                        <div class="notifications-content">                                                                   
-                                            <div class="notification-image ">  
-                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                                    <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
-                                                </a>
-                                            </div> <!-- End of Div image -->
-                                            <div class="notification-text ps-4">
-                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
-                                            </div>
-                                            
-                                        </div><hr> <!--End notification content-->
-                            
-                                        <div class="text-center fs-2"> 
-                                            View All <span> <i class="fa-solid fa-arrow-right"></i> </span>
-                                        </div>
-                                    </div> <!--End Div card Body-->
-                                </div><!--End Card-->
-                            </div><!--End of col-md-6-->
+                          
                         </div> <!--End Row-->
                     </div><!--End mb-3-->
                 </div>
             </main>
 
-            <!-- Footer -->
-            <footer class="footer mt-auto py-3">
-                <div class="container-fluid">
-                    <div class="row text-body-secondary">
-                        <div class="col-6 text-start">
-                            <a class="text-body-secondary" href="#">
-                                <strong> The Weekly Challenge </strong>
-                            </a>
-                        </div>
-                        <div class="col-6 text-end text-body-secondary d-none d-md-block">
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item">
-                                    <a class="text-body-secondary" href="#">Contact</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="text-body-secondary" href="#">About Us</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="text-body-secondary" href="#">Terms & Conditions</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <!-- =============== Footer ================= -->
+     <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12 footer-contact">
+                <img src="/public/images/logo/logo.png" class="footer-logo">
+                <img src="/public/images/logo/typography.png" class="footer-typo">
+                  <div class="email my-5">
+                    <strong>Email:</strong> theweeklychallenge@example.com<br />
+                  </div>
+                </p>
+              </div>
+  
+              <div class="col-lg-4 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul>
+                      <li>
+                        <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
+                      </li>
+                      <li>
+                        <i class="bx bx-chevron-right"></i>
+                        <a href="about.html">About us</a>
+                      </li>
+                      <li>
+                        <i class="bx bx-chevron-right"></i>
+                        <a href="#">Contributions</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 mt-2 mt-lg-0">
+                    <ul>
+                      <li>
+                        <i class="bx bx-chevron-right"></i> <a href="team.html">Teams</a>
+                      </li>
+                      <li>
+                        <i class="bx bx-chevron-right"></i>
+                        <a href="#">Reviews</a>
+                      </li>
+                      <li>
+                        <i class="bx bx-chevron-right"></i> <a href="chart.html">Charts</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </footer>
+              </div>
+  
+              <div class="col-lg-4 col-md-6 footer-links">
+                <h4>Our Social Networks</h4>
+                <p>
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="instagram"
+                    ><i class="bx bxl-instagram"></i
+                  ></a>
+                  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container footer-bottom clearfix">
+          <div class="copyright">
+            &copy; Copyright <strong><span>The Weekly Challenge</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+  
+            
         </div>
     </div> <!--End Body Wrapper-->
     <!-- Bootstrap Bundle with Popper -->
