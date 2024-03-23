@@ -1,0 +1,28 @@
+# Project Tasks
+
+- Add Search Contribution Page: Noubissi Viany
+- Add View Weekly Challenge Page: Kartik Kakodiya
+- Create View Contribution Page: kemsguy7 (Matthew Idungafa)
+- Create Contact Us page: Himanshi Srestha
+- Create FAQ page: Himanshi Srestha
+- Create page to list Outreachy applicants: Fahad Albasrawi
+- Create template to list guest members: Himanshi Srestha and kemsguy7 (Matthew Idungafa)
+- Create template to list team members: Himanshi Srestha
+- Create template to list blog post: Fahad Albasrawi
+- Create generic template to show blog post: Fahad Albasrawi
+- Create admin page: Soniya Prasad
+- Create search contributions page: Fahad Albasrawi
+- Create admin page to propose new challenge: Soniya Prasad
+- Create ERD for new schema: Noubissi Viany
+- Define MySQL database engine setup: Noubissi Viany
+- Database initialization: Baimamboukar
+- RSS feed: kemsguy7 (Matthew Idungafa)
+- Ability to create blog post: Fahad Albasrawi
+- Convert interviews to template: Noubissi Viany
+- Create admin mailing list: kemsguy7 (Matthew Idungafa)
+- Submit contribution: Noubissi Viany
+- Account Creation: Ayushi Choudhary
+- Login/logout feature: Ayushi Choudhary
+- Dabcer2 code: Baimamboukar
+- Create DBIC code: kemsguy7 (Matthew Idungafa)
+- Create Badge icon: Himanshi Srestha

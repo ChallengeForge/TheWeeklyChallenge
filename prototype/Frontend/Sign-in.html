@@ -1,103 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up / Sign In Form</title>
-    <link rel="stylesheet" href="css/login.css">
-    
-</head>
-<body>
-    <header>
-        <a href="index.html" id="logo"><img src="/assets/blogs/blog_img_6.jpeg" alt="Logo"></a> 
-        <a id="website-name">THE WEEKLY CHALLENGE - PERL and RAKU </a>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>The Weekly Challenge - Perl & Raku</title>
+    <meta
+      content="The Weekly Challenge that includes Perl and Raku programming."
+      name="description"
+    />
+    <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="/public/images/logo/logo.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="/public/css/helpercss/aos.css" rel="stylesheet" />
+    <link
+      href="/public/css/helpercss/bootstrap_css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/glightbox_css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/remixicon/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="/public/css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/css/teamStyle.css" />
+    <link rel="stylesheet" href="/public/css/login.css" />
+
+
+  </head>
+
+  <body>
+    <!-- ==================== Header ======================== -->
+    <header id="header" class="sticky-top border-bottom">
+      <div class="container d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-center me-auto">
+          <a href="index.html" class="logo me-3">
+            <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
+        </a>
+          <a href="index.html" class="logo me-auto">
+            <img
+              src="/public/images/logo/typography.png"
+              alt="typography"
+              class="img-fluid"/>
+            </a>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="index.html">Home</a>
+            </li>
+            <!-- About Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>About</span> <i class="bi bi-chevron-down"></i>
+            </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="border-bottom">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <!-- Contributions Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Contributions</span> 
+                <i class="bi bi-chevron-down"></i>
+            </a>
+              <ul>
+                <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
+                <li ><a href="blogs.html">Blogs</a></li>
+              </ul>
+            </li>
+            <!-- Team Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Team</span>
+                <i class="bi bi-chevron-down"></i>
+            </a>
+              <ul>
+                <li class="border-bottom"><a href="team.html">Regular</a></li>
+                <li class="border-bottom"><a href="guest.html">Guest</a></li>
+                <li><a href="champions.html">Champions</a></li>
+              </ul>
+            </li>
+            <!-- Reviews Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Reviews</span> 
+                <i class="bi bi-chevron-down"></i>
+            </a>
+              <ul>
+                <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
+                <li><a href="raku.html">Raku</a></li>
+              </ul>
+            </li>
+            <!-- Charts DropDown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Leaderboard</span>
+                <i class="bi bi-chevron-down"></i>
+            </a>
+              <ul>
+                <li class="border-bottom"><a href="chart.html">Charts</a></li>
+                <li class="border-bottom"><a href="#">Team Leader</a></li>
+                <li><a href="#">Guest Leader</a></li>
+              </ul>
+            </li>
+            <!-- Prefernces -->
+            <li class="dropdown">
+              <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="border-bottom theme1"><a href="#">Default</a></li>
+                <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
+                <li class="theme3"><a href="#">Blue Mode</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- End Navbar -->
+      </div>
     </header>
 
-<div class="container">
-    <div class="forms-container">
-        <div class="form-control signup-form">
-            <form action="#">
-                <h2>Sign-up</h2>
-                <input type="text" placeholder="Username" required />
-                <input type="email" placeholder="Email" required />
-                <input type="password" placeholder="Password" required />
-                <input type="password" placeholder="Confirm password" required />
-                <div class="captcha-container">
-                    <img id="captcha-image" src="#" alt="CAPTCHA Image">
-                    
-                    
-                    <div style="display: flex; justify-content:space-evenly; align-items: center;">
-                        <input type="text" placeholder="Enter CAPTCHA" required />
+    <!-- End Header -->
 
-                        <button id="refresh-captcha" type="button">
-                            <i class="fas fa-sync-alt"></i>
-                        </button>
-                    </div>
+    <!-- ================= Main Body ======================== -->
+    <div class="main-section py-5" style="min-height: 84.5vh;">
+            <div class="container-fluid h-custom">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <div class="wrapper">
+                        <div class="title-text">
+                          <div class="title login">Login Form</div>
+                          <div class="title signup">Signup Form</div>
+                        </div>
+                        <div class="form-container">
+                          <div class="slide-controls">
+                            <input type="radio" name="slide" id="login" checked>
+                            <input type="radio" name="slide" id="signup">
+                            <label for="login" class="slide login">Login</label>
+                            <label for="signup" class="slide signup">Signup</label>
+                            <div class="slider-tab"></div>
+                          </div>
+                          <div class="form-inner">
+                            <form action="#" class="login">
+                              <div class="field">
+                                <input type="text" placeholder="Email Address" required>
+                              </div>
+                              <div class="field">
+                                <input type="password" placeholder="Password" required>
+                              </div>
+                              <div class="pass-link"><a href="#">Forgot password?</a></div>
+                              <div class="field btn">
+                                <div class="btn-layer"></div>
+                                <input type="submit" value="Login">
+                              </div>
+                              <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+                            </form>
+                            <form action="#" class="signup">
+                              <div class="field">
+                                <input type="text" placeholder="Email Address" required>
+                              </div>
+                              <div class="field">
+                                <input type="password" placeholder="Password" required>
+                              </div>
+                              <div class="field">
+                                <input type="password" placeholder="Confirm password" required>
+                              </div>
+                              <div class="field btn">
+                                <div class="btn-layer"></div>
+                                <input type="submit" value="Signup">
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                  
                 </div>
-                <button>Sign-up</button>
-            </form>
-            <span>or create an account with</span>
-            <div class="socials">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-linkedin-in"></i>
-            </div>
-        </div>
-        <div class="form-control signin-form">
-            <form action="#">
-                <h2>Login</h2>
-                <input type="text" placeholder="Username" required />
-                <input type="password" placeholder="Password" required />
-                <div class="captcha-container">
-                    <img id="captcha-image" src="#" alt="CAPTCHA Image">
-                    
-                    
-                    <div style="display: flex; justify-content:space-evenly; align-items: center;">
-                        <input type="text" placeholder="Enter CAPTCHA" required />
-                    
-                        <button id="refresh-captcha" type="button">
-                            <i class="fas fa-sync-alt"></i>
-                        </button>
-                    </div>
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <div id="animation-container"class="animated container-fluid anim-container"></div>
+                  <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                    class="img-fluid" alt="Sample image"> -->
                 </div>
-                <button>Login</button>
-            </form>
-            <span>or login with</span>
-            <div class="socials">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-linkedin-in"></i>
+              </div>
             </div>
         </div>
-    </div>
-    <div class="intros-container">
-        <div class="intro-control signin-intro">
-            <div class="intro-control__inner">
-                <h2>Welcome back!</h2>
-                <p>
-                    We are happy to see you again! Are you ready to take this challenge?
-                </p>
-                <p><br>No account yet? Sign-up to create your account. </p>
-                <button id="sign-up-btn"> Sign-up </button>
-            </div>
-        </div>
-        <div class="intro-control sign-up-intro">
-            <div class="intro-control__inner">
-                <h2>Come join us!</h2>
-                <p>
-                    We are so excited to have you here. If you haven't already, create an account to get access to the weekly challenge.
-                    
-                </p>
-                <p><br> Already have an account?</p>
-                <button id="Login-btn">Login</button>
-            </div>
-        </div>
-    </div>
-</div>
 
-<script>
-    
-</script>
-<script src="js/login.js"></script>
-</body>
+    <!-- ================ Preloader ========================= -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+     <!-- =============== Footer ================= -->
+     <footer id="footer">
+        <div class="container footer-bottom clearfix">
+          <div class="copyright">
+            &copy; Copyright <strong><span>The Weekly Challenge</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+
+    <!-- ================= Vendor JS Files ================== -->
+    <script src="/public/javascripts/vendor/aos/aos.js"></script>
+    <script src="/public/javascripts/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/public/javascripts/vendor/glightbox/glightbox.min.js"></script>
+    <script src="/public/javascripts/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/public/javascripts/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/public/javascripts/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/public/javascripts/index.js"></script>
+    <script src="/public/javascripts/login.js"></script>
+
+    <!-- ======================= Lottie JSON script here ======================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+
+    <script>
+        // Setting up Lottie
+        var lottiePath = (localStorage.getItem('lottie') && localStorage.getItem('lottie') === 'blue') ? '/public/javascripts/lottiejson/purple.json': '/public/javascripts/lottiejson/green.json';
+        var animationContainer = document.getElementById("animation-container");
+        var anim = bodymovin.loadAnimation({
+          container: animationContainer,
+          renderer: "svg", // You can also use 'canvas' or 'html'
+          loop: true, // Set to true if you want the animation to loop
+          autoplay: true,
+          path: lottiePath,
+        });
+      </script>
+  </body>
 </html>

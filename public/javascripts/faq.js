@@ -12,37 +12,56 @@ questionContainer.addEventListener("click",function()
 {
     if(dropdownIcon.innerHTML==="expand_more")
     {
-        dropdownIcon.innerHTML="expand_less";
+        dropdownIcon.innerHTML="expand_less"
     }
     else{
-        dropdownIcon.innerHTML="expand_more" ;
-        showAnswer.innerText="Click on the dropdown and select a question to view it's answer";
-        answerHeader.innerText="Answer";
+        dropdownIcon.innerHTML="expand_more" 
     }
 })
 
 questionContainer.addEventListener("click",showQuestion);
 Array.from(questionBox.children).forEach((e)=>{
     e.addEventListener("click",function()
-    {
+    {   
+        // e.classList.remove("active");
         viewAnswer(e,e.id);
-        console.log(e.id);
+        removeQuestion(e.id);
+        // console.log(e.id);
     })
 })
+
+//This function is for showing the clicked question only
+
+function removeQuestion(questionId)
+{   
+    //This code is for adding the active class to all the other question which are not be seen by the user after clicking on a question 
+    Array.from(questionBox.children).forEach((e)=>{
+        if(e.id!==questionId)
+        {
+            e.classList.add("active");
+        }
+    })
+}
 
 //To show all the questions 
 function showQuestion(){
     questionBox.classList.toggle("active");
-    console.log("Hi i am working");
+
+    //This code is for removing the active class show that all question are visible to user
+    Array.from(questionBox.children).forEach((e)=>{
+        if(e.classList.contains("active"))
+        {
+            e.classList.remove("active");
+        }
+    })
+    // console.log("Hi i am working");
 }
 
 //To view the clicked question answer
 function viewAnswer(node,e)
 {     
     let num=Number(e[e.length-1]);
+    // console.log(num);
     let data=answerData[num-1];
     showAnswer.innerHTML=data;
-    let ansHead=String(node.id);
-    answerHeader.innerHTML="Answer of "+ansHead.charAt(0).toUpperCase()+ansHead.substring(1,ansHead.length-1)+" "+ansHead[ansHead.length-1];
-
 }
