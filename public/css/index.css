@@ -746,6 +746,10 @@
     color: var(--text-color-dark);
   }
 
+  &.dark-mode .section-title h2{
+    color: var(--text-color-dark);
+  }
+
   &.dark-mode 
   &.dark-mode #teamDiv h2{
     color: var(--text-color-dark);
@@ -801,12 +805,12 @@
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 30px 0 0 0;
   background: var(--bg-sec);
 }
 
 #footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 #footer .footer-top .footer-contact h3 {
@@ -910,8 +914,7 @@
 }
 
 #footer .footer-bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 10px 0;
   color: var(--bg-dark);
 }
 
