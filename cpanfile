@@ -1,4 +1,5 @@
 requires "Dancer2" => "1.1.0";
+requires "DBIx::Class" => "0";
 
 recommends "YAML"                    => "0";
 recommends "URL::Encode::XS"         => "0";
@@ -30,7 +31,17 @@ feature 'accelerate', 'Accelerate Dancer2 app performance with XS modules' => su
 };
 
 on "test" => sub {
+    requires "Ref::Util"             => "0";
     requires "Test::More"            => "0";
     requires "HTTP::Request::Common" => "0";
 };
 
+on "develop" => sub {
+    requires "Moo"                        => "0";
+    requires "DBI"                        => "0";
+    requires "JSON"                       => "0";
+    requires "Try::Tiny"                  => "0";
+    requires "JSON::Parse"                => "0";
+    requires "MooX::Options"              => "0";
+    requires "Crypt::Eksblowfish::Bcrypt" => "0";
+}
