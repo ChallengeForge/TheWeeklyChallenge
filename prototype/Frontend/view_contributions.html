@@ -238,7 +238,7 @@
         <!-- ========== Code Contributions Section ========== -->
         <section id="code-contributions" class="section mt-5 mb-5" >
         <div class="container">
-            <h2>Code Contributions</h2>
+            <h3 class="mb-5">Member Name - Dancer2 - Week3 - View Contributions Page </h3> 
             <div class="row">
             <div class="col-lg-6 mb-4">
                 <!-- Code Snippet -->
@@ -246,7 +246,6 @@
                 <div class="d-flex justify-content-end mb-3">
                     <button class="btn btn-light copy-btn" onclick="copyCode()">Copy</button>
                 </div>
-                <h3>Code Snippet</h3>
                 <div class="code-content overflow-auto">
                     <pre>
                         <code class="code-snippet">
@@ -270,75 +269,47 @@
                 <!-- Comment Box -->
                 <div class="comment-box p-4 rounded shadow">
                 <h3>Comments</h3>
-                <form id="comment-form">
-                    <div class="mb-3">
+
+                <!--Old Comments-->
+                <div class="old-comments mb-3">
+                  <div class="comment">
+                    <div class="comment-header">
+                      <img src="../assets/misc/person.jpg"  alt="User Avatar" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                      <span class="comment-author">John Doe</span>
+                    </div>
+                    <div class="comment-body">
+                      <p>This is an old comment.</p>
+                    </div>
+                  </div>
+                  <!-- Add more old comments here -->
+                  <div class="comment">
+                    <div class="comment-header">
+                      <img src="../assets/misc/person.jpg"  alt="User Avatar" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                      <span class="comment-author">John Doe</span>
+                    </div>
+                    <div class="comment-body">
+                      <p>Another old comment.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Add More Comments Section -->
+                <form id="add-comment-form">
+                  <div class="mb-3">
                     <div class="d-flex align-items-center">
-                        <img src="../assets/misc/person.jpg" alt="User Avatar" class="rounded-circle me-2" style="width: 50px; height: 50px;">
-                        <label for="comment" class="visually-hidden">Your Comment:</label>
+                      <img src="../assets/misc/person.jpg"  alt="User Avatar" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                      <label for="comment" class="visually-hidden">Your Comment:</label>
                     </div>
                     <textarea class="form-control mt-2" id="comment" rows="5" placeholder="Write your comment here..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Add Comment</button>
                 </form>
                 </div>
             </div>
             </div>
         </div>
         </section>
-
-        <!-- ======= Clients Section ======= -->
-      <section id="clients" class="clients section-bg py-3 mb-5 mt-5">
-        <div class="container">
-          <div class="row d-flex justify-content-evenly" data-aos="zoom-in">
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
-              <a href="champions.html">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/champion_icon.svg"alt=""class="img-fluid"/>
-                  <h5>Champions</h5>
-                </div>
-              </a>
-            </div>
-
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
-              <a href="#">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public//images/icons/code_2.svg"alt=""class="img-fluid"/>
-                  <h5>Contributions</h5>  
-                </div>
-              </a>
-            </div>
-
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
-              <a href="#">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/guest_icon.svg"alt=""class="img-fluid"/>
-                  <h5 id="guest-contri">Guest Contributions</h5>
-                </div>
-              </a>
-            </div>
-
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
-              <a href="perl-review.html">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/perl.svg"alt=""class="img-fluid perl-img"/>
-                  <h5>Perl Review</h5>
-                </div>
-              </a>
-            </div>
-
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
-              <a href="raku.html">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/raku.svg"alt=""class="img-fluid raku-img py-4"/>
-                  <h5>Raku Review</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Cliens Section -->
-  
+      
     </div>
     <!-- End #main -->
 
