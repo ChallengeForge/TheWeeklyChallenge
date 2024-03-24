@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>The Weekly Challenge - Perl & Raku View Code Contributions Page</title>
+    <title>The Weekly Challenge - Perl & Rss Feed Page</title>
     <meta
       content="The Weekly Challenge that includes Perl and Raku programming."
       name="description"
@@ -61,60 +61,6 @@
     <!-- Syntax highlighter-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
    
-    <style>
-        .code-snippet {
-          background-color: #ffffff;
-        }
-      
-        .copy-btn {
-          cursor: pointer;
-        }
-      
-        .code-content {
-          max-height: 300px; /* Set maximum height for scrollbar */
-        }
-      
-        /* Optional: Add scrollbar styling */
-        .code-content::-webkit-scrollbar {
-          width: 8px;
-        }
-      
-        .code-content::-webkit-scrollbar-thumb {
-          background-color: #6c757d;
-          border-radius: 4px;
-        }
-      
-        .code-content::-webkit-scrollbar-track {
-          background-color: #f9f9f9;
-        }
-        @media (max-width: 768px) {
-            .code-content {
-                text-align: left;
-                display: block;
-                margin-right: 2em;
-                width: 100%;
-            }
-
-            /* .code-content pre {
-                margin-right: 6em;
-                width: 100%;
-            } */
-
-        }
-        
-        @media screen and (max-width: 600px){
-             .code-snippet{
-                margin-right: 2em;
-                padding-right: 6em;
-            
-                display: block;
-               
-               align-self: start;
-                /* overflow: scroll; */
-            }
-        }
-      </style>
-      
   </head>
 
   <body>
@@ -224,89 +170,46 @@
     <!-- ========== Recent Activity Cards ============ -->
     <div class="main-section">
       
-        <!-- ========== Breadcrumb Navigation ========== -->
-        <div class="container mt-5">     
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="search_contributions.html">Search Contributions</a></li>
-                <li class="breadcrumb-item active" aria-current="page">View Code Contribution</li>
-                </ol>
-            </nav>
-        </div>
 
-        <!-- ========== Code Contributions Section ========== -->
-        <section id="code-contributions" class="section mt-5 mb-5" >
-        <div class="container">
-            <h3 class="mb-5">Member Name - Dancer2 - Week3 - View Contributions Page </h3> 
-            <div class="row">
-            <div class="col-lg-6 mb-4">
-                <!-- Code Snippet -->
-                <div class="code-snippet p-4 rounded shadow">
-                <div class="d-flex justify-content-end mb-3">
-                    <button class="btn btn-light copy-btn" onclick="copyCode()">Copy</button>
-                </div>
-                <div class="code-content overflow-auto">
-                    <pre>
-                        <code class="code-snippet">
-                            <!-- Codes will go here -->
-                            &lt;!DOCTYPE html&gt;
-                            &lt;html lang="en"&gt;
-                            &lt;head&gt;
-                            &lt;meta charset="UTF-8"&gt;
-                            &lt;title&gt;Example&lt;/title&gt;
-                            &lt;/head&gt;
-                            &lt;body&gt;
-                            &lt;h1&gt;Hello, World!&lt;/h1&gt;
-                            &lt;/body&gt;
-                            &lt;/html&gt;
-                        </code>
-                    </pre>
-                </div>
+        <!-- ========== Rss Feed Section ========== -->
+        <section id="code-contributions" class="section mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 mt-4"> 
+
+                        <h1 class="display-1 mt-2 mb-4" style="font-size: 25px;">
+                            All the Latest Feeds
+                          </h1>
+
+                        <!-- RSS Feed Card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="fw-bold fs-4 my-3">RSS Feed</h3>
+                                <hr>
+                                <!-- RSS Feed Items -->
+                                <div class="rss-feed-item">
+                                    
+                                    <div class="rss-feed-content">
+                                        <!-- Add your RSS feed content here -->
+                                        <div class="rss-icon">
+                                          <!-- Add your RSS icon here, e.g., <i class="fab fa-rss"></i> -->
+                                          <i class="fa-solid fa-rss"></i>
+                                      </div>
+                                        <p class="feed-description"> <h3> Description of the RSS feed item goes here. </h3></p>
+                                        <p class="feed-content text-secondary"> This is a feed from perl and Raku database <br> Another line break <br>Another line break </p>
+                                        <p class="feed-source text-secondary">From: Feed Source Name <span class="feed-time">January 1, 2024 12:00 PM </span></p>                              
+                                        <a href="#">Read More</a>
+                                    </div>
+                                   
+                                </div> <!--End feed item-->
+                                <hr>
+                                <!-- Add more RSS feed items here -->
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
-            <div class="col-lg-6">
-                <!-- Comment Box -->
-                <div class="comment-box p-4 rounded shadow">
-                <h3>Comments</h3>
-
-                <!--Old Comments-->
-                <div class="old-comments mb-3">
-                  <div class="comment">
-                    <div class="comment-header">
-                      <img src="../assets/misc/person.jpg"  alt="User Avatar" class="rounded-circle me-2" style="width: 50px; height: 50px;">
-                      <span class="comment-author">John Doe</span>
-                    </div>
-                    <div class="comment-body">
-                      <p>This is an old comment.</p>
-                    </div>
-                  </div>
-                  <!-- Add more old comments here -->
-                  <div class="comment">
-                    <div class="comment-header">
-                      <img src="../assets/misc/person.jpg"  alt="User Avatar" class="rounded-circle me-2" style="width: 50px; height: 50px;">
-                      <span class="comment-author">John Doe</span>
-                    </div>
-                    <div class="comment-body">
-                      <p>Another old comment.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Add More Comments Section -->
-                <form id="add-comment-form">
-                  <div class="mb-3">
-                    <div class="d-flex align-items-center">
-                      <img src="../assets/misc/person.jpg"  alt="User Avatar" class="rounded-circle me-2" style="width: 50px; height: 50px;">
-                      <label for="comment" class="visually-hidden">Your Comment:</label>
-                    </div>
-                    <textarea class="form-control mt-2" id="comment" rows="5" placeholder="Write your comment here..."></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Add Comment</button>
-                </form>
-                </div>
-            </div>
-            </div>
-        </div>
         </section>
       
     </div>
@@ -424,26 +327,6 @@
         path: lottiePath,
       });
     </script>
-
-    <script>
-        // Function to copy code snippet
-        function copyCode() {
-        var codeElement = document.querySelector('.code-content');
-        var codeText = codeElement.textContent;
-        navigator.clipboard.writeText(codeText).then(function() {
-            alert('Code copied to clipboard!');
-        }, function(err) {
-            console.error('Failed to copy code: ', err);
-        });
-        }
-    
-        // Initialize syntax highlighting
-        document.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelectorAll('pre code').forEach((block) => {
-            hljs.highlightBlock(block);
-        });
-        });
-    </script>
-
   </body>
 </html>
+
