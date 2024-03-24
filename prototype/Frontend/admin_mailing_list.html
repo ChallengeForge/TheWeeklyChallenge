@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../public/css/admin.css" />
+    <!-- charts -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- title -->
+    <title>Admin Dashboard - Mailing List</title>
+
+    <style> 
+        .mailing-list {
+            margin-top: 3rem;
+            overflow: scroll;
+        }
+
+        .mailing-list-btn { 
+            background-color: #92e3a9;
+            border: none;
+            color: black;            
+        }
+        .mailing-list-btn:hover {
+            border: 2px solid #92e3a9 !important;
+            color: white !important;
+        }   
+        .search-btn:hover {
+            border: 2px solid #92e3a9 !important;
+            background-color: #92e3a9;
+            color: white !important;
+        }
+        table {
+            font-size: 0.8rem;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <img src="../assets/misc/theweeklychallenge-logo 1.svg" alt="" />
+      </a>
+      <a href="index.html" class="head-link"> The Weekly Challenge</a>
+      <div class="search">
+        <input type="text" id="search" placeholder="search here" />
+        <label for="search"> <i class="fas fa-search"></i></label>
+      </div>
+      <div class="user">
+        <img src="../assets/misc/person.jpg" alt="" class="user-pic" />
+        <div class="sub-menu-wrap">
+          <div class="sub-menu">
+            <a href="#" class="sub-menu-link"
+              ><i class="fa-regular fa-user"></i>NAME</a
+            >
+            <a href="#" class="sub-menu-link"
+              ><i class="fa-regular fa-bell"></i>NOTIFICATIONS</a
+            >
+            <a href="#" class="sub-menu-link"
+              ><i class="fa-regular fa-gears"></i>SETTINGS</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- sidebar -->
+    <div class="sidebar">
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="index.html"
+              ><i class="fa-solid fa-address-card"></i>
+              <div>About</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="chart.html"
+              ><i class="fa-solid fa-chart-simple"></i>
+              <div>Chart</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="team.html"
+              ><i class="fa-solid fa-layer-group"></i>
+              <div>Teams</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="perl-review.html"
+              ><i class="fa-solid fa-magnifying-glass-dollar"></i>
+              <div>Pearl/Review</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="raku.html"
+              ><i class="fa-solid fa-magnifying-glass-location"></i>
+              <div>Raku/Review</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="blogs.html"
+              ><i class="fa-solid fa-blog"></i>
+              <div>Blogs</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="recap.html"
+              ><i class="fa-solid fa-right-left"></i>
+              <div>Recap</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="challenges.html"
+              ><i class="fa-solid fa-list-check"></i>
+              <div>Challenges</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="champions.html"
+              ><i class="fa-solid fa-trophy"></i>
+              <div>Champions</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="faq.html"
+              ><i class="fa-solid fa-circle-question"></i>
+              <div>FAQ</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="contact.html"
+              ><i class="fa-solid fa-address-book"></i>
+              <div>Contact</div></a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-comment"></i>
+              <div>Comment</div></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- main content -->
+    <main>
+        <section class="mailing-list "> <!-- Mailing List Section-->
+            <div class="container mt-4">
+                <div class="row justify-content-center">
+
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="card-title text-center mb-4">Mailing List</h1>
+                                <div class="form-group text-center mb-3">
+                                    <label class="mr-3"><input type="radio" name="list-options" value="2" checked> 2</label>
+                                    <label class="mr-3"><input type="radio" name="list-options" value="3"> 3</label>
+                                    <label><input type="radio" name="list-options" value="4"> 4</label>
+                                </div>
+                                <div class="text-center mb-3">
+                                    <button id="create-mailing-list-btn" class="btn mailing-list-btn">Create Mailing List</button>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Search email address">
+                                    <div class="input-group-append">
+                                        <button class="btn search-btn btn-outline-secondary" type="button">Search</button>
+                                    </div>
+
+                                </div>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Email Address</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="mailing-list-body">
+                                        <!-- Mailing list will be populated here -->
+                                    </tbody>
+                                </table>  
+                            </div> <!-- card-body -->
+
+                            <!--Pagination Starts-->
+                            <div class="container mt-5 float-end">
+                                <ul class="pagination justify-content-center"> 
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page"> 
+                                        <span class="page-link">1</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                    <li class="page-item"> 
+                                        <a class="page-link" href="#"> Next </a>
+                                    </li>
+                                </ul>
+                            </div><!--Pagination Container Ends-->
+
+                            <!--Pagination Ends-->
+                        </div><!-- card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <!-- Bootstrap Javascript --->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- custom javascript -->
+    <script src="../../public/javascripts/admin.js"></script>
+    <script src="../../public/javascripts/charts/chart1.js"></script>
+    <script src="../../public/javascripts/charts/chart2.js"></script>
+    <script src="../../public/javascripts/charts/chart3.js"></script>
+    <script src="../../public/javascripts/charts/chart4.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dummy data for email addresses, this data will come from the database in future
+            const emailAddresses = [
+                'example1@example.com',
+                'example2@example.com',
+                'example3@example.com',
+                'example4@example.com',
+                // Add more email addresses as needed
+            ];
+
+            // Populate initial mailing list
+            const mailingListBody = document.getElementById('mailing-list-body');
+            populateMailingList(emailAddresses);
+
+            // Function to populate mailing list table
+            function populateMailingList(emails) {
+                mailingListBody.innerHTML = '';
+                emails.forEach(email => {
+                    const row = `
+                        <tr>
+                            <td>${email}</td>
+                            <td><button class="btn btn-danger btn-delete" data-email="${email}">Delete</button></td>
+                        </tr>
+                    `;
+                    mailingListBody.innerHTML += row;
+                });
+            }
+
+            // Create Mailing List Button Click Event
+            const createMailingListBtn = document.getElementById('create-mailing-list-btn');
+            createMailingListBtn.addEventListener('click', function() {
+                const selectedOption = document.querySelector('input[name="list-options"]:checked').value;
+                generateMailingList(selectedOption);
+            });
+
+            // Generate Mailing List Function
+            function generateMailingList(option) {
+                const selectedEmails = [];
+                for (let i = 0; i < option; i++) {
+                    const randomIndex = Math.floor(Math.random() * emailAddresses.length);
+                    selectedEmails.push(emailAddresses[randomIndex]);
+                }
+                const mailingListOutput = selectedEmails.join(', ');
+                alert(`Mailing List: ${mailingListOutput}`);
+            }
+
+            // Delete Member Button Click Event
+            document.addEventListener('click', function(event) {
+                if (event.target.classList.contains('btn-delete')) {
+                    const emailToDelete = event.target.getAttribute('data-email');
+                    const index = emailAddresses.indexOf(emailToDelete);
+                    if (index !== -1) {
+                        emailAddresses.splice(index, 1);
+                        populateMailingList(emailAddresses);
+                    }
+                }
+            });
+        });
+    </script>
+  </body>
+</html>
