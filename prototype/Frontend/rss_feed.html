@@ -334,26 +334,5 @@
         path: lottiePath,
       });
     </script>
-
-    <script>
-        // Function to copy code snippet
-        function copyCode() {
-        var codeElement = document.querySelector('.code-content');
-        var codeText = codeElement.textContent;
-        navigator.clipboard.writeText(codeText).then(function() {
-            alert('Code copied to clipboard!');
-        }, function(err) {
-            console.error('Failed to copy code: ', err);
-        });
-        }
-    
-        // Initialize syntax highlighting
-        document.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelectorAll('pre code').forEach((block) => {
-            hljs.highlightBlock(block);
-        });
-        });
-    </script>
-
   </body>
 </html>
