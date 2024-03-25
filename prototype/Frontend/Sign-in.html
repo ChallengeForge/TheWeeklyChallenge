@@ -189,9 +189,18 @@
                                 <input type="password" placeholder="Password" required>
                               </div>
                               <div class="pass-link"><a href="#">Forgot password?</a></div>
+                              <div class="field d-flex align-items-center">
+                                  <canvas id="captcha" width="200" height="80"></canvas>
+                                  <button type="button" class="btn btn-secondary" id="refresh-captcha">
+                                    <i class="fa fa-refresh"></i>
+                                  </button>
+                              </div>
+                              <div class="field">
+                                  <input type="text" class="form-control" id="captcha-input" required placeholder="Enter Captcha">
+                              </div>
                               <div class="field btn">
                                 <div class="btn-layer"></div>
-                                <input type="submit" value="Login">
+                                <input type="submit" value="Submit">
                               </div>
                               <div class="signup-link">Not a member? <a href="">Signup now</a></div>
                             </form>
@@ -205,9 +214,18 @@
                               <div class="field">
                                 <input type="password" placeholder="Confirm password" required>
                               </div>
+                              <div class="field d-flex align-items-center">
+                                <canvas id="captcha2" width="200" height="80"></canvas>
+                                <button type="button" class="btn btn-secondary" id="refresh-captcha2">
+                                  <i class="fa fa-refresh"></i>
+                                </button>
+                            </div>
+                            <div class="field">
+                                <input type="text" class="form-control" id="captcha-input2" required placeholder="Enter Captcha">
+                            </div>
                               <div class="field btn">
                                 <div class="btn-layer"></div>
-                                <input type="submit" value="Signup">
+                                <input type="submit" value="Submit">
                               </div>
                             </form>
                           </div>
@@ -255,6 +273,7 @@
     <!-- Template Main JS File -->
     <script src="/public/javascripts/index.js"></script>
     <script src="/public/javascripts/login.js"></script>
+    <script src="/public/javascripts/contact.js"></script>
 
     <!-- ======================= Lottie JSON script here ======================= -->
 
