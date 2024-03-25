@@ -39,22 +39,19 @@
             overflow: scroll;
         }
 
-        .mailing-list-btn { 
-            background-color: #92e3a9;
-            border: none;
-            color: black;            
-        }
-        .mailing-list-btn:hover {
-            border: 2px solid #92e3a9 !important;
-            color: white !important;
-        }   
-        .search-btn:hover {
-            border: 2px solid #92e3a9 !important;
-            background-color: #92e3a9;
-            color: white !important;
+        .generate-btns {
+            
         }
         table {
             font-size: 0.8rem;
+        }
+
+        .generate-btns .list-option-btn {
+          display: inline-block;
+          margin: 0 2rem;
+          width: 5rem !important;
+          margin-bottom: 1rem;
+          
         }
     </style>
 
@@ -177,21 +174,18 @@
                       <div class="card">
                           <div class="card-body">
                               <h1 class="card-title text-center mb-4">Mailing List</h1>
-                              <div class="form-group text-center mb-3">
-                                  <label class="mr-3"><input type="radio" name="list-options" value="2" checked> 2</label>
-                                  <label class="mr-3"><input type="radio" name="list-options" value="3"> 3</label>
-                                  <label><input type="radio" name="list-options" value="4"> 4</label>
-                              </div>
-                              <div class="text-center mt-5 mb-5">
-                                  <button id="create-mailing-list-btn" class="btn mailing-list-btn">Create Mailing List</button>
-                              </div>
+                              <div class="form-group text-center generate-btns  mb-3">
+                                <button type="button" class="btn btn-outline-secondary mr-2 list-option-btn" data-value="2">2</button>
+                                <button type="button" class="btn btn-outline-secondary mr-2 list-option-btn" data-value="3">3</button>
+                                <button type="button" class="btn btn-outline-secondary list-option-btn" data-value="4">4</button>
+                            </div>
+                            
+                             
                               <!-- Newly Added Table -->
                               <div class="table-responsive">
                                   <table class="table table-bordered">
                                       <thead>
-                                          <tr>
-                                              <th colspan="2">Generated Emails</th>
-                                          </tr>
+                                          
                                       </thead>
                                       <tbody id="generated-emails">
                                         <!-- Generated email sets will be populated here -->
@@ -200,49 +194,10 @@
                               </div>
                               <!-- End of Newly Added Table -->
 
-                              <div class="input-group mt-5 mb-3">
-                                  <input type="text" class="form-control" placeholder="Search email address">
-                                  <div class="input-group-append">
-                                      <button class="btn search-btn btn-outline-secondary" type="button">Search</button>
-                                  </div>
-                              </div>
-                              <table class="table table-striped">
-                                  <thead>
-                                      <tr>
-                                          <th>Email Address</th>
-                                          <th>Action</th>
-                                      </tr>
-                                  </thead>
-                                  <tbody id="mailing-list-body">
-                                      <!-- Mailing list will be populated here -->
-                                  </tbody>
-                              </table>
                           </div> <!-- card-body -->
                       </div><!-- card -->
-                      <div class="container">
-
-                        <!-- Pagination -->
-                        <div class="row mt-5 mb-5">
-                          <div class="col"></div>
-                          <div class="col"></div>
-                          <div class="col"></div>
-                          <div class="col">
-                            <nav class="float-right" aria-label="Page navigation example">
-                              <ul class="pagination">
-                                <li class="page-item"><a class="page-link" href="#" id="prevPageBtn">Back</a></li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#" id="nextPageBtn">Forward</a></li>
-                              </ul>
-                            </nav>
-                          </div>
-                        </div> <!--Pagination row ends-->
-
-
-                      </div><!--End Container -->
+                     
                   </div><!-- col-10 -->
-
                  
               </div><!--row-->
           </div><!--container-->
@@ -265,101 +220,72 @@
       
     <script>
 
-        document.addEventListener('DOMContentLoaded', function() {
-            // Dummy data for email addresses, this data will come from the database in future
-            const emailAddresses = [
-                'example1@example.com',
-                'example2@example.com',
-                'example3@example.com',
-                'example4@example.com',
-                // Add more email addresses as needed
-            ];
+      document.addEventListener('DOMContentLoaded', function() {
+          const emailAddresses = [
+              'example1@example.com',
+              'example2@example.com',
+              'example3@example.com',
+              'example4@example.com',
+              // Add more email addresses as needed
+          ];
 
-            // Populate initial mailing list
-            const mailingListBody = document.getElementById('mailing-list-body');
-            populateMailingList(emailAddresses);
+          const mailingListBody = document.getElementById('mailing-list-body');
 
-            // Function to populate mailing list table
-            function populateMailingList(emails) {
-                mailingListBody.innerHTML = '';
-                emails.forEach(email => {
-                    const row = `
-                        <tr>
-                            <td>${email}</td>
-                            <td><button class="btn btn-danger btn-delete" data-email="${email}">Delete</button></td>
-                        </tr>
-                    `;
-                    mailingListBody.innerHTML += row;
-                });
-            }
+         
 
-            // Create Mailing List Button Click Event
-            const createMailingListBtn = document.getElementById('create-mailing-list-btn');
-            createMailingListBtn.addEventListener('click', function() {
-                const selectedOption = document.querySelector('input[name="list-options"]:checked').value;
-                generateMailingList(selectedOption);
-            });
+          function generateMailingList(option) {
+              const selectedEmails = [];
+              for (let i = 0; i < option; i++) {
+                  const randomIndex = Math.floor(Math.random() * emailAddresses.length);
+                  selectedEmails.push(emailAddresses[randomIndex]);
+              }
+              appendGeneratedEmails(selectedEmails);
+          }
 
-                        // Generate Mailing List Function
-            function generateMailingList(option) {
-                const selectedEmails = [];
-                for (let i = 0; i < option; i++) {
-                    const randomIndex = Math.floor(Math.random() * emailAddresses.length);
-                    selectedEmails.push(emailAddresses[randomIndex]);
-                }
-                appendGeneratedEmails(selectedEmails);
-            }
+          const generatedEmailLists = [];
 
-            // Array to store generated email lists
-            const generatedEmailLists = [];
+          function appendGeneratedEmails(emails) {
+              generatedEmailLists.push(emails);
+              updateGeneratedEmailsTable();
+          }
 
-            function appendGeneratedEmails(emails) {
-                generatedEmailLists.push(emails);
-                updateGeneratedEmailsTable();
-            }
-            // Function to update the generated emails table
-            function updateGeneratedEmailsTable() {
-                const generatedEmailsElement = document.getElementById('generated-emails');
-                generatedEmailsElement.innerHTML = '';
-                generatedEmailLists.forEach(emails => {
-                    const row = `<tr><td>${emails.join(', ')}</td><td><button class="btn btn-primary copy-generated-emails">Copy</button></td></tr>`;
-                    generatedEmailsElement.innerHTML += row;
-                });
+          function updateGeneratedEmailsTable() {
+              const generatedEmailsElement = document.getElementById('generated-emails');
+              generatedEmailsElement.innerHTML = '';
+              generatedEmailLists.forEach(emails => {
+                  const row = `<tr><td>${emails.join(', ')}</td><td><button class="btn btn-primary copy-generated-emails">Copy</button></td></tr>`;
+                  generatedEmailsElement.innerHTML += row;
+              });
 
-                // Add event listeners to copy buttons
-                const copyButtons = document.querySelectorAll('.copy-generated-emails');
-                copyButtons.forEach((button, index) => {
-                    button.addEventListener('click', function() {
-                        copyGeneratedEmails(index);
-                    });
-                });
-            }
+              const copyButtons = document.querySelectorAll('.copy-generated-emails');
+              copyButtons.forEach((button, index) => {
+                  button.addEventListener('click', function() {
+                      copyGeneratedEmails(index);
+                  });
+              });
+          }
 
-            // Function to copy generated emails on a specific row
-            function copyGeneratedEmails(index) {
-                const emailsToCopy = generatedEmailLists[index].join(', ');
-                navigator.clipboard.writeText(emailsToCopy)
-                    .then(() => {
-                        alert('Generated emails copied to clipboard: ' + emailsToCopy);
-                    })
-                    .catch(err => {
-                        console.error('Failed to copy emails to clipboard: ', err);
-                    });
-            }
+          function copyGeneratedEmails(index) {
+              const emailsToCopy = generatedEmailLists[index].join(', ');
+              navigator.clipboard.writeText(emailsToCopy)
+                  .then(() => {
+                      alert('Generated emails copied to clipboard: ' + emailsToCopy);
+                  })
+                  .catch(err => {
+                      console.error('Failed to copy emails to clipboard: ', err);
+                  });
+          }
 
+          const listOptionBtns = document.querySelectorAll('.list-option-btn');
+          listOptionBtns.forEach(btn => {
+              btn.addEventListener('click', function() {
+                  const selectedOption = parseInt(btn.dataset.value);
+                  generateMailingList(selectedOption);
+              });
+          });
 
-            // Delete Member Button Click Event
-            document.addEventListener('click', function(event) {
-                if (event.target.classList.contains('btn-delete')) {
-                    const emailToDelete = event.target.getAttribute('data-email');
-                    const index = emailAddresses.indexOf(emailToDelete);
-                    if (index !== -1) {
-                        emailAddresses.splice(index, 1);
-                        populateMailingList(emailAddresses);
-                    }
-                }
-            });
-        });
+      });
+
 
     </script>
     
