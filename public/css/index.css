@@ -750,8 +750,7 @@
     color: var(--text-color-dark);
   }
 
-  &.dark-mode 
-  &.dark-mode #teamDiv h2{
+  &.dark-mode  #teamDiv h2{
     color: var(--text-color-dark);
   }
 
@@ -771,6 +770,14 @@
   }
   &.dark-mode .info-container{
     background: var(--bg-dark);
+  }
+  &.dark-mode .wrapper {
+    color: var(--text-color-def);
+  }
+  &.dark-mode .quesHead,
+  &.dark-mode .answer,
+  &.dark-mode .showAnswer{
+    color: var(--text-color-dark);
   }
 
   &.blue-mode{
