@@ -8,7 +8,7 @@
     <meta
       content="The Weekly Challenge that includes Perl and Raku programming."
       name="description"
-    />
+    /> 
     <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
 
     <!-- Favicons -->
@@ -163,13 +163,14 @@
       <div id="teamDiv" style="overflow-x: hidden;">
         <h2 class="text-center mb-5">Team Members</h2>
         <!-- <div id="animation-container" class="globe-anim"style="overflow-x: hidden;"></div> -->
-        <div class="contactDetails mt-3">
+        <div class="contactDetails team-members mt-3">
           <div class="row d-flex justify-content-around">
               <div
                 class="col-lg-3 col-md-5 col-sm-10"
                 style="display: flex; justify-content: center"
               >
-                <div class="our-team">
+              
+                 <div class="our-team">
                   <div class="pic">
                     <img src="/public/images/blank_profile.svg" />
                   </div>
@@ -196,9 +197,9 @@
                       ></a>
                     </li>
                   </ul>
-                </div>
+                </div> 
               </div>
-              <div
+                 <div
                 class="col-lg-3 col-md-5 col-sm-10"
                 style="display: flex; justify-content: center"
               >
@@ -428,7 +429,7 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> 
               <!-- <div
                 class="col-lg-3 col-md-5 col-sm-10"
                 style="display: flex; justify-content: center"
@@ -495,8 +496,12 @@
                   </ul>
                 </div>
               </div> -->
-          </div>
-        </div>
+              <div class="pagination-buttons">
+                <button id="prevPageBtn">Back</button>
+                <button id="nextPageBtn">Forward</button>
+              </div>
+          </div><!--End row-->
+        </div><!--End contact details-->
       </div>
     </div>
 
@@ -613,5 +618,46 @@
         // path: 'assets/lottiejson/purple.json',
       });
     </script>
+
+   <script> 
+      document.addEventListener("DOMContentLoaded", function() {
+      const prevPageBtn = document.getElementById("prevPageBtn");
+      const nextPageBtn = document.getElementById("nextPageBtn");
+      const teamMembers = document.querySelectorAll(".our-team");
+
+      const membersPerPage = 3; // Change this number based on your preference
+      let currentPage = 0;
+
+      function showPage(page) {
+        const startIndex = page * membersPerPage;
+        const endIndex = startIndex + membersPerPage;
+        for (let i = 0; i < teamMembers.length; i++) {
+          if (i >= startIndex && i < endIndex) {
+            teamMembers[i].style.display = "flex";
+          } else {
+            teamMembers[i].style.display = "none";
+          }
+        }
+      }
+
+      showPage(currentPage);
+
+      prevPageBtn.addEventListener("click", function() {
+        if (currentPage > 0) {
+          currentPage--;
+          showPage(currentPage);
+        }
+      });
+
+      nextPageBtn.addEventListener("click", function() {
+        const totalPages = Math.ceil(teamMembers.length / membersPerPage);
+        if (currentPage < totalPages - 1) {
+          currentPage++;
+          showPage(currentPage);
+        }
+      });
+    });
+
+   </script>
   </body>
 </html>
