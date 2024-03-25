@@ -219,9 +219,33 @@
                               </table>
                           </div> <!-- card-body -->
                       </div><!-- card -->
-                  </div>
-              </div>
-          </div>
+                      <div class="container">
+
+                        <!-- Pagination -->
+                        <div class="row mt-5 mb-5">
+                          <div class="col"></div>
+                          <div class="col"></div>
+                          <div class="col"></div>
+                          <div class="col">
+                            <nav class="float-right" aria-label="Page navigation example">
+                              <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#" id="prevPageBtn">Back</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#" id="nextPageBtn">Forward</a></li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div> <!--Pagination row ends-->
+
+
+                      </div><!--End Container -->
+                  </div><!-- col-10 -->
+
+                 
+              </div><!--row-->
+          </div><!--container-->
       </section>
 
     </main>
@@ -238,7 +262,6 @@
     <script src="../../public/javascripts/charts/chart4.js"></script>
 
 
-    
       
     <script>
 
@@ -277,52 +300,52 @@
                 generateMailingList(selectedOption);
             });
 
-            // Generate Mailing List Function
-function generateMailingList(option) {
-    const selectedEmails = [];
-    for (let i = 0; i < option; i++) {
-        const randomIndex = Math.floor(Math.random() * emailAddresses.length);
-        selectedEmails.push(emailAddresses[randomIndex]);
-    }
-    appendGeneratedEmails(selectedEmails);
-}
+                        // Generate Mailing List Function
+            function generateMailingList(option) {
+                const selectedEmails = [];
+                for (let i = 0; i < option; i++) {
+                    const randomIndex = Math.floor(Math.random() * emailAddresses.length);
+                    selectedEmails.push(emailAddresses[randomIndex]);
+                }
+                appendGeneratedEmails(selectedEmails);
+            }
 
-// Array to store generated email lists
-const generatedEmailLists = [];
+            // Array to store generated email lists
+            const generatedEmailLists = [];
 
-function appendGeneratedEmails(emails) {
-    generatedEmailLists.push(emails);
-    updateGeneratedEmailsTable();
-}
-// Function to update the generated emails table
-function updateGeneratedEmailsTable() {
-    const generatedEmailsElement = document.getElementById('generated-emails');
-    generatedEmailsElement.innerHTML = '';
-    generatedEmailLists.forEach(emails => {
-        const row = `<tr><td>${emails.join(', ')}</td><td><button class="btn btn-primary copy-generated-emails">Copy</button></td></tr>`;
-        generatedEmailsElement.innerHTML += row;
-    });
+            function appendGeneratedEmails(emails) {
+                generatedEmailLists.push(emails);
+                updateGeneratedEmailsTable();
+            }
+            // Function to update the generated emails table
+            function updateGeneratedEmailsTable() {
+                const generatedEmailsElement = document.getElementById('generated-emails');
+                generatedEmailsElement.innerHTML = '';
+                generatedEmailLists.forEach(emails => {
+                    const row = `<tr><td>${emails.join(', ')}</td><td><button class="btn btn-primary copy-generated-emails">Copy</button></td></tr>`;
+                    generatedEmailsElement.innerHTML += row;
+                });
 
-    // Add event listeners to copy buttons
-    const copyButtons = document.querySelectorAll('.copy-generated-emails');
-    copyButtons.forEach((button, index) => {
-        button.addEventListener('click', function() {
-            copyGeneratedEmails(index);
-        });
-    });
-}
+                // Add event listeners to copy buttons
+                const copyButtons = document.querySelectorAll('.copy-generated-emails');
+                copyButtons.forEach((button, index) => {
+                    button.addEventListener('click', function() {
+                        copyGeneratedEmails(index);
+                    });
+                });
+            }
 
-// Function to copy generated emails on a specific row
-function copyGeneratedEmails(index) {
-    const emailsToCopy = generatedEmailLists[index].join(', ');
-    navigator.clipboard.writeText(emailsToCopy)
-        .then(() => {
-            alert('Generated emails copied to clipboard: ' + emailsToCopy);
-        })
-        .catch(err => {
-            console.error('Failed to copy emails to clipboard: ', err);
-        });
-}
+            // Function to copy generated emails on a specific row
+            function copyGeneratedEmails(index) {
+                const emailsToCopy = generatedEmailLists[index].join(', ');
+                navigator.clipboard.writeText(emailsToCopy)
+                    .then(() => {
+                        alert('Generated emails copied to clipboard: ' + emailsToCopy);
+                    })
+                    .catch(err => {
+                        console.error('Failed to copy emails to clipboard: ', err);
+                    });
+            }
 
 
             // Delete Member Button Click Event
