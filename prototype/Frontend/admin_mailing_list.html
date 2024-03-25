@@ -57,6 +57,11 @@
           background-color: #92e3a9;
           color:whitesmoke;
         }
+        
+       #copy-btn:hover {
+          background-color: #92e3a9;
+          color:whitesmoke;
+       }
     </style>
 
   </head>
@@ -257,7 +262,7 @@
               const generatedEmailsElement = document.getElementById('generated-emails');
               generatedEmailsElement.innerHTML = '';
               generatedEmailLists.forEach(emails => {
-                  const row = `<tr><td>${emails.join(', ')}</td><td><button class="btn btn-primary copy-generated-emails">Copy</button></td></tr>`;
+                  const row = `<tr><td>${emails.join(', ')}</td><td><button id="copy-btn" class="btn btn-outline-secondary copy-generated-emails">Copy</button></td></tr>`;
                   generatedEmailsElement.innerHTML += row;
               });
 
