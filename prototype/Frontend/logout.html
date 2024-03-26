@@ -56,7 +56,7 @@
     <!-- Template Main CSS File -->
     <link href="/public/css/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="/public/css/teamStyle.css" />
-    <link rel="stylesheet" href="/public/css/login.css" />
+    <link rel="stylesheet" href="/prototype/Frontend/css/new.css" />
 
 
   </head>
@@ -128,7 +128,7 @@
             </a>
               <ul>
                 <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
-                <li><a href="raku-review.html">Raku</a></li>
+                <li><a href="raku.html">Raku</a></li>
               </ul>
             </li>
             <!-- Charts DropDown -->
@@ -167,71 +167,17 @@
               <div class="row d-flex justify-content-center align-items-center h-100">
                 
                 <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                    <div class="wrapper" data-aos="fade-up"
+                    <div class="col-12" data-aos="fade-up"
                     data-aos-delay="200">
-                        <div class="title-text">
-                          <div class="title login">Login Form</div>
-                          <div class="title signup">Signup Form</div>
+                      <div class="logout mb-3"> <img src="/public/images/check_complete_done_green_success_icon.svg" style="height: 5rem; width: 5rem;"></div>
+                       
+                        <p>You have been successfully logged out of your account.</p>
+                        <p>Thank you for using <b>The Weekly Challenge</b></p>
+                        <div class="my-3">
+                            <a href="sign-in.html" class="btn-get-started scrollto">Login again</a>
                         </div>
-                        <div class="form-container">
-                          <div class="slide-controls">
-                            <input type="radio" name="slide" id="login" checked>
-                            <input type="radio" name="slide" id="signup">
-                            <label for="login" class="slide login">Login</label>
-                            <label for="signup" class="slide signup">Signup</label>
-                            <div class="slider-tab"></div>
-                          </div>
-                          <div class="form-inner">
-                            <form action="#" class="login">
-                              <div class="field">
-                                <input type="text" placeholder="Email Address" required>
-                              </div>
-                              <div class="field">
-                                <input type="password" placeholder="Password" required>
-                              </div>
-                              <div class="pass-link"><a href="#">Forgot password?</a></div>
-                              <div class="field d-flex align-items-center">
-                                  <canvas id="captcha" width="200" height="80"></canvas>
-                                  <button type="button" class="btn btn-secondary" id="refresh-captcha">
-                                    <i class="fa fa-refresh"></i>
-                                  </button>
-                              </div>
-                              <div class="field">
-                                  <input type="text" class="form-control" id="captcha-input" required placeholder="Enter Captcha">
-                              </div>
-                              <div class="field btn">
-                                <div class="btn-layer"></div>
-                                <input type="submit" value="Submit">
-                              </div>
-                              <div class="signup-link">Not a member? <a href="">Signup now</a></div>
-                            </form>
-                            <form action="#" class="signup">
-                              <div class="field">
-                                <input type="text" placeholder="Email Address" required>
-                              </div>
-                              <div class="field">
-                                <input type="password" placeholder="Password" required>
-                              </div>
-                              <div class="field">
-                                <input type="password" placeholder="Confirm password" required>
-                              </div>
-                              <div class="field d-flex align-items-center">
-                                <canvas id="captcha2" width="200" height="80"></canvas>
-                                <button type="button" class="btn btn-secondary" id="refresh-captcha2">
-                                  <i class="fa fa-refresh"></i>
-                                </button>
-                            </div>
-                            <div class="field">
-                                <input type="text" class="form-control" id="captcha-input2" required placeholder="Enter Captcha">
-                            </div>
-                              <div class="field btn">
-                                <div class="btn-layer"></div>
-                                <input type="submit" value="Submit">
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
+                        <p><b>See you later !</b></p>
+                    </div>
                   
                 </div>
                 <div class="col-md-9 col-lg-6 col-xl-5" data-aos="zoom-in"
@@ -274,8 +220,6 @@
 
     <!-- Template Main JS File -->
     <script src="/public/javascripts/index.js"></script>
-    <script src="/public/javascripts/login.js"></script>
-    <script src="/public/javascripts/contact.js"></script>
 
     <!-- ======================= Lottie JSON script here ======================= -->
 
