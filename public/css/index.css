@@ -84,7 +84,7 @@
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background:var(--navColor);
+    background: #fff;
   }
   
   #preloader:before {
@@ -196,6 +196,23 @@
   #header .logo img {
     max-height: 40px;
   }
+
+  .home-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 60px;
+    border-radius: 50px;
+    color: var(--text-color-def);
+    font-size: 14px;
+    border: 2px solid #47b2e4;
+    transition: 0.3s;
+  }
+
+  .home-btn:hover{
+    color: var(--btn-color);
+  }
   
   /*--------------------------------------------------------------
   # Navigation Menu
@@ -254,7 +271,7 @@
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 50px;
-    color: #fff;
+    color: var(--text-color-def);
     font-size: 14px;
     border: 2px solid #47b2e4;
     font-weight: 600;
@@ -262,8 +279,7 @@
   
   .navbar .getstarted:hover,
   .navbar .getstarted:focus:hover {
-    color: #fff;
-    background: var(--btn-color);
+    color: var(--btn-color);
   }
   
   .navbar .dropdown ul {
@@ -283,7 +299,7 @@
   }
   
   .navbar .dropdown ul li {
-    min-width: 200px;
+    min-width: 150px;
   }
   
   .navbar .dropdown ul a {
@@ -322,6 +338,19 @@
     left: 100%;
     visibility: visible;
   }
+
+  .btn-primary{
+    width: 5vw !important;
+    background: var(--bg-blue);
+    border: 1px solid black;
+    color: #000;
+  }
+
+  .user-btn{
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
   
   @media (max-width: 1366px) {
     .navbar .dropdown .dropdown ul {
@@ -349,7 +378,7 @@
     color: #fff;
   }
   
-  @media (max-width: 991px) {
+  @media (max-width: 1200px) {
     .mobile-nav-toggle {
       display: block;
     }
@@ -499,7 +528,8 @@
     font-size: 1.25rem;
   }
   
-  #hero .btn-get-started {
+  #hero .btn-get-started, 
+  .btn-get-started{
     font-family: "Jost", sans-serif;
     font-weight: 500;
     font-size: 1rem;
@@ -513,8 +543,10 @@
     background: var(--btn-color);
   }
   
-  #hero .btn-get-started:hover {
+  #hero .btn-get-started:hover ,
+  .btn-get-started:hover{
     background: var(--girl);
+    color: var(--text-color-def);
   }
   
   #hero .btn-watch-video {
@@ -745,7 +777,12 @@
     background: var(--bg-sec-dark);
     color: var(--text-color-dark);
   }
-  &.dark-mode #teamDiv h2{
+
+  &.dark-mode .section-title h2{
+    color: var(--text-color-dark);
+  }
+
+  &.dark-mode  #teamDiv h2{
     color: var(--text-color-dark);
   }
 
@@ -763,10 +800,31 @@
   &.dark-mode .our-team i:hover{
     color: var(--girl);
   }
+  &.dark-mode .info-container{
+    background: var(--bg-dark);
+  }
+  &.dark-mode .wrapper {
+    color: var(--text-color-def);
+  }
+  &.dark-mode .quesHead,
+  &.dark-mode .answer,
+  &.dark-mode .showAnswer{
+    color: var(--text-color-dark);
+  }
 
   &.blue-mode{
     background: var(--bg-blue-hero);
   }
+
+  &.blue-mode .info-item{
+    background: var(--btn-color);
+    color: var(--text-color-dark);
+  }
+
+  &.blue-mode .info-item i{
+    color: var(--text-color-dark) !important;
+  }
+
 }
 
 /* 
@@ -786,12 +844,12 @@
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 30px 0 0 0;
   background: var(--bg-sec);
 }
 
 #footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 #footer .footer-top .footer-contact h3 {
@@ -895,8 +953,7 @@
 }
 
 #footer .footer-bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 14px 0;
   color: var(--bg-dark);
 }
 

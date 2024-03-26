@@ -8,7 +8,7 @@
     <meta
       content="The Weekly Challenge that includes Perl and Raku programming."
       name="description"
-    />
+    /> 
     <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
 
     <!-- Favicons -->
@@ -56,6 +56,9 @@
     <!-- Template Main CSS File -->
     <link href="/public/css/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="/public/css/teamStyle.css" />
+
+    
+    
   </head>
 
   <body>
@@ -125,7 +128,7 @@
             </a>
               <ul>
                 <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
-                <li><a href="raku.html">Raku</a></li>
+                <li><a href="raku-review.html">Raku</a></li>
               </ul>
             </li>
             <!-- Charts DropDown -->
@@ -163,7 +166,7 @@
       <div id="teamDiv" style="overflow-x: hidden;">
         <h2 class="text-center mb-5">Team Members</h2>
         <!-- <div id="animation-container" class="globe-anim"style="overflow-x: hidden;"></div> -->
-        <div class="contactDetails mt-3">
+        <div class="contactDetails team-rows-container mt-3">
           <div class="row d-flex justify-content-around">
               <div
                 class="col-lg-3 col-md-5 col-sm-10"
@@ -495,8 +498,37 @@
                   </ul>
                 </div>
               </div> -->
+             
+                
+          
+          </div><!-- End of row -->
+
+        </div> <!-- End of contactDetails -->
+     
+       
+        <div class="container">
+          <!-- Your content here -->
+        
+          <!-- Pagination -->
+          <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+              <nav class="float-right" aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#" id="prevPageBtn">Back</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#" id="nextPageBtn">Forward</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
-        </div>
+        </div><!--End Container -->
+        
+        
       </div>
     </div>
 
@@ -613,5 +645,43 @@
         // path: 'assets/lottiejson/purple.json',
       });
     </script>
+
+   
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const itemsPerPage = 3; // Number of items per page
+    let currentPage = 0; // Current page index
+
+    const teamDiv = document.getElementById("teamDiv");
+    const teamRowsContainer = document.querySelector(".team-rows-container");
+    const teamMembers = Array.from(teamRowsContainer.querySelectorAll(".col-lg-3"));
+
+    // Function to show items for a specific page
+    function showPage(pageIndex) {
+        const startIndex = pageIndex * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        teamMembers.forEach((member, index) => {
+            member.style.display = index >= startIndex && index < endIndex ? "flex" : "none";
+        });
+    }
+
+    // Function to handle next button click
+    document.getElementById("nextPageBtn").addEventListener("click", function () {
+        currentPage = Math.min(currentPage + 1, Math.ceil(teamMembers.length / itemsPerPage) - 1);
+        showPage(currentPage);
+    });
+
+    // Function to handle previous button click
+    document.getElementById("prevPageBtn").addEventListener("click", function () {
+        currentPage = Math.max(currentPage - 1, 0);
+        showPage(currentPage);
+    });
+
+    // Initial page display
+    showPage(currentPage);
+});
+
+</script>
   </body>
 </html>
