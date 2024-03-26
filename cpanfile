@@ -32,5 +32,6 @@ feature 'accelerate', 'Accelerate Dancer2 app performance with XS modules' => su
 on "test" => sub {
     requires "Test::More"            => "0";
     requires "HTTP::Request::Common" => "0";
+    requires "Perl::Critic"          => "0";
 };
 
