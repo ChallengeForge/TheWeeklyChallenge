@@ -34,6 +34,7 @@ on "test" => sub {
     requires "Ref::Util"             => "0";
     requires "Test::More"            => "0";
     requires "HTTP::Request::Common" => "0";
+    requires "Perl::Critic"          => "0";
 };
 
 on "develop" => sub {

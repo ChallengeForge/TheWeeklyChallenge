@@ -1,0 +1,2 @@
+severity = brutal # strictest level
+verbose  = 11 # highest verbosity
