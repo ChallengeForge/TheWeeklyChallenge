@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>The Weekly Challenge - Perl & Raku</title>
+    <title>The Weekly Challenge - Perl & Rss Feed Page</title>
     <meta
       content="The Weekly Challenge that includes Perl and Raku programming."
       name="description"
@@ -15,7 +15,7 @@
     <link href="/public/images/logo/logo.png" rel="icon" />
 
     <!-- Google Fonts -->
-    <linkr
+    <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
@@ -56,10 +56,14 @@
     <!-- Template Main CSS File -->
     <link href="/public/css/index.css" rel="stylesheet" />
     <link href="/prototype/Frontend/css/team.css" rel="stylesheet" />
+
+
+    <!-- Syntax highlighter-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+   
   </head>
 
   <body>
-    
     <!-- ==================== Header =================== -->
     <header id="header" class="sticky-top border-bottom">
       <div class="container d-flex align-items-center">
@@ -78,9 +82,7 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li>
-                <a class="getstarted scrollto user-btn" href="index.html">
-                <span><i class="fa-solid fa-house fs-6"></i></span>
-              </a>
+              <a class="nav-link scrollto active" href="index.html">Home</a>
             </li>
             <!-- About Dropdown -->
             <li class="dropdown">
@@ -104,10 +106,10 @@
                 <i class="bi bi-chevron-down"></i>
             </a>
               <ul>
-                <li class="border-bottom"><a href="search-weekly-challenges.html">Challenges</a></li>
+                <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
 
                 <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
-                <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
+                <li class="border-bottom"><a href="list-autreachy-applicants.html">Autreachy Applicants</a></li>
                 <li ><a href="search_contributions.html">Search Contributions</a></li>
    
               </ul>
@@ -132,7 +134,7 @@
             </a>
               <ul>
                 <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
-                <li><a href="raku-review.html">Raku</a></li>
+                <li><a href="raku.html">Raku</a></li>
               </ul>
             </li>
             <!-- Charts DropDown -->
@@ -156,19 +158,6 @@
                 <li class="theme3"><a href="#">Blue Mode</a></li>
               </ul>
             </li>
-            <!-- User Features Dropdown -->
-            <li class="dropdown">
-              <a class="getstarted scrollto user-btn" href="#about">
-                <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
-                <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
-              </a>
-              <ul>
-                <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
-                <li class="border-bottom"><a href="logout.html">Logout</a></li>
-                <li class="border-bottom"><a href="user-dashboard.html">My Profile</a></li>
-                <li><a href="#">Settings</a></li>
-              </ul>
-            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -178,102 +167,51 @@
 
     <!-- End Header -->
 
-    <!-- =================== Hero Section ============ -->
-    <section id="hero" class="d-flex align-items-center main-section">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 task-box"
-            data-aos="fade-up"
-            data-aos-delay="200">
-            <div class="container ms-lg-5 card task-card">
-              <h2>Task #1</h2>
-              <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur aperiam odio
-              </h3>
-              <h2>Task #2</h2>
-              <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur aperiam odio
-              </h3>
-            </div>
-            <div class="d-flex justify-content-center justify-content-lg-start ms-lg-5 my-md-3">
-              <a href="sign-in.html" class="btn-get-started scrollto">Login/Sign up</a>
-              <a href="#" class="glightbox btn-watch-video">
-                <i class="bi bi-play-circle"></i>
-                <span>Youtube</span>
-                </a>
-            </div>
-          </div>
-
-          <!-- Hero Image -->
-          <div
-            class="col-lg-6 order-1 order-lg-2 hero-img"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
-            <div id="animation-container"class="animated container-fluid anim-container"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Hero -->
-
     <!-- ========== Recent Activity Cards ============ -->
     <div class="main-section">
-      <!-- ======= Clients Section ======= -->
-      <section id="clients" class="clients section-bg py-3">
-        <div class="container">
-          <div class="row d-flex justify-content-evenly" data-aos="zoom-in">
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
-              <a href="champions.html">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/champion_icon.svg"alt=""class="img-fluid"/>
-                  <h5>Champions</h5>
-                </div>
-              </a>
-            </div>
+      
 
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
-              <a href="#">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public//images/icons/code_2.svg"alt=""class="img-fluid"/>
-                  <h5>Contributions</h5>  
-                </div>
-              </a>
-            </div>
+        <!-- ========== Rss Feed Section ========== -->
+        <section id="code-contributions" class="section mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 mt-4"> 
 
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
-              <a href="#">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/guest_icon.svg"alt=""class="img-fluid"/>
-                  <h5 id="guest-contri">Guest Contributions</h5>
-                </div>
-              </a>
-            </div>
+                        <h1 class="display-1 mt-2 mb-4" style="font-size: 25px;">
+                            All the Latest Feeds
+                          </h1>
 
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
-              <a href="perl-review.html">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/perl.svg"alt=""class="img-fluid perl-img"/>
-                  <h5>Perl Review</h5>
+                        <!-- RSS Feed Card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="fw-bold fs-4 my-3">RSS Feed</h3>
+                                <hr>
+                                <!-- RSS Feed Items -->
+                                <div class="rss-feed-item">
+                                    
+                                    <div class="rss-feed-content">
+                                        <!-- Add your RSS feed content here -->
+                                        <div class="rss-icon">
+                                          <!-- Add your RSS icon here, e.g., <i class="fab fa-rss"></i> -->
+                                          <i class="fa-solid fa-rss"></i>
+                                      </div>
+                                        <p class="feed-description"> <h3> Description of the RSS feed item goes here. </h3></p>
+                                        <p class="feed-content text-secondary"> This is a feed from perl and Raku database <br> Another line break <br>Another line break </p>
+                                        <p class="feed-source text-secondary">From: Feed Source Name <span class="feed-time">January 1, 2024 12:00 PM </span></p>                              
+                                        <a href="#">Read More</a>
+                                    </div>
+                                   
+                                </div> <!--End feed item-->
+                                <hr>
+                                <!-- Add more RSS feed items here -->
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
-              </a>
             </div>
-
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
-              <a href="raku-review.html">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/raku.svg"alt=""class="img-fluid raku-img py-4"/>
-                  <h5>Raku Review</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Cliens Section -->
+        </section>
+      
     </div>
     <!-- End #main -->
 
@@ -372,9 +310,10 @@
     <!-- Template Main JS File -->
     <script src="/public/javascripts/index.js"></script>
 
-    <!-- ======================= Lottie JSON script here ======================= -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+
+    <!-- ======================= Syntax highlighter  ======================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
 
     <script>
       // Setting up Lottie
@@ -390,3 +329,4 @@
     </script>
   </body>
 </html>
+

@@ -54,15 +54,8 @@
 
     <!-- Template Main CSS File -->
     <link href="/public/css/index.css" rel="stylesheet" />
-    <style>
-      #taskContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- 
-}
-    </style>
+    <!-- This page CSS File -->
+    <link href="/public/css/view-weekly-challenges.css"  rel="stylesheet"/>
   </head>
   <body>
     <!-- ==================== Header ======================== -->
@@ -178,57 +171,115 @@
     <!-- End Header -->
 
     <div class="container mt-5">
-        <div id="taskContainer" class="mt-5">
+      <div id="taskContainer" class="mt-5">
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a
-              class="nav-link active"
-              id="task1-tab"
-              data-bs-toggle="tab"
-              href="#task1"
-              role="tab"
-              aria-controls="task1"
-              aria-selected="true"
-              >Task 1</a
-            >
+            <a class="nav-link active" id="task1-tab" data-bs-toggle="tab" href="#task1" role="tab" aria-controls="task1"
+              aria-selected="true">Task 1</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link"
-              id="task2-tab"
-              data-bs-toggle="tab"
-              href="#task2"
-              role="tab"
-              aria-controls="task2"
-              aria-selected="false"
-              >Task 2</a
-            >
+            <a class="nav-link" id="task2-tab" data-bs-toggle="tab" href="#task2" role="tab" aria-controls="task2"
+              aria-selected="false">Task 2</a>
           </li>
-
+    
         </ul>
-        <div class="tab-content mt-3">
-          <div
-            class="tab-pane fade show active"
-            id="task1"
-            role="tabpanel"
-            aria-labelledby="task1-tab"
-          >
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, necessitatibus.</p>
+    
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 task-box"
+          data-aos="fade-up" data-aos-delay="200">
+          <div class="container ms-lg-5 card task-card">
+            <div class="tab-content mt-3">
+              <div class="tab-pane fade show active" id="task1" role="tabpanel" aria-labelledby="task1-tab">
+    
+                <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo placeat officiis, voluptatibus quaerat eligendi impedit tenetur adipisci, aperiam rem atque libero ea officia voluptatum magni, fuga at autem quis? Facere.</h5>
+              </div>
+              <div class="tab-pane fade" id="task2" role="tabpanel" aria-labelledby="task2-tab">
+    
+                <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab distinctio sequi neque magnam expedita
+                  harum amet corrupti, id blanditiis, unde officia dolores necessitatibus veniam itaque perferendis sunt
+                  similique repellendus totam esse! Nesciunt unde assumenda ratione ipsa ex quasi molestias ea magnam
+                  veritatis. Aut, animi. Fuga accusamus autem tenetur libero magnam.<h5>
+              </div>
+    
+    
+            </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="task2"
-            role="tabpanel"
-            aria-labelledby="task2-tab"
-          >
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, dolores.</p>
-          </div>
-          
-           
         </div>
       </div>
     </div>
-
+    <!-- =============== Footer ================= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 footer-contact">
+              <img src="/public/images/logo/logo.png" class="footer-logo">
+              <img src="/public/images/logo/typography.png" class="footer-typo">
+              <div class="email my-5">
+                <strong>Email:</strong> theweeklychallenge@example.com<br />
+              </div>
+              </p>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="about.html">About us</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="#">Contributions</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 mt-2 mt-lg-0">
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i> <a href="team.html">Teams</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="#">Reviews</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i> <a href="chart.html">Charts</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>The Weekly Challenge</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    
     <!-- ================= Vendor JS Files ================== -->
     <script src="/public/javascripts/vendor/aos/aos.js"></script>
     <script src="/public/javascripts/vendor/bootstrap/bootstrap.bundle.min.js"></script>
@@ -236,13 +287,14 @@
     <script src="/public/javascripts/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="/public/javascripts/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="/public/javascripts/vendor/waypoints/noframework.waypoints.js"></script>
-
+    
     <!-- Template Main JS File -->
     <script src="/public/javascripts/index.js"></script>
-
+    
     <!-- ======================= Lottie JSON script here ======================= -->
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
     <script src="./js/search-weekly-challenges.js" defer></script>
-  </body>
-</html>
+    </body>
+    
+    </html>

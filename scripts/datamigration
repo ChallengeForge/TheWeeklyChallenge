@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+
+use strict; use warnings;
+
+use lib ("lib");
+
+use PWC::Utils::DataMigration;
+
+PWC::Utils::DataMigration->new_with_options->run;

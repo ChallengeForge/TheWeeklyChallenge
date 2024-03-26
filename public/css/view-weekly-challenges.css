@@ -1,0 +1,94 @@
+/* Global Styles */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+    margin-top: auto;
+}
+
+/* Task Container */
+#taskContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    /* Adjust as needed */
+    margin-bottom: 50px;
+    /* Adjust as needed */
+}
+
+/* Nav Tabs */
+.nav-tabs {
+    padding: 20px 0;
+    background-color: var(--header-footer-color);
+    border-radius: 5px;
+    justify-content: center;
+    /* Center the tabs horizontally */
+    margin-top: -70px;
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-color-def);
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin: 0 10px;
+    /* Add margin between tabs */
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+    background-color: var(--btn-color);
+    color: #fff;
+    border-color: var(--btn-color);
+}
+
+/* Dark Mode Nav Tabs */
+.dark-mode .nav-tabs .nav-link {
+    color: #fff;
+    /* Set inactive tab text color to white */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .nav-tabs .nav-link.active,
+.dark-mode .nav-tabs .nav-link:hover {
+    background-color: var(--btn-color);
+    color: #fff;
+    /* Active tab text color */
+}
+
+/* Task Card */
+.dark-mode .task-card {
+    background-color: var(--bg-dark);
+    color: var(--text-color-light);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Adjust the border color for visibility */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    /* Add a box shadow for contrast */
+}
+
+/* Focus Styles */
+.nav-tabs .nav-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+    /* Example focus style */
+}
+
+.task-card h5 {
+    font-family: "Roboto", sans-serif;
+    ;
+    /* Use Roboto font for task card content */
+    font-size: 18px;
+    /* Adjust font size as needed */
+    line-height: 1.5;
+    /* Set line height for improved readability */
+}

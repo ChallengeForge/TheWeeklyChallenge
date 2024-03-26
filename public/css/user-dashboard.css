@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+
 
 ::after,
 ::before {
@@ -6,6 +7,7 @@
     margin: 0;
     padding: 0;
 }
+
 
 a {
     text-decoration: none;
@@ -267,10 +269,7 @@ header {
   .stats-chart {
      
   } 
-
  
-
-
  .notifications-content {
     display: flex;
 } 
@@ -282,73 +281,8 @@ header {
     display: block !important;
 } 
 
-
 .avatar {
     height: 40px;
     width: 40px;
 }
 
-
-@media (max-width: 880px) {
-    .user-pic {
-      width: 5%;
-     
-    }
-  
-    .search i {
-      display: none;
-    }
-  
-    .cards {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .charts {
-      top: 470px;
-      grid-template-columns: repeat(1, 1fr);
-    }
-  
-  }
-  
-  @media (max-width: 600px) {
-    header {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  
-    .search i {
-      display: none;
-    }
-  
-    .search {
-      display: none;
-    }
-  
-    .user-pic {
-      width: 10%;
-      padding-right: 0.9em;
-      position: absolute;
-      right: 1%;
-      
-    }
-
-    .cards {
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    .stats-chart {
-         
-        padding: 0;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); 
-        margin: auto;
-        width: fit-content;
-        padding-right: 3rem;
-        width: 100%;
-    }
-
-    /* #general_contributions {
-        padding-right: 1rem;
-    } */
-
-   
-  }
