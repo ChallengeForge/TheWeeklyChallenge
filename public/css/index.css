@@ -987,6 +987,7 @@
   }
 }
 
-/* @media (max-width: 992px){
-  
-} */
+.charts{
+  background-color: var(--bg-light);
+  color: var(--text-color-def);
+}

@@ -61,35 +61,30 @@
     <!-- ==================== Header ======================== -->
     <header id="header" class="sticky-top border-bottom">
       <div class="container d-flex align-items-center">
-        <div
-          class="container d-flex align-items-center justify-content-center me-auto"
-        >
+        <div class="container d-flex align-items-center justify-content-center me-auto">
           <a href="index.html" class="logo me-3">
-            <img
-              src="/public/images/logo/logo.png"
-              alt="logo"
-              class="img-fluid"
-            />
-          </a>
+            <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
+        </a>
           <a href="index.html" class="logo me-auto">
             <img
               src="/public/images/logo/typography.png"
               alt="typography"
-              class="img-fluid"
-            />
-          </a>
+              class="img-fluid"/>
+            </a>
         </div>
 
         <nav id="navbar" class="navbar">
           <ul>
             <li>
-              <a class="nav-link scrollto active" href="index.html">Home</a>
+                <a class="getstarted scrollto user-btn" href="index.html">
+                <span><i class="fa-solid fa-house fs-6"></i></span>
+              </a>
             </li>
             <!-- About Dropdown -->
             <li class="dropdown">
               <a href="#">
                 <span>About</span> <i class="bi bi-chevron-down"></i>
-              </a>
+            </a>
               <ul>
                 <li class="border-bottom">
                   <a href="about.html">About Us</a>
@@ -103,14 +98,16 @@
             <!-- Contributions Dropdown -->
             <li class="dropdown">
               <a href="#">
-                <span>Contributions</span>
+                <span>Contributions</span> 
                 <i class="bi bi-chevron-down"></i>
-              </a>
+            </a>
               <ul>
-                <li class="border-bottom">
-                  <a href="challenges.html">Challenges</a>
-                </li>
-                <li><a href="blogs.html">Blogs</a></li>
+                <li class="border-bottom"><a href="search-weekly-challenges.html">Challenges</a></li>
+
+                <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
+                <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
+                <li ><a href="search_contributions.html">Search Contributions</a></li>
+   
               </ul>
             </li>
             <!-- Team Dropdown -->
@@ -118,7 +115,7 @@
               <a href="#">
                 <span>Team</span>
                 <i class="bi bi-chevron-down"></i>
-              </a>
+            </a>
               <ul>
                 <li class="border-bottom"><a href="team.html">Regular</a></li>
                 <li class="border-bottom"><a href="guest.html">Guest</a></li>
@@ -128,13 +125,11 @@
             <!-- Reviews Dropdown -->
             <li class="dropdown">
               <a href="#">
-                <span>Reviews</span>
+                <span>Reviews</span> 
                 <i class="bi bi-chevron-down"></i>
-              </a>
+            </a>
               <ul>
-                <li class="border-bottom">
-                  <a href="perl-review.html">Perl</a>
-                </li>
+                <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
                 <li><a href="raku-review.html">Raku</a></li>
               </ul>
             </li>
@@ -143,22 +138,32 @@
               <a href="#">
                 <span>Leaderboard</span>
                 <i class="bi bi-chevron-down"></i>
-              </a>
+            </a>
               <ul>
-                <li class="border-bottom"><a href="chart.html">Charts</a></li>
-                <li class="border-bottom"><a href="#">Team Leader</a></li>
-                <li><a href="#">Guest Leader</a></li>
+                <li class="border-bottom"><a href="team-leader.html">Team Leader</a></li>
+                <li><a href="guest-leader.html">Guest Leader</a></li>
               </ul>
             </li>
             <!-- Prefernces -->
             <li class="dropdown">
-              <a href="#"
-                ><span>Preferences</span> <i class="bi bi-chevron-down"></i
-              ></a>
+              <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 <li class="border-bottom theme1"><a href="#">Default</a></li>
                 <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
                 <li class="theme3"><a href="#">Blue Mode</a></li>
+              </ul>
+            </li>
+            <!-- User Features Dropdown -->
+            <li class="dropdown">
+              <a class="getstarted scrollto user-btn" href="#about">
+                <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
+                <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
+              </a>
+              <ul>
+                <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
+                <li class="border-bottom"><a href="logout.html">Logout</a></li>
+                <li class="border-bottom"><a href="user_dashboard.html">My Profile</a></li>
+                <li><a href="#">Settings</a></li>
               </ul>
             </li>
           </ul>
@@ -170,7 +175,7 @@
 
     <!-- End Header -->
 
-    <div class="container mt-5">
+    <div class="container mt-5 main-section">
       <div id="taskContainer" class="mt-5">
         <ul class="nav nav-tabs">
           <li class="nav-item">
@@ -214,12 +219,12 @@
             <div class="col-lg-4 col-md-6 col-12 footer-contact">
               <img src="/public/images/logo/logo.png" class="footer-logo">
               <img src="/public/images/logo/typography.png" class="footer-typo">
-              <div class="email my-5">
-                <strong>Email:</strong> theweeklychallenge@example.com<br />
-              </div>
+                <div class="email my-5">
+                  <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
+                </div>
               </p>
             </div>
-    
+
             <div class="col-lg-4 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <div class="row">
@@ -234,7 +239,7 @@
                     </li>
                     <li>
                       <i class="bx bx-chevron-right"></i>
-                      <a href="#">Contributions</a>
+                      <a href="search_contributions.html">Contributions</a>
                     </li>
                   </ul>
                 </div>
@@ -245,25 +250,27 @@
                     </li>
                     <li>
                       <i class="bx bx-chevron-right"></i>
-                      <a href="#">Reviews</a>
+                      <a href="perl-review.html">Reviews</a>
                     </li>
                     <li>
-                      <i class="bx bx-chevron-right"></i> <a href="chart.html">Charts</a>
+                      <i class="bx bx-chevron-right"></i> <a href="team-leader.html">Charts</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-    
+
             <div class="col-lg-4 col-md-6 footer-links">
               <h4>Our Social Networks</h4>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://twitter.com/perlwchallenge?lang=en" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/groups/theweeklychallengegroup/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
@@ -271,10 +278,11 @@
           </div>
         </div>
       </div>
-    
+
       <div class="container footer-bottom clearfix">
         <div class="copyright">
-          &copy; Copyright <strong><span>The Weekly Challenge</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>The Weekly Challenge</span></strong
+          >. All Rights Reserved
         </div>
       </div>
     </footer>
