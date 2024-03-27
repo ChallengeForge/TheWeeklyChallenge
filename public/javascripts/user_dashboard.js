@@ -1,6 +1,14 @@
 
+// const hamBurger = document.querySelector(".toggle-btn");
+
+// hamBurger.addEventListener("click", function () {
+//   document.querySelector("#sidebar").classList.toggle("expand");
+// });
+
+
 const hamBurger = document.querySelector(".toggle-btn");
 
 hamBurger.addEventListener("click", function () {
-  document.querySelector("#sidebar").classList.toggle("expand");
+ const sidebar = document.querySelector("#sidebar");
+ sidebar.classList.toggle("expand");
 });

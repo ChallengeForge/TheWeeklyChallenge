@@ -4,6 +4,91 @@
     /**
      * Easy selector helper function
      */
+
+    // Existing code...
+
+    (function() {
+      "use strict";
+    
+      /**
+       * Easy selector helper function
+       */
+      const select = (el, all = false) => {
+        el = el.trim()
+        if (all) {
+          return [...document.querySelectorAll(el)]
+        } else {
+          return document.querySelector(el)
+        }
+      }
+    
+     
+    
+      /**
+       * Easy on scroll event listener 
+       */
+      const onscroll = (el, listener) => {
+        el.addEventListener('scroll', listener)
+      }
+    
+      // Define the on function before using it
+      const on = (type, el, listener, all = false) => {
+        let selectEl = select(el, all)
+        if (selectEl) {
+          if (all) {
+            selectEl.forEach(e => e.addEventListener(type, listener))
+          } else {
+            selectEl.addEventListener(type, listener)
+          }
+        }
+      }
+      on('click', '.mobile-nav-toggle', function(e) {
+        select('#navbar').classList.toggle('navbar-mobile');
+        this.classList.toggle('bi-list');
+        this.classList.toggle('bi-x');
+       
+        // Toggle dropdown visibility for mobile
+        toggleMobileDropdownVisibility();
+       });
+       
+       // New function to toggle dropdown visibility for mobile
+       function toggleMobileDropdownVisibility() {
+        const navbar = select('#navbar');
+        if (navbar.classList.contains('navbar-mobile')) {
+           // If navbar is in mobile view, toggle dropdown visibility
+           const dropdowns = navbar.querySelectorAll('.dropdown');
+           dropdowns.forEach(dropdown => {
+             dropdown.classList.toggle('dropdown-active');
+           });
+        }
+       }
+       
+      
+       on('click', '.mobile-nav-toggle', function(e) {
+        console.log('Hamburger menu clicked'); // Debugging
+        select('#navbar').classList.toggle('navbar-mobile');
+        this.classList.toggle('bi-list');
+        this.classList.toggle('bi-x');
+       
+        // Toggle dropdown visibility for mobile
+        toggleMobileDropdownVisibility();
+       });
+       
+       function toggleMobileDropdownVisibility() {
+        const navbar = select('#navbar');
+        if (navbar.classList.contains('navbar-mobile')) {
+           const dropdowns = navbar.querySelectorAll('.dropdown');
+           console.log(dropdowns); // Debugging
+           dropdowns.forEach(dropdown => {
+             dropdown.classList.toggle('dropdown-active');
+             console.log(dropdown.classList.contains('dropdown-active')); // Debugging
+           });
+        }
+       }
+          
+      // Existing code...
+  })();
+  
     const select = (el, all = false) => {
       el = el.trim()
       if (all) {
