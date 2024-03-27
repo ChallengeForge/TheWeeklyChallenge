@@ -60,44 +60,44 @@
     <link href="/prototype/Frontend/css/team.css" rel="stylesheet" />
 
     <!-- Syntax highlighter-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
 
     <style>
-      .code-snippet {
-        background-color: #ffffff;
-      }
+        .code-snippet {
+          background-color: #ffffff;
+        }
 
-      .copy-btn {
-        cursor: pointer;
-      }
+        .copy-btn {
+          cursor: pointer;
+        }
 
-      .code-content {
-        max-height: 300px; /* Set maximum height for scrollbar */
-      }
-
-      /* Optional: Add scrollbar styling */
-      .code-content::-webkit-scrollbar {
-        width: 8px;
-      }
-
-      .code-content::-webkit-scrollbar-thumb {
-        background-color: #6c757d;
-        border-radius: 4px;
-      }
-
-      .code-content::-webkit-scrollbar-track {
-        background-color: #f9f9f9;
-      }
-      @media (max-width: 768px) {
         .code-content {
           text-align: left;
           display: block;
           margin-right: 2em;
           width: 100%;
         }
+
+        /* Optional: Add scrollbar styling */
+        .code-content::-webkit-scrollbar {
+          width: 8px;
+        }
+
+        .code-content::-webkit-scrollbar-thumb {
+          background-color: #6c757d;
+          border-radius: 4px;
+        }
+
+        .code-content::-webkit-scrollbar-track {
+          background-color: #f9f9f9;
+        }
+        @media (max-width: 768px) {
+            .code-content {
+                text-align: left;
+                display: block;
+                margin-right: 2em;
+                width: 100%;
+            }
 
         /* .code-content pre {
                 margin-right: 6em;
@@ -115,175 +115,157 @@
           align-self: start;
           /* overflow: scroll; */
         }
-      }
-    </style>
+
+        @media screen and (max-width: 600px){
+             .code-snippet{
+                margin-right: 2em;
+                padding-right: 6em;
+
+                display: block;
+               align-self: start;
+                /* overflow: scroll; */
+            }
+        }
+      </style>
+
   </head>
 
   <body>
-    <!-- ==================== Header =================== -->
-    <header id="header" class="sticky-top border-bottom">
-      <div class="container d-flex align-items-center">
-        <div
-          class="container d-flex align-items-center justify-content-center me-auto"
-        >
-          <a href="index.html" class="logo me-3">
-            <img
-              src="/public/images/logo/logo.png"
-              alt="logo"
-              class="img-fluid"
-            />
-          </a>
-          <a href="index.html" class="logo me-auto">
-            <img
-              src="/public/images/logo/typography.png"
-              alt="typography"
-              class="img-fluid"
-            />
-          </a>
-        </div>
+  <!-- ==================== Header =================== -->
+  <header id="header" class="sticky-top border-bottom">
+    <div class="container d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-center me-auto">
+        <a href="index.html" class="logo me-3">
+        <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
+    </a>
+        <a href="index.html" class="logo me-auto">
+        <img
+            src="/public/images/logo/typography.png"
+            alt="typography"
+            class="img-fluid"/>
+        </a>
+    </div>
 
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li>
-              <a class="getstarted scrollto user-btn" href="index.html">
-                <span><i class="fa-solid fa-house fs-6"></i></span>
-              </a>
+    <nav id="navbar" class="navbar">
+        <ul>
+        <li>
+            <a class="getstarted scrollto user-btn" href="index.html">
+            <span><i class="fa-solid fa-house fs-6"></i></span>
+            </a>
+        </li>
+        <!-- About Dropdown -->
+        <li class="dropdown">
+            <a href="#">
+            <span>About</span> <i class="bi bi-chevron-down"></i>
+        </a>
+            <ul>
+            <li class="border-bottom">
+                <a href="about.html">About Us</a>
             </li>
-            <!-- About Dropdown -->
-            <li class="dropdown">
-              <a href="#">
-                <span>About</span> <i class="bi bi-chevron-down"></i>
-              </a>
-              <ul>
-                <li class="border-bottom">
-                  <a href="about.html">About Us</a>
-                </li>
-                <li class="border-bottom">
-                  <a href="contact.html">Contact Us</a>
-                </li>
-                <li><a href="faq.html">FAQ</a></li>
-              </ul>
+            <li class="border-bottom">
+                <a href="contact.html">Contact Us</a>
             </li>
-            <!-- Contributions Dropdown -->
-            <li class="dropdown">
-              <a href="#">
-                <span>Contributions</span>
-                <i class="bi bi-chevron-down"></i>
-              </a>
-              <ul>
-                <li class="border-bottom">
-                  <a href="search-weekly-challenges.html">Challenges</a>
-                </li>
+            <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </li>
+        <!-- Contributions Dropdown -->
+        <li class="dropdown">
+            <a href="#">
+            <span>Contributions</span>
+            <i class="bi bi-chevron-down"></i>
+        </a>
+            <ul>
+            <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
 
-                <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
-                <li class="border-bottom">
-                  <a href="list-outreachy-applicants.html"
-                    >Outreachy Applicants</a
-                  >
-                </li>
-                <li>
-                  <a href="search_contributions.html">Search Contributions</a>
-                </li>
-              </ul>
-            </li>
-            <!-- Team Dropdown -->
-            <li class="dropdown">
-              <a href="#">
-                <span>Team</span>
-                <i class="bi bi-chevron-down"></i>
-              </a>
-              <ul>
-                <li class="border-bottom"><a href="team.html">Regular</a></li>
-                <li class="border-bottom"><a href="guest.html">Guest</a></li>
-                <li><a href="champions.html">Champions</a></li>
-              </ul>
-            </li>
-            <!-- Reviews Dropdown -->
-            <li class="dropdown">
-              <a href="#">
-                <span>Reviews</span>
-                <i class="bi bi-chevron-down"></i>
-              </a>
-              <ul>
-                <li class="border-bottom">
-                  <a href="perl-review.html">Perl</a>
-                </li>
-                <li><a href="raku-review.html">Raku</a></li>
-              </ul>
-            </li>
-            <!-- Charts DropDown -->
-            <li class="dropdown">
-              <a href="#">
-                <span>Leaderboard</span>
-                <i class="bi bi-chevron-down"></i>
-              </a>
-              <ul>
-                <li class="border-bottom">
-                  <a href="team-leader.html">Team Leader</a>
-                </li>
-                <li><a href="guest-leader.html">Guest Leader</a></li>
-              </ul>
-            </li>
-            <!-- Prefernces -->
-            <li class="dropdown">
-              <a href="#"
-                ><span>Preferences</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li class="border-bottom theme1"><a href="#">Default</a></li>
-                <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
-                <li class="theme3"><a href="#">Blue Mode</a></li>
-              </ul>
-            </li>
-            <!-- User Features Dropdown -->
-            <li class="dropdown">
-              <a class="getstarted scrollto user-btn" href="#about">
-                <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
-                <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
-              </a>
-              <ul>
-                <li class="border-bottom">
-                  <a href="sign-in.html">Login/SignUp</a>
-                </li>
-                <li class="border-bottom"><a href="logout.html">Logout</a></li>
-                <li class="border-bottom">
-                  <a href="user_dashboard.html">My Profile</a>
-                </li>
-                <li><a href="#">Settings</a></li>
-              </ul>
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- End Navbar -->
-      </div>
-    </header>
+            <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
+            <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
+            <li ><a href="search_contributions.html">Search Contributions</a></li>
 
-    <!-- End Header -->
+            </ul>
+        </li>
+        <!-- Team Dropdown -->
+        <li class="dropdown">
+            <a href="#">
+            <span>Team</span>
+            <i class="bi bi-chevron-down"></i>
+        </a>
+            <ul>
+            <li class="border-bottom"><a href="team.html">Regular</a></li>
+            <li class="border-bottom"><a href="guest.html">Guest</a></li>
+            <li><a href="champions.html">Champions</a></li>
+            </ul>
+        </li>
+        <!-- Reviews Dropdown -->
+        <li class="dropdown">
+            <a href="#">
+            <span>Reviews</span>
+            <i class="bi bi-chevron-down"></i>
+        </a>
+            <ul>
+            <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
+            <li><a href="raku-review.html">Raku</a></li>
+            </ul>
+        </li>
+        <!-- Charts DropDown -->
+        <li class="dropdown">
+            <a href="#">
+            <span>Leaderboard</span>
+            <i class="bi bi-chevron-down"></i>
+        </a>
+            <ul>
+            <li class="border-bottom"><a href="chart.html">Charts</a></li>
+            <li class="border-bottom"><a href="#">Team Leader</a></li>
+            <li><a href="#">Guest Leader</a></li>
+            </ul>
+        </li>
+        <!-- Prefernces -->
+        <li class="dropdown">
+            <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+            <li class="border-bottom theme1"><a href="#">Default</a></li>
+            <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
+            <li class="theme3"><a href="#">Blue Mode</a></li>
+            </ul>
+        </li>
+        <!-- User Features Dropdown -->
+        <li class="dropdown">
+            <a class="getstarted scrollto user-btn" href="#about">
+            <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
+            <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
+            </a>
+            <ul>
+            <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
+            <li class="border-bottom"><a href="logout.html">Logout</a></li>
+            <li class="border-bottom"><a href="user-dashboard.html">My Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            </ul>
+        </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <!-- End Navbar -->
+    </div>
+</header>
 
+<!-- End Header -->
     <!-- ========== Recent Activity Cards ============ -->
     <div class="main-section">
-      <!-- ========== Breadcrumb Navigation ========== -->
-      <div class="container mt-5">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="search_contributions.html">Search Contributions</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              View Code Contribution
-            </li>
-          </ol>
-        </nav>
-      </div>
+
+        <!-- ========== Breadcrumb Navigation ========== -->
+        <div class="container mt-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="search_contributions.html">Search Contributions</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Code Contribution</li>
+                </ol>
+            </nav>
+        </div>
 
       <!-- ========== Code Contributions Section ========== -->
       <section id="code-contributions" class="section mt-5 mb-5">
         <div class="container">
-          <h3 class="mb-5">
-            Member Name - Dancer2 - Week3 - View Contributions Page
-          </h3>
-          <div class="row">
+            <h3 class="mb-5">Member Name - Dancer2 - Week3 - View Contributions Page </h3>
+            <div class="row">
             <div class="col-lg-6 mb-4">
               <!-- Code Snippet -->
               <div class="code-snippet p-4 rounded shadow">
@@ -378,7 +360,8 @@
             </div>
           </div>
         </div>
-      </section>
+        </section>
+
     </div>
     <!-- End #main -->
 
@@ -522,20 +505,18 @@
       function copyCode() {
         var codeElement = document.querySelector(".code-content");
         var codeText = codeElement.textContent;
-        navigator.clipboard.writeText(codeText).then(
-          function () {
-            alert("Code copied to clipboard!");
-          },
-          function (err) {
-            console.error("Failed to copy code: ", err);
-          }
-        );
-      }
+        navigator.clipboard.writeText(codeText).then(function() {
+            alert('Code copied to clipboard!');
+        }, function(err) {
+            console.error('Failed to copy code: ', err);
+        });
+        }
 
-      // Initialize syntax highlighting
-      document.addEventListener("DOMContentLoaded", (event) => {
-        document.querySelectorAll("pre code").forEach((block) => {
-          hljs.highlightBlock(block);
+        // Initialize syntax highlighting
+        document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
         });
       });
     </script>
