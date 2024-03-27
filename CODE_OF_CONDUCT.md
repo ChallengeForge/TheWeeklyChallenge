@@ -5,9 +5,11 @@ This TheWeeklyChallenge is a fun and welcoming space for developers of all skill
 _To ensure a positive and respectful environment, we have established this Code of Conduct that applies to all project participants, including maintainers, contributors, and users. By participating in this project, you agree to abide by this Code of Conduct._
 
 ## Our Pledge
+
 In the TheWeeklyChallenge community, we are committed to providing a harassment-free experience for everyone, regardless of age, race, ethnicity, nationality, gender identity, sexual orientation, religion, disability, or any other protected characteristic. We pledge to foster an inclusive and supportive environment where all individuals are treated with respect and dignity.
 
 ## Expected Behavior
+
 To contribute to the TheWeeklyChallenge project, we expect all participants to:
 
 - Be respectful and considerate of others' opinions, ideas, and experiences.
@@ -17,8 +19,8 @@ To contribute to the TheWeeklyChallenge project, we expect all participants to:
 - Be accountable for your actions and words, taking responsibility for their impact on the community.
 - Respect the boundaries and personal space of others.
 
-
 ## Unacceptable Behavior
+
 The following behaviors are considered unacceptable within the TheWeeklyChallenge community:
 
 - Harassment, discrimination, or any form of offensive conduct based on protected characteristics.
@@ -28,6 +30,6 @@ The following behaviors are considered unacceptable within the TheWeeklyChalleng
 - Publishing or sharing others' private information without consent.
 - Engaging in any behavior that violates applicable laws or regulations.
 
-
 ## Reporting and Enforcement
+
 If you witness or experience any violation of this Code of Conduct, please report it to the project maintainers. All reports will be treated confidentially, and the maintainers will review and investigate the reported incidents. In cases where a violation is confirmed, appropriate and fair actions will be taken, which may include warnings, temporary or permanent bans from project-related activities, or other actions deemed necessary.
