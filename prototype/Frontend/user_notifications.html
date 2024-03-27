@@ -10,7 +10,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../../public/css/user-dashboard.css">
-    <link rel="stylesheet" href="../../public/css/index.css">
+    <link rel="stylesheet" href="../../public/css/index.css"> 
 
     
     <!-- Font Awesome CDN -->
@@ -52,6 +52,44 @@
       type="text/javascript"
       src="https://www.gstatic.com/charts/loader.js"
     ></script>
+
+    <style>
+        .btn-primary{
+            .btn-primary {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 0.25rem; /* Default border radius */
+            padding: 0.375rem 0.75rem; /* Default padding */
+            font-size: 1rem; /* Default font size */
+            line-height: 1.5; /* Default line height */
+            text-align: center; /* Default text alignment */
+            vertical-align: middle; /* Aligns the text vertically */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+            user-select: none; /* Prevents user selection of text */
+            border: 1px solid transparent; /* Default border */
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Default transition effects */
+            text-decoration: none; /* Removes underline by default */
+            display: inline-block; /* Sets the button to be an inline block */
+            font-weight: 400; /* Default font weight */
+            }
+
+        }
+
+        .view-btn{
+            background-color: #007bff;
+            color: white;
+            width: 2rem;
+            border-radius: 5px;
+            padding: px ;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+        }
+      
+    </style>
+    
+  
 </head>
 
 <body>
@@ -108,107 +146,123 @@
         <!-- Main content -->
         <div class="main">
 
+      <!-- ==================== Header =================== -->
+      <header id="header" class="sticky-top border-bottom">
+        <div class="container d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-center me-auto">
+            <a href="index.html" class="logo me-3">
+            <img src="../../public/images/logo/logo.png" alt="logo" class="img-fluid"/>
+        </a>
+            <a href="index.html" class="logo me-auto">
+            <img
+                src="../../public/images/logo/typography.png"
+                alt="typography"
+                class="img-fluid"/>
+            </a>
+        </div>
 
-            <!-- ==================== Header =================== -->
-            <header id="header" class="sticky-top border-bottom">
-                <div class="container d-flex align-items-center">
-                <div class="container d-flex align-items-center justify-content-center me-auto">
-                    <a href="index.html" class="logo me-3">
-                    <img src="../../public/images/logo/logo.png" alt="logo" width="70" height="" class="img-fluid"/>
-
+        <nav id="navbar" class="navbar">
+            <ul>
+            <li>
+                <a class="getstarted scrollto user-btn" href="index.html">
+                <span><i class="fa-solid fa-house fs-6"></i></span>
                 </a>
-                    <a href="index.html" class="logo me-auto">
-                    <img
-                        src="../../public/images/logo/typography.png"
-                        alt="typography"
-                        class="img-fluid"/>
-                    </a>
-                </div>
-        
-                <nav id="navbar" class="navbar">
-                    <ul>
-                    <li>
-                        <a class="nav-link scrollto active" href="index.html">Home</a>
-                    </li>
-                    <!-- About Dropdown -->
-                    <li class="dropdown">
-                        <a href="#">
-                        <span>About</span> <i class="bi bi-chevron-down"></i>
-                    </a>
-                        <ul>
-                        <li class="border-bottom">
-                            <a href="about.html">About Us</a>
-                        </li>
-                        <li class="border-bottom">
-                            <a href="contact.html">Contact Us</a>
-                        </li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <!-- Contributions Dropdown -->
-                    <li class="dropdown">
-                        <a href="#">
-                        <span>Contributions</span> 
-                        <i class="bi bi-chevron-down"></i>
-                    </a>
-                        <ul>
-                        <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
-                        <li ><a href="blogs.html">Blogs</a></li>
-                        <li ><a href="list-autreachy-applicants.html">Autreachy Applicants</a></li>
-                        </ul>
-                    </li>
-                    <!-- Team Dropdown -->
-                    <li class="dropdown">
-                        <a href="#">
-                        <span>Team</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </a>
-                        <ul>
-                        <li class="border-bottom"><a href="team.html">Regular</a></li>
-                        <li class="border-bottom"><a href="guest.html">Guest</a></li>
-                        <li><a href="champions.html">Champions</a></li>
-                        </ul>
-                    </li>
-                    <!-- Reviews Dropdown -->
-                    <li class="dropdown">
-                        <a href="#">
-                        <span>Reviews</span> 
-                        <i class="bi bi-chevron-down"></i>
-                    </a>
-                        <ul>
-                        <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
-                        <li><a href="raku.html">Raku</a></li>
-                        </ul>
-                    </li>
-                    <!-- Charts DropDown -->
-                    <li class="dropdown">
-                        <a href="#">
-                        <span>Leaderboard</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </a>
-                        <ul>
-                        <li class="border-bottom"><a href="chart.html">Charts</a></li>
-                        <li class="border-bottom"><a href="#">Team Leader</a></li>
-                        <li><a href="#">Guest Leader</a></li>
-                        </ul>
-                    </li>
-                    <!-- Prefernces -->
-                    <li class="dropdown">
-                        <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                        <li class="border-bottom theme1"><a href="#">Default</a></li>
-                        <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
-                        <li class="theme3"><a href="#">Blue Mode</a></li>
-                        </ul>
-                    </li>
-                    </ul>
-                    <i class="bi bi-list mobile-nav-toggle"></i>
-                </nav>
-                <!-- End Navbar -->
-                </div>
-            </header>
-                
-            <!-- End Header -->
+            </li>
+            <!-- About Dropdown -->
+            <li class="dropdown">
+                <a href="#">
+                <span>About</span> <i class="bi bi-chevron-down"></i>
+            </a>
+                <ul>
+                <li class="border-bottom">
+                    <a href="about.html">About Us</a>
+                </li>
+                <li class="border-bottom">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </li>
+            <!-- Contributions Dropdown -->
+            <li class="dropdown">
+                <a href="#">
+                <span>Contributions</span> 
+                <i class="bi bi-chevron-down"></i>
+            </a>
+                <ul>
+                <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
+
+                <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
+                <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
+                <li ><a href="search_contributions.html">Search Contributions</a></li>
+    
+                </ul>
+            </li>
+            <!-- Team Dropdown -->
+            <li class="dropdown">
+                <a href="#">
+                <span>Team</span>
+                <i class="bi bi-chevron-down"></i>
+            </a>
+                <ul>
+                <li class="border-bottom"><a href="team.html">Regular</a></li>
+                <li class="border-bottom"><a href="guest.html">Guest</a></li>
+                <li><a href="champions.html">Champions</a></li>
+                </ul>
+            </li>
+            <!-- Reviews Dropdown -->
+            <li class="dropdown">
+                <a href="#">
+                <span>Reviews</span> 
+                <i class="bi bi-chevron-down"></i>
+            </a>
+                <ul>
+                <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
+                <li><a href="raku-review.html">Raku</a></li>
+                </ul>
+            </li>
+            <!-- Charts DropDown -->
+            <li class="dropdown">
+                <a href="#">
+                <span>Leaderboard</span>
+                <i class="bi bi-chevron-down"></i>
+            </a>
+                <ul>
+                <li class="border-bottom"><a href="chart.html">Charts</a></li>
+                <li class="border-bottom"><a href="#">Team Leader</a></li>
+                <li><a href="#">Guest Leader</a></li>
+                </ul>
+            </li>
+            <!-- Prefernces -->
+            <li class="dropdown">
+                <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                <li class="border-bottom theme1"><a href="#">Default</a></li>
+                <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
+                <li class="theme3"><a href="#">Blue Mode</a></li>
+                </ul>
+            </li>
+            <!-- User Features Dropdown -->
+            <li class="dropdown">
+                <a class="getstarted scrollto user-btn" href="#about">
+                <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
+                <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
+                </a>
+                <ul>
+                <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
+                <li class="border-bottom"><a href="logout.html">Logout</a></li>
+                <li class="border-bottom"><a href="user-dashboard.html">My Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                </ul>
+            </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- End Navbar -->
+        </div>
+    </header>
+
+        <!-- End Header -->
 
             <!-- Main content area -->
             <main class="content px-3 py-4">
@@ -266,7 +320,7 @@
                                         </div><hr> <!--End notification content-->
 
                                         <div class="text-center ">
-                                            <button class="btn btn-more rounded-5 btn-primary btn-shadow">View More <i class="fa-solid fa-caret-right"></i></button>
+                                            <button class="btn btn-more rounded-5 view-btn btn-primary btn-shadow">View More <i class="fa-solid fa-caret-right"></i></button>
                                         </div>
                                     </div> <!--End Div card Body-->
                                 </div><!--End Card-->
@@ -378,7 +432,6 @@
             </footer>
             <!-- End Footer -->
             
-
         </div>
     </div> <!--End Body Wrapper-->
     <!-- Bootstrap Bundle with Popper -->

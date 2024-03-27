@@ -12,13 +12,10 @@
     <!--User Dashbaord Styles -->    
     <link rel="stylesheet" href="../../public/css/user-dashboard.css">
     <!--Homepage style-->
-    <link rel="stylesheet" href="../../public/css/index.css">
-.
-    
+    <link rel="stylesheet" href="../../public/css/index.css"> 
     <!-- Favicons -->
     <link href="../../public/images/logo/logo.png" rel="icon" />
-
-    
+   
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
@@ -52,9 +49,29 @@
     />
     <link href="../../public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
 
-  </head>
+    <style>
+       .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 0.25rem; /* Default border radius */
+    padding: 0.375rem 0.75rem; /* Default padding */
+    font-size: 1rem; /* Default font size */
+    line-height: 1.5; /* Default line height */
+    text-align: center; /* Default text alignment */
+    vertical-align: middle; /* Aligns the text vertically */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    user-select: none; /* Prevents user selection of text */
+    border: 1px solid transparent; /* Default border */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Default transition effects */
+    text-decoration: none; /* Removes underline by default */
+    display: inline-block; /* Sets the button to be an inline block */
+    font-weight: 400; /* Default font weight */
+}
 
-
+    </style>
+    
+  
     <!-- charts -->
     <script
       type="text/javascript"
@@ -122,7 +139,7 @@
                 <div class="container d-flex align-items-center">
                 <div class="container d-flex align-items-center justify-content-center me-auto">
                     <a href="index.html" class="logo me-3">
-                    <img src="../../public/images/logo/logo.png" alt="logo" width="70" height="" class="img-fluid"/>
+                    <img src="../../public/images/logo/logo.png" alt="logo" class="img-fluid"/>
                 </a>
                     <a href="index.html" class="logo me-auto">
                     <img
@@ -135,7 +152,9 @@
                 <nav id="navbar" class="navbar">
                     <ul>
                     <li>
-                        <a class="nav-link scrollto active" href="index.html">Home</a>
+                        <a class="getstarted scrollto user-btn" href="index.html">
+                        <span><i class="fa-solid fa-house fs-6"></i></span>
+                        </a>
                     </li>
                     <!-- About Dropdown -->
                     <li class="dropdown">
@@ -160,8 +179,11 @@
                     </a>
                         <ul>
                         <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
-                        <li ><a href="blogs.html">Blogs</a></li>
-                        <li ><a href="list-autreachy-applicants.html">Autreachy Applicants</a></li>
+        
+                        <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
+                        <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
+                        <li ><a href="search_contributions.html">Search Contributions</a></li>
+            
                         </ul>
                     </li>
                     <!-- Team Dropdown -->
@@ -184,7 +206,7 @@
                     </a>
                         <ul>
                         <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
-                        <li><a href="raku.html">Raku</a></li>
+                        <li><a href="raku-review.html">Raku</a></li>
                         </ul>
                     </li>
                     <!-- Charts DropDown -->
@@ -208,15 +230,26 @@
                         <li class="theme3"><a href="#">Blue Mode</a></li>
                         </ul>
                     </li>
+                    <!-- User Features Dropdown -->
+                    <li class="dropdown">
+                        <a class="getstarted scrollto user-btn" href="#about">
+                        <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
+                        <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
+                        </a>
+                        <ul>
+                        <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
+                        <li class="border-bottom"><a href="logout.html">Logout</a></li>
+                        <li class="border-bottom"><a href="user-dashboard.html">My Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        </ul>
+                    </li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav>
                 <!-- End Navbar -->
                 </div>
             </header>
-                  
-            <!-- End Header -->
-  
+        
             <!-- Main content area -->
             <main class="content px-3 py-4">
                 <div class="container-fluid">
@@ -252,7 +285,7 @@
                         <div class="row mb-5">
                             <div class="col-12 col-md-3 mb-4 ">
                                 <div class="card border-0 analytics-card">
-                                    <div class="card-body py-4 text-center">
+                                    <div class="card-body py-2 text-center">
                                         <p class="mb-2 fw-bold">
                                             <i class="fa-solid fa-message "></i>
                                         </p>
@@ -269,8 +302,8 @@
                             </div>
                             <div class="col-12 col-md-3 mb-3">
                                 <div class="card border-0 analytics-card">
-                                    <div class="card-body py-4 text-center">
-                                        <p class="mb-2 fw-bold">
+                                    <div class="card-body py-2 text-center">
+                                        <p class="mb-2 ">
                                             <i class="fa-solid fa-reply"></i>
                                         </p>
                                         <h5 class="mb-2 fw-bold">
@@ -286,8 +319,8 @@
                             </div>
                             <div class="col-12 col-md-3 mb-3">
                                 <div class="card border-0 analytics-card">
-                                    <div class="card-body py-4 text-center">
-                                        <p class="mb-2 fw-bold">
+                                    <div class="card-body py-2 text-center">
+                                        <p class="mb-2 f">
                                             <i class="fas fa-bell"></i>
                                         </p>
                                         <h5 class="mb-2 fw-bold">
@@ -303,7 +336,7 @@
                             </div>
                             <div class="col-12 col-md-3 mb-3">
                                 <div class="card border-0 analytics-card">
-                                    <div class="card-body py-4 text-center">
+                                    <div class="card-body py-2 text-center">
                                         <p class="mb-2 fw-bold">
                                             <i class="fa-solid fa-business-time"></i>
                                         </p>
@@ -320,7 +353,7 @@
                             </div>
                             <div class="col-12 col-md-3 mb-3">
                                 <div class="card border-0 analytics-card">
-                                    <div class="card-body py-4 text-center">
+                                    <div class="card-body py-2 text-center">
                                         <p class="mb-2 fw-bold">
                                             <i class="fa-solid fa-trophy"></i>
                                         </p>
