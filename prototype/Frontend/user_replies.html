@@ -1,198 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> The Weekly Challenge user Dashboard </title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="../../public/css/user_dashboard.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Weekly Challenge user Dashboard</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../public/css/user_dashboard.css" />
 
     <!-- charts -->
     <script
       type="text/javascript"
       src="https://www.gstatic.com/charts/loader.js"
     ></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-         <!-- Sidebar -->
-         <aside id="sidebar">
-            <div class="d-flex">
-                <button class="toggle-btn" type="button">
-                    <i class="fas fa-th"></i>
-                </button>
-                <div class="sidebar-logo">
-                    <a href="#">You don't have to be an expert</a>
-                </div>
-            </div>
-            <ul class="sidebar-nav">
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="fas fa-user"></i>
-                        <span>Profile</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="user_view_comment.html" class="sidebar-link">
-                        <i class="fas fa-comment"></i>
-                        <span>Comments</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="user_replies.html" class="sidebar-link">
-                        <i class="fas fa-clipboard-list"></i>
-                        <span>Replies</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="user_notifications.html" class="sidebar-link">
-                        <i class="fas fa-bell"></i>
-                        <span>Notification</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="fas fa-cog"></i>
-                        <span>Setting</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="sidebar-footer">
-                <a href="#" class="sidebar-link">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <span>Logout</span>
-                </a>
-            </div>
-        </aside><!-- End Sidebar -->
-
-        <!-- Main content -->
-        <div class="main">
-            
-            <header>
-                <a href="#">
-                  <img src="../assets/misc/theweeklychallenge-logo 1.svg" alt="" />
-                </a>
-                <a href="index.html" class="head-link"> The Weekly Challenge </a>
-                <div class="search">
-                  <input type="text" id="search" placeholder="search here" />
-                  <label for="search"> <i class="fas fa-search"></i></label>
-                </div>
-                <div class="user">
-                  <img src="../assets/misc/person.jpg" alt="" class="user-pic" />
-                  <div class="sub-menu-wrap">
-                    <div class="sub-menu">
-                      <a href="#" class="sub-menu-link"
-                        ><i class="fa-regular fa-user"></i>NAME</a
-                      >
-                      <a href="#" class="sub-menu-link"
-                        ><i class="fa-regular fa-bell"></i>NOTIFICATIONS</a
-                      >
-                      <a href="#" class="sub-menu-link"
-                        ><i class="fa-regular fa-gears"></i>SETTINGS</a
-                      >
-                    </div>
-                  </div>
-                </div>
-            </header>
-
-            <!-- Main content area -->
-            <main class="content px-3 py-4">
-                <div class="container-fluid">
-                    
-                    <div class="mb-4">
-                        <h3 class="fw-bold fs-4 mb-3 mt-5">User Dashboard</h3>
-                                              
-                        <!-- Beginning of Comments table -->
-                        
-                        <div class="row justify-content-center mt-5">       
-                            
-                            <div class="col-1"></div> <!--Empty div for spacing-->
-                            
-                            <div class=" col-sm-12 col-md-10 col-lg-10   mt-4">
-                                <div class="card">
-                                    <div class="card-body"> 
-                                      
-                                        <div class="container ">
-                                            <h1 class="mb-4">Comments and replies</h1>
-                                          
-                                            <div class="comments">
-                                              <!-- Root Comment -->
-                                              <div class="comment">
-                                                <div class="comment-header">
-                                                    <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
-                                                  <h5>User 1</h5>
-                                                </div>
-                                                <div class="comment-body">
-                                                  <p>This is the root comment. Reply to this!</p>
-                                                  <button class="btn btn-sm btn-primary reply-btn">Reply</button>
-                                                </div>
-                                                <!-- Nested Replies -->
-                                                <div class="replies ms-5">
-                                                  <div class="comment">
-                                                    <div class="comment-header">
-                                                        <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
-                                                      <h5>User 2</h5>
-                                                    </div>
-                                                    <div class="comment-body">
-                                                      <p>This is a nested reply.</p>
-                                                      <button class="btn btn-sm btn-primary reply-btn">Reply</button>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          
-                                            <!-- Comment Form -->
-                                            <div class="comment-form mt-5">
-                                              <h3>Add a Comment</h3>
-                                              <form id="commentForm">
-                                                <div class="mb-3">
-                                                  <label for="comment-text" class="form-label">Comment</label>
-                                                  <textarea class="form-control" id="comment-text" rows="3" required></textarea>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                              </form>
-                                            </div>
-                                          </div>
-                                        <div class="text-center "> 
-                                            <button class="btn btn-more rounded-5 btn-primary btn-shadow">View More <i class="fa-solid fa-caret-right"></i></button>
-                                        </div>
-                                    </div><!--End card body-->
-                                </div><!--End Card-->
-                                
-
-                                
-                            </div><!--col-sm-12 -->
-
-                            <div class="col-2"></div> <!--Empty div for spacing-->
-                                    
-                        </div> <!--End Row-->
-                    </div><!--End mb-3-->
-                </div>
-            </main>
-
-        
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="d-flex">
+          <button class="toggle-btn" type="button">
+            <i class="fas fa-th"></i>
+          </button>
+          <div class="sidebar-logo">
+            <a href="#">You don't have to be an expert</a>
+          </div>
         </div>
-    </div> <!--End Body Wrapper-->
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fas fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="user_view_comment.html" class="sidebar-link">
+              <i class="fas fa-comment"></i>
+              <span>Comments</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="user_replies.html" class="sidebar-link">
+              <i class="fas fa-clipboard-list"></i>
+              <span>Replies</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="user_notifications.html" class="sidebar-link">
+              <i class="fas fa-bell"></i>
+              <span>Notification</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fas fa-cog"></i>
+              <span>Setting</span>
+            </a>
+          </li>
+        </ul>
+        <div class="sidebar-footer">
+          <a href="#" class="sidebar-link">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+          </a>
+        </div>
+      </aside>
+      <!-- End Sidebar -->
 
-        <!-- Jquery-->
+      <!-- Main content -->
+      <div class="main">
+        <header>
+          <a href="#">
+            <img src="../assets/misc/theweeklychallenge-logo 1.svg" alt="" />
+          </a>
+          <a href="index.html" class="head-link"> The Weekly Challenge </a>
+          <div class="search">
+            <input type="text" id="search" placeholder="search here" />
+            <label for="search"> <i class="fas fa-search"></i></label>
+          </div>
+          <div class="user">
+            <img src="../assets/misc/person.jpg" alt="" class="user-pic" />
+            <div class="sub-menu-wrap">
+              <div class="sub-menu">
+                <a href="#" class="sub-menu-link"
+                  ><i class="fa-regular fa-user"></i>NAME</a
+                >
+                <a href="#" class="sub-menu-link"
+                  ><i class="fa-regular fa-bell"></i>NOTIFICATIONS</a
+                >
+                <a href="#" class="sub-menu-link"
+                  ><i class="fa-regular fa-gears"></i>SETTINGS</a
+                >
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main content area -->
+        <main class="content px-3 py-4">
+          <div class="container-fluid">
+            <div class="mb-4">
+              <h3 class="fw-bold fs-4 mb-3 mt-5">User Dashboard</h3>
+
+              <!-- Beginning of Comments table -->
+
+              <div class="row justify-content-center mt-5">
+                <div class="col-1"></div>
+                <!--Empty div for spacing-->
+
+                <div class="col-sm-12 col-md-10 col-lg-10 mt-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="container">
+                        <h1 class="mb-4">Comments and replies</h1>
+
+                        <div class="comments">
+                          <!-- Root Comment -->
+                          <div class="comment">
+                            <div class="comment-header">
+                              <img
+                                src="../assets/misc/account.png"
+                                class="avatar img-fluid"
+                                alt=""
+                              />
+                              <h5>User 1</h5>
+                            </div>
+                            <div class="comment-body">
+                              <p>This is the root comment. Reply to this!</p>
+                              <button class="btn btn-sm btn-primary reply-btn">
+                                Reply
+                              </button>
+                            </div>
+                            <!-- Nested Replies -->
+                            <div class="replies ms-5">
+                              <div class="comment">
+                                <div class="comment-header">
+                                  <img
+                                    src="../assets/misc/account.png"
+                                    class="avatar img-fluid"
+                                    alt=""
+                                  />
+                                  <h5>User 2</h5>
+                                </div>
+                                <div class="comment-body">
+                                  <p>This is a nested reply.</p>
+                                  <button
+                                    class="btn btn-sm btn-primary reply-btn"
+                                  >
+                                    Reply
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Comment Form -->
+                        <div class="comment-form mt-5">
+                          <h3>Add a Comment</h3>
+                          <form id="commentForm">
+                            <div class="mb-3">
+                              <label for="comment-text" class="form-label"
+                                >Comment</label
+                              >
+                              <textarea
+                                class="form-control"
+                                id="comment-text"
+                                rows="3"
+                                required
+                              ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                              Submit
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button
+                          class="btn btn-more rounded-5 btn-primary btn-shadow"
+                        >
+                          View More <i class="fa-solid fa-caret-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <!--End card body-->
+                  </div>
+                  <!--End Card-->
+                </div>
+                <!--col-sm-12 -->
+
+                <div class="col-2"></div>
+                <!--Empty div for spacing-->
+              </div>
+              <!--End Row-->
+            </div>
+            <!--End mb-3-->
+          </div>
+        </main>
+      </div>
+    </div>
+    <!--End Body Wrapper-->
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Your custom script -->
     <script src="../../public/javascripts/user_dashboard.js"></script>
     <script src="../../public/javascripts/comment_reply.js"></script>
-    
+
     <script src="../../public/javascripts/charts/user_dashboardchart1.js"></script>
     <script src="../../public/javascripts/charts/user_dashboardchart2.js"></script>
-</body>
-
+  </body>
 </html>
