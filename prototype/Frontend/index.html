@@ -4,12 +4,50 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>The Weekly Challenge - Perl & Raku</title>
+    <!--
+      -----SEO META TAGS-----
+    -->
+
     <meta
-      content="The Weekly Challenge that includes Perl and Raku programming."
       name="description"
+      content="TheWeeklyChallenge: Unleash your coding potential with our engaging weekly challenges! Sharpen your skills, build projects, and join a thriving developer community."
     />
-    <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
+    <meta
+      name="keywords"
+      content="weekly coding challenges, programming practice, Perl and Raku, Dancer2 framework, online coding competitions"
+    />
+    <meta name="author" content="TheWeeklyChallenge.org Team" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      property="og:title"
+      content="You don't need to be an expert, Come and hone Your Coding Skills Every Week"
+    />
+    <meta
+      property="og:description"
+      content="Take your coding skills to the next level with TheWeeklyChallenge. Participate in engaging weekly challenges, learn from peers, and build a strong developer portfolio."
+    />
+    <meta property="og:image" content="/public/images/logo/perl-raku-logo.png" />
+    <meta property="og:url" content="https://theweeklychallenge.org" />
+    <meta name="twitter:card" content="/public/images/logo/logo.png" />
+    <meta name="twitter:site" content="@TheWeeklyChallenge" />
+    <meta name="twitter:creator" content="@TheWeeklyChallenge" />
+    <meta
+      name="twitter:title"
+      content="Weekly Coding Challenges to Sharpen Your Skills"
+    />
+    <meta
+      name="twitter:description"
+      content="Join TheWeeklyChallenge and push your coding limits with fun, weekly challenges. Build your developer network and showcase your talents!"
+    />
+    <meta name="twitter:image" content="/public/images/logo/logo.png" />
+
+
+    <!--
+      ----SEO META TAGS----
+    -->
+
+    <title>The Weekly Challenge - Perl & Raku</title>
 
     <!-- Favicons -->
     <link href="../../public/images/logo/logo.png" rel="icon" />
@@ -362,14 +400,12 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6 col-12 footer-contact">
-              <img src="/public/images/logo/logo.png" class="footer-logo" />
-              <img
-                src="/public/images/logo/typography.png"
-                class="footer-typo"
-              />
-              <div class="email my-5">
-                <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
-              </div>
+              <img src="/public/images/logo/logo.png" class="footer-logo" alt="footer logo">
+              <img src="/public/images/logo/typography.png" class="footer-typo" alt="TheWeeklyChallenge">
+                <div class="email my-5">
+                  <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
+                </div>
+              </p>
             </div>
 
             <div class="col-lg-4 col-md-6 footer-links">
@@ -480,5 +516,50 @@
         path: lottiePath,
       });
     </script>
+
+    <!-- JSON-LD TO OPTIMIZE SEO-->
+    <script type="application/ld+json">
+      {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "TheWeeklyChallenge",
+  "description": "A platform offering engaging weekly coding challenges to help developers of all skill levels hone their programming expertise, build a strong portfolio, and connect with a thriving developer community.",
+  "url": "https://TheWeeklyChallenge.org",
+  "maintainer": {
+    "@type": "Organization",
+    "name": "TheWeeklyChallenge.org Team"
+  },
+  "keywords": [
+    "weekly coding challenges",
+    "programming practice",
+    "skill development",
+    "developer community",
+    "Dancer2 backend",
+    "Perl and Raku",
+    "coding competitions"
+  ],
+  "sameAs": [
+    "https://www.facebook.com/TheWeeklyChallenge.org",  "https://twitter.com/TheWeeklyChallenge" ],
+  "educationalProgram": [
+    {
+      "@type": "Course",
+      "name": "Weekly Coding Challenges",
+      "description": "A series of self-paced weekly coding challenges designed to improve problem-solving skills, explore new technologies, and build practical programming experience.",
+      "hasPrerequisite": [
+        {
+          "@type": "Skill",
+          "name": "Basic programming concepts"
+        }
+      ]
+    }
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer service",
+    "email": "support@TheWeeklyChallenge.org",
+    "url": "https://TheWeeklyChallenge.org/contact"  }
+}
+    </script>
+    <!--JSON-LD TO OPTIMIZE SEO-->
   </body>
 </html>
