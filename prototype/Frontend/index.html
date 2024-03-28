@@ -50,7 +50,7 @@
     <title>The Weekly Challenge - Perl & Raku</title>
 
     <!-- Favicons -->
-    <link href="/public/images/logo/logo.png" rel="icon" />
+    <link href="../../public/images/logo/logo.png" rel="icon" />
 
     <!-- Google Fonts -->
     <link
@@ -68,17 +68,17 @@
     />
 
     <!-- Vendor CSS Files -->
-    <link href="/public/css/helpercss/aos.css" rel="stylesheet" />
+    <link href="../../public/css/helpercss/aos.css" rel="stylesheet" />
     <link
-      href="/public/css/helpercss/bootstrap_css/bootstrap.min.css"
+      href="../../public/css/helpercss/bootstrap_css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css"
+      href="../../public/css/helpercss/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
     <link
-      href="/public/css/helpercss/boxicons/css/boxicons.min.css"
+      href="../../public/css/helpercss/boxicons/css/boxicons.min.css"
       rel="stylesheet"
     />
     <link
@@ -92,31 +92,34 @@
     <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
-    <link href="/public/css/index.css" rel="stylesheet" />
-    <link href="/prototype/Frontend/css/team.css" rel="stylesheet" />
+    <link href="../../public/css/index.css" rel="stylesheet" />
+    <link href="../../prototype/Frontend/css/team.css" rel="stylesheet" />
   </head>
 
   <body>
-    
+
     <!-- ==================== Header =================== -->
     <header id="header" class="sticky-top border-bottom">
       <div class="container d-flex align-items-center">
-        <div class="container d-flex align-items-center justify-content-center me-auto">
+        <div
+          class="container d-flex align-items-center justify-content-center me-auto"
+        >
           <a href="index.html" class="logo me-3">
-            <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
+            <img src="../../public/images/logo/logo.png" alt="logo" class="img-fluid"/>
         </a>
           <a href="index.html" class="logo me-auto">
             <img
-              src="/public/images/logo/typography.png"
+              src="../../public/images/logo/typography.png"
               alt="typography"
-              class="img-fluid"/>
-            </a>
+              class="img-fluid"
+            />
+          </a>
         </div>
 
         <nav id="navbar" class="navbar">
           <ul>
             <li>
-                <a class="getstarted scrollto user-btn" href="index.html">
+              <a class="getstarted scrollto user-btn" href="index.html">
                 <span><i class="fa-solid fa-house fs-6"></i></span>
               </a>
             </li>
@@ -124,7 +127,7 @@
             <li class="dropdown">
               <a href="#">
                 <span>About</span> <i class="bi bi-chevron-down"></i>
-            </a>
+              </a>
               <ul>
                 <li class="border-bottom">
                   <a href="about.html">About Us</a>
@@ -138,16 +141,23 @@
             <!-- Contributions Dropdown -->
             <li class="dropdown">
               <a href="#">
-                <span>Contributions</span> 
+                <span>Contributions</span>
                 <i class="bi bi-chevron-down"></i>
-            </a>
+              </a>
               <ul>
-                <li class="border-bottom"><a href="search-weekly-challenges.html">Challenges</a></li>
+                <li class="border-bottom">
+                  <a href="search-weekly-challenges.html">Challenges</a>
+                </li>
 
                 <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
-                <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
-                <li ><a href="search_contributions.html">Search Contributions</a></li>
-   
+                <li class="border-bottom">
+                  <a href="list-outreachy-applicants.html"
+                    >Outreachy Applicants</a
+                  >
+                </li>
+                <li>
+                  <a href="search_contributions.html">Search Contributions</a>
+                </li>
               </ul>
             </li>
             <!-- Team Dropdown -->
@@ -155,7 +165,7 @@
               <a href="#">
                 <span>Team</span>
                 <i class="bi bi-chevron-down"></i>
-            </a>
+              </a>
               <ul>
                 <li class="border-bottom"><a href="team.html">Regular</a></li>
                 <li class="border-bottom"><a href="guest.html">Guest</a></li>
@@ -165,11 +175,13 @@
             <!-- Reviews Dropdown -->
             <li class="dropdown">
               <a href="#">
-                <span>Reviews</span> 
+                <span>Reviews</span>
                 <i class="bi bi-chevron-down"></i>
-            </a>
+              </a>
               <ul>
-                <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
+                <li class="border-bottom">
+                  <a href="perl-review.html">Perl</a>
+                </li>
                 <li><a href="raku-review.html">Raku</a></li>
               </ul>
             </li>
@@ -178,15 +190,19 @@
               <a href="#">
                 <span>Leaderboard</span>
                 <i class="bi bi-chevron-down"></i>
-            </a>
+              </a>
               <ul>
-                <li class="border-bottom"><a href="team-leader.html">Team Leader</a></li>
+                <li class="border-bottom">
+                  <a href="team-leader.html">Team Leader</a>
+                </li>
                 <li><a href="guest-leader.html">Guest Leader</a></li>
               </ul>
             </li>
             <!-- Prefernces -->
             <li class="dropdown">
-              <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
+              <a href="#"
+                ><span>Preferences</span> <i class="bi bi-chevron-down"></i
+              ></a>
               <ul>
                 <li class="border-bottom theme1"><a href="#">Default</a></li>
                 <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
@@ -200,9 +216,13 @@
                 <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
               </a>
               <ul>
-                <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
+                <li class="border-bottom">
+                  <a href="sign-in.html">Login/SignUp</a>
+                </li>
                 <li class="border-bottom"><a href="logout.html">Logout</a></li>
-                <li class="border-bottom"><a href="user_dashboard.html">My Profile</a></li>
+                <li class="border-bottom">
+                  <a href="user_dashboard.html">My Profile</a>
+                </li>
                 <li><a href="#">Settings</a></li>
               </ul>
             </li>
@@ -222,7 +242,8 @@
           <div
             class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 task-box"
             data-aos="fade-up"
-            data-aos-delay="200">
+            data-aos-delay="200"
+          >
             <div class="container ms-lg-5 card task-card">
               <h2>Task #1</h2>
               <h3>
@@ -235,12 +256,19 @@
                 Consectetur aperiam odio
               </h3>
             </div>
-            <div class="d-flex justify-content-center justify-content-lg-start ms-lg-5 my-md-3">
-              <a href="sign-in.html" class="btn-get-started scrollto">Login/Sign up</a>
-              <a href="https://www.youtube.com/c/mohammadsajidanwar" class="glightbox btn-watch-video">
+            <div
+              class="d-flex justify-content-center justify-content-lg-start ms-lg-5 my-md-3"
+            >
+              <a href="sign-in.html" class="btn-get-started scrollto"
+                >Login/Sign up</a
+              >
+              <a
+                href="https://www.youtube.com/c/mohammadsajidanwar"
+                class="glightbox btn-watch-video"
+              >
                 <i class="bi bi-play-circle"></i>
                 <span>Youtube</span>
-                </a>
+              </a>
             </div>
           </div>
 
@@ -250,7 +278,10 @@
             data-aos="zoom-in"
             data-aos-delay="200"
           >
-            <div id="animation-container"class="animated container-fluid anim-container"></div>
+            <div
+              id="animation-container"
+              class="animated container-fluid anim-container"
+            ></div>
           </div>
         </div>
       </div>
@@ -263,46 +294,86 @@
       <section id="clients" class="clients section-bg py-3">
         <div class="container">
           <div class="row d-flex justify-content-evenly" data-aos="zoom-in">
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
+            <div
+              class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2"
+            >
               <a href="champions.html">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/champion_icon.svg"alt=""class="img-fluid"/>
+                <div
+                  class="card d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="/public/images/icons/champion_icon.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
                   <h5>Champions</h5>
                 </div>
               </a>
             </div>
 
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
+            <div
+              class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2"
+            >
               <a href="search_contributions.html">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public//images/icons/code_2.svg"alt=""class="img-fluid"/>
-                  <h5>Contributions</h5>  
+                <div
+                  class="card d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="/public//images/icons/code_2.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <h5>Contributions</h5>
                 </div>
               </a>
             </div>
 
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
+            <div
+              class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2"
+            >
               <a href="search_contributions.html">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/guest_icon.svg"alt=""class="img-fluid"/>
+                <div
+                  class="card d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="/public/images/icons/guest_icon.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
                   <h5 id="guest-contri">Guest Contributions</h5>
                 </div>
               </a>
             </div>
 
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
+            <div
+              class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2"
+            >
               <a href="perl-review.html">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/perl.svg"alt=""class="img-fluid perl-img"/>
+                <div
+                  class="card d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="/public/images/icons/perl.svg"
+                    alt=""
+                    class="img-fluid perl-img"
+                  />
                   <h5>Perl Review</h5>
                 </div>
               </a>
             </div>
 
-            <div class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2">
+            <div
+              class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2"
+            >
               <a href="raku-review.html">
-                <div class="card d-flex align-items-center justify-content-center">
-                  <img src="/public/images/icons/raku.svg"alt=""class="img-fluid raku-img py-4"/>
+                <div
+                  class="card d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="/public/images/icons/raku.svg"
+                    alt=""
+                    class="img-fluid raku-img py-4"
+                  />
                   <h5>Raku Review</h5>
                 </div>
               </a>
@@ -316,22 +387,27 @@
 
     <!-- ============== Preloader ================ -->
     <div id="preloader"></div>
-    <a href="#"class="back-to-top d-flex align-items-center justify-content-center">
-        <i class="bi bi-arrow-up-short"></i>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
     </a>
 
-     <!-- =============== Footer ================= -->
-     <footer id="footer">
+    <!-- =============== Footer ================= -->
+    <footer id="footer">
       <div class="footer-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6 col-12 footer-contact">
-              <img src="/public/images/logo/logo.png" class="footer-logo">
-              <img src="/public/images/logo/typography.png" class="footer-typo">
-                <div class="email my-5">
-                  <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
-                </div>
-              </p>
+              <img src="/public/images/logo/logo.png" class="footer-logo" />
+              <img
+                src="/public/images/logo/typography.png"
+                class="footer-typo"
+              />
+              <div class="email my-5">
+                <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
+              </div>
             </div>
 
             <div class="col-lg-4 col-md-6 footer-links">
@@ -340,7 +416,8 @@
                 <div class="col-lg-6">
                   <ul>
                     <li>
-                      <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="index.html">Home</a>
                     </li>
                     <li>
                       <i class="bx bx-chevron-right"></i>
@@ -355,14 +432,16 @@
                 <div class="col-lg-6 mt-2 mt-lg-0">
                   <ul>
                     <li>
-                      <i class="bx bx-chevron-right"></i> <a href="team.html">Teams</a>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team.html">Teams</a>
                     </li>
                     <li>
                       <i class="bx bx-chevron-right"></i>
                       <a href="perl-review.html">Reviews</a>
                     </li>
                     <li>
-                      <i class="bx bx-chevron-right"></i> <a href="team-leader.html">Charts</a>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team-leader.html">Charts</a>
                     </li>
                   </ul>
                 </div>
@@ -372,11 +451,22 @@
             <div class="col-lg-4 col-md-6 footer-links">
               <h4>Our Social Networks</h4>
               <p>
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
+                suscipit?
               </p>
               <div class="social-links mt-3">
-                <a href="https://twitter.com/perlwchallenge?lang=en" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/groups/theweeklychallengegroup/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a
+                  href="https://twitter.com/perlwchallenge?lang=en"
+                  target="_blank"
+                  class="twitter"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/groups/theweeklychallengegroup/"
+                  target="_blank"
+                  class="facebook"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
                 <a href="#" class="instagram"
                   ><i class="bx bxl-instagram"></i
                 ></a>
@@ -397,17 +487,16 @@
     </footer>
     <!-- End Footer -->
 
-
     <!-- ============================ Vendor JS Files ============================ -->
-    <script src="/public/javascripts/vendor/aos/aos.js"></script>
-    <script src="/public/javascripts/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="/public/javascripts/vendor/glightbox/glightbox.min.js"></script>
-    <script src="/public/javascripts/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="/public/javascripts/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="/public/javascripts/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../../public/javascripts/vendor/aos/aos.js"></script>
+    <script src="../../public/javascripts/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../public/javascripts/vendor/glightbox/glightbox.min.js"></script>
+    <script src="../../public/javascripts/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../../public/javascripts/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../../public/javascripts/vendor/waypoints/noframework.waypoints.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="/public/javascripts/index.js"></script>
+    <script src="../../public/javascripts/index.js"></script>
 
     <!-- ======================= Lottie JSON script here ======================= -->
 
@@ -415,7 +504,11 @@
 
     <script>
       // Setting up Lottie
-      var lottiePath = (localStorage.getItem('lottie') && localStorage.getItem('lottie') === 'blue') ? '/public/javascripts/lottiejson/purple.json': '/public/javascripts/lottiejson/green.json';
+      var lottiePath =
+        localStorage.getItem("lottie") &&
+        localStorage.getItem("lottie") === "blue"
+          ? "/public/javascripts/lottiejson/purple.json"
+          : "/public/javascripts/lottiejson/green.json";
       var animationContainer = document.getElementById("animation-container");
       var anim = bodymovin.loadAnimation({
         container: animationContainer,

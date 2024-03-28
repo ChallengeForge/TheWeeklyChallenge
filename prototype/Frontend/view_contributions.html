@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>The Weekly Challenge - Perl & Raku View Code Contributions Page</title>
+    <title>
+      The Weekly Challenge - Perl & Raku View Code Contributions Page
+    </title>
     <meta
       content="The Weekly Challenge that includes Perl and Raku programming."
       name="description"
@@ -57,33 +59,35 @@
     <link href="/public/css/index.css" rel="stylesheet" />
     <link href="/prototype/Frontend/css/team.css" rel="stylesheet" />
 
-
     <!-- Syntax highlighter-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
-   
+
     <style>
         .code-snippet {
           background-color: #ffffff;
         }
-      
+
         .copy-btn {
           cursor: pointer;
         }
-      
+
         .code-content {
-          max-height: 300px; /* Set maximum height for scrollbar */
+          text-align: left;
+          display: block;
+          margin-right: 2em;
+          width: 100%;
         }
-      
+
         /* Optional: Add scrollbar styling */
         .code-content::-webkit-scrollbar {
           width: 8px;
         }
-      
+
         .code-content::-webkit-scrollbar-thumb {
           background-color: #6c757d;
           border-radius: 4px;
         }
-      
+
         .code-content::-webkit-scrollbar-track {
           background-color: #f9f9f9;
         }
@@ -95,151 +99,160 @@
                 width: 100%;
             }
 
-            /* .code-content pre {
+        /* .code-content pre {
                 margin-right: 6em;
                 width: 100%;
             } */
+      }
 
+      @media screen and (max-width: 600px) {
+        .code-snippet {
+          margin-right: 2em;
+          padding-right: 6em;
+
+          display: block;
+
+          align-self: start;
+          /* overflow: scroll; */
         }
-        
+
         @media screen and (max-width: 600px){
              .code-snippet{
                 margin-right: 2em;
                 padding-right: 6em;
-            
+
                 display: block;
-               
                align-self: start;
                 /* overflow: scroll; */
             }
         }
       </style>
-      
+
   </head>
 
   <body>
-    <!-- ==================== Header =================== -->
-    <header id="header" class="sticky-top border-bottom">
-      <div class="container d-flex align-items-center">
-        <div class="container d-flex align-items-center justify-content-center me-auto">
-          <a href="index.html" class="logo me-3">
-            <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
+  <!-- ==================== Header =================== -->
+  <header id="header" class="sticky-top border-bottom">
+    <div class="container d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-center me-auto">
+        <a href="index.html" class="logo me-3">
+        <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
+    </a>
+        <a href="index.html" class="logo me-auto">
+        <img
+            src="/public/images/logo/typography.png"
+            alt="typography"
+            class="img-fluid"/>
         </a>
-          <a href="index.html" class="logo me-auto">
-            <img
-              src="/public/images/logo/typography.png"
-              alt="typography"
-              class="img-fluid"/>
-            </a>
-        </div>
+    </div>
 
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li>
-                <a class="getstarted scrollto user-btn" href="index.html">
-                <span><i class="fa-solid fa-house fs-6"></i></span>
-              </a>
-            </li>
-            <!-- About Dropdown -->
-            <li class="dropdown">
-              <a href="#">
-                <span>About</span> <i class="bi bi-chevron-down"></i>
+    <nav id="navbar" class="navbar">
+        <ul>
+        <li>
+            <a class="getstarted scrollto user-btn" href="index.html">
+            <span><i class="fa-solid fa-house fs-6"></i></span>
             </a>
-              <ul>
-                <li class="border-bottom">
-                  <a href="about.html">About Us</a>
-                </li>
-                <li class="border-bottom">
-                  <a href="contact.html">Contact Us</a>
-                </li>
-                <li><a href="faq.html">FAQ</a></li>
-              </ul>
+        </li>
+        <!-- About Dropdown -->
+        <li class="dropdown">
+            <a href="#">
+            <span>About</span> <i class="bi bi-chevron-down"></i>
+        </a>
+            <ul>
+            <li class="border-bottom">
+                <a href="about.html">About Us</a>
             </li>
-            <!-- Contributions Dropdown -->
-            <li class="dropdown">
-              <a href="#">
-                <span>Contributions</span> 
-                <i class="bi bi-chevron-down"></i>
-            </a>
-              <ul>
-                <li class="border-bottom"><a href="search-weekly-challenges.html">Challenges</a></li>
+            <li class="border-bottom">
+                <a href="contact.html">Contact Us</a>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </li>
+        <!-- Contributions Dropdown -->
+        <li class="dropdown">
+            <a href="#">
+            <span>Contributions</span>
+            <i class="bi bi-chevron-down"></i>
+        </a>
+            <ul>
+            <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
 
-                <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
-                <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
-                <li ><a href="search_contributions.html">Search Contributions</a></li>
-   
-              </ul>
-            </li>
-            <!-- Team Dropdown -->
-            <li class="dropdown">
-              <a href="#">
-                <span>Team</span>
-                <i class="bi bi-chevron-down"></i>
-            </a>
-              <ul>
-                <li class="border-bottom"><a href="team.html">Regular</a></li>
-                <li class="border-bottom"><a href="guest.html">Guest</a></li>
-                <li><a href="champions.html">Champions</a></li>
-              </ul>
-            </li>
-            <!-- Reviews Dropdown -->
-            <li class="dropdown">
-              <a href="#">
-                <span>Reviews</span> 
-                <i class="bi bi-chevron-down"></i>
-            </a>
-              <ul>
-                <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
-                <li><a href="raku-review.html">Raku</a></li>
-              </ul>
-            </li>
-            <!-- Charts DropDown -->
-            <li class="dropdown">
-              <a href="#">
-                <span>Leaderboard</span>
-                <i class="bi bi-chevron-down"></i>
-            </a>
-              <ul>
-                <li class="border-bottom"><a href="team-leader.html">Team Leader</a></li>
-                <li><a href="guest-leader.html">Guest Leader</a></li>
-              </ul>
-            </li>
-            <!-- Prefernces -->
-            <li class="dropdown">
-              <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li class="border-bottom theme1"><a href="#">Default</a></li>
-                <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
-                <li class="theme3"><a href="#">Blue Mode</a></li>
-              </ul>
-            </li>
-            <!-- User Features Dropdown -->
-            <li class="dropdown">
-              <a class="getstarted scrollto user-btn" href="#about">
-                <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
-                <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
-              </a>
-              <ul>
-                <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
-                <li class="border-bottom"><a href="logout.html">Logout</a></li>
-                <li class="border-bottom"><a href="user_dashboard.html">My Profile</a></li>
-                <li><a href="#">Settings</a></li>
-              </ul>
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- End Navbar -->
-      </div>
-    </header>
+            <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
+            <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
+            <li ><a href="search_contributions.html">Search Contributions</a></li>
 
-    <!-- End Header -->
+            </ul>
+        </li>
+        <!-- Team Dropdown -->
+        <li class="dropdown">
+            <a href="#">
+            <span>Team</span>
+            <i class="bi bi-chevron-down"></i>
+        </a>
+            <ul>
+            <li class="border-bottom"><a href="team.html">Regular</a></li>
+            <li class="border-bottom"><a href="guest.html">Guest</a></li>
+            <li><a href="champions.html">Champions</a></li>
+            </ul>
+        </li>
+        <!-- Reviews Dropdown -->
+        <li class="dropdown">
+            <a href="#">
+            <span>Reviews</span>
+            <i class="bi bi-chevron-down"></i>
+        </a>
+            <ul>
+            <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
+            <li><a href="raku-review.html">Raku</a></li>
+            </ul>
+        </li>
+        <!-- Charts DropDown -->
+        <li class="dropdown">
+            <a href="#">
+            <span>Leaderboard</span>
+            <i class="bi bi-chevron-down"></i>
+        </a>
+            <ul>
+            <li class="border-bottom"><a href="chart.html">Charts</a></li>
+            <li class="border-bottom"><a href="#">Team Leader</a></li>
+            <li><a href="#">Guest Leader</a></li>
+            </ul>
+        </li>
+        <!-- Prefernces -->
+        <li class="dropdown">
+            <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+            <li class="border-bottom theme1"><a href="#">Default</a></li>
+            <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
+            <li class="theme3"><a href="#">Blue Mode</a></li>
+            </ul>
+        </li>
+        <!-- User Features Dropdown -->
+        <li class="dropdown">
+            <a class="getstarted scrollto user-btn" href="#about">
+            <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
+            <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
+            </a>
+            <ul>
+            <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
+            <li class="border-bottom"><a href="logout.html">Logout</a></li>
+            <li class="border-bottom"><a href="user-dashboard.html">My Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            </ul>
+        </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <!-- End Navbar -->
+    </div>
+</header>
 
+<!-- End Header -->
     <!-- ========== Recent Activity Cards ============ -->
     <div class="main-section">
-      
+
         <!-- ========== Breadcrumb Navigation ========== -->
-        <div class="container mt-5">     
+        <div class="container mt-5">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="search_contributions.html">Search Contributions</a></li>
@@ -248,19 +261,21 @@
             </nav>
         </div>
 
-        <!-- ========== Code Contributions Section ========== -->
-        <section id="code-contributions" class="section mt-5 mb-5" >
+      <!-- ========== Code Contributions Section ========== -->
+      <section id="code-contributions" class="section mt-5 mb-5">
         <div class="container">
-            <h3 class="mb-5">Member Name - Dancer2 - Week3 - View Contributions Page </h3> 
+            <h3 class="mb-5">Member Name - Dancer2 - Week3 - View Contributions Page </h3>
             <div class="row">
             <div class="col-lg-6 mb-4">
-                <!-- Code Snippet -->
-                <div class="code-snippet p-4 rounded shadow">
+              <!-- Code Snippet -->
+              <div class="code-snippet p-4 rounded shadow">
                 <div class="d-flex justify-content-end mb-3">
-                    <button class="btn btn-light copy-btn" onclick="copyCode()">Copy</button>
+                  <button class="btn btn-light copy-btn" onclick="copyCode()">
+                    Copy
+                  </button>
                 </div>
                 <div class="code-content overflow-auto">
-                    <pre>
+                  <pre>
                         <code class="code-snippet">
                             <!-- Codes will go here -->
                             &lt;!DOCTYPE html&gt;
@@ -276,18 +291,23 @@
                         </code>
                     </pre>
                 </div>
-                </div>
+              </div>
             </div>
             <div class="col-lg-6">
-                <!-- Comment Box -->
-                <div class="comment-box p-4 rounded shadow">
+              <!-- Comment Box -->
+              <div class="comment-box p-4 rounded shadow">
                 <h3>Comments</h3>
 
                 <!--Old Comments-->
                 <div class="old-comments mb-3">
                   <div class="comment">
                     <div class="comment-header">
-                      <img src="../assets/misc/person.jpg"  alt="User Avatar" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                      <img
+                        src="../assets/misc/person.jpg"
+                        alt="User Avatar"
+                        class="rounded-circle me-2"
+                        style="width: 50px; height: 50px"
+                      />
                       <span class="comment-author">John Doe</span>
                     </div>
                     <div class="comment-body">
@@ -297,7 +317,12 @@
                   <!-- Add more old comments here -->
                   <div class="comment">
                     <div class="comment-header">
-                      <img src="../assets/misc/person.jpg"  alt="User Avatar" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                      <img
+                        src="../assets/misc/person.jpg"
+                        alt="User Avatar"
+                        class="rounded-circle me-2"
+                        style="width: 50px; height: 50px"
+                      />
                       <span class="comment-author">John Doe</span>
                     </div>
                     <div class="comment-body">
@@ -310,40 +335,59 @@
                 <form id="add-comment-form">
                   <div class="mb-3">
                     <div class="d-flex align-items-center">
-                      <img src="../assets/misc/person.jpg"  alt="User Avatar" class="rounded-circle me-2" style="width: 50px; height: 50px;">
-                      <label for="comment" class="visually-hidden">Your Comment:</label>
+                      <img
+                        src="../assets/misc/person.jpg"
+                        alt="User Avatar"
+                        class="rounded-circle me-2"
+                        style="width: 50px; height: 50px"
+                      />
+                      <label for="comment" class="visually-hidden"
+                        >Your Comment:</label
+                      >
                     </div>
-                    <textarea class="form-control mt-2" id="comment" rows="5" placeholder="Write your comment here..."></textarea>
+                    <textarea
+                      class="form-control mt-2"
+                      id="comment"
+                      rows="5"
+                      placeholder="Write your comment here..."
+                    ></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary">Add Comment</button>
+                  <button type="submit" class="btn btn-primary">
+                    Add Comment
+                  </button>
                 </form>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
         </section>
-      
+
     </div>
     <!-- End #main -->
 
     <!-- ============== Preloader ================ -->
     <div id="preloader"></div>
-    <a href="#"class="back-to-top d-flex align-items-center justify-content-center">
-        <i class="bi bi-arrow-up-short"></i>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
     </a>
 
-     <!-- =============== Footer ================= -->
-     <footer id="footer">
+    <!-- =============== Footer ================= -->
+    <footer id="footer">
       <div class="footer-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6 col-12 footer-contact">
-              <img src="/public/images/logo/logo.png" class="footer-logo">
-              <img src="/public/images/logo/typography.png" class="footer-typo">
-                <div class="email my-5">
-                  <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
-                </div>
-              </p>
+              <img src="/public/images/logo/logo.png" class="footer-logo" />
+              <img
+                src="/public/images/logo/typography.png"
+                class="footer-typo"
+              />
+              <div class="email my-5">
+                <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
+              </div>
             </div>
 
             <div class="col-lg-4 col-md-6 footer-links">
@@ -352,7 +396,8 @@
                 <div class="col-lg-6">
                   <ul>
                     <li>
-                      <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="index.html">Home</a>
                     </li>
                     <li>
                       <i class="bx bx-chevron-right"></i>
@@ -367,14 +412,16 @@
                 <div class="col-lg-6 mt-2 mt-lg-0">
                   <ul>
                     <li>
-                      <i class="bx bx-chevron-right"></i> <a href="team.html">Teams</a>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team.html">Teams</a>
                     </li>
                     <li>
                       <i class="bx bx-chevron-right"></i>
                       <a href="perl-review.html">Reviews</a>
                     </li>
                     <li>
-                      <i class="bx bx-chevron-right"></i> <a href="team-leader.html">Charts</a>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team-leader.html">Charts</a>
                     </li>
                   </ul>
                 </div>
@@ -384,11 +431,22 @@
             <div class="col-lg-4 col-md-6 footer-links">
               <h4>Our Social Networks</h4>
               <p>
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
+                suscipit?
               </p>
               <div class="social-links mt-3">
-                <a href="https://twitter.com/perlwchallenge?lang=en" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/groups/theweeklychallengegroup/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a
+                  href="https://twitter.com/perlwchallenge?lang=en"
+                  target="_blank"
+                  class="twitter"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/groups/theweeklychallengegroup/"
+                  target="_blank"
+                  class="facebook"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
                 <a href="#" class="instagram"
                   ><i class="bx bxl-instagram"></i
                 ></a>
@@ -409,7 +467,6 @@
     </footer>
     <!-- End Footer -->
 
-
     <!-- ============================ Vendor JS Files ============================ -->
     <script src="/public/javascripts/vendor/aos/aos.js"></script>
     <script src="/public/javascripts/vendor/bootstrap/bootstrap.bundle.min.js"></script>
@@ -428,7 +485,11 @@
 
     <script>
       // Setting up Lottie
-      var lottiePath = (localStorage.getItem('lottie') && localStorage.getItem('lottie') === 'blue') ? '/public/javascripts/lottiejson/purple.json': '/public/javascripts/lottiejson/green.json';
+      var lottiePath =
+        localStorage.getItem("lottie") &&
+        localStorage.getItem("lottie") === "blue"
+          ? "/public/javascripts/lottiejson/purple.json"
+          : "/public/javascripts/lottiejson/green.json";
       var animationContainer = document.getElementById("animation-container");
       var anim = bodymovin.loadAnimation({
         container: animationContainer,
@@ -440,9 +501,9 @@
     </script>
 
     <script>
-        // Function to copy code snippet
-        function copyCode() {
-        var codeElement = document.querySelector('.code-content');
+      // Function to copy code snippet
+      function copyCode() {
+        var codeElement = document.querySelector(".code-content");
         var codeText = codeElement.textContent;
         navigator.clipboard.writeText(codeText).then(function() {
             alert('Code copied to clipboard!');
@@ -450,14 +511,14 @@
             console.error('Failed to copy code: ', err);
         });
         }
-    
+
         // Initialize syntax highlighting
         document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelectorAll('pre code').forEach((block) => {
             hljs.highlightBlock(block);
         });
         });
+      });
     </script>
-
   </body>
 </html>
