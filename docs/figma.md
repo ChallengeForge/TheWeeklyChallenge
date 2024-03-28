@@ -23,80 +23,80 @@ the current design by basic Figma commands.**
 
 **1. Selection Tools:**
 
--   *Pointer (V):* Allows you to select and interact with objects on the
-    canvas.
+- _Pointer (V):_ Allows you to select and interact with objects on the
+  canvas.
 
--   *Move (M):* Enables you to move selected objects around the canvas.
+- _Move (M):_ Enables you to move selected objects around the canvas.
 
 **2. Drawing Tools:**
 
--   *Shape (R):* Creates basic shapes such as rectangles, circles, and
-    polygons.
+- _Shape (R):_ Creates basic shapes such as rectangles, circles, and
+  polygons.
 
--   *Pen (P):* Allows you to draw freeform shapes and paths.
+- _Pen (P):_ Allows you to draw freeform shapes and paths.
 
--   *Text (T):* Inserts text boxes for adding text to your designs.
+- _Text (T):_ Inserts text boxes for adding text to your designs.
 
 **3. Editing Tools:**
 
--   *Edit (Enter):* Enters into the edit mode for selected objects,
-    enabling you to manipulate their properties.
+- _Edit (Enter):_ Enters into the edit mode for selected objects,
+  enabling you to manipulate their properties.
 
--   *Scale (Cmd/Ctrl + Shift + K):* Resizes objects proportionally.
+- _Scale (Cmd/Ctrl + Shift + K):_ Resizes objects proportionally.
 
--   *Rotate (Cmd/Ctrl + Shift + R):* Rotates selected objects.
+- _Rotate (Cmd/Ctrl + Shift + R):_ Rotates selected objects.
 
 **4. Alignment and Distribution:**
 
--   *Align:* Aligns selected objects relative to each other (top,
-    bottom, left, right, etc.).
+- _Align:_ Aligns selected objects relative to each other (top,
+  bottom, left, right, etc.).
 
--   *Distribute:* Distributes selected objects evenly with respect to
-    their spacing.
+- _Distribute:_ Distributes selected objects evenly with respect to
+  their spacing.
 
 **5. Layers Panel:**
 
--   *Arrange ((Cmd/Ctrl + [ ) or (Cmd/Ctrl +  ])):* Sends selected objects backward or
-    forward in the layer hierarchy.
+- _Arrange ((Cmd/Ctrl + [ ) or (Cmd/Ctrl + ])):_ Sends selected objects backward or
+  forward in the layer hierarchy.
 
--   *Group (Cmd/Ctrl + G):* Groups selected objects together for easier
-    manipulation.
+- _Group (Cmd/Ctrl + G):_ Groups selected objects together for easier
+  manipulation.
 
--   *Component (Cmd/Ctrl + Alt + K):* Converts selected objects into
-    reusable components.
+- _Component (Cmd/Ctrl + Alt + K):_ Converts selected objects into
+  reusable components.
 
 **6. Prototyping:**
 
--   *Prototype (Cmd/Ctrl + Option/Alt + P):* Enables you to create
-    interactive prototypes by linking frames.
+- _Prototype (Cmd/Ctrl + Option/Alt + P):_ Enables you to create
+  interactive prototypes by linking frames.
 
--   *Interactions:* Define interactions between frames (click, hover,
-    etc.) using the prototype panel.
+- _Interactions:_ Define interactions between frames (click, hover,
+  etc.) using the prototype panel.
 
 **7. Collaboration:**
 
--   *Share (Cmd/Ctrl + Shift + D):* Generates a shareable link to your
-    Figma file.
+- _Share (Cmd/Ctrl + Shift + D):_ Generates a shareable link to your
+  Figma file.
 
--   *Comments:* Allows collaborators to leave comments on specific
-    elements of the design.
+- _Comments:_ Allows collaborators to leave comments on specific
+  elements of the design.
 
 **8. View Options:**
 
--   *Zoom (Cmd/Ctrl + + or -):* Zooms in or out of the canvas.
+- _Zoom (Cmd/Ctrl + + or -):_ Zooms in or out of the canvas.
 
--   *Canvas Size:* Adjusts the canvas size according to your design
-    requirements.
+- _Canvas Size:_ Adjusts the canvas size according to your design
+  requirements.
 
 **9. Plugins:**
 
--   *Plugins Menu:* Access a variety of plugins to extend Figma\'s
-    functionality, from design to collaboration tools.
+- _Plugins Menu:_ Access a variety of plugins to extend Figma\'s
+  functionality, from design to collaboration tools.
 
 **10. Version History:**
 
--   *Version History (Cmd/Ctrl + Shift + H):* Tracks changes made to the
-    design and allows for version comparison and restoration.
+- _Version History (Cmd/Ctrl + Shift + H):_ Tracks changes made to the
+  design and allows for version comparison and restoration.
 
 **Note:** Figma also provides extensive documentation and tutorials on
 their website for further learning and exploration.
