@@ -27,5 +27,6 @@
 <!--- Put an `x` in all the boxes that apply: -->
 
 Please which part of the project your changes affect ?
+
 - [ ] Frontend (Templates, CSS, JS)
 - [ ] Backend (Dancer2, api-docs, Dockerfile)

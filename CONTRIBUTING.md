@@ -3,6 +3,7 @@
 Welcome to the TheWeeklyChallenge project! We appreciate your interest in contributing. By contributing to this project, you're helping us creating a fun and welcoming space for developers of all skill levels to explore Perl and Raku. To ensure a smooth and collaborative experience, please review the guidelines below before making contributions.
 
 ## Table of Contents
+
 - [Ways to Contribute](#ways-to-contribute)
 - [Contributions Guide](#getting-started)
 - [Code Style and Guidelines](#code-style-and-guidelines)
@@ -22,8 +23,6 @@ There are several ways you can contribute to TheWeeklyChallenge:
 
 4. Bug Fixes and Improvements: If you are familiar with the codebase, you can contribute by fixing bugs or implementing enhancements. Fork the repository, make the changes, and submit a pull request.
 
-
-
 ## Contributions Guidelines
 
 ### First Time Contribution
@@ -34,13 +33,12 @@ There are several ways you can contribute to TheWeeklyChallenge:
 
 3. **Create a New Branch**: Checkout from the main branch and create a new branch on your local machine using the command:
 
-
 ```sh
 git checkout -b <your_preferred_branch_name>
 ```
 
-
 4. **Commit Your Changes**: After working and testing your changes, execute the following commands in order:
+
    - `git add .` - This adds all your changes.
    - `git commit` - This takes a snapshot of all your changes and makes them ready to be pushed to the remote (online) origin.
    - `git push --set-upstream origin <origin_name_from_step_3>`
@@ -55,11 +53,9 @@ Maintaining a clean and updated Git workflow is essential for efficient developm
 
 Before starting any new work or making changes, ensure your local master branch is up-to-date with the remote repository:
 
-
 ```sh
 git checkout master git pull origin master
 ```
-
 
 #### Step 2: Create or Switch to Your Working Branch
 
@@ -83,13 +79,11 @@ Make necessary changes to your code or files and commit them:
 git add . git commit -m "Your commit message here"
 ```
 
-
 #### Step 4: Rebase Your Working Branch with Local Master
 
 Incorporate the latest changes from the master branch into your working branch:
 
 git checkout <working_branch> git rebase master
-
 
 #### Step 5: Resolve any Conflicts (if applicable)
 
@@ -113,19 +107,14 @@ MacOS comes preinstalled with vendor versions of Perl, unfortunately, these Perl
 
 **Example Error**: When trying to install the DBD mysql package, you may get an error like this:
 
-
 ```sh
 1 error generated. make: *** [dbdimp.o] Error 1 DVEEDEN/DBD-mysql-5.003.tar.gz /usr/bin/make -- NOT OK Failed during this command: DVEEDEN/DBD-mysql-5.003.tar.gz
 ```
-
-
 
 To resolve this, we can install Perlbrew version:
 
 For a quick installation of Perlbrew, do this:
 `\curl -L https://install.perlbrew.pl | bash`
-
-
 
 After installing Perlbrew, attach it to your terminal:
 
@@ -133,22 +122,17 @@ After installing Perlbrew, attach it to your terminal:
 
 `nano ~/.bash_profile`
 
-
 2. Append the following line to the end of the file:
 
 `source ~/perl5/perlbrew/etc/bashrc`
 
-   - Save the changes and exit the text editor.
+- Save the changes and exit the text editor.
 
 3. Close your terminal and start a new one. Alternatively, you can run the command:
 
 `source ~/.bash_profile`
 
-
 Use `ctrl + o` to write to a file and `ctrl + x` to save to a file.
-
-
-
 
 ## Code Style and Guidelines
 
@@ -200,7 +184,5 @@ If you have any questions or need further assistance, you can reach out to the p
 
 ### We appreciate your contributions and look forward to building an Perl and Raku enthusiasts community together! 🎉
 
-
 [![Join us on Slack](https://img.shields.io/badge/Join_us-Slack-informational?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/theweeklychal-udf4770/shared_invite/zt-2em4g2m29-WGd9LQc1YnNLyn_qHi6xLA)
 [![Visit Website](https://img.shields.io/badge/Visit_Website-brightgreen?style=for-the-badge)](https://theweeklychallenge.org)
-

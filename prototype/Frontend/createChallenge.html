@@ -138,29 +138,43 @@
 
     <!-- main content -->
     <main>
-        <div class="container">
-            <h2 id="heading">Create New Challenge</h2>
-            <form action="/submit" method="post">
-              <div class="input-group">
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required>
-              </div>
-              <div class="input-group">
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" rows="4" required></textarea>
-              </div>
-              <div class="input-group">
-                <label for="Example1">Sample Input & Output 1</label>
-                <textarea id="Example1" name="example2" rows="4" required></textarea>
-              </div>
-              <div class="input-group">
-                <label for="Example2">Sample Input & Output 2</label>
-                <textarea id="Example2" name="Example2" rows="4" required></textarea>
-              </div>
-              <button type="submit" class="btn">Submit</button>
-            </form>
+      <div class="container">
+        <h2 id="heading">Create New Challenge</h2>
+        <form action="/submit" method="post">
+          <div class="input-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
           </div>
-          
+          <div class="input-group">
+            <label for="description">Description:</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="input-group">
+            <label for="Example1">Sample Input & Output 1</label>
+            <textarea
+              id="Example1"
+              name="example2"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="input-group">
+            <label for="Example2">Sample Input & Output 2</label>
+            <textarea
+              id="Example2"
+              name="Example2"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
     </main>
     <script src="../../public/javascripts/admin.js"></script>
   </body>
