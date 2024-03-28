@@ -190,7 +190,7 @@
     <!-- ================= Main Body ======================== -->
     <div class="container-fluid py-5 main-section">
       <div id="teamDiv" style="overflow-x: hidden;">
-        <h2 class="text-center mb-5">Team Members</h2>
+        <h2 class="text-center mb-5"> Team Members </h2>
         <!-- <div id="animation-container" class="globe-anim"style="overflow-x: hidden;"></div> -->
         <div class="contactDetails team-rows-container mt-3">
           <div class="row d-flex justify-content-around">
@@ -672,42 +672,41 @@
       });
     </script>
 
-   
+    <!-- Pagination Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const itemsPerPage = 3; // Number of items per page
+        let currentPage = 0; // Current page index
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const itemsPerPage = 3; // Number of items per page
-    let currentPage = 0; // Current page index
+        const teamDiv = document.getElementById("teamDiv");
+        const teamRowsContainer = document.querySelector(".team-rows-container");
+        const teamMembers = Array.from(teamRowsContainer.querySelectorAll(".col-lg-3"));
 
-    const teamDiv = document.getElementById("teamDiv");
-    const teamRowsContainer = document.querySelector(".team-rows-container");
-    const teamMembers = Array.from(teamRowsContainer.querySelectorAll(".col-lg-3"));
+        // Function to show items for a specific page
+        function showPage(pageIndex) {
+            const startIndex = pageIndex * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            teamMembers.forEach((member, index) => {
+                member.style.display = index >= startIndex && index < endIndex ? "flex" : "none";
+            });
+        }
 
-    // Function to show items for a specific page
-    function showPage(pageIndex) {
-        const startIndex = pageIndex * itemsPerPage;
-        const endIndex = startIndex + itemsPerPage;
-        teamMembers.forEach((member, index) => {
-            member.style.display = index >= startIndex && index < endIndex ? "flex" : "none";
+        // Function to handle next button click
+        document.getElementById("nextPageBtn").addEventListener("click", function () {
+            currentPage = Math.min(currentPage + 1, Math.ceil(teamMembers.length / itemsPerPage) - 1);
+            showPage(currentPage);
         });
-    }
 
-    // Function to handle next button click
-    document.getElementById("nextPageBtn").addEventListener("click", function () {
-        currentPage = Math.min(currentPage + 1, Math.ceil(teamMembers.length / itemsPerPage) - 1);
+        // Function to handle previous button click
+        document.getElementById("prevPageBtn").addEventListener("click", function () {
+            currentPage = Math.max(currentPage - 1, 0);
+            showPage(currentPage);
+        });
+
+        // Initial page display
         showPage(currentPage);
     });
 
-    // Function to handle previous button click
-    document.getElementById("prevPageBtn").addEventListener("click", function () {
-        currentPage = Math.max(currentPage - 1, 0);
-        showPage(currentPage);
-    });
-
-    // Initial page display
-    showPage(currentPage);
-});
-
-</script>
+    </script>
   </body>
 </html>
