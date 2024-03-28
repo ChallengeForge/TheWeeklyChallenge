@@ -1,292 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>The Weekly Challenge - Perl & Raku</title>
+    <title>The Weekly Challenge</title>
     <meta content="The Weekly Challenge that includes Perl and Raku programming." name="description" />
     <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
 
     <!-- Favicons -->
-    <link href="/public/images/logo/logo.png" rel="icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/public/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/public/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/public/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/public/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Vendor CSS Files -->
     <link href="/public/css/helpercss/aos.css" rel="stylesheet" />
-    <link href="/public/css/helpercss/bootstrap_css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="/public/css/helpercss/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="/public/css/helpercss/glightbox_css/glightbox.min.css" rel="stylesheet" />
-    <link href="/public/css/helpercss/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="/public/css/helpercss/bootstrap_css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/glightbox_css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/remixicon/remixicon.css"
+      rel="stylesheet"
+    />
     <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
     <link href="/public/css/index.css" rel="stylesheet" />
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- ==================== Header ======================== -->
     <header id="header" class="sticky-top border-bottom">
-        <div class="container d-flex align-items-center">
-          <div class="container d-flex align-items-center justify-content-center me-auto">
-            <a href="index.html" class="logo me-3">
-              <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
+      <div class="container d-flex align-items-center">
+        <div
+          class="container d-flex align-items-center justify-content-center me-auto"
+        >
+          <a href="index.html" class="logo me-3">
+            <img
+              src="/public/images/logo/logo.png"
+              alt="logo"
+              class="img-fluid"
+            />
           </a>
-            <a href="index.html" class="logo me-auto">
-              <img
-                src="/public/images/logo/typography.png"
-                alt="typography"
-                class="img-fluid"/>
-              </a>
-          </div>
-  
-          <nav id="navbar" class="navbar">
-            <ul>
-              <li>
-                  <a class="getstarted scrollto user-btn" href="index.html">
-                  <span><i class="fa-solid fa-house fs-6"></i></span>
-                </a>
-              </li>
-              <!-- About Dropdown -->
-              <li class="dropdown">
-                <a href="#">
-                  <span>About</span> <i class="bi bi-chevron-down"></i>
-              </a>
-                <ul>
-                  <li class="border-bottom">
-                    <a href="about.html">About Us</a>
-                  </li>
-                  <li class="border-bottom">
-                    <a href="contact.html">Contact Us</a>
-                  </li>
-                  <li><a href="faq.html">FAQ</a></li>
-                </ul>
-              </li>
-              <!-- Contributions Dropdown -->
-              <li class="dropdown">
-                <a href="#">
-                  <span>Contributions</span> 
-                  <i class="bi bi-chevron-down"></i>
-              </a>
-                <ul>
-                  <li class="border-bottom"><a href="search-weekly-challenges.html">Challenges</a></li>
-  
-                  <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
-                  <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
-                  <li ><a href="search_contributions.html">Search Contributions</a></li>
-     
-                </ul>
-              </li>
-              <!-- Team Dropdown -->
-              <li class="dropdown">
-                <a href="#">
-                  <span>Team</span>
-                  <i class="bi bi-chevron-down"></i>
-              </a>
-                <ul>
-                  <li class="border-bottom"><a href="team.html">Regular</a></li>
-                  <li class="border-bottom"><a href="guest.html">Guest</a></li>
-                  <li><a href="champions.html">Champions</a></li>
-                </ul>
-              </li>
-              <!-- Reviews Dropdown -->
-              <li class="dropdown">
-                <a href="#">
-                  <span>Reviews</span> 
-                  <i class="bi bi-chevron-down"></i>
-              </a>
-                <ul>
-                  <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
-                  <li><a href="raku-review.html">Raku</a></li>
-                </ul>
-              </li>
-              <!-- Charts DropDown -->
-              <li class="dropdown">
-                <a href="#">
-                  <span>Leaderboard</span>
-                  <i class="bi bi-chevron-down"></i>
-              </a>
-                <ul>
-                  <li class="border-bottom"><a href="team-leader.html">Team Leader</a></li>
-                  <li><a href="guest-leader.html">Guest Leader</a></li>
-                </ul>
-              </li>
-              <!-- Prefernces -->
-              <li class="dropdown">
-                <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li class="border-bottom theme1"><a href="#">Default</a></li>
-                  <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
-                  <li class="theme3"><a href="#">Blue Mode</a></li>
-                </ul>
-              </li>
-              <!-- User Features Dropdown -->
-              <li class="dropdown">
-                <a class="getstarted scrollto user-btn" href="#about">
-                  <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
-                  <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
-                </a>
-                <ul>
-                  <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
-                  <li class="border-bottom"><a href="logout.html">Logout</a></li>
-                  <li class="border-bottom"><a href="user_dashboard.html">My Profile</a></li>
-                  <li><a href="#">Settings</a></li>
-                </ul>
-              </li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav>
-          <!-- End Navbar -->
+          <a href="index.html" class="logo me-auto">
+            <img
+              src="/public/images/logo/typography.png"
+              alt="typography"
+              class="img-fluid"
+            />
+          </a>
         </div>
-      </header>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="getstarted scrollto user-btn" href="index.html">
+                <span><i class="fa-solid fa-house fs-6"></i></span>
+              </a>
+            </li>
+            <!-- About Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>About</span> <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="border-bottom">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <!-- Contributions Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Contributions</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="search-weekly-challenges.html">Challenges</a>
+                </li>
+
+                <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
+                <li class="border-bottom">
+                  <a href="list-outreachy-applicants.html"
+                    >Outreachy Applicants</a
+                  >
+                </li>
+                <li>
+                  <a href="search_contributions.html">Search Contributions</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Team Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Team</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom"><a href="team.html">Regular</a></li>
+                <li class="border-bottom"><a href="guest.html">Guest</a></li>
+                <li><a href="champions.html">Champions</a></li>
+              </ul>
+            </li>
+            <!-- Reviews Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Reviews</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="perl-review.html">Perl</a>
+                </li>
+                <li><a href="raku-review.html">Raku</a></li>
+              </ul>
+            </li>
+            <!-- Charts DropDown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Leaderboard</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="team-leader.html">Team Leader</a>
+                </li>
+                <li><a href="guest-leader.html">Guest Leader</a></li>
+              </ul>
+            </li>
+            <!-- Prefernces -->
+            <li class="dropdown">
+              <a href="#"
+                ><span>Preferences</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li class="border-bottom theme1"><a href="#">Default</a></li>
+                <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
+                <li class="theme3"><a href="#">Blue Mode</a></li>
+              </ul>
+            </li>
+            <!-- User Features Dropdown -->
+            <li class="dropdown">
+              <a class="getstarted scrollto user-btn" href="#about">
+                <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
+                <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="sign-in.html">Login/SignUp</a>
+                </li>
+                <li class="border-bottom"><a href="logout.html">Logout</a></li>
+                <li class="border-bottom">
+                  <a href="user_dashboard.html">My Profile</a>
+                </li>
+                <li><a href="#">Settings</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+    </header>
 
     <!-- End Header -->
 
     <!-- ================= Main Body ======================== -->
-          <!-- ======= About Section ======= -->
+    <!-- ======= About Section ======= -->
     <section id="about" class="about">
-        <div class="container">
-  
-          <div class="section-title ">
-            <h2 style="color: #2b83f3;">About</h2>
-            <p>BEHIND THE SUCCESS</p>
+      <div class="container">
+        <div class="section-title">
+          <h2 style="color: #2b83f3">About</h2>
+          <p>BEHIND THE SUCCESS</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="/public/images/mentor.jpg" class="img-fluid" alt="" />
           </div>
-  
-          <div class="row">
-            <div class="col-lg-4" data-aos="fade-right">
-              <img src="/public/images/mentor.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-              <h3>Mohammad Sajid Anwar</h3>
-              <p class="fst-italic">
-                2022 White Camel Awardee. CPAN Contributor
-              </p>
-              <p class="pt-2"><b>JAMSHEDPUR, INDIA (1993 - 1997)</b></p>
-              <div id="articleRows">
-                <div class="col-display">
-                    Let me share my journey of getting into computing. It all started in the year 1993, I just joined the 3 year degree course of B.Sc (Math Honours). It was during the first year, I realised doing just degree is not going to help me secure a job that I needed desparately to support my family. A friend of mine asked me if I am interested to join computer training course. Without giving any thought, I decided to join him and went to a local branch of APTECH, a well known name in computer training institute in India. When we reached their office and enquired about various courses they were offerings. We were told to give an aptitute test before we can join any course. I wasn't prepared for the test but decided to give it a try. We both secured over 90% mark in the test. My friend was fully prepared, so he started dicussing about the courses. At the end he decided to join one year course in "Diploma In Information and System Management" (DISM). At the time, the fee was INR 13,000. But I didn't have the money to join the course. I told my mother about it. Like any mother, she decided to sell her wedding jewellery to pay my fees. It was important for me to start earning asap. I was hoping this course would help me land a decent job. I joined the course 6 months later. </div> 
-                    <div class="col-display">On the very first day of course, I noticed the same friend is my course faculty. He was a bright student, therefore APTECH offered him the job while he was still doing his course there. We were taught Foxpro and COBOL programming language as a part of the course. At the end of the course, I wasn't satisfied with the knowledge I had. So I decided to learn few other programming languages. The trouble was, I didn't have PC/Laptop to practice and also not enough money to buy computer books. I joined a local library called "Muslim Library" as it was FREE and started borrowing books from there. The library was very far from where I lived. I had to take 2 bus journeys to get there. Sometimes, I didn't even have enough money to pay the bus fare. My older sister, who used to give home tution, always helped me. I learnt Pascal by just reading books. Then I learnt "C" but this time, I found out one of my friend is running computer training institute. So I went to him and asked if I can use his PC when ever it is available. In return I would teach his students. He kindly accepted my offer. While I was still exploring "C" language, I saw an advert about a multinational computer training center opening in Jamshedpur called INFOTECH. I decided to apply for the post of Faculty. But I only got the job of "Lab Assistant" for INR 2000 per month. For me that was a lot of money as I could support my family, specially my younger brother who was still in college. There was an added advantage being a Lab Assistant, I could have as much PC time as I like. I learnt Oracle during my time there and got promoted to Faculty after one year.</div> 
-                    <div class="col-display">
-                        <p class="py-2"><b>MUMBAI, INDIA (1997 - 2000)</b></p>
-                        In the year 1997, I decided to move to bigger city for better opportunities. One of my colleague at INFOTECH was going to Mumbai to try his luck. So I decided to join him, as I didn't know anyone in Mumbai. It was really tough first 3 months. My colleague got a good offer in a very big Technology firm and I was still struggling. In the end, I decided to join APTECH as Faculty. It was a case of surviving. I didn't like the job as I was looking for programming role but I had no other choices. After a year or so, the branch manager of APTECH asked me if I am interested to do small project in Foxpro as a part time. I took the offer without any hesitation. This was my first programming role. We built Windows desktop app for a local Rubber Factory. During this time, a friend of my friend from Jamshedpur asked me if I am interested in Perl programming role. It was a startup, INFOFIN, looking for someone keen to learn the language. I gave the interview and got the job. It was better paid (INR 7000/month) than APTECH (INR 5000/month) and satisfying as well. For the first time, I learnt web programming using good old CGI.pm and DBI.pm. No template, everything was in CGI script. A year and half later, I saw a job advert from multinational company, ORIENT, looking for Perl developers. By now, I knew enough of Perl and decided to give it a try. By the grace of ALLAH, I got the job. I couldn't believe when I was told my salary would be INR 15,000/month. I was little worried though with this salary the expectation would be very high. My first day in the office was very interesting. I saw 20+ programmers with different background sitting and doing nothing all day. We used to get FREE lunch as well. It didn't took me long to figure out what was happening. It was kind of body-shopping. Hire programmers and then send them abroad for contracting, mainly UK and USA. I was asked my choice of place, I randomly picked UK.
-                        <p class="py-2"><b>LONDON, ENGLAND (2000 - till date)</b></p>I still remember arriving at Heathrow airport on a Sunday evening, 2nd April 2000. My manager from London office came to pick me up. He took me to a Gujarati family in Wembley where already 10 other programmers were staying. I came to UK with 2 years work permit on a take home pay package of GBP 1600 after tax. My first few months were really bad. Communication, that too in English, was never my forte. So where ever I used to go for contracting, I would face lots of issues. After a while, I got 2 weeks contract in the city. On the very first day, I impressed my line manager by solving an issue that they couldn't solve for months. At the end of first day, I was offered extended 6 months contract. I was very happy as she was very understanding. After that I got another contract in Dublin for Vodafone for 2 months. It was great working there, very friendly people. I came back to London in Dec 2000 and took contract for company, Torrington Interactive, based in the city. I was working on "Tuskerdirect" project. Within few months, the company went into liquidation. Luckily I was approached by the IT manager of Tuskerdirect and he offered me a permanent place rather than contracting. I didn't like contracting so I took the offer. Guess my pay package was now, GBP 2600 after tax. I worked there for 5 years, the longest at any place that time. After that I joined Spinvox where I met Neil Bowers. I had the pleasure of working with him on SMS sending module. Two years later, during redundancy, I left the job and came back to the city. Currently I am working for NTT Europe for nearly 7 years.
-                        <p class="pt-3"><b>Yours Truly</b></p>
-                         <p><b> Mohammad Sajid Anwar</b></p>  
-                            
-                    
-                    
-                    </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Mohammad Sajid Anwar</h3>
+            <p class="fst-italic">2022 White Camel Awardee. CPAN Contributor</p>
+            <p class="pt-2"><b>JAMSHEDPUR, INDIA (1993 - 1997)</b></p>
+            <div id="articleRows">
+              <div class="col-display">
+                Let me share my journey of getting into computing. It all
+                started in the year 1993, I just joined the 3 year degree course
+                of B.Sc (Math Honours). It was during the first year, I realised
+                doing just degree is not going to help me secure a job that I
+                needed desparately to support my family. A friend of mine asked
+                me if I am interested to join computer training course. Without
+                giving any thought, I decided to join him and went to a local
+                branch of APTECH, a well known name in computer training
+                institute in India. When we reached their office and enquired
+                about various courses they were offerings. We were told to give
+                an aptitute test before we can join any course. I wasn't
+                prepared for the test but decided to give it a try. We both
+                secured over 90% mark in the test. My friend was fully prepared,
+                so he started dicussing about the courses. At the end he decided
+                to join one year course in "Diploma In Information and System
+                Management" (DISM). At the time, the fee was INR 13,000. But I
+                didn't have the money to join the course. I told my mother about
+                it. Like any mother, she decided to sell her wedding jewellery
+                to pay my fees. It was important for me to start earning asap. I
+                was hoping this course would help me land a decent job. I joined
+                the course 6 months later.
               </div>
-              
+              <div class="col-display">
+                On the very first day of course, I noticed the same friend is my
+                course faculty. He was a bright student, therefore APTECH
+                offered him the job while he was still doing his course there.
+                We were taught Foxpro and COBOL programming language as a part
+                of the course. At the end of the course, I wasn't satisfied with
+                the knowledge I had. So I decided to learn few other programming
+                languages. The trouble was, I didn't have PC/Laptop to practice
+                and also not enough money to buy computer books. I joined a
+                local library called "Muslim Library" as it was FREE and started
+                borrowing books from there. The library was very far from where
+                I lived. I had to take 2 bus journeys to get there. Sometimes, I
+                didn't even have enough money to pay the bus fare. My older
+                sister, who used to give home tution, always helped me. I learnt
+                Pascal by just reading books. Then I learnt "C" but this time, I
+                found out one of my friend is running computer training
+                institute. So I went to him and asked if I can use his PC when
+                ever it is available. In return I would teach his students. He
+                kindly accepted my offer. While I was still exploring "C"
+                language, I saw an advert about a multinational computer
+                training center opening in Jamshedpur called INFOTECH. I decided
+                to apply for the post of Faculty. But I only got the job of "Lab
+                Assistant" for INR 2000 per month. For me that was a lot of
+                money as I could support my family, specially my younger brother
+                who was still in college. There was an added advantage being a
+                Lab Assistant, I could have as much PC time as I like. I learnt
+                Oracle during my time there and got promoted to Faculty after
+                one year.
+              </div>
+              <div class="col-display">
+                <p class="py-2"><b>MUMBAI, INDIA (1997 - 2000)</b></p>
+                In the year 1997, I decided to move to bigger city for better
+                opportunities. One of my colleague at INFOTECH was going to
+                Mumbai to try his luck. So I decided to join him, as I didn't
+                know anyone in Mumbai. It was really tough first 3 months. My
+                colleague got a good offer in a very big Technology firm and I
+                was still struggling. In the end, I decided to join APTECH as
+                Faculty. It was a case of surviving. I didn't like the job as I
+                was looking for programming role but I had no other choices.
+                After a year or so, the branch manager of APTECH asked me if I
+                am interested to do small project in Foxpro as a part time. I
+                took the offer without any hesitation. This was my first
+                programming role. We built Windows desktop app for a local
+                Rubber Factory. During this time, a friend of my friend from
+                Jamshedpur asked me if I am interested in Perl programming role.
+                It was a startup, INFOFIN, looking for someone keen to learn the
+                language. I gave the interview and got the job. It was better
+                paid (INR 7000/month) than APTECH (INR 5000/month) and
+                satisfying as well. For the first time, I learnt web programming
+                using good old CGI.pm and DBI.pm. No template, everything was in
+                CGI script. A year and half later, I saw a job advert from
+                multinational company, ORIENT, looking for Perl developers. By
+                now, I knew enough of Perl and decided to give it a try. By the
+                grace of ALLAH, I got the job. I couldn't believe when I was
+                told my salary would be INR 15,000/month. I was little worried
+                though with this salary the expectation would be very high. My
+                first day in the office was very interesting. I saw 20+
+                programmers with different background sitting and doing nothing
+                all day. We used to get FREE lunch as well. It didn't took me
+                long to figure out what was happening. It was kind of
+                body-shopping. Hire programmers and then send them abroad for
+                contracting, mainly UK and USA. I was asked my choice of place,
+                I randomly picked UK.
+                <p class="py-2"><b>LONDON, ENGLAND (2000 - till date)</b></p>
+                I still remember arriving at Heathrow airport on a Sunday
+                evening, 2nd April 2000. My manager from London office came to
+                pick me up. He took me to a Gujarati family in Wembley where
+                already 10 other programmers were staying. I came to UK with 2
+                years work permit on a take home pay package of GBP 1600 after
+                tax. My first few months were really bad. Communication, that
+                too in English, was never my forte. So where ever I used to go
+                for contracting, I would face lots of issues. After a while, I
+                got 2 weeks contract in the city. On the very first day, I
+                impressed my line manager by solving an issue that they couldn't
+                solve for months. At the end of first day, I was offered
+                extended 6 months contract. I was very happy as she was very
+                understanding. After that I got another contract in Dublin for
+                Vodafone for 2 months. It was great working there, very friendly
+                people. I came back to London in Dec 2000 and took contract for
+                company, Torrington Interactive, based in the city. I was
+                working on "Tuskerdirect" project. Within few months, the
+                company went into liquidation. Luckily I was approached by the
+                IT manager of Tuskerdirect and he offered me a permanent place
+                rather than contracting. I didn't like contracting so I took the
+                offer. Guess my pay package was now, GBP 2600 after tax. I
+                worked there for 5 years, the longest at any place that time.
+                After that I joined Spinvox where I met Neil Bowers. I had the
+                pleasure of working with him on SMS sending module. Two years
+                later, during redundancy, I left the job and came back to the
+                city. Currently I am working for NTT Europe for nearly 7 years.
+                <p class="pt-3"><b>Yours Truly</b></p>
+                <p><b> Mohammad Sajid Anwar</b></p>
+              </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4 mbt-3">
-                  <button id="showMore" class="btn btn-md" style="background-color: #92E3A9; color: white;">Show more</button>
-                </div>
-                <div class="col-lg-4 text-end mb-3 d-flex justify-content-end">
-                  <button id="showLess" class="btn btn-md" style="background-color: #92E3A9; color: white; display: none;">Show Less</button>
-                </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 mbt-3">
+              <button
+                id="showMore"
+                class="btn btn-md"
+                style="background-color: #92e3a9; color: white"
+              >
+                Show more
+              </button>
+            </div>
+            <div class="col-lg-4 text-end mb-3 d-flex justify-content-end">
+              <button
+                id="showLess"
+                class="btn btn-md"
+                style="background-color: #92e3a9; color: white; display: none"
+              >
+                Show Less
+              </button>
             </div>
           </div>
         </div>
-      </section><!-- End About Section -->
+      </div>
+    </section>
+    <!-- End About Section -->
     <!-- ================ Preloader ========================= -->
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-        <i class="bi bi-arrow-up-short"></i>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
     </a>
 
     <!-- ================= Footer ==================== -->
     <footer id="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-12 footer-contact">
-                <img src="/public/images/logo/logo.png" class="footer-logo">
-                <img src="/public/images/logo/typography.png" class="footer-typo">
-                  <div class="email my-5">
-                    <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
-                  </div>
-                </p>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 footer-contact">
+              <img src="/public/images/logo/logo.png" class="footer-logo" />
+              <img
+                src="/public/images/logo/typography.png"
+                class="footer-typo"
+              />
+              <div class="email my-5">
+                <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
               </div>
-  
-              <div class="col-lg-4 col-md-6 footer-links">
-                <h4>Useful Links</h4>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <ul>
-                      <li>
-                        <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
-                      </li>
-                      <li>
-                        <i class="bx bx-chevron-right"></i>
-                        <a href="about.html">About us</a>
-                      </li>
-                      <li>
-                        <i class="bx bx-chevron-right"></i>
-                        <a href="search_contributions.html">Contributions</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-6 mt-2 mt-lg-0">
-                    <ul>
-                      <li>
-                        <i class="bx bx-chevron-right"></i> <a href="team.html">Teams</a>
-                      </li>
-                      <li>
-                        <i class="bx bx-chevron-right"></i>
-                        <a href="perl-review.html">Reviews</a>
-                      </li>
-                      <li>
-                        <i class="bx bx-chevron-right"></i> <a href="team-leader.html">Charts</a>
-                      </li>
-                    </ul>
-                  </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="about.html">About us</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="search_contributions.html">Contributions</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 mt-2 mt-lg-0">
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team.html">Teams</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="perl-review.html">Reviews</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team-leader.html">Charts</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-  
-              <div class="col-lg-4 col-md-6 footer-links">
-                <h4>Our Social Networks</h4>
-                <p>
-                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
-                </p>
-                <div class="social-links mt-3">
-                  <a href="https://twitter.com/perlwchallenge?lang=en" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-                  <a href="https://www.facebook.com/groups/theweeklychallengegroup/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-                  <a href="#" class="instagram"
-                    ><i class="bx bxl-instagram"></i
-                  ></a>
-                  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
+                suscipit?
+              </p>
+              <div class="social-links mt-3">
+                <a
+                  href="https://twitter.com/perlwchallenge?lang=en"
+                  target="_blank"
+                  class="twitter"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/groups/theweeklychallengegroup/"
+                  target="_blank"
+                  class="facebook"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
         </div>
-  
-        <div class="container footer-bottom clearfix">
-          <div class="copyright">
-            &copy; Copyright <strong><span>The Weekly Challenge</span></strong
-            >. All Rights Reserved
-          </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>The Weekly Challenge</span></strong
+          >. All Rights Reserved
         </div>
-      </footer>
+      </div>
+    </footer>
     <!-- End Footer -->
 
     <!-- ================= Vendor JS Files ================== -->
@@ -300,6 +483,5 @@
     <!-- Template Main JS File -->
     <script src="/public/javascripts/index.js"></script>
     <script src="/public/javascripts/about.js"></script>
-</body>
-
+  </body>
 </html>

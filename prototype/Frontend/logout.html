@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>The Weekly Challenge - Perl & Raku</title>
+    <title>The Weekly Challenge</title>
     <meta
       content="The Weekly Challenge that includes Perl and Raku programming."
       name="description"
@@ -12,7 +12,15 @@
     <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
 
     <!-- Favicons -->
-    <link href="/public/images/logo/logo.png" rel="icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/public/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/public/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/public/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/public/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Google Fonts -->
     <link
@@ -57,30 +65,35 @@
     <link href="/public/css/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="/public/css/teamStyle.css" />
     <link rel="stylesheet" href="/prototype/Frontend/css/new.css" />
-
-
   </head>
 
   <body>
     <!-- ==================== Header ======================== -->
     <header id="header" class="sticky-top border-bottom">
       <div class="container d-flex align-items-center">
-        <div class="container d-flex align-items-center justify-content-center me-auto">
+        <div
+          class="container d-flex align-items-center justify-content-center me-auto"
+        >
           <a href="index.html" class="logo me-3">
-            <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
-        </a>
+            <img
+              src="/public/images/logo/logo.png"
+              alt="logo"
+              class="img-fluid"
+            />
+          </a>
           <a href="index.html" class="logo me-auto">
             <img
               src="/public/images/logo/typography.png"
               alt="typography"
-              class="img-fluid"/>
-            </a>
+              class="img-fluid"
+            />
+          </a>
         </div>
 
         <nav id="navbar" class="navbar">
           <ul>
             <li>
-                <a class="getstarted scrollto user-btn" href="index.html">
+              <a class="getstarted scrollto user-btn" href="index.html">
                 <span><i class="fa-solid fa-house fs-6"></i></span>
               </a>
             </li>
@@ -88,7 +101,7 @@
             <li class="dropdown">
               <a href="#">
                 <span>About</span> <i class="bi bi-chevron-down"></i>
-            </a>
+              </a>
               <ul>
                 <li class="border-bottom">
                   <a href="about.html">About Us</a>
@@ -102,16 +115,23 @@
             <!-- Contributions Dropdown -->
             <li class="dropdown">
               <a href="#">
-                <span>Contributions</span> 
+                <span>Contributions</span>
                 <i class="bi bi-chevron-down"></i>
-            </a>
+              </a>
               <ul>
-                <li class="border-bottom"><a href="search-weekly-challenges.html">Challenges</a></li>
+                <li class="border-bottom">
+                  <a href="search-weekly-challenges.html">Challenges</a>
+                </li>
 
                 <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
-                <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
-                <li ><a href="search_contributions.html">Search Contributions</a></li>
-   
+                <li class="border-bottom">
+                  <a href="list-outreachy-applicants.html"
+                    >Outreachy Applicants</a
+                  >
+                </li>
+                <li>
+                  <a href="search_contributions.html">Search Contributions</a>
+                </li>
               </ul>
             </li>
             <!-- Team Dropdown -->
@@ -119,7 +139,7 @@
               <a href="#">
                 <span>Team</span>
                 <i class="bi bi-chevron-down"></i>
-            </a>
+              </a>
               <ul>
                 <li class="border-bottom"><a href="team.html">Regular</a></li>
                 <li class="border-bottom"><a href="guest.html">Guest</a></li>
@@ -129,11 +149,13 @@
             <!-- Reviews Dropdown -->
             <li class="dropdown">
               <a href="#">
-                <span>Reviews</span> 
+                <span>Reviews</span>
                 <i class="bi bi-chevron-down"></i>
-            </a>
+              </a>
               <ul>
-                <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
+                <li class="border-bottom">
+                  <a href="perl-review.html">Perl</a>
+                </li>
                 <li><a href="raku-review.html">Raku</a></li>
               </ul>
             </li>
@@ -142,15 +164,19 @@
               <a href="#">
                 <span>Leaderboard</span>
                 <i class="bi bi-chevron-down"></i>
-            </a>
+              </a>
               <ul>
-                <li class="border-bottom"><a href="team-leader.html">Team Leader</a></li>
+                <li class="border-bottom">
+                  <a href="team-leader.html">Team Leader</a>
+                </li>
                 <li><a href="guest-leader.html">Guest Leader</a></li>
               </ul>
             </li>
             <!-- Prefernces -->
             <li class="dropdown">
-              <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
+              <a href="#"
+                ><span>Preferences</span> <i class="bi bi-chevron-down"></i
+              ></a>
               <ul>
                 <li class="border-bottom theme1"><a href="#">Default</a></li>
                 <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
@@ -164,9 +190,13 @@
                 <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
               </a>
               <ul>
-                <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
+                <li class="border-bottom">
+                  <a href="sign-in.html">Login/SignUp</a>
+                </li>
                 <li class="border-bottom"><a href="logout.html">Logout</a></li>
-                <li class="border-bottom"><a href="user_dashboard.html">My Profile</a></li>
+                <li class="border-bottom">
+                  <a href="user_dashboard.html">My Profile</a>
+                </li>
                 <li><a href="#">Settings</a></li>
               </ul>
             </li>
@@ -180,33 +210,43 @@
     <!-- End Header -->
 
     <!-- ================= Main Body ======================== -->
-    <div class="main-section py-5" style="min-height: 84.5vh;">
-            <div class="container-fluid h-custom">
-              <div class="row d-flex justify-content-center align-items-center h-100">
-                
-                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                    <div class="col-12" data-aos="fade-up"
-                    data-aos-delay="200">
-                      <div class="logout mb-3"> <img src="/public/images/check_complete_done_green_success_icon.svg" style="height: 5rem; width: 5rem;"></div>
-                       
-                        <p>You have been successfully logged out of your account.</p>
-                        <p>Thank you for using <b>The Weekly Challenge</b></p>
-                        <div class="my-3">
-                            <a href="sign-in.html" class="btn-get-started scrollto">Login again</a>
-                        </div>
-                        <p><b>See you later !</b></p>
-                    </div>
-                  
-                </div>
-                <div class="col-md-9 col-lg-6 col-xl-5" data-aos="zoom-in"
-                data-aos-delay="200">
-                    <div id="animation-container"class="animated container-fluid anim-container"></div>
-                  <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                    class="img-fluid" alt="Sample image"> -->
-                </div>
+    <div class="main-section py-5" style="min-height: 84.5vh">
+      <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+              <div class="logout mb-3">
+                <img
+                  src="/public/images/check_complete_done_green_success_icon.svg"
+                  style="height: 5rem; width: 5rem"
+                />
               </div>
+
+              <p>You have been successfully logged out of your account.</p>
+              <p>Thank you for using <b>The Weekly Challenge</b></p>
+              <div class="my-3">
+                <a href="sign-in.html" class="btn-get-started scrollto"
+                  >Login again</a
+                >
+              </div>
+              <p><b>See you later !</b></p>
             </div>
+          </div>
+          <div
+            class="col-md-9 col-lg-6 col-xl-5"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div
+              id="animation-container"
+              class="animated container-fluid anim-container"
+            ></div>
+            <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                    class="img-fluid" alt="Sample image"> -->
+          </div>
         </div>
+      </div>
+    </div>
 
     <!-- ================ Preloader ========================= -->
     <div id="preloader"></div>
@@ -217,16 +257,16 @@
       <i class="bi bi-arrow-up-short"></i>
     </a>
 
-     <!-- =============== Footer ================= -->
-     <footer id="footer">
-        <div class="container footer-bottom clearfix">
-          <div class="copyright">
-            &copy; Copyright <strong><span>The Weekly Challenge</span></strong
-            >. All Rights Reserved
-          </div>
+    <!-- =============== Footer ================= -->
+    <footer id="footer">
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>The Weekly Challenge</span></strong
+          >. All Rights Reserved
         </div>
-      </footer>
-      <!-- End Footer -->
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- ================= Vendor JS Files ================== -->
     <script src="/public/javascripts/vendor/aos/aos.js"></script>
@@ -244,16 +284,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
 
     <script>
-        // Setting up Lottie
-        var lottiePath = (localStorage.getItem('lottie') && localStorage.getItem('lottie') === 'blue') ? '/public/javascripts/lottiejson/purple.json': '/public/javascripts/lottiejson/green.json';
-        var animationContainer = document.getElementById("animation-container");
-        var anim = bodymovin.loadAnimation({
-          container: animationContainer,
-          renderer: "svg", // You can also use 'canvas' or 'html'
-          loop: true, // Set to true if you want the animation to loop
-          autoplay: true,
-          path: lottiePath,
-        });
-      </script>
+      // Setting up Lottie
+      var lottiePath =
+        localStorage.getItem("lottie") &&
+        localStorage.getItem("lottie") === "blue"
+          ? "/public/javascripts/lottiejson/purple.json"
+          : "/public/javascripts/lottiejson/green.json";
+      var animationContainer = document.getElementById("animation-container");
+      var anim = bodymovin.loadAnimation({
+        container: animationContainer,
+        renderer: "svg", // You can also use 'canvas' or 'html'
+        loop: true, // Set to true if you want the animation to loop
+        autoplay: true,
+        path: lottiePath,
+      });
+    </script>
   </body>
 </html>
