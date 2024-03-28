@@ -1,64 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>The Weekly Challenge</title>
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/public/images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/public/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/public/images/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/public/images/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    
-    <meta content="The Weekly Challenge that includes Perl and Raku programming." name="description" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/public/images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/public/images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/public/images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="/public/images/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta
+      content="The Weekly Challenge that includes Perl and Raku programming."
+      name="description"
+    />
     <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
 
     <!-- Data Tbale link -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
-        rel="stylesheet" />
-    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-    <link href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/images/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicons/favicon-16x16.png">
-<link rel="manifest" href="/public/images/favicons/site.webmanifest">
-<link rel="mask-icon" href="/public/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/public/images/favicons/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/public/images/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/public/images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/public/images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/public/images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="/public/images/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Vendor CSS Files -->
     <link href="/public/css/helpercss/aos.css" rel="stylesheet" />
-    <link href="/public/css/helpercss/bootstrap_css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="/public/css/helpercss/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="/public/css/helpercss/glightbox_css/glightbox.min.css" rel="stylesheet" />
-    <link href="/public/css/helpercss/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="/public/css/helpercss/bootstrap_css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/glightbox_css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/remixicon/remixicon.css"
+      rel="stylesheet"
+    />
     <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
@@ -66,538 +139,669 @@
     <link href="/prototype/Frontend/css/team.css" rel="stylesheet" />
 
     <style>
-
-
-        .btn-primary-effect:hover {
-            background-color: #92E3A9;
-            color: white;
-            border-color: #92E3A9;
-        }
-
+      .btn-primary-effect:hover {
+        background-color: #92e3a9;
+        color: white;
+        border-color: #92e3a9;
+      }
     </style>
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- ==================== Header =================== -->
     <header id="header" class="sticky-top border-bottom">
-        <div class="container d-flex align-items-center">
-          <div class="container d-flex align-items-center justify-content-center me-auto">
-            <a href="index.html" class="logo me-3">
-              <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
+      <div class="container d-flex align-items-center">
+        <div
+          class="container d-flex align-items-center justify-content-center me-auto"
+        >
+          <a href="index.html" class="logo me-3">
+            <img
+              src="/public/images/logo/logo.png"
+              alt="logo"
+              class="img-fluid"
+            />
           </a>
-            <a href="index.html" class="logo me-auto">
-              <img
-                src="/public/images/logo/typography.png"
-                alt="typography"
-                class="img-fluid"/>
-              </a>
-          </div>
-  
-          <nav id="navbar" class="navbar">
-            <ul>
-              <li>
-                  <a class="getstarted scrollto user-btn" href="index.html">
-                  <span><i class="fa-solid fa-house fs-6"></i></span>
-                </a>
-              </li>
-              <!-- About Dropdown -->
-              <li class="dropdown">
-                <a href="#">
-                  <span>About</span> <i class="bi bi-chevron-down"></i>
-              </a>
-                <ul>
-                  <li class="border-bottom">
-                    <a href="about.html">About Us</a>
-                  </li>
-                  <li class="border-bottom">
-                    <a href="contact.html">Contact Us</a>
-                  </li>
-                  <li><a href="faq.html">FAQ</a></li>
-                </ul>
-              </li>
-              <!-- Contributions Dropdown -->
-              <li class="dropdown">
-                <a href="#">
-                  <span>Contributions</span> 
-                  <i class="bi bi-chevron-down"></i>
-              </a>
-                <ul>
-                  <li class="border-bottom"><a href="search-weekly-challenges.html">Challenges</a></li>
-  
-                  <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
-                  <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
-                  <li ><a href="search_contributions.html">Search Contributions</a></li>
-     
-                </ul>
-              </li>
-              <!-- Team Dropdown -->
-              <li class="dropdown">
-                <a href="#">
-                  <span>Team</span>
-                  <i class="bi bi-chevron-down"></i>
-              </a>
-                <ul>
-                  <li class="border-bottom"><a href="team.html">Regular</a></li>
-                  <li class="border-bottom"><a href="guest.html">Guest</a></li>
-                  <li><a href="champions.html">Champions</a></li>
-                </ul>
-              </li>
-              <!-- Reviews Dropdown -->
-              <li class="dropdown">
-                <a href="#">
-                  <span>Reviews</span> 
-                  <i class="bi bi-chevron-down"></i>
-              </a>
-                <ul>
-                  <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
-                  <li><a href="raku-review.html">Raku</a></li>
-                </ul>
-              </li>
-              <!-- Charts DropDown -->
-              <li class="dropdown">
-                <a href="#">
-                  <span>Leaderboard</span>
-                  <i class="bi bi-chevron-down"></i>
-              </a>
-                <ul>
-                  <li class="border-bottom"><a href="team-leader.html">Team Leader</a></li>
-                  <li><a href="guest-leader.html">Guest Leader</a></li>
-                </ul>
-              </li>
-              <!-- Prefernces -->
-              <li class="dropdown">
-                <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li class="border-bottom theme1"><a href="#">Default</a></li>
-                  <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
-                  <li class="theme3"><a href="#">Blue Mode</a></li>
-                </ul>
-              </li>
-              <!-- User Features Dropdown -->
-              <li class="dropdown">
-                <a class="getstarted scrollto user-btn" href="#about">
-                  <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
-                  <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
-                </a>
-                <ul>
-                  <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
-                  <li class="border-bottom"><a href="logout.html">Logout</a></li>
-                  <li class="border-bottom"><a href="user_dashboard.html">My Profile</a></li>
-                  <li><a href="#">Settings</a></li>
-                </ul>
-              </li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav>
-          <!-- End Navbar -->
+          <a href="index.html" class="logo me-auto">
+            <img
+              src="/public/images/logo/typography.png"
+              alt="typography"
+              class="img-fluid"
+            />
+          </a>
         </div>
-      </header>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="getstarted scrollto user-btn" href="index.html">
+                <span><i class="fa-solid fa-house fs-6"></i></span>
+              </a>
+            </li>
+            <!-- About Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>About</span> <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="border-bottom">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <!-- Contributions Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Contributions</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="search-weekly-challenges.html">Challenges</a>
+                </li>
+
+                <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
+                <li class="border-bottom">
+                  <a href="list-outreachy-applicants.html"
+                    >Outreachy Applicants</a
+                  >
+                </li>
+                <li>
+                  <a href="search_contributions.html">Search Contributions</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Team Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Team</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom"><a href="team.html">Regular</a></li>
+                <li class="border-bottom"><a href="guest.html">Guest</a></li>
+                <li><a href="champions.html">Champions</a></li>
+              </ul>
+            </li>
+            <!-- Reviews Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Reviews</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="perl-review.html">Perl</a>
+                </li>
+                <li><a href="raku-review.html">Raku</a></li>
+              </ul>
+            </li>
+            <!-- Charts DropDown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Leaderboard</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="team-leader.html">Team Leader</a>
+                </li>
+                <li><a href="guest-leader.html">Guest Leader</a></li>
+              </ul>
+            </li>
+            <!-- Prefernces -->
+            <li class="dropdown">
+              <a href="#"
+                ><span>Preferences</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li class="border-bottom theme1"><a href="#">Default</a></li>
+                <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
+                <li class="theme3"><a href="#">Blue Mode</a></li>
+              </ul>
+            </li>
+            <!-- User Features Dropdown -->
+            <li class="dropdown">
+              <a class="getstarted scrollto user-btn" href="#about">
+                <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
+                <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="sign-in.html">Login/SignUp</a>
+                </li>
+                <li class="border-bottom"><a href="logout.html">Logout</a></li>
+                <li class="border-bottom">
+                  <a href="user_dashboard.html">My Profile</a>
+                </li>
+                <li><a href="#">Settings</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+    </header>
 
     <!-- End Header -->
-
 
     <!-- Search Contributions start ============ -->
     <!-- ==================== Main Section ==================== -->
     <div class="container mt-5 mb-5">
+      <h1 class="display-6">Search Contributions</h1>
 
-
-        <h1 class="display-6">
-            Search Contributions
-        </h1>
-
-        <!-- Search by year, moth, and week -->
-        <div class="row">
-            <div class="col col-sm-10 col-md-8 col-lg-4 btn-group" role="group" aria-label="Basic example">
-                <select id="year" class="form-select ms-2" aria-label="Default select example">
-                    <option selected>Year</option>
-                    <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                    <option value="2019">2019</option>
-                    <option value="2018">2018</option>
-                </select>
-                <select id="month" class="form-select ms-2" aria-label="Default select example">
-                    <option selected>Month</option>
-                    <option value="January">January</option>
-                    <option value="Febuary">Febuary</option>
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May">May</option>
-                    <option value="June">June</option>
-                    <option value="July">July</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                </select>
-                <select id="week" class="form-select ms-2" aria-label="Default select example">
-                    <option selected>Week</option>
-                    <option value="1st">1st</option>
-                    <option value="2nd">2nd</option>
-                    <option value="3rd">3rd</option>
-                    <option value="4th">4th</option>
-                    <option value="5th">5th</option>
-                    <option value="6th">6th</option>
-                    <option value="7th">7th</option>
-                    <option value="8th">8th</option>
-                    <option value="9th">9th</option>
-                </select>
-                <button type="button" class="btn btn-primary btn-primary-effect ms-2 rounded border-0" onclick="filterTable()">Go</button>
-            </div>
+      <!-- Search by year, moth, and week -->
+      <div class="row">
+        <div
+          class="col col-sm-10 col-md-8 col-lg-4 btn-group"
+          role="group"
+          aria-label="Basic example"
+        >
+          <select
+            id="year"
+            class="form-select ms-2"
+            aria-label="Default select example"
+          >
+            <option selected>Year</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+          </select>
+          <select
+            id="month"
+            class="form-select ms-2"
+            aria-label="Default select example"
+          >
+            <option selected>Month</option>
+            <option value="January">January</option>
+            <option value="Febuary">Febuary</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+          </select>
+          <select
+            id="week"
+            class="form-select ms-2"
+            aria-label="Default select example"
+          >
+            <option selected>Week</option>
+            <option value="1st">1st</option>
+            <option value="2nd">2nd</option>
+            <option value="3rd">3rd</option>
+            <option value="4th">4th</option>
+            <option value="5th">5th</option>
+            <option value="6th">6th</option>
+            <option value="7th">7th</option>
+            <option value="8th">8th</option>
+            <option value="9th">9th</option>
+          </select>
+          <button
+            type="button"
+            class="btn btn-primary btn-primary-effect ms-2 rounded border-0"
+            onclick="filterTable()"
+          >
+            Go
+          </button>
         </div>
+      </div>
 
-        <!-- Search by language -->
-        <div class="row mt-3">
-            <div class="col col-sm-10 col-md-8 col-lg-4 btn-group" role="group" aria-label="Basic example">
-                <select id="language" class="form-select" aria-label="Default select example">
-                    <option selected>Language</option>
-                    <option value="Perl">Perl</option>
-                    <option value="Python">Python</option>
-                    <option value="Js">Js</option>
-                    <option value="Java">Java</option>
-                    <option value="HTML/CSS">HTML/CSS</option>
-                    <option value="React">React</option>
-                    <option value="PHP">PHP</option>
-                </select>
-                <button type="button" class="btn btn-primary btn-primary-effect ms-2 rounded" onclick="filterTableByLangauge()">Go</button>
-            </div>
+      <!-- Search by language -->
+      <div class="row mt-3">
+        <div
+          class="col col-sm-10 col-md-8 col-lg-4 btn-group"
+          role="group"
+          aria-label="Basic example"
+        >
+          <select
+            id="language"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>Language</option>
+            <option value="Perl">Perl</option>
+            <option value="Python">Python</option>
+            <option value="Js">Js</option>
+            <option value="Java">Java</option>
+            <option value="HTML/CSS">HTML/CSS</option>
+            <option value="React">React</option>
+            <option value="PHP">PHP</option>
+          </select>
+          <button
+            type="button"
+            class="btn btn-primary btn-primary-effect ms-2 rounded"
+            onclick="filterTableByLangauge()"
+          >
+            Go
+          </button>
         </div>
+      </div>
 
-        <div class="filter-container mb-3 mt-3">
-            <input type="search" id="customSearchBox1" class="form-control" placeholder="Search by typing user name...">
-        </div>
+      <div class="filter-container mb-3 mt-3">
+        <input
+          type="search"
+          id="customSearchBox1"
+          class="form-control"
+          placeholder="Search by typing user name..."
+        />
+      </div>
 
-        <!-- The table container starts here -->
-        <div class="container-fluid table-responsive pb-3 border rounded pt-3 mt-3">
-            <table id="search-contributions" class="table table-striped nowrap responsive" style="width: 100%;">
-                <thead>
-                    <tr>
-                        <th> # </th>
-                        <th> Contributor</th>
-                        <th>
-                            week
-                        </th>
-                        <th>
-                            year
+      <!-- The table container starts here -->
+      <div
+        class="container-fluid table-responsive pb-3 border rounded pt-3 mt-3"
+      >
+        <table
+          id="search-contributions"
+          class="table table-striped nowrap responsive"
+          style="width: 100%"
+        >
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Contributor</th>
+              <th>week</th>
+              <th>year</th>
+              <th>Month</th>
 
-                        </th>
-                        <th>
-                            Month
+              <th>Language</th>
 
-                        </th>
+              <th>
+                <span class="material-symbols-outlined"> visibility </span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1</td>
+              <td>
+                <a
+                  href="#"
+                  role="button"
+                  id="applicant-more-info"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  class="text-muted"
+                >
+                  <img
+                    src="https://lh3.googleusercontent.com/a/ACg8ocIAKucv2Q4a0yRtpFZP5YNgvnx0SdUyioWh9a5zLvb9oDw=s288-c-no"
+                    class="rounded-circle"
+                    height="35"
+                    alt="Black and White Portrait of a Man"
+                    loading="lazy"
+                  />
+                </a>
+                Fahad Mohamed Albasrawie
+              </td>
 
-                        <th>
-                            Language
-                        </th>
+              <td>1st</td>
 
-                        <th>
-                            <span class="material-symbols-outlined">
-                                visibility
-                            </span>
-                        </th>
+              <td>2015</td>
 
-                    </tr>
-                </thead>
-                <tbody>
+              <td>March</td>
 
-                    <tr>
-                        <td>#1</td>
-                        <td>
+              <td>Python</td>
 
-                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
-                                aria-expanded="false" class="text-muted">
-                                <img src="https://lh3.googleusercontent.com/a/ACg8ocIAKucv2Q4a0yRtpFZP5YNgvnx0SdUyioWh9a5zLvb9oDw=s288-c-no"
-                                    class="rounded-circle" height="35" alt="Black and White Portrait of a Man"
-                                    loading="lazy">
-                            </a>
-                            Fahad Mohamed Albasrawie
+              <td>
+                <a
+                  href="view_contributions.html"
+                  class="btn btn-sm btn-primary btn-primary-effect"
+                  >View</a
+                >
+              </td>
+            </tr>
 
-                        </td>
+            <!-- Entry 2 -->
+            <tr>
+              <td>#2</td>
+              <td>
+                <a
+                  href="#"
+                  role="button"
+                  id="applicant-more-info"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  class="text-muted"
+                >
+                  <img
+                    src="https://static.generated.photos/vue-static/face-generator/landing/demo-previews/age.jpg"
+                    class="rounded-circle"
+                    height="35"
+                    alt="Profile Picture 2"
+                    loading="lazy"
+                  />
+                </a>
+                Jane Doe
+              </td>
+              <td>2nd</td>
+              <td>2024</td>
+              <td>April</td>
+              <td>JavaScript</td>
+              <td>
+                <a
+                  href="view_contributions.html"
+                  class="btn btn-sm btn-primary btn-primary-effect"
+                  >View</a
+                >
+              </td>
+            </tr>
 
-                        <td>1st</td>
+            <!-- Repeat the above block for 18 more entries, adjusting details as necessary -->
 
-                        <td>2015</td>
+            <!-- Entry 3 -->
+            <tr>
+              <td>#3</td>
+              <td>
+                <a
+                  href="#"
+                  role="button"
+                  id="applicant-more-info"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  class="text-muted"
+                >
+                  <img
+                    src="https://static.generated.photos/vue-static/face-generator/landing/wall/23.jpg"
+                    class="rounded-circle"
+                    height="35"
+                    alt="Profile Picture 3"
+                    loading="lazy"
+                  />
+                </a>
+                Emily Smith
+              </td>
+              <td>3rd</td>
+              <td>2019</td>
+              <td>May</td>
+              <td>HTML/CSS</td>
+              <td>
+                <a
+                  href="view_contributions.html"
+                  class="btn btn-sm btn-primary btn-primary-effect"
+                  >View</a
+                >
+              </td>
+            </tr>
 
-                        <td>March</td>
+            <!-- Entry 4 -->
+            <tr>
+              <td>#4</td>
+              <td>
+                <a
+                  href="#"
+                  role="button"
+                  id="applicant-more-info"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  class="text-muted"
+                >
+                  <img
+                    src="https://static.generated.photos/vue-static/face-generator/landing/wall/20.jpg"
+                    class="rounded-circle"
+                    height="35"
+                    alt="Profile Picture 4"
+                    loading="lazy"
+                  />
+                </a>
+                John Williams
+              </td>
+              <td>4th</td>
+              <td>2024</td>
+              <td>June</td>
+              <td>Java</td>
+              <td>
+                <a
+                  href="view_contributions.html"
+                  class="btn btn-sm btn-primary btn-primary-effect"
+                  >View</a
+                >
+              </td>
+            </tr>
 
-                        <td>
-                            Python
-                        </td>
+            <!-- Repeat the above block for more entries, adjusting details as necessary -->
 
-                        <td>
-                            <a href="view_contributions.html" class="btn btn-sm btn-primary btn-primary-effect">View</a>
-                        </td>
-                    </tr>
+            <!-- Entry 5 -->
+            <tr>
+              <td>#5</td>
+              <td>
+                <a
+                  href="#"
+                  role="button"
+                  id="applicant-more-info"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  class="text-muted"
+                >
+                  <img
+                    src="https://static.generated.photos/vue-static/face-generator/landing/demo-previews/sex.jpg"
+                    class="rounded-circle"
+                    height="35"
+                    alt="Profile Picture 5"
+                    loading="lazy"
+                  />
+                </a>
+                Maria Garcia
+              </td>
+              <td>1st</td>
+              <td>2020</td>
+              <td>July</td>
+              <td>C++</td>
+              <td>
+                <a
+                  href="view_contributions.html"
+                  class="btn btn-sm btn-primary btn-primary-effect"
+                  >View</a
+                >
+              </td>
+            </tr>
 
-                    <!-- Entry 2 -->
-                    <tr>
-                        <td>#2</td>
-                        <td>
-                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
-                                aria-expanded="false" class="text-muted">
-                                <img src="https://static.generated.photos/vue-static/face-generator/landing/demo-previews/age.jpg"
-                                    class="rounded-circle" height="35" alt="Profile Picture 2" loading="lazy">
-                            </a>
-                            Jane Doe
-                        </td>
-                        <td>2nd</td>
-                        <td>2024</td>
-                        <td>April</td>
-                        <td>
-                            JavaScript
-                        </td>
-                        <td>
-                            <a href="view_contributions.html" class="btn btn-sm btn-primary btn-primary-effect">View</a>
-                        </td>
-                    </tr>
+            <!-- Entry 6 -->
+            <tr>
+              <td>#6</td>
+              <td>
+                <a
+                  href="#"
+                  role="button"
+                  id="applicant-more-info"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  class="text-muted"
+                >
+                  <img
+                    src="https://images.nightcafe.studio//assets/man-in-suit.jpg?tr=w-1600,c-at_max"
+                    class="rounded-circle"
+                    height="35"
+                    alt="Profile Picture 6"
+                    loading="lazy"
+                  />
+                </a>
+                Michael Brown
+              </td>
+              <td>2nd</td>
+              <td>2010</td>
+              <td>August</td>
+              <td>PHP</td>
+              <td>
+                <a
+                  href="view_contributions.html"
+                  class="btn btn-sm btn-primary btn-primary-effect"
+                  >View</a
+                >
+              </td>
+            </tr>
 
-                    <!-- Repeat the above block for 18 more entries, adjusting details as necessary -->
+            <!-- Entry 7 -->
+            <tr>
+              <td>#7</td>
+              <td>
+                <a
+                  href="#"
+                  role="button"
+                  id="applicant-more-info"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  class="text-muted"
+                >
+                  <img
+                    src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Nt39X5uC-FW8A94OtpgbJg.jpeg"
+                    class="rounded-circle"
+                    height="35"
+                    alt="Profile Picture 7"
+                    loading="lazy"
+                  />
+                </a>
+                Sarah Johnson
+              </td>
+              <td>3rd</td>
+              <td>2024</td>
+              <td>September</td>
+              <td>Ruby</td>
+              <td>
+                <a
+                  href="view_contributions.html"
+                  class="btn btn-sm btn-primary btn-primary-effect"
+                  >View</a
+                >
+              </td>
+            </tr>
 
-                    <!-- Entry 3 -->
-                    <tr>
-                        <td>#3</td>
-                        <td>
-                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
-                                aria-expanded="false" class="text-muted">
-                                <img src="https://static.generated.photos/vue-static/face-generator/landing/wall/23.jpg"
-                                    class="rounded-circle" height="35" alt="Profile Picture 3" loading="lazy">
-                            </a>
-                            Emily Smith
-                        </td>
-                        <td>3rd</td>
-                        <td>2019</td>
-                        <td>May</td>
-                        <td>
-                            HTML/CSS
-                        </td>
-                        <td>
-                            <a href="view_contributions.html" class="btn btn-sm btn-primary btn-primary-effect">View</a>
-                        </td>
-                           
-                    </tr>
+            <!-- Repeat the above block for more entries, adjusting details as necessary -->
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>#</th>
+              <th>Full name</th>
+              <th>
+                <span class="material-symbols-outlined"> mail </span>
+              </th>
+              <th>
+                <span class="material-symbols-outlined"> phone_iphone </span>
+              </th>
+              <th>Sex</th>
 
-                    <!-- Entry 4 -->
-                    <tr>
-                        <td>#4</td>
-                        <td>
-                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
-                                aria-expanded="false" class="text-muted">
-                                <img src="https://static.generated.photos/vue-static/face-generator/landing/wall/20.jpg"
-                                    class="rounded-circle" height="35" alt="Profile Picture 4" loading="lazy">
-                            </a>
-                            John Williams
-                        </td>
-                        <td>4th</td>
-                        <td>2024</td>
-                        <td>June</td>
-                        <td>
-                            Java
-                        </td>
-                        <td>
-                            <a href="view_contributions.html" class="btn btn-sm btn-primary btn-primary-effect">View</a>
-                        </td>
-                        
-                    </tr>
-
-                    <!-- Repeat the above block for more entries, adjusting details as necessary -->
-
-                    <!-- Entry 5 -->
-                    <tr>
-                        <td>#5</td>
-                        <td>
-                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
-                                aria-expanded="false" class="text-muted">
-                                <img src="https://static.generated.photos/vue-static/face-generator/landing/demo-previews/sex.jpg"
-                                    class="rounded-circle" height="35" alt="Profile Picture 5" loading="lazy">
-                            </a>
-                            Maria Garcia
-                        </td>
-                        <td>1st</td>
-                        <td>2020</td>
-                        <td>July</td>
-                        <td>
-                            C++
-                        </td>
-                        <td>
-                            <a href="view_contributions.html" class="btn btn-sm btn-primary btn-primary-effect">View</a>
-                        </td>
-                        
-                    </tr>
-
-                    <!-- Entry 6 -->
-                    <tr>
-                        <td>#6</td>
-                        <td>
-                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
-                                aria-expanded="false" class="text-muted">
-                                <img src="https://images.nightcafe.studio//assets/man-in-suit.jpg?tr=w-1600,c-at_max"
-                                    class="rounded-circle" height="35" alt="Profile Picture 6" loading="lazy">
-                            </a>
-                            Michael Brown
-                        </td>
-                        <td>2nd</td>
-                        <td>2010</td>
-                        <td>August</td>
-                        <td>
-                            PHP
-                        </td>
-                        <td>
-                            <a href="view_contributions.html" class="btn btn-sm btn-primary btn-primary-effect">View</a>
-                        </td>
-                    </tr>
-
-                    <!-- Entry 7 -->
-                    <tr>
-                        <td>#7</td>
-                        <td>
-                            <a href="#" role="button" id="applicant-more-info" data-bs-toggle="dropdown"
-                                aria-expanded="false" class="text-muted">
-                                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Nt39X5uC-FW8A94OtpgbJg.jpeg"
-                                    class="rounded-circle" height="35" alt="Profile Picture 7" loading="lazy">
-                            </a>
-                            Sarah Johnson
-                        </td>
-                        <td>3rd</td>
-                        <td>2024</td>
-                        <td>September</td>
-                        <td>
-                            Ruby
-                        </td>
-                        <td>
-                            <a href="view_contributions.html" class="btn btn-sm btn-primary btn-primary-effect">View</a>
-                        </td>
-                    </tr>
-
-                    <!-- Repeat the above block for more entries, adjusting details as necessary -->
-
-
-
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th> # </th>
-                        <th> Full name</th>
-                        <th>
-                            <span class="material-symbols-outlined">
-                                mail
-                            </span>
-                        </th>
-                        <th>
-                            <span class="material-symbols-outlined">
-                                phone_iphone
-                            </span>
-
-                        </th>
-                        <th>
-                            Sex
-
-                        </th>
-
-                        <th>
-                            <span class="material-symbols-outlined">
-                                info
-                            </span>
-                        </th>
-                        <th>
-                            <span class="material-symbols-outlined">
-                                visibility
-                            </span>
-                        </th>
-
-                    </tr>
-                </tfoot>
-            </table>
-
-        </div>
-
+              <th>
+                <span class="material-symbols-outlined"> info </span>
+              </th>
+              <th>
+                <span class="material-symbols-outlined"> visibility </span>
+              </th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
     </div>
-
 
     <!-- ============== Preloader ================ -->
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-        <i class="bi bi-arrow-up-short"></i>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
     </a>
-
 
     <!-- =============== Footer ================= -->
     <footer id="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-12 footer-contact">
-                <img src="/public/images/logo/logo.png" class="footer-logo">
-                <img src="/public/images/logo/typography.png" class="footer-typo">
-                  <div class="email my-5">
-                    <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
-                  </div>
-                </p>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 footer-contact">
+              <img src="/public/images/logo/logo.png" class="footer-logo" />
+              <img
+                src="/public/images/logo/typography.png"
+                class="footer-typo"
+              />
+              <div class="email my-5">
+                <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
               </div>
-  
-              <div class="col-lg-4 col-md-6 footer-links">
-                <h4>Useful Links</h4>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <ul>
-                      <li>
-                        <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
-                      </li>
-                      <li>
-                        <i class="bx bx-chevron-right"></i>
-                        <a href="about.html">About us</a>
-                      </li>
-                      <li>
-                        <i class="bx bx-chevron-right"></i>
-                        <a href="search_contributions.html">Contributions</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-6 mt-2 mt-lg-0">
-                    <ul>
-                      <li>
-                        <i class="bx bx-chevron-right"></i> <a href="team.html">Teams</a>
-                      </li>
-                      <li>
-                        <i class="bx bx-chevron-right"></i>
-                        <a href="perl-review.html">Reviews</a>
-                      </li>
-                      <li>
-                        <i class="bx bx-chevron-right"></i> <a href="team-leader.html">Charts</a>
-                      </li>
-                    </ul>
-                  </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="about.html">About us</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="search_contributions.html">Contributions</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 mt-2 mt-lg-0">
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team.html">Teams</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="perl-review.html">Reviews</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team-leader.html">Charts</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-  
-              <div class="col-lg-4 col-md-6 footer-links">
-                <h4>Our Social Networks</h4>
-                <p>
-                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
-                </p>
-                <div class="social-links mt-3">
-                  <a href="https://twitter.com/perlwchallenge?lang=en" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-                  <a href="https://www.facebook.com/groups/theweeklychallengegroup/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-                  <a href="#" class="instagram"
-                    ><i class="bx bxl-instagram"></i
-                  ></a>
-                  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
+                suscipit?
+              </p>
+              <div class="social-links mt-3">
+                <a
+                  href="https://twitter.com/perlwchallenge?lang=en"
+                  target="_blank"
+                  class="twitter"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/groups/theweeklychallengegroup/"
+                  target="_blank"
+                  class="facebook"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
         </div>
-  
-        <div class="container footer-bottom clearfix">
-          <div class="copyright">
-            &copy; Copyright <strong><span>The Weekly Challenge</span></strong
-            >. All Rights Reserved
-          </div>
-        </div>
-      </footer>
-    <!-- End Footer -->
+      </div>
 
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>The Weekly Challenge</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- ============================ Vendor JS Files ============================ -->
     <script src="/public/javascripts/vendor/aos/aos.js"></script>
@@ -616,119 +820,134 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
 
     <script>
-        // Setting up Lottie
-        var animationContainer = document.getElementById("animation-container");
-        var anim = bodymovin.loadAnimation({
-            container: animationContainer,
-            renderer: "svg", // You can also use 'canvas' or 'html'
-            loop: true, // Set to true if you want the animation to loop
-            autoplay: true,
-            path: "/public/javascripts/lottiejson/green.json",
-            // path: 'assets/lottiejson/purple.json',
-        });
+      // Setting up Lottie
+      var animationContainer = document.getElementById("animation-container");
+      var anim = bodymovin.loadAnimation({
+        container: animationContainer,
+        renderer: "svg", // You can also use 'canvas' or 'html'
+        loop: true, // Set to true if you want the animation to loop
+        autoplay: true,
+        path: "/public/javascripts/lottiejson/green.json",
+        // path: 'assets/lottiejson/purple.json',
+      });
     </script>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
-
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.7.0.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"
+    ></script>
 
     <script>
-        $(document).ready(function () {
-            var table = $('#search-contributions').DataTable({
-                "dom": 'lrtip'  // Exclude 'f' which stands for filtering input,
-                , "language": {
-                    "emptyTable": "Sorry, there is no data available in the table",
-                    "zeroRecords": "Sorry, no matching records were found",
-                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
-                    "infoFiltered": "(searched from _MAX_ total entries)",
-                    "paginate": {
-                        "previous": "Previous",
-                        "next": "Next"
-                    },
-                    "lengthMenu": "Show _MENU_ entries per page",
-
-                }
-
-            });
-
-            // Add search functionality to the custom search box
-            $('#customSearchBox1').on('keyup', function () {
-                table.search(this.value).draw();
-            });
+      $(document).ready(function () {
+        var table = $("#search-contributions").DataTable({
+          dom: "lrtip", // Exclude 'f' which stands for filtering input,
+          language: {
+            emptyTable: "Sorry, there is no data available in the table",
+            zeroRecords: "Sorry, no matching records were found",
+            info: "Showing _START_ to _END_ of _TOTAL_ entries",
+            infoFiltered: "(searched from _MAX_ total entries)",
+            paginate: {
+              previous: "Previous",
+              next: "Next",
+            },
+            lengthMenu: "Show _MENU_ entries per page",
+          },
         });
 
+        // Add search functionality to the custom search box
+        $("#customSearchBox1").on("keyup", function () {
+          table.search(this.value).draw();
+        });
+      });
     </script>
 
     <script>
-        // Function to filter table rows based on selected values
-        function filterTable() {
-            var selectedYear = document.getElementById("year").value;
-            var selectedMonth = document.getElementById("month").value;
-            var selectedWeek = document.getElementById("week").value;
+      // Function to filter table rows based on selected values
+      function filterTable() {
+        var selectedYear = document.getElementById("year").value;
+        var selectedMonth = document.getElementById("month").value;
+        var selectedWeek = document.getElementById("week").value;
 
-            var tableRows = document.getElementById("search-contributions").getElementsByTagName("tr");
+        var tableRows = document
+          .getElementById("search-contributions")
+          .getElementsByTagName("tr");
 
-            // Loop through table rows and hide those that do not match the selected values
-            for (var i = 0; i < tableRows.length; i++) {
-                var cells = tableRows[i].getElementsByTagName("td");
-                if (cells.length > 0) {
-                    var rowYear = cells[3].textContent.trim(); // Column index of year data
-                    var rowMonth = cells[4].textContent.trim(); // Column index of month data
-                    var rowWeek = cells[2].textContent.trim(); // Column index of week data
+        // Loop through table rows and hide those that do not match the selected values
+        for (var i = 0; i < tableRows.length; i++) {
+          var cells = tableRows[i].getElementsByTagName("td");
+          if (cells.length > 0) {
+            var rowYear = cells[3].textContent.trim(); // Column index of year data
+            var rowMonth = cells[4].textContent.trim(); // Column index of month data
+            var rowWeek = cells[2].textContent.trim(); // Column index of week data
 
-                    // Check if the row matches the selected values
-                    if ((selectedYear == "Year" || rowYear == selectedYear) &&
-                        (selectedMonth == "Month" || rowMonth == selectedMonth) &&
-                        (selectedWeek == "Week" || rowWeek == selectedWeek)) {
-                        tableRows[i].style.display = "";
-                    } else {
-                        tableRows[i].style.display = "none";
-                    }
-                }
+            // Check if the row matches the selected values
+            if (
+              (selectedYear == "Year" || rowYear == selectedYear) &&
+              (selectedMonth == "Month" || rowMonth == selectedMonth) &&
+              (selectedWeek == "Week" || rowWeek == selectedWeek)
+            ) {
+              tableRows[i].style.display = "";
+            } else {
+              tableRows[i].style.display = "none";
             }
+          }
         }
+      }
 
-        // Initially filter the table by default week
-        document.addEventListener("DOMContentLoaded", function () {
-            filterTable();
-        });
+      // Initially filter the table by default week
+      document.addEventListener("DOMContentLoaded", function () {
+        filterTable();
+      });
     </script>
-
 
     <!-- Filter by lanaguge -->
     <script>
-        // Function to filter table rows based on selected values
-        function filterTableByLangauge() {
-            var selectedLanguage = document.getElementById("language").value;
+      // Function to filter table rows based on selected values
+      function filterTableByLangauge() {
+        var selectedLanguage = document.getElementById("language").value;
 
-            var tableRows = document.getElementById("search-contributions").getElementsByTagName("tr");
+        var tableRows = document
+          .getElementById("search-contributions")
+          .getElementsByTagName("tr");
 
-            // Loop through table rows and hide those that do not match the selected values
-            for (var i = 0; i < tableRows.length; i++) {
-                var cells = tableRows[i].getElementsByTagName("td");
-                if (cells.length > 0) {
-                    var rowLanguage = cells[5].textContent.trim(); // Column index of Langauge data
-                    // Check if the row matches the selected values
-                    if ((selectedLanguage == "Language" || rowLanguage == selectedLanguage) ) {
-                        tableRows[i].style.display = "";
-                    } else {
-                        tableRows[i].style.display = "none";
-                    }
-                }
+        // Loop through table rows and hide those that do not match the selected values
+        for (var i = 0; i < tableRows.length; i++) {
+          var cells = tableRows[i].getElementsByTagName("td");
+          if (cells.length > 0) {
+            var rowLanguage = cells[5].textContent.trim(); // Column index of Langauge data
+            // Check if the row matches the selected values
+            if (
+              selectedLanguage == "Language" ||
+              rowLanguage == selectedLanguage
+            ) {
+              tableRows[i].style.display = "";
+            } else {
+              tableRows[i].style.display = "none";
             }
+          }
         }
+      }
 
-        // Initially filter the table by default week
-        document.addEventListener("DOMContentLoaded", function () {
-            filterTable();
-        });
+      // Initially filter the table by default week
+      document.addEventListener("DOMContentLoaded", function () {
+        filterTable();
+      });
     </script>
-
-</body>
-
+  </body>
 </html>

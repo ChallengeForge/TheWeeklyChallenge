@@ -1,424 +1,532 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>The Weekly Challenge</title>
+    <meta
+      content="The Weekly Challenge that includes Perl and Raku programming."
+      name="description"
+    />
+    <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
 
-  <title>The Weekly Challenge</title>
-  <meta content="The Weekly Challenge that includes Perl and Raku programming." name="description" />
-  <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/public/images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/public/images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/public/images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="/public/images/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/public/images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/public/images/favicons/site.webmanifest">
-  <link rel="mask-icon" href="/public/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/public/images/favicons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="/public/images/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Vendor CSS Files -->
+    <link href="/public/css/helpercss/aos.css" rel="stylesheet" />
+    <link
+      href="/public/css/helpercss/bootstrap_css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/glightbox_css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/remixicon/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="/public/css/helpercss/aos.css" rel="stylesheet" />
-  <link href="/public/css/helpercss/bootstrap_css/bootstrap.min.css" rel="stylesheet" />
-  <link href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="/public/css/helpercss/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="/public/css/helpercss/glightbox_css/glightbox.min.css" rel="stylesheet" />
-  <link href="/public/css/helpercss/remixicon/remixicon.css" rel="stylesheet" />
-  <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Template Main CSS File -->
+    <link href="/public/css/index.css" rel="stylesheet" />
+    <link href="/public/css/blogs.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="/public/css/index.css" rel="stylesheet" />
-  <link href="/public/css/blogs.css" rel="stylesheet" />
+    <!-- TinyMCE -->
+    <script
+      src="https://cdn.tiny.cloud/1/ci57v5f5dkepj31a4ppjbj1b68jjkda0wnouosvx8frxxpb0/tinymce/6/tinymce.min.js"
+      referrerpolicy="origin"
+    ></script>
+  </head>
 
-
-  <!-- TinyMCE -->
-  <script src="https://cdn.tiny.cloud/1/ci57v5f5dkepj31a4ppjbj1b68jjkda0wnouosvx8frxxpb0/tinymce/6/tinymce.min.js"
-    referrerpolicy="origin"></script>
-</head>
-
-<body>
-  <header id="header" class="sticky-top border-bottom">
-    <div class="container d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-center me-auto">
-        <a href="index.html" class="logo me-3">
-          <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
-      </a>
-        <a href="index.html" class="logo me-auto">
-          <img
-            src="/public/images/logo/typography.png"
-            alt="typography"
-            class="img-fluid"/>
+  <body>
+    <header id="header" class="sticky-top border-bottom">
+      <div class="container d-flex align-items-center">
+        <div
+          class="container d-flex align-items-center justify-content-center me-auto"
+        >
+          <a href="index.html" class="logo me-3">
+            <img
+              src="/public/images/logo/logo.png"
+              alt="logo"
+              class="img-fluid"
+            />
           </a>
-      </div>
+          <a href="index.html" class="logo me-auto">
+            <img
+              src="/public/images/logo/typography.png"
+              alt="typography"
+              class="img-fluid"
+            />
+          </a>
+        </div>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
               <a class="getstarted scrollto user-btn" href="index.html">
-              <span><i class="fa-solid fa-house fs-6"></i></span>
-            </a>
-          </li>
-          <!-- About Dropdown -->
-          <li class="dropdown">
-            <a href="#">
-              <span>About</span> <i class="bi bi-chevron-down"></i>
-          </a>
-            <ul>
-              <li class="border-bottom">
-                <a href="about.html">About Us</a>
-              </li>
-              <li class="border-bottom">
-                <a href="contact.html">Contact Us</a>
-              </li>
-              <li><a href="faq.html">FAQ</a></li>
-            </ul>
-          </li>
-          <!-- Contributions Dropdown -->
-          <li class="dropdown">
-            <a href="#">
-              <span>Contributions</span> 
-              <i class="bi bi-chevron-down"></i>
-          </a>
-            <ul>
-              <li class="border-bottom"><a href="search-weekly-challenges.html">Challenges</a></li>
+                <span><i class="fa-solid fa-house fs-6"></i></span>
+              </a>
+            </li>
+            <!-- About Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>About</span> <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="border-bottom">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <!-- Contributions Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Contributions</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="search-weekly-challenges.html">Challenges</a>
+                </li>
 
-              <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
-              <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
-              <li ><a href="search_contributions.html">Search Contributions</a></li>
- 
-            </ul>
-          </li>
-          <!-- Team Dropdown -->
-          <li class="dropdown">
-            <a href="#">
-              <span>Team</span>
-              <i class="bi bi-chevron-down"></i>
-          </a>
-            <ul>
-              <li class="border-bottom"><a href="team.html">Regular</a></li>
-              <li class="border-bottom"><a href="guest.html">Guest</a></li>
-              <li><a href="champions.html">Champions</a></li>
-            </ul>
-          </li>
-          <!-- Reviews Dropdown -->
-          <li class="dropdown">
-            <a href="#">
-              <span>Reviews</span> 
-              <i class="bi bi-chevron-down"></i>
-          </a>
-            <ul>
-              <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
-              <li><a href="raku-review.html">Raku</a></li>
-            </ul>
-          </li>
-          <!-- Charts DropDown -->
-          <li class="dropdown">
-            <a href="#">
-              <span>Leaderboard</span>
-              <i class="bi bi-chevron-down"></i>
-          </a>
-            <ul>
-              <li class="border-bottom"><a href="team-leader.html">Team Leader</a></li>
-              <li><a href="guest-leader.html">Guest Leader</a></li>
-            </ul>
-          </li>
-          <!-- Prefernces -->
-          <li class="dropdown">
-            <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li class="border-bottom theme1"><a href="#">Default</a></li>
-              <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
-              <li class="theme3"><a href="#">Blue Mode</a></li>
-            </ul>
-          </li>
-          <!-- User Features Dropdown -->
-          <li class="dropdown">
-            <a class="getstarted scrollto user-btn" href="#about">
-              <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
-              <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
-            </a>
-            <ul>
-              <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
-              <li class="border-bottom"><a href="logout.html">Logout</a></li>
-              <li class="border-bottom"><a href="user_dashboard.html">My Profile</a></li>
-              <li><a href="#">Settings</a></li>
-            </ul>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      <!-- End Navbar -->
-    </div>
-  </header>
+                <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
+                <li class="border-bottom">
+                  <a href="list-outreachy-applicants.html"
+                    >Outreachy Applicants</a
+                  >
+                </li>
+                <li>
+                  <a href="search_contributions.html">Search Contributions</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Team Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Team</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom"><a href="team.html">Regular</a></li>
+                <li class="border-bottom"><a href="guest.html">Guest</a></li>
+                <li><a href="champions.html">Champions</a></li>
+              </ul>
+            </li>
+            <!-- Reviews Dropdown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Reviews</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="perl-review.html">Perl</a>
+                </li>
+                <li><a href="raku-review.html">Raku</a></li>
+              </ul>
+            </li>
+            <!-- Charts DropDown -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Leaderboard</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="team-leader.html">Team Leader</a>
+                </li>
+                <li><a href="guest-leader.html">Guest Leader</a></li>
+              </ul>
+            </li>
+            <!-- Prefernces -->
+            <li class="dropdown">
+              <a href="#"
+                ><span>Preferences</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li class="border-bottom theme1"><a href="#">Default</a></li>
+                <li class="border-bottom theme2"><a href="#">Dark Mode</a></li>
+                <li class="theme3"><a href="#">Blue Mode</a></li>
+              </ul>
+            </li>
+            <!-- User Features Dropdown -->
+            <li class="dropdown">
+              <a class="getstarted scrollto user-btn" href="#about">
+                <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
+                <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
+              </a>
+              <ul>
+                <li class="border-bottom">
+                  <a href="sign-in.html">Login/SignUp</a>
+                </li>
+                <li class="border-bottom"><a href="logout.html">Logout</a></li>
+                <li class="border-bottom">
+                  <a href="user_dashboard.html">My Profile</a>
+                </li>
+                <li><a href="#">Settings</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+    </header>
 
-  <!-- End Header -->
+    <!-- End Header -->
 
-  <!-- Blog post list start -->
+    <!-- Blog post list start -->
 
-  <section class="container mt-5 mb-5">
-    <!-- create new blog post button start -->
-    <div>
-      <a href="new-perl.html" class="btn btn-white shadow  rounded-6 text-black bg-light p-3">
-        <span class="">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi fw-bold"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
-          </svg>
-        </span>
-        C<span class="text-lowercase">reate new post</span>
-      </a>
-    </div>
-    <!-- create new blog post button start -->
-    <hr>
+    <section class="container mt-5 mb-5">
+      <!-- create new blog post button start -->
+      <div>
+        <a
+          href="new-perl.html"
+          class="btn btn-white shadow rounded-6 text-black bg-light p-3"
+        >
+          <span class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi fw-bold"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+              />
+            </svg>
+          </span>
+          C<span class="text-lowercase">reate new post</span>
+        </a>
+      </div>
+      <!-- create new blog post button start -->
+      <hr />
 
-      <h1 class="display-1 mt-2" style="font-size: 25px;">
+      <h1 class="display-1 mt-2" style="font-size: 25px">
         All the Latest Posts
       </h1>
 
       <div>
-        <h6 class="text-black text-muted">
-          Search
-        </h6>
+        <h6 class="text-black text-muted">Search</h6>
 
         <div class="filter-container mb-3">
-          <input type="text" id="titleFilter" class="form-control" placeholder="Search for review...">
+          <input
+            type="text"
+            id="titleFilter"
+            class="form-control"
+            placeholder="Search for review..."
+          />
         </div>
       </div>
 
-    <!-- Latest articles start -->
-    <div class="mt-2">
+      <!-- Latest articles start -->
+      <div class="mt-2">
+        <div
+          class="row pt-3 row-cols-1 row-cols-md-2 row-cols-lg-3"
+          id="articleRows"
+        >
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">PERL REVIEW #180</h6>
 
-      <div class="row pt-3 row-cols-1 row-cols-md-2 row-cols-lg-3" id="articleRows">
-        <div class="col  mb-3 col-display">
-          <div class="card border latest-article-cards">
-            <div class="card-body">
-              <h6 class="card-title text-muted">PERL REVIEW #180 </h6>
-
-              <div class="mb-3">
-                <b>Colin Crain</b>
-                <div>Monday, Oct 17, 2022| Tags: perl</div>
-                
+                <div class="mb-3">
+                  <b>Colin Crain</b>
+                  <div>Monday, Oct 17, 2022| Tags: perl</div>
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
               </div>
-              <a href="read-post.html" class="btn btn-primary btn-sm" style="background-color: #92E3A9; color: #000;">
-                <span class="material-symbols-outlined">
-                  arrow_forward
-                </span>
-              </a>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">PERL REVIEW #179</h6>
+
+                <div class="mb-3">
+                  <b>Colin Crain</b>
+                  <div>Monday, Oct 10, 2022| Tags: perl</div>
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">PERL REVIEW #178</h6>
+
+                <div class="mb-3">
+                  <b>Colin Crain</b>
+                  <div>Monday, Oct 17, 2022| Tags: perl</div>
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">PERL REVIEW #177</h6>
+
+                <div class="mb-3">
+                  <b>Colin Crain</b>
+                  <div>Monday, Oct 3, 2022| Tags: perl</div>
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">PERL REVIEW #176</h6>
+
+                <div class="mb-3">
+                  <b>Colin Crain</b>
+                  <div>Monday, Oct 17, 2022| Tags: perl</div>
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">PERL REVIEW #180</h6>
+
+                <div class="mb-3">
+                  <b>Colin Crain</b>
+                  <div>Monday, Oct 17, 2022| Tags: perl</div>
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">PERL REVIEW #180</h6>
+
+                <div class="mb-3">
+                  <b>Colin Crain</b>
+                  <div>Monday, Oct 17, 2022| Tags: perl</div>
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">PERL REVIEW #180</h6>
+
+                <div class="mb-3">
+                  <b>Colin Crain</b>
+                  <div>Monday, Oct 17, 2022| Tags: perl</div>
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">PERL REVIEW #180</h6>
+
+                <div class="mb-3">
+                  <b>Colin Crain</b>
+                  <div>Monday, Oct 17, 2022| Tags: perl</div>
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col  mb-3 col-display">
-          <div class="card border latest-article-cards">
-            <div class="card-body">
-              <h6 class="card-title text-muted">PERL REVIEW #179 </h6>
-
-              <div class="mb-3">
-                <b>Colin Crain</b>
-                <div>Monday, Oct 10, 2022| Tags: perl</div>
-                
-              </div>
-              <a href="read-post.html" class="btn btn-primary btn-sm" style="background-color: #92E3A9; color: #000;">
-                <span class="material-symbols-outlined">
-                  arrow_forward
-                </span>
-              </a>
-            </div>
+        <div class="row">
+          <div class="col mbt-3">
+            <button
+              id="showMore"
+              class="btn btn-md"
+              style="background-color: #92e3a9; color: white"
+            >
+              Show more
+            </button>
+          </div>
+          <div class="col text-end mb-3">
+            <button
+              id="showLess"
+              class="btn btn-md"
+              style="background-color: #92e3a9; color: white; display: none"
+            >
+              SHOW LESS
+            </button>
           </div>
         </div>
 
-        <div class="col  mb-3 col-display">
-          <div class="card border latest-article-cards">
-            <div class="card-body">
-              <h6 class="card-title text-muted">PERL REVIEW #178 </h6>
-
-              <div class="mb-3">
-                <b>Colin Crain</b>
-                <div>Monday, Oct 17, 2022| Tags: perl</div>
-                
-              </div>
-              <a href="read-post.html" class="btn btn-primary btn-sm" style="background-color: #92E3A9; color: #000;">
-                <span class="material-symbols-outlined">
-                  arrow_forward
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col  mb-3 col-display">
-          <div class="card border latest-article-cards">
-            <div class="card-body">
-              <h6 class="card-title text-muted">PERL REVIEW #177 </h6>
-
-              <div class="mb-3">
-                <b>Colin Crain</b>
-                <div>Monday, Oct 3, 2022| Tags: perl</div>
-                
-              </div>
-              <a href="read-post.html" class="btn btn-primary btn-sm" style="background-color: #92E3A9; color: #000;">
-                <span class="material-symbols-outlined">
-                  arrow_forward
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col  mb-3 col-display">
-          <div class="card border latest-article-cards">
-            <div class="card-body">
-              <h6 class="card-title text-muted">PERL REVIEW #176 </h6>
-
-              <div class="mb-3">
-                <b>Colin Crain</b>
-                <div>Monday, Oct 17, 2022| Tags: perl</div>
-                
-              </div>
-              <a href="read-post.html" class="btn btn-primary btn-sm" style="background-color: #92E3A9; color: #000;">
-                <span class="material-symbols-outlined">
-                  arrow_forward
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col  mb-3 col-display">
-          <div class="card border latest-article-cards">
-            <div class="card-body">
-              <h6 class="card-title text-muted">PERL REVIEW #180</h6>
-
-              <div class="mb-3">
-                <b>Colin Crain</b>
-                <div>Monday, Oct 17, 2022| Tags: perl</div>
-                
-              </div>
-              <a href="read-post.html" class="btn btn-primary btn-sm" style="background-color: #92E3A9; color: #000;">
-                <span class="material-symbols-outlined">
-                  arrow_forward
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col  mb-3 col-display">
-          <div class="card border latest-article-cards">
-            <div class="card-body">
-              <h6 class="card-title text-muted">PERL REVIEW #180</h6>
-
-              <div class="mb-3">
-                <b>Colin Crain</b>
-                <div>Monday, Oct 17, 2022| Tags: perl</div>
-                
-              </div>
-              <a href="read-post.html" class="btn btn-primary btn-sm" style="background-color: #92E3A9; color: #000;">
-                <span class="material-symbols-outlined">
-                  arrow_forward
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col  mb-3 col-display">
-          <div class="card border latest-article-cards">
-            <div class="card-body">
-              <h6 class="card-title text-muted">PERL REVIEW #180</h6>
-
-              <div class="mb-3">
-                <b>Colin Crain</b>
-                <div>Monday, Oct 17, 2022| Tags: perl</div>
-                
-              </div>
-              <a href="read-post.html" class="btn btn-primary btn-sm" style="background-color: #92E3A9; color: #000;">
-                <span class="material-symbols-outlined">
-                  arrow_forward
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col  mb-3 col-display">
-          <div class="card border latest-article-cards">
-            <div class="card-body">
-              <h6 class="card-title text-muted">PERL REVIEW #180</h6>
-
-              <div class="mb-3">
-                <b>Colin Crain</b>
-                <div>Monday, Oct 17, 2022| Tags: perl</div>
-                
-              </div>
-              <a href="read-post.html" class="btn btn-primary btn-sm" style="background-color: #92E3A9; color: #000;">
-                <span class="material-symbols-outlined">
-                  arrow_forward
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
+        <!-- <button id="my-showBtn">Show</button> -->
       </div>
-
-      <div class="row ">
-        <div class="col mbt-3">
-          <button id="showMore" class="btn btn-md" style="background-color: #92E3A9; color: white;">Show more</button>
-        </div>
-        <div class="col text-end mb-3">
-          <button id="showLess" class="btn btn-md" style="background-color: #92E3A9; color: white; display: none;">SHOW
-            LESS</button>
-        </div>
-      </div>
-
-      <!-- <button id="my-showBtn">Show</button> -->
-
-    </div>
-    <!-- Latest articles end -->
-
+      <!-- Latest articles end -->
     </section>
 
     <!-- Blog post list end -->
     <!-- End Cliens Section -->
-  
-  <!-- End #main -->
-  <!-- ==================== Blogs Section  end ==================== -->
 
+    <!-- End #main -->
+    <!-- ==================== Blogs Section  end ==================== -->
 
-  <!-- ============== Preloader ================ -->
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
+    <!-- ============== Preloader ================ -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
 
-     <!-- =============== Footer ================= -->
-     <footer id="footer">
+    <!-- =============== Footer ================= -->
+    <footer id="footer">
       <div class="footer-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6 col-12 footer-contact">
-              <img src="/public/images/logo/logo.png" class="footer-logo">
-              <img src="/public/images/logo/typography.png" class="footer-typo">
-                <div class="email my-5">
-                  <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
-                </div>
-              </p>
+              <img src="/public/images/logo/logo.png" class="footer-logo" />
+              <img
+                src="/public/images/logo/typography.png"
+                class="footer-typo"
+              />
+              <div class="email my-5">
+                <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
+              </div>
             </div>
 
             <div class="col-lg-4 col-md-6 footer-links">
@@ -427,7 +535,8 @@
                 <div class="col-lg-6">
                   <ul>
                     <li>
-                      <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="index.html">Home</a>
                     </li>
                     <li>
                       <i class="bx bx-chevron-right"></i>
@@ -442,14 +551,16 @@
                 <div class="col-lg-6 mt-2 mt-lg-0">
                   <ul>
                     <li>
-                      <i class="bx bx-chevron-right"></i> <a href="team.html">Teams</a>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team.html">Teams</a>
                     </li>
                     <li>
                       <i class="bx bx-chevron-right"></i>
                       <a href="perl-review.html">Reviews</a>
                     </li>
                     <li>
-                      <i class="bx bx-chevron-right"></i> <a href="team-leader.html">Charts</a>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team-leader.html">Charts</a>
                     </li>
                   </ul>
                 </div>
@@ -459,11 +570,22 @@
             <div class="col-lg-4 col-md-6 footer-links">
               <h4>Our Social Networks</h4>
               <p>
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, suscipit?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
+                suscipit?
               </p>
               <div class="social-links mt-3">
-                <a href="https://twitter.com/perlwchallenge?lang=en" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/groups/theweeklychallengegroup/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a
+                  href="https://twitter.com/perlwchallenge?lang=en"
+                  target="_blank"
+                  class="twitter"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/groups/theweeklychallengegroup/"
+                  target="_blank"
+                  class="facebook"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
                 <a href="#" class="instagram"
                   ><i class="bx bxl-instagram"></i
                 ></a>
@@ -482,21 +604,18 @@
         </div>
       </div>
     </footer>
-      <!-- End Footer -->
+    <!-- End Footer -->
 
+    <!-- ============================ Vendor JS Files ============================ -->
+    <script src="/public/javascripts/vendor/aos/aos.js"></script>
+    <script src="/public/javascripts/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/public/javascripts/vendor/glightbox/glightbox.min.js"></script>
+    <script src="/public/javascripts/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/public/javascripts/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/public/javascripts/vendor/waypoints/noframework.waypoints.js"></script>
 
-  <!-- ============================ Vendor JS Files ============================ -->
-  <script src="/public/javascripts/vendor/aos/aos.js"></script>
-  <script src="/public/javascripts/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="/public/javascripts/vendor/glightbox/glightbox.min.js"></script>
-  <script src="/public/javascripts/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="/public/javascripts/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="/public/javascripts/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="/public/javascripts/index.js"></script>
-  <script src="/public/javascripts/blogs.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="/public/javascripts/index.js"></script>
+    <script src="/public/javascripts/blogs.js"></script>
+  </body>
 </html>
