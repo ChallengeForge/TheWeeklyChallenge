@@ -3,33 +3,32 @@
 --------------------------------------------------------------*/
 
 /* All colors defined here */
-:root{
-    --bg-light : #fcfcfc;
-    --btn-color:#2b83f3;
-    --bg-blue:#a4d4fc;
-    --text-color-def: #000;
-    --bg-sec:#f3f5fa;
-    --bg-sec-dark: #212121;
-    --bg-blue-hero: #edf3ff;
+:root {
+  --bg-light: #fcfcfc;
+  --btn-color: #2b83f3;
+  --bg-blue: #a4d4fc;
+  --text-color-def: #000;
+  --bg-sec: #f3f5fa;
+  --bg-sec-dark: #212121;
+  --bg-blue-hero: #edf3ff;
 
-    --girl:#92e3a9;
+  --girl: #92e3a9;
 
-    --bg-dark: #121212;
-    --text-color-dark: #fcfcfc;
-  }
+  --bg-dark: #121212;
+  --text-color-dark: #fcfcfc;
+}
 
-  .light-mode{
-    background-color: var(--bg-light);
-    color: var(--btn-color);
-  }
+.light-mode {
+  background-color: var(--bg-light);
+  color: var(--btn-color);
+}
 
-  .dark-mode{
-    background-color: var(--bg-dark);
-    color: var(--text-color-dark);
-  }
+.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-color-dark);
+}
 
-  .blue-mode{
-    background-color: var(--bg-blue);
-    color: var(--text-color-def);
-  }
-
+.blue-mode {
+  background-color: var(--bg-blue);
+  color: var(--text-color-def);
+}

@@ -2,7 +2,7 @@
 #tags-input,
 #section-header,
 #article,
-#titleFilter{
+#titleFilter {
   /* background-color: #FFF5E0 !important; */
   border: 2px solid #e9e9e9 !important;
 }
@@ -11,7 +11,7 @@
 #tags-input:hover,
 #section-header:hover,
 #article:hover,
-#titleFilter:hover{
+#titleFilter:hover {
   border: 2px solid #006eff !important;
 }
 
@@ -20,7 +20,6 @@
 #section-header:focus,
 #article:focus,
 #titleFilter:focus {
-
   border: 2px solid #006eff !important;
   box-shadow: none !important;
 }

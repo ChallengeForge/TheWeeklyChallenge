@@ -1,9 +1,8 @@
-#customSearchBox1{
-    border: 2px solid #cccccc !important;
-  }
+#customSearchBox1 {
+  border: 2px solid #cccccc !important;
+}
 
 #customSearchBox1:focus {
-
-border: 2px solid #92E3A9 !important;
-box-shadow: none !important;
+  border: 2px solid #92e3a9 !important;
+  box-shadow: none !important;
 }
