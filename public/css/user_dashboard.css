@@ -550,7 +550,18 @@ a.sidebar-link:hover {
     border-radius: 50%;
     background: #e5e5e5;
     color: black;
-  }
+    flex-shrink: 0; /* Prevent icons from shrinking on smaller screens */
+}
+
+.analytics-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chart-container {
+  width: 100%;
+  overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+}
 
   .analytics-card  i {
     font-size: 2rem;
@@ -572,6 +583,10 @@ a.sidebar-link:hover {
     background-color: #f5f5f5;
     display: block !important;
 } 
+
+.table-container {
+  overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+}
 
 .avatar {
     height: 40px;
@@ -698,7 +713,6 @@ a.sidebar-link:hover {
     width: 36px;
     height: 36px;
     transition: 0.3s;
-   
   }
   
   #footer .footer-top .social-links a:hover {
