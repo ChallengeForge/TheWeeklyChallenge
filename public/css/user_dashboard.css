@@ -451,9 +451,8 @@ body {
 #sidebar.expand {
   width: 150px; /* Expanded width */
   min-width: 260px;
-  background-color: #92e3a9; /* Replace with your desired color */
-  z-index: 999;
-  position:fixed;
+  background-color: #92e3a9; 
+  position:static;
 }
 
 #sidebar:not(.expand) .sidebar-logo,
@@ -599,7 +598,6 @@ a.sidebar-link:hover {
 */
 
 #footer {
-    margin-left: 0.2rem;
     font-size: 14px;
     background:var(--girl);
   
@@ -742,6 +740,15 @@ a.sidebar-link:hover {
   }
   
   @media (max-width: 768px) {
+
+    #sidebar.expand {
+      width: 150px; 
+      min-width: 260px;
+      background-color: #92e3a9; 
+      z-index: 999;
+      position:fixed;
+    }
+
     #footer .footer-bottom {
       padding-top: 20px;
       padding-bottom: 20px;
