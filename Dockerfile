@@ -1,6 +1,18 @@
+# Use a slim Perl image to reduce layer size
 FROM perl:latest
-WORKDIR /srv/TheWeeklyChallenge
+
+# Create a working directory for the application
+WORKDIR /app
+
+# Copy the application code from the context
 COPY . .
-RUN cpanm --installdeps --notest --with-feature=accelerate .
+
+# Install dependencies using cpanm
+RUN cpanm --installdeps --notest --with-feature=accelerate
+RUN cpanm Dancer2 Plack --force
+
+# Expose the port where the application will listen
 EXPOSE 4000
-CMD plackup -p 4000 bin/app.psgi
+
+# Start the application using plackup
+CMD ["plackup", "-p", "4000", "bin/app.psgi"]
