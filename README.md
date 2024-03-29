@@ -34,7 +34,7 @@ This project is a fun and welcoming space for developers of all skill levels to 
   Use git to clone this repository
 
 ```Bash
-git clone https://github.com/ChallengeForge/TheWeeklyChallenge.git
+    git clone https://github.com/ChallengeForge/TheWeeklyChallenge.git
 ```
 
 - ## Run the Development Server
@@ -49,15 +49,15 @@ This project is licensed under the `Artistic License 2.0` license. Please refer 
 
 ---
 
--- ##Prequequisite to Use and Connect to Database
+## Prequequisite to Use and Connect to Database
 
 - Install all of the following modules below
 
 ## Setting Up the Database
 
-`To run the database for this project, you'll need to install the following PERL packages :`
+`To run the database for this project, you'll need to install the following Perl modules :`
 
-1. Install DBIx::Class\*\*: This module provides a convenient abstraction layer over your database.
+1. **Install DBIx::Class**: This module provides a convenient abstraction layer over your database.
 
 2. **Install DBD::mysql**: This module provides the MySQL driver for DBI, enabling connectivity to a MySQL database.
 
