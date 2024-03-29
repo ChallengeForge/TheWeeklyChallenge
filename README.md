@@ -37,7 +37,27 @@ This project is a fun and welcoming space for developers of all skill levels to 
     git clone https://github.com/ChallengeForge/TheWeeklyChallenge.git
 ```
 
-- ## Run the Development Server
+- ## Running the Development Server
+
+To ease development processes, we are using `Docker` to effortlessly build and run the backend code for this project. Follow these straightforward steps to start the development server:
+
+1. **Navigate to the root directory of the project**
+    ```bash
+    $ cd TheWeeklyChallenge
+    ```
+
+2. **Build the Docker image**
+    ```bash
+    $ docker build -t pwc .
+    ```
+
+3. **Run the Docker image on your local machine**
+    ```bash
+    $ docker run -t pwc
+    ```
+
+4. **All set**! The development server should now be accessible at [http://127.0.0.1:4000](http://127.0.0.1:4000).
+
 
 # Contribution
 
