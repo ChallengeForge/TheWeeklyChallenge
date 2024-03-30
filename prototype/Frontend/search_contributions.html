@@ -373,14 +373,19 @@
         </div>
       </div>
 
-      <div class="filter-container mb-3 mt-3">
-        <input
-          type="search"
-          id="customSearchBox1"
-          class="form-control"
-          placeholder="Search by typing user name..."
-        />
-      </div>
+      <div class="form-group">
+        <label for="input-datalist"></label>
+        <input type="text" class="form-control" placeholder="Timezone" list="list-timezone" id="input-datalist">
+        <datalist id="list-timezone">
+            <option>Fahad Mohamed Albasrawie</option>
+            <option>Jane Doe</option>
+            <option>Emily Smith</option>
+            <option>John Williams</option>
+            <option>Maria Garcia</option>
+            <option>Michael Brown</option>
+            <option>Sarah Johnson</option>
+        </datalist>
+     </div>
 
       <!-- The table container starts here -->
       <div
@@ -802,23 +807,6 @@
     <script src="/public/javascripts/index.js"></script>
     <script src="/public/javascripts/search_contributions.js"></script>
 
-    <!-- ======================= Lottie JSON script here ======================= -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
-
-    <script>
-      // Setting up Lottie
-      var animationContainer = document.getElementById("animation-container");
-      var anim = bodymovin.loadAnimation({
-        container: animationContainer,
-        renderer: "svg", // You can also use 'canvas' or 'html'
-        loop: true, // Set to true if you want the animation to loop
-        autoplay: true,
-        path: "/public/javascripts/lottiejson/green.json",
-        // path: 'assets/lottiejson/purple.json',
-      });
-    </script>
-
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.7.0.js"
@@ -840,6 +828,12 @@
       src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"
     ></script>
 
+    <!-- ======================= Script for search by username ======================= -->
+    <script>
+      document.addEventListener('DOMContentLoaded', e => {
+          $('#input-datalist').autocomplete()
+      }, false);
+    </script>
     <script>
       $(document).ready(function () {
         var table = $("#search-contributions").DataTable({
