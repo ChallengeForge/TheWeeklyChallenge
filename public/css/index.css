@@ -986,3 +986,8 @@ section {
   background-color: var(--bg-light);
   color: var(--text-color-def);
 }
+
+.rounded-btn{
+  border-radius: 25px !important;
+  width: 60px;
+}
