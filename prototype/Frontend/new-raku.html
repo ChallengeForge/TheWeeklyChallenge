@@ -4,13 +4,6 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>The Weekly Challenge - Perl & Raku</title>
-    <meta
-      content="The Weekly Challenge that includes Perl and Raku programming."
-      name="description"
-    />
-    <meta content="The Weekly Challenge, Perl,Raku" name="keywords" />
-
     <title>The Weekly Challenge</title>
     <meta
       content="The Weekly Challenge that includes Perl and Raku programming."
@@ -50,6 +43,16 @@
     />
     <meta name="theme-color" content="#ffffff" />
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
@@ -85,16 +88,12 @@
 
     <!-- Template Main CSS File -->
     <link href="/public/css/index.css" rel="stylesheet" />
-    <link href="/public/css/create-new-blog-post.css" rel="stylesheet" />
-    <!-- TinyMCE -->
-    <script
-      src="https://cdn.tiny.cloud/1/ci57v5f5dkepj31a4ppjbj1b68jjkda0wnouosvx8frxxpb0/tinymce/6/tinymce.min.js"
-      referrerpolicy="origin"
-    ></script>
+    <link href="/public/css/blogs.css" rel="stylesheet" />
+
   </head>
 
   <body>
-    <!-- =================================== Header =================================== -->
+    <!-- ==================== Header =================== -->
     <header id="header" class="sticky-top border-bottom">
       <div class="container d-flex align-items-center">
         <div
@@ -233,7 +232,7 @@
       <div class="container-md">
         <div class="row justify-content-center">
           <div class="col col-lg-10 col-xxl-9">
-            <h5 class="text-black">Create a new Raku Review</h5>
+            <h5>Create a new Raku Review</h5>
             <hr />
             <p>
               <i style="font-size: 14px">
@@ -243,7 +242,7 @@
 
             <div class="row mt-3 row-cols-1 row-cols-sm-2 row-cols-md-2">
               <div class="col mb-3">
-                <label for="blog-title" class="form-label text-black"
+                <label for="blog-title" class="form-label"
                   >Title *</label
                 >
                 <input
@@ -254,7 +253,7 @@
                 />
               </div>
               <div class="col mb-3">
-                <label for="tags-input" class="form-label text-black"
+                <label for="tags-input" class="form-label"
                   >Tags</label
                 >
                 <input
@@ -270,7 +269,7 @@
             <div>
               <div class="row">
                 <div class="col-12 col-sm-6 mb-3">
-                  <label for="section-header" class="form-label text-black"
+                  <label for="section-header" class="form-label"
                     >Section header *</label
                   >
                   <input
@@ -342,7 +341,100 @@
     <!-- Create blog post section end-->
     <!-- blog ends here -->
 
-    <!-- Footer -->
+    <!-- =============== Footer ================= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 footer-contact">
+              <img src="/public/images/logo/logo.png" class="footer-logo" />
+              <img
+                src="/public/images/logo/typography.png"
+                class="footer-typo"
+              />
+              <div class="email my-5">
+                <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="about.html">About us</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="list-outreachy-applicants.html"
+                        >Outreachy Applicants</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 mt-2 mt-lg-0">
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team.html">Teams</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="perl-review.html">Reviews</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="team-leader.html">Charts</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
+                suscipit?
+              </p>
+              <div class="social-links mt-3">
+                <a
+                  href="https://twitter.com/perlwchallenge?lang=en"
+                  target="_blank"
+                  class="twitter"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/groups/theweeklychallengegroup/"
+                  target="_blank"
+                  class="facebook"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>The Weekly Challenge</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
   </body>
   <script src="/js/script.js"></script>
   <script
@@ -355,6 +447,11 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"
   ></script>
+  <!-- TinyMCE -->
+  <script
+  src="https://cdn.tiny.cloud/1/ci57v5f5dkepj31a4ppjbj1b68jjkda0wnouosvx8frxxpb0/tinymce/6/tinymce.min.js"
+  referrerpolicy="origin"
+></script>
 
   <!-- We use TinyMCE and we customize it here -->
   <script>
