@@ -206,7 +206,7 @@
                   <a href="sign-in.html">Login/SignUp</a>
                 </li>
                 <li class="border-bottom"><a href="logout.html">Logout</a></li>
-                <li class="border-bottom">
+                <li>
                   <a href="user_dashboard.html">My Profile</a>
                 </li>
               </ul>
@@ -224,11 +224,10 @@
     <div class="container-fluid py-5 main-section">
       <div id="teamDiv" style="overflow-x: hidden">
         <h2 class="text-center mb-5">Guest Members</h2>
-        <!-- <div id="animation-container" class="globe-anim"style="overflow-x: hidden;"></div> -->
         <div class="contactDetails team-rows-container mt-3">
           <div class="row d-flex justify-content-around">
             <div
-              class="col-lg-3 col-md-5 col-sm-10"
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10"
               style="display: flex; justify-content: center"
             >
               <div class="our-team">
@@ -244,13 +243,13 @@
                     class="d-flex flex-row justify-content-around align-item-center"
                   >
                     <a href="#"><i class="fa-regular fs-2 fa-envelope"></i></a>
-                    <a href="mailto:rishikesh_2001cs85@iitp.ac.in"
+                    <a href="#"
                       ><i class="fa fs-2 fa-envelope"></i
                     ></a>
-                    <a href="https://www.facebook.com/rishi.devanathan.5"
+                    <a href="#"
                       ><i class="fa-solid fs-2 fa-phone"></i
                     ></a>
-                    <a href="https://www.linkedin.com/in/rishikesh-devanathan/"
+                    <a href="#"
                       ><i class="fa-brands fs-2 fa-linkedin"></i
                     ></a>
                   </li>
@@ -258,7 +257,7 @@
               </div>
             </div>
             <div
-              class="col-lg-3 col-md-5 col-sm-10"
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10"
               style="display: flex; justify-content: center"
             >
               <div class="our-team">
@@ -282,7 +281,7 @@
               </div>
             </div>
             <div
-              class="col-lg-3 col-md-5 col-sm-10"
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
               style="display: flex; justify-content: center"
             >
               <div class="our-team">
@@ -306,7 +305,7 @@
               </div>
             </div>
             <div
-              class="col-lg-3 col-md-5 col-sm-10"
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
               style="display: flex; justify-content: center"
             >
               <div class="our-team">
@@ -330,7 +329,7 @@
               </div>
             </div>
             <div
-              class="col-lg-3 col-md-5 col-sm-10"
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
               style="display: flex; justify-content: center"
             >
               <div class="our-team">
@@ -346,7 +345,7 @@
                     class="d-flex flex-row justify-content-around align-item-center"
                   >
                     <a href="#"><i class="fa-regular fs-2 fa-envelope"></i></a>
-                    <a href="mailto:rishikesh_2001cs85@iitp.ac.in"
+                    <a href="#"
                       ><i class="fa fs-2 fa-envelope"></i
                     ></a>
                     <a href="#"><i class="fa-solid fs-2 fa-phone"></i></a>
@@ -356,7 +355,7 @@
               </div>
             </div>
             <div
-              class="col-lg-3 col-md-5 col-sm-10"
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
               style="display: flex; justify-content: center"
             >
               <div class="our-team">
@@ -380,7 +379,7 @@
               </div>
             </div>
             <div
-              class="col-lg-3 col-md-5 col-sm-10"
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
               style="display: flex; justify-content: center"
             >
               <div class="our-team">
@@ -404,7 +403,7 @@
               </div>
             </div>
             <div
-              class="col-lg-3 col-md-5 col-sm-10"
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
               style="display: flex; justify-content: center"
             >
               <div class="our-team">
@@ -427,45 +426,33 @@
                 </ul>
               </div>
             </div>
-            <!-- end of row-->
           </div>
-          <!---->
-
-          <div class="container">
-            <!-- Your content here -->
-
-            <!-- Pagination -->
-            <div class="row">
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col">
-                <nav class="float-right" aria-label="Page navigation example">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link" href="#" id="prevPageBtn">Back</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#" id="nextPageBtn">Forward</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-          <!--End Container -->
+          <!-- End of row -->
         </div>
-      </div>
 
+        <div class="container">
+          <!-- ========================== Pagination ============================= -->
+          <div class="row">
+            <div class="col">
+              <nav class="float-right" aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" id="prevPageBtn">Back</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" id="nextPageBtn">Forward</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!--End Container -->
+      </div>
+    </div>
       <!-- ================= Preloader ============== -->
       <div id="preloader"></div>
       <a
@@ -525,7 +512,7 @@
                       </li>
                       <li>
                         <i class="bx bx-chevron-right"></i>
-                        <a href="perl-review.html">Reviews</a>
+                        <a href="rss_feed.html">RSS Feed</a>
                       </li>
                       <li>
                         <i class="bx bx-chevron-right"></i>
@@ -578,7 +565,6 @@
         </div>
       </footer>
       <!-- End Footer -->
-    </div>
     <!-- ============================ Vendor JS Files ============================ -->
     <script src="/public/javascripts/vendor/aos/aos.js"></script>
     <script src="/public/javascripts/vendor/bootstrap/bootstrap.bundle.min.js"></script>
@@ -587,30 +573,12 @@
     <script src="/public/javascripts/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="/public/javascripts/vendor/waypoints/noframework.waypoints.js"></script>
 
-    <!-- Template Main JS File -->
+    <!-- ========================== Template Main JS File ========================== -->
     <script src="/public/javascripts/index.js"></script>
-
-    <!-- ======================= Lottie JSON script here ======================= -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
-
-    <script>
-      // Setting up Lottie
-      var animationContainer = document.getElementById("animation-container");
-      var anim = bodymovin.loadAnimation({
-        container: animationContainer,
-        renderer: "svg", // You can also use 'canvas' or 'html'
-        loop: true, // Set to true if you want the animation to loop
-        autoplay: true,
-        path: "/public/javascripts/lottiejson/globe.json",
-        // path: 'assets/lottiejson/purple.json',
-      });
-    </script>
-
-    <!-- Pagination Script -->
+    <!-- ========================== Pagination Script ========================== -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const itemsPerPage = 4; // Number of items per page
+        const itemsPerPage = 5; // Number of items per page
         let currentPage = 0; // Current page index
 
         const teamDiv = document.getElementById("teamDiv");
@@ -618,7 +586,7 @@
           ".team-rows-container"
         );
         const teamMembers = Array.from(
-          teamRowsContainer.querySelectorAll(".col-lg-3")
+          teamRowsContainer.querySelectorAll(".col-xl-2")
         );
 
         // Function to show items for a specific page
