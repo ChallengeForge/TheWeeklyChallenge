@@ -647,8 +647,23 @@ a.sidebar-link:hover {
 }
 
 
+.tiles.mb-5 > div[class^='col-'] {
+  flex: 1 0 calc(33.33% - 30px); /* Adjust the percentage and margin as needed */
+  margin-right: 15px;
+  margin-left: 15px;
+}
 
+@media (max-width: 992px) {
+  .tiles.mb-5 > div[class^='col-'] {
+      flex: 1 0 calc(50% - 30px); /* Adjust the percentage and margin for smaller screens */
+  }
+}
 
+@media (max-width: 768px) {
+  .tiles.mb-5 > div[class^='col-'] {
+      flex: 1 0 calc(100% - 30px); /* Adjust the percentage and margin for even smaller screens */
+  }
+}
 
 /* 
   Footer section
