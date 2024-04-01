@@ -258,31 +258,10 @@
  * Color Preferences Theme for diferent sections
  */
 
-var body = document.querySelector("body");
-var hero = document.getElementById("hero");
-var header = document.querySelector("header");
-var dropdown = document.querySelector(".navbar");
-var client = document.querySelector(".clients");
-var mainSection = document.querySelector(".main-section");
-var footer = document.getElementById("footer");
-
 
 
 /**
  * Local Storage for Theme Color Save
  */
 
-// Immediately invoked function to set the theme on initial load
-(function () {
-  if (localStorage.getItem("theme")) {
-    if (localStorage.getItem("theme") === "dark") {
-      goDark();
-    } else if (localStorage.getItem("theme") === "blue") {
-      goBlue();
-    } else {
-      goLight();
-    }
-  } else {
-    goLight();
-  }
-})();
+

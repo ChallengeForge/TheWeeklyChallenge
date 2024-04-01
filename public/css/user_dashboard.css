@@ -15,9 +15,7 @@
   --bg-sec: #f3f5fa;
   --bg-sec-dark: #212121;
   --bg-blue-hero: #edf3ff;
-
   --girl: #92e3a9;
-
   --bg-dark: #121212;
   --text-color-dark: #fcfcfc;
 }
@@ -112,7 +110,7 @@ body {
 }
 
 .main {
-  background-color: #fff;
+  background-color: black;
   &.dark-mode {
     background: var(--bg-sec-dark);
     color: var(--text-color-dark);
@@ -306,7 +304,6 @@ body {
   font-weight: 550;
   color: var(--head);
   text-decoration: none;
-
 }
 
 .navbar .dropdown ul a i {
@@ -495,6 +492,12 @@ body {
   position:static;
   transition: all .25s ease-in-out;
   background-color: #92e3a9;
+  &.dark-mode{
+    color: var(--text-color-def);
+  }
+  &.blue-mode{
+    background: var(--bg-blue);
+  }
   display: flex;
   flex-direction: column;
   z-index: 999;
@@ -699,8 +702,26 @@ a.sidebar-link:hover {
   }
 }
 
+body {
+  background-color: var(--girl);
+  color: var(--text-color-def);
 
-.main .main-section {
+  &.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-color-dark);
+  }
+
+  &.dark-mode .header-scrolled {
+    background: var(--girl);
+  }
+
+  &.blue-mode {
+    background-color: var(--bg-blue);
+    color: var(--text-color-def);
+  }
+}
+
+ .main-section {
   background: var(--bg-light);
 
   &.dark-mode {
@@ -722,7 +743,7 @@ a.sidebar-link:hover {
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
   }
 
-  &.dark-mode .our-team h3,
+  &.dark-mode .our-team ,
   &.dark-mode .our-team span,
   &.dark-mode .our-team i {
     color: var(--text-color-dark);
@@ -755,8 +776,6 @@ a.sidebar-link:hover {
     color: var(--text-color-dark) !important;
   }
 }
-
-
 
 
 /* 

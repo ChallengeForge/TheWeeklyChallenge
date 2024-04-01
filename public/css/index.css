@@ -165,6 +165,7 @@ header {
     background-color: var(--bg-blue);
     color: var(--text-color-def);
   }
+  
 }
 
 #header {
@@ -770,7 +771,7 @@ section {
 /* 
   Color theme definitions for main section
   */
-  
+
 .main-section {
   background: var(--bg-light);
 
