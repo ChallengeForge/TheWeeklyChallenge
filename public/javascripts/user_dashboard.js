@@ -9,102 +9,35 @@ hamBurger.addEventListener("click", function () {
 });
 
 
-var body = document.querySelector("body");
-var hero = document.getElementById("hero");
-var header = document.querySelector("header");
-var dropdown = document.querySelector(".navbar");
-var client = document.querySelector(".clients");
-var mainSection = document.querySelector(".main-section");
-var footer = document.getElementById("footer");
+  // Function to toggle between blue mode and dark modedocument.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
+      var dropdownItems = document.querySelectorAll('.dropdown li');
 
+      dropdownItems.forEach(function(item) {
+          item.addEventListener('click', function(event) {
+              event.preventDefault();
+              var theme = event.target.parentElement.classList[1];
+              setTheme(theme);
+          });
+      });
 
-function goDark() {
-    // setting local storage value theme = dark
-    localStorage.setItem("theme", "dark");
-    //removing all possible classes of the other 2 modes
-    header.classList.remove("blue-mode");
-    body.classList.remove("blue-mode");
-    dropdown.classList.remove("blue-mode");
-    body.classList.add("dark-mode");
-  
-    if (hero || client) {
-      hero.classList.remove("blue-mode");
-      hero.classList.add("dark-mode");
-      client.classList.add("dark-mode");
-    }
-    if (mainSection) {
-      mainSection.classList.remove("blue-mode");
-      mainSection.classList.add("dark-mode");
-    }
-  
-    footer.classList.remove("blue-mode");
-    footer.classList.add("dark-mode");
-  
-    // adding dark mode
-  }
-  
-  function goLight() {
-    localStorage.setItem("theme", "light");
-    header.classList.remove("blue-mode");
-    dropdown.classList.remove("blue-mode");
-    body.classList.remove("dark-mode");
-    body.classList.remove("blue-mode");
-  
-    if (hero || client) {
-      hero.classList.remove("dark-mode");
-      hero.classList.remove("blue-mode");
-      client.classList.remove("dark-mode");
-    }
-  
-    if (mainSection) {
-      mainSection.classList.remove("blue-mode");
-      mainSection.classList.remove("dark-mode");
-    }
-  
-    footer.classList.remove("blue-mode");
-    footer.classList.remove("dark-mode");
-  }
-  
-  function goBlue() {
-    localStorage.setItem("theme", "blue");
-    body.classList.remove("dark-mode");
-    dropdown.classList.add("blue-mode");
-    header.classList.add("blue-mode");
-    body.classList.add("blue-mode");
-  
-    if (hero || client) {
-      hero.classList.remove("dark-mode");
-      client.classList.remove("dark-mode");
-      hero.classList.add("blue-mode");
-    }
-  
-    if (mainSection) {
-      mainSection.classList.remove("dark-mode");
-      mainSection.classList.add("blue-mode");
-    }
-  
-    footer.classList.remove("dark-mode");
-    footer.classList.add("blue-mode");
-  }
-  
-  document.querySelector(".theme1").addEventListener("click", goLight, false); // Tells the first button to run the goLight function when clicked
-  
-  document.querySelector(".theme2").addEventListener("click", goDark, false); // Tells the second button to run the goDark function when clicked
-  
-  document.querySelector(".theme3").addEventListener("click", goBlue, false);
-  
+      function setTheme(theme) {
+          var blueModeStyle = document.getElementById('blue-mode');
+          var darkModeStyle = document.getElementById('dark-mode');
+          var defaultStyle = document.getElementById('default-style');
 
-  // Immediately invoked function to set the theme on initial load
-(function () {
-    if (localStorage.getItem("theme")) {
-      if (localStorage.getItem("theme") === "dark") {
-        goDark();
-      } else if (localStorage.getItem("theme") === "blue") {
-        goBlue();
-      } else {
-        goLight();
+          if (theme === 'theme3') {
+              blueModeStyle.disabled = false;
+              darkModeStyle.disabled = true;
+              defaultStyle.disabled = true;
+          } else if (theme === 'theme2') {
+              blueModeStyle.disabled = true;
+              darkModeStyle.disabled = false;
+              defaultStyle.disabled = true;
+          } else {
+              blueModeStyle.disabled = true;
+              darkModeStyle.disabled = true;
+              defaultStyle.disabled = false;
+          }
       }
-    } else {
-      goLight();
-    }
-  })();
+  });
