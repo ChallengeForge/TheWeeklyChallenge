@@ -37,7 +37,27 @@ This project is a fun and welcoming space for developers of all skill levels to 
     git clone https://github.com/ChallengeForge/TheWeeklyChallenge.git
 ```
 
-- ## Run the Development Server
+- ## Running the Development Server
+
+To ease development processes, we are using `Docker` to effortlessly build and run the backend code for this project. Follow these straightforward steps to start the development server:
+
+1. **Navigate to the root directory of the project**
+    ```bash
+    $ cd TheWeeklyChallenge
+    ```
+
+2. **Build the Docker image**
+    ```bash
+    $ docker build -t pwc .
+    ```
+
+3. **Run the Docker image on your local machine**
+    ```bash
+    $ docker run -t pwc
+    ```
+
+4. **All set**! The development server should now be accessible at [http://127.0.0.1:4000](http://127.0.0.1:4000).
+
 
 # Contribution
 
@@ -59,7 +79,48 @@ This project is licensed under the `Artistic License 2.0` license. Please refer 
 
 1. **Install DBIx::Class**: This module provides a convenient abstraction layer over your database.
 
-2. **Install DBD::mysql**: This module provides the MySQL driver for DBI, enabling connectivity to a MySQL database.
+3. **Install Dancer2::Plugin::Database**: This module integrates the Dancer2 web framework with your database.
+
+# Runnig Perl Critic
+
+## Description
+This code snippet is configured to utilize Perl::Critic for static code analysis with the strictest severity level (`brutal`) and the highest verbosity level (`11`). It's designed to enforce coding standards and best practices by analyzing Perl code against default Perl::Critic policies.
+
+## Setup
+1. Make sure you have Perl::Critic installed. If not, you can install it via CPAN or your preferred package manager.
+2. Ensure that the `.perlcriticrc` file is present in your project directory with the following configurations:
+   - Severity level set to `brutal`
+   - Verbosity level set to `11`
+
+## Usage
+1. Clone or download the code snippet to your local machine.
+2. Navigate to the directory containing the code.
+3. Ensure that your Perl scripts are also present in the same directory or its subdirectories.
+4. Run Perl::Critic with the provided configurations by executing the following command in your terminal:
+
+```bash
+perlcritic . your_perl_script.pl
+```
+
+Replace `your_perl_script.pl` with the name of the Perl script you want to analyze.
+
+## Run PerlCritic on Multiple Files
+- To run PerlCritc on all the Perl files in a drectiory i.e. files with ".pl" or ".pm" extenstions. Run the following command in your root directory terminal:
+```bash
+perlcritic .
+```
+
+## Additional Information
+- The `.perlcriticrc` file included in this repository is preconfigured to use the default Perl::Critic policies.
+- No custom policies are added beyond the defaults.
+- The severity level is set to `brutal`, indicating the strictest enforcement of coding standards.
+- The verbosity level is set to `11`, providing the highest level of detail in the analysis output.
+
+## Dependencies
+Ensure that the following dependencies are met:
+- Perl::Critic
+
+These dependencies should be installed and configured appropriately.
 
 3. **Install Dancer2::Plugin::Database**: This module integrates the Dancer2 web framework with your database.
 

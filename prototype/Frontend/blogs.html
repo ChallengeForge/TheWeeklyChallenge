@@ -113,7 +113,7 @@
           </a>
           <a href="index.html" class="logo me-auto">
             <img
-              src="/public/images/logo/logo.png"
+              src="/public/images/logo/typography.png"
               alt="typography"
               class="img-fluid"
             />
@@ -217,7 +217,7 @@
                   <a href="sign-in.html">Login/SignUp</a>
                 </li>
                 <li class="border-bottom"><a href="logout.html">Logout</a></li>
-                <li class="border-bottom">
+                <li>
                   <a href="user_dashboard.html">My Profile</a>
                 </li>
               </ul>
@@ -266,7 +266,7 @@
       </h1>
 
       <div>
-        <h6 class="text-black text-muted">Search</h6>
+        <h6>Search</h6>
 
         <div class="filter-container mb-3">
           <input
@@ -461,37 +461,9 @@
             </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col mbt-3">
-            <button
-              id="showMore"
-              class="btn btn-md"
-              style="background-color: #92e3a9; color: white"
-            >
-              Show more
-            </button>
-          </div>
-          <div class="col text-end mb-3">
-            <button
-              id="showLess"
-              class="btn btn-md"
-              style="background-color: #92e3a9; color: white; display: none"
-            >
-              SHOW LESS
-            </button>
-          </div>
-        </div>
-
-        <!-- <button id="my-showBtn">Show</button> -->
       </div>
       <!-- Latest articles end -->
     </section>
-
-    <!-- Blog post list end -->
-    <!-- End Cliens Section -->
-
-    <!-- End #main -->
     <!-- ==================== Blogs Section  end ==================== -->
 
     <!-- ============== Preloader ================ -->
@@ -503,21 +475,37 @@
       <i class="bi bi-arrow-up-short"></i>
     </a>
 
+    <div class="container">
+      <!-- ========================== Pagination ============================= -->
+      <div class="row">
+        <div class="col">
+          <nav class="float-right" aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" id="prevPageBtn">Back</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" id="nextPageBtn">Forward</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer id="footer">
       <div class="footer-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6 col-12 footer-contact">
-              <img
-                src="/public/images/logo/logo.png"
-                class="footer-logo"
-                alt="footer logo"
-              />
+              <img src="/public/images/logo/logo.png" class="footer-logo" />
               <img
                 src="/public/images/logo/typography.png"
                 class="footer-typo"
-                alt="TheWeeklyChallenge"
               />
               <div class="email my-5">
                 <strong>Email:</strong> perlweeklychallenge@yahoo.com<br />
@@ -553,7 +541,7 @@
                     </li>
                     <li>
                       <i class="bx bx-chevron-right"></i>
-                      <a href="perl-review.html">Reviews</a>
+                      <a href="rss_feed.html">RSS Feed</a>
                     </li>
                     <li>
                       <i class="bx bx-chevron-right"></i>

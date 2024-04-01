@@ -43,24 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const filterInput = document.getElementById("titleFilter");
-  const cards = document.querySelectorAll("#articleRows .card");
-
-  filterInput.addEventListener("keyup", function () {
-    const searchText = filterInput.value.toLowerCase();
-
-    cards.forEach((card) => {
-      const title = card.querySelector(".card-title").textContent.toLowerCase();
-      if (title.includes(searchText)) {
-        card.parentElement.style.display = ""; // Show the card's column if the title matches
-      } else {
-        card.parentElement.style.display = "none"; // Hide the card's column if the title does not match
-      }
-    });
-  });
-});
-
 darkModeToggle.addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
   localStorage.setItem(
