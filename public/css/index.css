@@ -823,6 +823,10 @@ section {
     color: var(--text-color-dark);
   }
 
+  &.dark-mode .blue-form{
+    color: var(--text-color-dark);
+  }
+
   &.blue-mode {
     background: var(--bg-blue-hero);
   }
