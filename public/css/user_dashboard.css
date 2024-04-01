@@ -22,6 +22,28 @@
   --text-color-dark: #fcfcfc;
 }
 
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-color-def);
+
+  &.dark-mode {
+    background-color: var(--bg-sec-dark);
+    color: var(--text-color-dark);
+  }
+
+  &.blue-mode {
+    background-color: var(--bg-blue-hero);
+    color: var(--text-color-def);
+  }
+}
+
 .light-mode {
   background-color: var(--bg-light);
   color: var(--btn-color);
@@ -85,8 +107,20 @@ body {
   flex: 1; /* Takes up the remaining space in the content area */
   overflow: hidden;
   transition: all 0.35s ease-in-out;
-  background-color: #fff;
+  
   min-width: 0;
+}
+
+.main {
+  background-color: #fff;
+  &.dark-mode {
+    background: var(--bg-sec-dark);
+    color: var(--text-color-dark);
+  }
+  &.blue-mode{
+    background-color: var(--bg-blue);
+    color: var(--text-color-def);
+  }
 }
 
 .toggle-btn {
@@ -661,9 +695,69 @@ a.sidebar-link:hover {
 
 @media (max-width: 768px) {
   .tiles.mb-5 > div[class^='col-'] {
-      flex: 1 0 calc(100% - 30px); /* Adjust the percentage and margin for even smaller screens */
+      flex: 1 0 calc(100% - 30px); /* Adjust the percentage and margin for extra  small screens */
   }
 }
+
+
+.main .main-section {
+  background: var(--bg-light);
+
+  &.dark-mode {
+    background: var(--bg-sec-dark);
+    color: var(--text-color-dark);
+  }
+
+  &.dark-mode .section-title h2 {
+    color: var(--text-color-dark);
+  }
+
+  &.dark-mode #teamDiv h2 {
+    color: var(--text-color-dark);
+  }
+
+  &.dark-mode .our-team {
+    background: var(--bg-dark);
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
+  }
+
+  &.dark-mode .our-team h3,
+  &.dark-mode .our-team span,
+  &.dark-mode .our-team i {
+    color: var(--text-color-dark);
+  }
+  &.dark-mode .our-team i:hover {
+    color: var(--girl);
+  }
+  &.dark-mode .info-container {
+    background: var(--bg-dark);
+  }
+  &.dark-mode .wrapper {
+    color: var(--text-color-def);
+  }
+  &.dark-mode .quesHead,
+  &.dark-mode .answer,
+  &.dark-mode .showAnswer {
+    color: var(--text-color-dark);
+  }
+
+  &.blue-mode {
+    background: var(--bg-blue-hero);
+  }
+
+  &.blue-mode .info-item {
+    background: var(--btn-color);
+    color: var(--text-color-dark);
+  }
+
+  &.blue-mode .info-item i {
+    color: var(--text-color-dark) !important;
+  }
+}
+
+
+
 
 /* 
   Footer section
