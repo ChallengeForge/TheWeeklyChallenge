@@ -1,46 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const rows = document.querySelectorAll("#articleRows .col-display");
-  let maxVisible = 3; // Start with 3 items visible
-  const showMoreBtn = document.getElementById("showMore");
-  const showLessBtn = document.getElementById("showLess");
-
-  // Function to update column visibility based on maxVisible
-  function updateColumnVisibility() {
-    rows.forEach((row, index) => {
-      row.style.display = index < maxVisible ? "" : "none";
+  const itemsPerPage = 6; // Number of items per page
+  let currentPage = 0; // Current page index
+  const articleRows = document.getElementById("articleRows");
+  const rowsContainer = document.querySelector(
+    ".row-cols-1"
+  );
+  const articleRow = Array.from(
+    articleRows.querySelectorAll(".col-display")
+  );
+  // Function to show items for a specific page
+  function showPage(pageIndex) {
+    const startIndex = pageIndex * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    articleRow.forEach((member, index) => {
+      member.style.display =
+        index >= startIndex && index < endIndex ? "flex" : "none";
     });
   }
-
-  // Initially update visibility based on maxVisible
-  updateColumnVisibility();
-
-  // Show more columns
-  showMoreBtn.addEventListener("click", function () {
-    maxVisible = Math.min(rows.length, maxVisible + 3);
-    updateColumnVisibility();
-
-    // Toggle button visibility
-    if (maxVisible >= rows.length) {
-      showMoreBtn.style.display = "none";
-    }
-    if (maxVisible > 3) {
-      showLessBtn.style.display = "";
-    }
-  });
-
-  // Show less columns
-  showLessBtn.addEventListener("click", function () {
-    maxVisible = Math.max(3, maxVisible - 3);
-    updateColumnVisibility();
-
-    // Toggle button visibility
-    if (maxVisible <= 3) {
-      showLessBtn.style.display = "none";
-    }
-    if (maxVisible < rows.length) {
-      showMoreBtn.style.display = "";
-    }
-  });
+  // Function to handle next button click
+  document
+    .getElementById("nextPageBtn")
+    .addEventListener("click", function () {
+      currentPage = Math.min(
+        currentPage + 1,
+        Math.ceil(articleRow.length / itemsPerPage) - 1
+      );
+      showPage(currentPage);
+    });
+  // Function to handle previous button click
+  document
+    .getElementById("prevPageBtn")
+    .addEventListener("click", function () {
+      currentPage = Math.max(currentPage - 1, 0);
+      showPage(currentPage);
+    });
+  // Initial page display
+  showPage(currentPage);
 });
 
 document.addEventListener("DOMContentLoaded", function () {

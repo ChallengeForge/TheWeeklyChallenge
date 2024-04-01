@@ -16,6 +16,7 @@
 
   --bg-dark: #121212;
   --text-color-dark: #fcfcfc;
+  --dark-btn: #c3c1c1;
 }
 
 .light-mode {
@@ -46,6 +47,16 @@ body {
   &.dark-mode {
     background-color: var(--bg-sec-dark);
     color: var(--text-color-dark);
+  }
+  &.dark-mode .btn-get-started{
+    background: var(--dark-btn) !important;
+  }
+  &.dark-mode .btn-get-started:hover{
+    background: var(--btn-color) !important;
+  }
+
+  &.dark-mode .slide-controls .slider-tab{
+    background: var(--bg-sec-dark) !important;
   }
 
   &.blue-mode {
@@ -165,6 +176,7 @@ header {
     background-color: var(--bg-blue);
     color: var(--text-color-def);
   }
+  
 }
 
 #header {
@@ -770,6 +782,7 @@ section {
 /* 
   Color theme definitions for main section
   */
+
 .main-section {
   background: var(--bg-light);
 
@@ -824,6 +837,10 @@ section {
   &.blue-mode .info-item i {
     color: var(--text-color-dark) !important;
   }
+}
+
+.refresh-btn{
+  background: var(--bg-sec-dark);
 }
 
 /* 
@@ -985,4 +1002,9 @@ section {
 .charts {
   background-color: var(--bg-light);
   color: var(--text-color-def);
+}
+
+.rounded-btn{
+  border-radius: 25px !important;
+  width: 60px;
 }
