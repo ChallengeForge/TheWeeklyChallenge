@@ -690,7 +690,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+  color: #2b83f3;
 }
 
 .section-title h2::before {
@@ -824,6 +824,15 @@ section {
   }
 
   &.dark-mode .blue-form{
+    color: var(--text-color-dark);
+  }
+
+  &.dark-mode .swiper-wrapper p{
+    color: var(--text-color-def);
+  }
+
+  &.dark-mode .swiper-wrapper h3,
+  &.dark-mode .swiper-wrapper h4{
     color: var(--text-color-dark);
   }
 
