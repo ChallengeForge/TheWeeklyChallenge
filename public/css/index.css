@@ -783,7 +783,7 @@ section {
   Color theme definitions for main section
   */
 
-.main-section {
+.main-section main{
   background: var(--bg-light);
 
   &.dark-mode {
