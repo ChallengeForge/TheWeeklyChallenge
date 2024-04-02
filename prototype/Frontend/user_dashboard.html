@@ -61,66 +61,7 @@
     />
     <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
     
-
 <style>
-
-.blue-mode {
-    
-          .wrapper,
-          #header,
-          .navbar .dropdown ul,
-          #sidebar,
-          .content-area,
-          #sidebar.expand,
-          .main.main-section,
-          .footer-bottom,
-          .card {
-              background-color: #a4d4fc; 
-              color: #333; 
-          }
-          .card:hover {
-              background-color: #f0f5ff; 
-          }
-  
-          .card i{
-              color: black;
-          }
-          main.content {
-              background-color: #edf3ff;
-          }  
-   }
-
-
-   .dark-mode {
-    body,
-         
-          .main-content
-           {
-              background-color: #121212;
-              color: #fcfcfc;
-          }
-  
-          .card {
-              background-color: #121212;
-              color: #fcfcfc;
-              box-shadow: 0 4px 8px 4px rgba(255, 255, 255, 0.2);
-              transition: transform 0.7s, box-shadow 0.7s, background-color 0.7s; 
-          }
-  
-          .card:hover {
-              background-color: #444; /* Slightly lighter dark background on hover */
-              color: #fcfcfc;
-              transform: translateY(-8px); 
-              box-shadow: 0 8px 16px 4px rgba(255, 255, 255, 0.4);
-  
-          } 
-          main.content {
-              background-color: #444;
-          }
-          #footer {
-              color: #121212;
-          }
-   }
    
 </style>
 
@@ -656,36 +597,6 @@
   ></script>
 
 
-
-<script>
-    // Function to set default mode
-    function setDefaultMode() {
-        document.body.classList.remove('dark-mode');
-        document.body.classList.remove('blue-mode');
-    }
-
-    // Function to set dark mode
-    function setDarkMode() {
-        document.body.classList.add('dark-mode');
-        document.body.classList.remove('blue-mode');
-    }
-
-    // Function to set blue mode
-    function setBlueMode() {
-        document.body.classList.add('blue-mode');
-        document.body.classList.remove('dark-mode');
-    }
-
-    // Add event listeners
-    document.getElementById('defaultMode').addEventListener('click', setDefaultMode);
-    document.getElementById('darkMode').addEventListener('click', setDarkMode);
-    document.getElementById('blueMode').addEventListener('click', setBlueMode);
-
-    // Initially set default mode
-    setDefaultMode();
-
-
-</script>
     <!--Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Your custom script -->

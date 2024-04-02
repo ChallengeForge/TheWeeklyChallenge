@@ -8,76 +8,96 @@ hamBurger.addEventListener("click", function () {
     caretIcon.classList.toggle("black"); // Add a class to change the color to black
 });
 
+(function() {
+
+
+    /**
+   * Mobile nav toggle
+   */
+  on("click", ".mobile-nav-toggle", function (e) {
+    select("#navbar").classList.toggle("navbar-mobile");
+    this.classList.toggle("bi-list");
+    this.classList.toggle("bi-x");
+  });
+
+  /**
+   * Mobile nav dropdowns activate
+   */
+  on(
+    "click",
+    ".navbar .dropdown > a",
+    function (e) {
+      if (select("#navbar").classList.contains("navbar-mobile")) {
+        e.preventDefault();
+        this.nextElementSibling.classList.toggle("dropdown-active");
+      }
+    },
+    true,
+  );
+
+  /**
+   * Scroll with offset on links with a class name .scrollto
+   */
+  on(
+    "click",
+    ".scrollto",
+    function (e) {
+      if (select(this.hash)) {
+        e.preventDefault();
+
+        let navbar = select("#navbar");
+        if (navbar.classList.contains("navbar-mobile")) {
+          navbar.classList.remove("navbar-mobile");
+          let navbarToggle = select(".mobile-nav-toggle");
+          navbarToggle.classList.toggle("bi-list");
+          navbarToggle.classList.toggle("bi-x");
+        }
+        scrollto(this.hash);
+      }
+    },
+    true,
+  );
+
+  /**
+   * Scroll with ofset on page load with hash links in the url
+   */
+  window.addEventListener("load", () => {
+    if (window.location.hash) {
+      if (select(window.location.hash)) {
+        scrollto(window.location.hash);
+      }
+    }
+  });
+
+
+});
 
   
-// document.addEventListener("DOMContentLoaded", function() {
-//     // Check user's preference from local storage or any other source
-//     var userPreference = localStorage.getItem("theme");
 
-//     // Function to toggle between dark mode and blue mode
-//     function toggleTheme(theme) {
-//         // Remove existing style tags
-//         var existingStyles = document.querySelectorAll("style[data-theme]");
-//         existingStyles.forEach(function(style) {
-//             style.remove();
-//         });
 
-//         // Create a new style tag for the selected theme
-//         var newStyle = document.createElement("style");
-//         newStyle.setAttribute("data-theme", theme);
+    // Function to set default mode
+    function setDefaultMode() {
+        document.body.classList.remove('dark-mode');
+        document.body.classList.remove('blue-mode');
+    }
 
-//         if (theme === "dark") {
-//             newStyle.textContent = `
-//                 body,
-//                 #sidebar,
-//                 .wrapper,
-//                 .card {
-//                     background-color: #333; /* Dark background */
-//                     color: #fff; /* Light text color */
-//                 }
-//                 /* Add other specific styles for dark mode here */
-//             `;
-//         } else if (theme === "blue") {
-//             newStyle.textContent = `
-//                 body,
-//                 .wrapper,
-//                 .main-content,
-//                 #sidebar,
-//                 #sidebar.expand
-//                 {
-//                     background-color: #a4d4fc; /* Light blue background */
-//                     color: #333; /* Dark text color */
-//                 }
-//                 .card {
-//                     background-color: #f0f5ff; /* Light blue background */
-//                     color: #333; /* Dark text color */
-//                 }
-//                 card:hover {
-//                     background-color: #f0f5ff; /* Light blue background */
-//                     color: #333; /* Dark text color */
-//                 }
-//                 /* Add other specific styles for blue mode here */
-//             `;
-//         }
+    // Function to set dark mode
+    function setDarkMode() {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('blue-mode');
+    }
 
-//         // Append the new style tag to the head
-//         document.head.appendChild(newStyle);
-//     }
+    // Function to set blue mode
+    function setBlueMode() {
+        document.body.classList.add('blue-mode');
+        document.body.classList.remove('dark-mode');
+    }
 
-//     // Check user preference and apply corresponding theme
-//     if (userPreference === "dark") {
-//         toggleTheme("dark");
-//     } else {
-//         toggleTheme("blue"); // Default to blue mode
-//     }
+    // Add event listeners
+    document.getElementById('defaultMode').addEventListener('click', setDefaultMode);
+    document.getElementById('darkMode').addEventListener('click', setDarkMode);
+    document.getElementById('blueMode').addEventListener('click', setBlueMode);
 
-//     // Event listener to toggle theme when preference is changed
-//     document.querySelectorAll(".dropdown .border-bottom").forEach(function(element) {
-//         element.addEventListener("click", function(event) {
-//             var selectedTheme = event.target.textContent.toLowerCase();
-//             toggleTheme(selectedTheme);
-//             // Save user's preference
-//             localStorage.setItem("theme", selectedTheme);
-//         });
-//     });
-// });
+    // Initially set default mode
+    setDefaultMode();
+
