@@ -11,9 +11,7 @@
   --bg-sec: #f3f5fa;
   --bg-sec-dark: #212121;
   --bg-blue-hero: #edf3ff;
-
   --girl: #92e3a9;
-
   --bg-dark: #121212;
   --text-color-dark: #fcfcfc;
   --dark-btn: #c3c1c1;
@@ -176,6 +174,7 @@ header {
     background-color: var(--bg-blue);
     color: var(--text-color-def);
   }
+  
 }
 
 #header {
@@ -778,10 +777,11 @@ section {
   }
 }
 
-/* 
+/*
   Color theme definitions for main section
   */
-.main-section {
+
+.main-section main{
   background: var(--bg-light);
 
   &.dark-mode {
