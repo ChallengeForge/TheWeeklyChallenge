@@ -89,7 +89,7 @@ body,
   #sidebar,
   #sidebar.expand
    {
-      background-color: #ffffff;
+      background-color: #c4c1c1;
   }
   .btn-primary {
     background-color: var(--dark-btn);
