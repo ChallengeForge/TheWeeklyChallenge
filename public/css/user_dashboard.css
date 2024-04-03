@@ -64,7 +64,6 @@ body {
 /* Dark  Mode Styles */
 .dark-mode {
 body,
- 
   .main-content
    {
       background-color: #121212;
@@ -74,18 +73,23 @@ body,
   .card {
       background-color: #121212;
       color: #fcfcfc;
-      box-shadow: 0 2px 4px 2px rgba(255, 255, 255, 0.2);
+      box-shadow: 0 1px 3px 1px rgba(255, 255, 255, 0.2);
       transition: transform 0.9s, box-shadow 0.9s, background-color 0.9s; 
   }
 
   .card:hover {
       background-color: #121212; /* Slightly lighter dark background on hover */      
       transform: translateY(-12px); 
-      box-shadow: 0 8px 16px 4px rgba(255, 255, 255, 0.4);
-
+      box-shadow: 0 4px 8px 4px rgba(255, 255, 255, 0.4);
   } 
   main.content {
       background-color: #444;
+  }
+
+  #sidebar,
+  #sidebar.expand
+   {
+      background-color: #ffffff;
   }
   .btn-primary {
     background-color: var(--dark-btn);
@@ -782,8 +786,7 @@ a.sidebar-link:hover {
     font-weight: bold;
     color: var(--btn-color);
     position: relative;
-    padding-bottom: 12px;
-    
+    padding-bottom: 12px; 
   }
   
   #footer .footer-top .footer-links {
