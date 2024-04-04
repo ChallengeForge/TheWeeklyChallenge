@@ -74,28 +74,7 @@
     ></script>
 
     <style>
-        .btn-primary{
-            .btn-primary {
-            color: #fff;
-            background-color: #007bff;
-            border-color: #007bff;
-            border-radius: 0.25rem; 
-            padding: 0.375rem 0.75rem; /* Default padd
-            font-size: 1rem; /* Default font size */
-            line-height: 1.5; /* Default line height */
-            text-align: center; /* Default text alignment */
-            vertical-align: middle; /* Aligns the text vertically */
-            cursor: pointer; /* Changes cursor to pointer on hover */
-            user-select: none; /* Prevents user selection of text */
-            border: 1px solid transparent; /* Default border */
-            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Default transition effects */
-            text-decoration: none; /* Removes underline by default */
-            display: inline-block; /* Sets the button to be an inline block */
-            font-weight: 400; /* Default font weight */
-            }
-
-        }
-
+        
         .view-btn{
             background-color: #007bff;
             color: white;
@@ -234,32 +213,38 @@
 
         <div class="content-area">
             <!-- Sidebar -->
-            <aside id="sidebar">
+            <aside id="sidebar" class="sidebar">
                 <div class="d-flex">
-                    <button class="toggle-btn black" type="button">
-                        <i class="fas fa-caret-right"></i>
-                    </button>
-                    
+                <!-- Add icon for back to home -->
+                    <a href="user_dashboard.html" class="sidebar-link" data-text="Dashboard">
+                        <i class="fas fa-home"></i>
+                        <span class="sidebar-text">Dashboard</span>
+                    </a>
                 </div>
                 <ul class="sidebar-nav">
-                    <li class="sidebar-item">
-                        <a href="user_view_comment.html" class="sidebar-link">
-                            <i class="fas fa-comment"></i>
-                            <span>Comments</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="user_replies.html" class="sidebar-link">
-                            <i class="fas fa-clipboard-list"></i>
-                            <span>Replies</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="user_notifications.html" class="sidebar-link">
-                            <i class="fas fa-bell"></i>
-                            <span>Notification</span>
-                        </a>
-                    </li>
+                <li class="sidebar-item">
+                    <button class="toggle-btn black" type="button">
+                    <i class="fas fa-caret-right"></i>
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <a href="user_view_comment.html" class="sidebar-link" data-text="Comments">
+                    <i class="fas fa-comment"></i>
+                    <span class="sidebar-text">Comments</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="user_replies.html" class="sidebar-link" data-text="Replies">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span class="sidebar-text">Replies</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="user_notifications.html" class="sidebar-link" data-text="Notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="sidebar-text">Notifications</span>
+                    </a>
+                </li>
                 </ul>
             </aside><!-- End Sidebar -->
     

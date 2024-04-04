@@ -521,36 +521,7 @@ body {
   /*--------------------------------------------------------------
   # Sidebar
   --------------------------------------------------------------*/
-  .sidebar-nav .sidebar-item a {
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap; /* Ensure text doesn't wrap */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
-
-
-.sidebar-nav .sidebar-item a::before {
-    content: attr(data-text); /* Use the text content as the content for pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 100%; /* Position the text outside on the right */
-    width: auto; /* Let the width be auto to fit the content */
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Background color of the overlay */
-    color: #fff; /* Text color */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Align text to the right */
-    padding-right: 5px; /* Add some padding */
-    padding-left: 20px; /* Add padding on the left to create space */
-    transition: all 0.3s ease;
-    z-index:1000;
-}
-
-.sidebar-nav .sidebar-item a:hover::before {
-    left: 0; /* Slide the text in from the left */
-}
-
+  
 #sidebar {
   top: 60px; /* Change this value as needed */
   left: 0; 
@@ -576,7 +547,7 @@ body {
   transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.sidebar-nav .sidebar-item a::before {
+ .sidebar-nav .sidebar-item a::before {
   content: attr(data-text); /* Use the text content as the content for pseudo-element */
   position: absolute;
   top: 0;
@@ -707,6 +678,11 @@ a.sidebar-link:hover {
     transform: rotate(45deg);
     transition: all .2s ease-out;
 }
+
+#sidebar.expand .sidebar-item a::before {
+  display: none; /* Disable the hover slider effect on expanded sidebar*/
+}
+
 
 /* Main Area Starts Here */
 .content {

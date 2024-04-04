@@ -69,7 +69,6 @@ hamBurger.addEventListener("click", function () {
     }
   });
 
-
 });
 
   
@@ -100,7 +99,31 @@ hamBurger.addEventListener("click", function () {
     setDefaultMode();
 
 
-  // Get the sidebar element
+
+
+//   // Get the sidebar element
+// const sidebar = document.getElementById('sidebar');
+
+// // Add a scroll event listener to the window
+// window.addEventListener('scroll', () => {
+//   // Calculate the distance from the top of the document to the bottom of the viewport
+//   const distanceToBottom = document.documentElement.scrollHeight - window.innerHeight - window.scrollY;
+
+//   // Define the margin for pushing the sidebar down
+//   const margin = '3rem';
+
+//   // If the distance to the bottom of the page is less than a threshold (e.g., 50 pixels)
+//   // add margin to the top of the sidebar to push it down
+//   if (distanceToBottom <= 50) {
+//     sidebar.style.marginTop = margin;
+//   } else {
+//     // Otherwise, remove the margin
+//     sidebar.style.marginTop = '0';
+//   }
+// });
+
+
+// Get the sidebar element
 const sidebar = document.getElementById('sidebar');
 
 // Add a scroll event listener to the window
@@ -120,3 +143,4 @@ window.addEventListener('scroll', () => {
     sidebar.style.marginTop = '0';
   }
 });
+
