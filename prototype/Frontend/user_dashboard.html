@@ -190,40 +190,46 @@
       <div class="content-area">
         <!-- Sidebar -->
         <aside id="sidebar" class="sidebar">
-          <div class="d-flex">
-              <button class="toggle-btn black" type="button">
-                  <i class="fas fa-caret-right"></i>
-              </button>
-          </div>
-          <ul class="sidebar-nav">
-              <li class="sidebar-item">
-                  <a href="user_view_comment.html" class="sidebar-link">
-                      <i class="fas fa-comment"></i>
-                      <span>Comments</span>
-                  </a>
-              </li>
-              <li class="sidebar-item">
-                  <a href="user_replies.html" class="sidebar-link">
-                      <i class="fas fa-clipboard-list"></i>
-                      <span>Replies</span>
-                  </a>
-              </li>
-              <li class="sidebar-item">
-                  <a href="user_notifications.html" class="sidebar-link">
-                      <i class="fas fa-bell"></i>
-                      <span>Notification</span>
-                  </a>
-              </li>
-          </ul>
+            <div class="d-flex">
+            <!-- Add icon for back to home -->
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-home"></i>
+                    <span class="sidebar-text">Dashboard</span>
+                </a>
+            </div>
+            <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <button class="toggle-btn black" type="button">
+                <i class="fas fa-caret-right"></i>
+                </button>
+            </li>
+            <li class="sidebar-item">
+                <a href="user_view_comment.html" class="sidebar-link" data-text="Comments">
+                <i class="fas fa-comment"></i>
+                <span class="sidebar-text">Comments</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="user_replies.html" class="sidebar-link" data-text="Comments">
+                <i class="fas fa-clipboard-list"></i>
+                <span class="sidebar-text">Replies</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="user_notifications.html" class="sidebar-link" data-text="Comments">
+                <i class="fas fa-bell"></i>
+                <span class="sidebar-text">Notification</span>
+                </a>
+            </li>
+            </ul>
         </aside><!-- End Sidebar -->
-
+  
         <!-- Main content -->
         <div class="main main-section">
             <!-- Main content area -->
             <main class="content px-3 py-4">
                 <div class="container-fluid">
                     <div class="mb-4">
-                        <h3 class="fw-bold fs-4 mb-3 mt-3">User Dashboard</h3>
                         <div class="row mb-5"> <!--- Row Charts-->
                             <div class="col-12 col-xs-12 col-md-6 mb-3">
                                 <div class="card border-0">
@@ -247,7 +253,6 @@
                                 </div>
                             </div> <!--- End Col-6-->
                         </div><!--- End Row Charts-->
-
 
                         <div class="row tiles mb-5">
                             <div class="col-12 col-md-4 col-lg-3 mb-4">
@@ -433,42 +438,45 @@
                                     <div class="card-body">
                                         <h3 class="fs-4 my-3"> Recent Notifications</h3>
 
-                                        <hr>
-                                        <div class="notifications-content">
-                                            <div class="notification-image ">
-                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                                    <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
-                                                </a>
-                                            </div> <!-- End of Div image -->
-                                            <div class="notification-text ps-4">
-                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now
-                                            </div>
-                                        </div><hr> <!--End notification content-->
+                                        <div class="notifications-wrapper"> 
+                                            <hr>
+                                            <div class="notifications-content">
+                                                <div class="notification-image ">
+                                                    <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                                        <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
+                                                    </a>
+                                                </div> <!-- End of Div image -->
+                                                <div class="notification-text ps-4">
+                                                    User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now
+                                                </div>
+                                            </div><hr> <!--End notification content-->
+    
+                                            <div class="notifications-content">
 
-                                        <div class="notifications-content">
+                                                <div class="notification-image ">
+                                                    <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                                        <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
+                                                    </a>
+                                                </div> <!-- End of Div image -->
+                                                <div class="notification-text ps-4">
+                                                    User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now
+                                                </div>
 
-                                            <div class="notification-image ">
-                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                                    <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
-                                                </a>
-                                            </div> <!-- End of Div image -->
-                                            <div class="notification-text ps-4">
-                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now
-                                            </div>
+                                            </div><hr> <!--End notification content-->
 
-                                        </div><hr> <!--End notification content-->
+                                            <div class="notifications-content">
+                                                <div class="notification-image ">
+                                                    <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                                        <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
+                                                    </a>
+                                                </div> <!-- End of Div image -->
+                                                <div class="notification-text ps-4">
+                                                    User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now
+                                                </div>
 
-                                        <div class="notifications-content">
-                                            <div class="notification-image ">
-                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                                    <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
-                                                </a>
-                                            </div> <!-- End of Div image -->
-                                            <div class="notification-text ps-4">
-                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now
-                                            </div>
+                                            </div><hr> <!--End notification content-->
 
-                                        </div><hr> <!--End notification content-->
+                                        </div> <!--End notification wrapper-->
 
                                         <div class="text-center">
                                             View All <span> <i class="fa-solid fa-arrow-right"></i> </span>
