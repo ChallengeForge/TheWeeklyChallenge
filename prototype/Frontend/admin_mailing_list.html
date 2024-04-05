@@ -1,349 +1,425 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/css/admin.css" />
-    <!-- title -->
-    <title>Admin Dashboard - Mailing List</title>
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/public/images/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/public/images/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/public/images/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/public/images/favicons/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/public/images/favicons/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <link rel="shortcut icon" href="/public/images/favicons/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta
-      name="msapplication-config"
-      content="/public/images/favicons/browserconfig.xml"
-    />
-    <meta name="theme-color" content="#ffffff" />
 
-    <!-- charts -->
-    <script
-      type="text/javascript"
-      src="https://www.gstatic.com/charts/loader.js"
-    ></script>
-    <!-- font awesome -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weekly Challenge - Mailing list</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/public/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/public/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/public/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/public/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <!--User Dashbaord Styles -->
+    <link rel="stylesheet" href="/public/css/user_dashboard.css">
+    <!--Homepage style-->
+    <link rel="stylesheet" href="/public/css/index.css">
+
+    <!-- Admin Dashbaord Styles -->
+    <link rel="stylesheet" href="/public/css/admin_dashboard.css">
+     
+    <!-- Favicons -->
+    <link href="/public/images/logo/logo.png" rel="icon" />
+
+    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Vendor CSS Files -->
+    <link href="/public/css/helpercss/aos.css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="/public/css/helpercss/bootstrap_css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- bootstrap -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="/public/css/helpercss/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
     />
+    <link
+      href="/public/css/helpercss/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/glightbox_css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/css/helpercss/remixicon/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
+    
+</head>
 
-    <style>
-      .mailing-list {
-        margin-top: 3rem;
-        overflow: scroll;
-      }
-
-      table {
-        font-size: 0.8rem;
-      }
-
-      .generate-btns .list-option-btn {
-        display: inline-block;
-        margin: 0 2rem;
-        width: 5rem !important;
-        margin-bottom: 1rem;
-      }
-
-      .generate-btns .list-option-btn:hover {
-        background-color: #92e3a9;
-        color: whitesmoke;
-      }
-
-      #copy-btn:hover {
-        background-color: #92e3a9;
-        color: whitesmoke;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <a href="#">
-        <img src="../assets/misc/theweeklychallenge-logo 1.svg" alt="" />
-      </a>
-      <a href="index.html" class="head-link"> The Weekly Challenge</a>
-      <div class="search">
-        <input type="text" id="search" placeholder="search here" />
-        <label for="search"> <i class="fas fa-search"></i></label>
-      </div>
-      <div class="user">
-        <img src="../assets/misc/person.jpg" alt="" class="user-pic" />
-        <div class="sub-menu-wrap">
-          <div class="sub-menu">
-            <a href="#" class="sub-menu-link"
-              ><i class="fa-regular fa-user"></i>NAME</a
-            >
-            <a href="#" class="sub-menu-link"
-              ><i class="fa-regular fa-bell"></i>NOTIFICATIONS</a
-            >
-            <a href="#" class="sub-menu-link"
-              ><i class="fa-regular fa-gears"></i>SETTINGS</a
-            >
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- sidebar -->
-    <div class="sidebar">
-      <nav>
-        <ul class="nav-links">
-          <li>
-            <a class="nav-link" href="index.html"
-              ><i class="fa-solid fa-address-card"></i>
-              <div>About</div></a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="chart.html"
-              ><i class="fa-solid fa-chart-simple"></i>
-              <div>Chart</div></a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="team.html"
-              ><i class="fa-solid fa-layer-group"></i>
-              <div>Teams</div></a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="perl-review.html"
-              ><i class="fa-solid fa-magnifying-glass-dollar"></i>
-              <div>Pearl/Review</div></a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="raku.html"
-              ><i class="fa-solid fa-magnifying-glass-location"></i>
-              <div>Raku/Review</div></a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="blogs.html"
-              ><i class="fa-solid fa-blog"></i>
-              <div>Blogs</div></a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="recap.html"
-              ><i class="fa-solid fa-right-left"></i>
-              <div>Recap</div></a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="challenges.html"
-              ><i class="fa-solid fa-list-check"></i>
-              <div>Challenges</div></a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="champions.html"
-              ><i class="fa-solid fa-trophy"></i>
-              <div>Champions</div></a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="faq.html"
-              ><i class="fa-solid fa-circle-question"></i>
-              <div>FAQ</div></a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="contact.html"
-              ><i class="fa-solid fa-address-book"></i>
-              <div>Contact</div></a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="#"
-              ><i class="fa-solid fa-comment"></i>
-              <div>Comment</div></a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <!-- main content -->
-    <main>
-      <section class="mailing-list">
-        <!-- Mailing List Section-->
-        <div class="container mt-4">
-          <div class="row justify-content-center">
-            <div class="col-sm-10 col-md-10 col-lg-10">
-              <div class="card">
-                <div class="card-body">
-                  <h1 class="card-title text-center mb-4">Mailing List</h1>
-                  <div class="form-group text-center generate-btns mb-3">
-                    <button
-                      type="button"
-                      class="btn btn-outline-secondary mr-2 list-option-btn"
-                      data-value="2"
-                    >
-                      2
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-outline-secondary mr-2 list-option-btn"
-                      data-value="3"
-                    >
-                      3
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-outline-secondary list-option-btn"
-                      data-value="4"
-                    >
-                      4
-                    </button>
-                  </div>
-
-                  <!-- Newly Added Table -->
-                  <div class="table-responsive">
-                    <table class="table table-bordered">
-                      <thead></thead>
-                      <tbody id="generated-emails">
-                        <!-- Generated email sets will be populated here -->
-                      </tbody>
-                    </table>
-                  </div>
-                  <!-- End of Newly Added Table -->
-                </div>
-                <!-- card-body -->
-              </div>
-              <!-- card -->
+<body>
+    <div class="wrapper">
+        <!-- ==================== Header =================== -->
+        <header id="header" class="sticky-top border-bottom">
+          <div class="container d-flex align-items-center">
+            <div class="container d-flex align-items-center justify-content-center me-auto">
+                <a href="index.html" class="logo me-3">
+                <img src="/public/images/logo/logo.png" alt="logo" class="img-fluid"/>
+            </a>
+                <a href="index.html" class="logo me-auto">
+                <img
+                    src="/public/images/logo/typography.png"
+                    alt="typography"
+                    class="img-fluid"/>
+                </a>
             </div>
-            <!-- col-10 -->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                <li>
+                    
+                    <a class="getstarted scrollto user-btn" href="index.html">
+                    <span><i class="fa-solid fa-house fs-6"></i></span>
+                    </a>
+                </li>
+                <!-- About Dropdown -->
+                <li class="dropdown">
+                    <a href="#">
+                    <span>About</span> <i class="bi bi-chevron-down"></i>
+                </a>
+                    <ul>
+                    <li class="border-bottom">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="border-bottom">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <!-- Contributions Dropdown -->
+                <li class="dropdown">
+                    <a href="#">
+                    <span>Contributions</span>
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+                    <ul>
+                    <li class="border-bottom"><a href="challenges.html">Challenges</a></li>
+
+                    <li class="border-bottom"><a href="blogs.html">Blogs</a></li>
+                    <li class="border-bottom"><a href="list-outreachy-applicants.html">Outreachy Applicants</a></li>
+                    <li ><a href="search_contributions.html">Search Contributions</a></li>
+
+                    </ul>
+                </li>
+                <!-- Team Dropdown -->
+                <li class="dropdown">
+                    <a href="#">
+                    <span>Team</span>
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+                    <ul>
+                    <li class="border-bottom"><a href="team.html">Regular</a></li>
+                    <li class="border-bottom"><a href="guest.html">Guest</a></li>
+                    <li><a href="champions.html">Champions</a></li>
+                    </ul>
+                </li>
+                <!-- Reviews Dropdown -->
+                <li class="dropdown">
+                    <a href="#">
+                    <span>Reviews</span>
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+                    <ul>
+                    <li class="border-bottom"><a href="perl-review.html">Perl</a></li>
+                    <li><a href="raku-review.html">Raku</a></li>
+                    </ul>
+                </li>
+                <!-- Charts DropDown -->
+                <li class="dropdown">
+                    <a href="#">
+                    <span>Leaderboard</span>
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+                    <ul>
+                    <li class="border-bottom"><a href="chart.html">Charts</a></li>
+                    <li class="border-bottom"><a href="#">Team Leader</a></li>
+                    <li><a href="#">Guest Leader</a></li>
+                    </ul>
+                </li>
+                <!-- Prefernces -->
+                <li class="dropdown">
+                    <a href="#"><span>Preferences</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                    <li class="border-bottom theme1"><a href="#" id="defaultMode">Default</a></li>
+                    <li class="border-bottom theme2"><a href="#" id="darkMode">Dark Mode</a></li>
+                    <li class="theme3"><a href="#" id="blueMode">Blue Mode</a></li>
+                    </ul>
+                </li>
+                <!-- User Features Dropdown -->
+                <li class="dropdown">
+                    <a class="getstarted scrollto user-btn" href="#about">
+                    <i class="fa-solid fa-bars mx-lg-1 mx-2"></i>
+                    <span><i class="fa-solid fa-user mx-lg-1 mx-2"></i></span>
+                    </a>
+                    <ul>
+                    <li class="border-bottom"><a href="sign-in.html">Login/SignUp</a></li>
+                    <li class="border-bottom"><a href="logout.html">Logout</a></li>
+                    <li class="border-bottom"><a href="user-dashboard.html">My Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    </ul>
+                </li>
+                </ul> 
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- End Navbar -->
           </div>
-          <!--row-->
+        </header>
+
+      <div class="content-area">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar">
+            <div class="d-flex">
+                <!-- Add icon for back to home -->
+                <a href="user_dashboard.html" class="sidebar-link" data-text="Dashboard">
+                    <i class="fa-solid fa-gauge"></i>
+                    <span class="sidebar-text">Dashboard</span>
+                </a>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <button class="toggle-btn black" type="button">
+                        <i class="fas fa-caret-right"></i>
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <a href="about.html" class="sidebar-link" data-text="About">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span class="sidebar-text">About</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admin_mailing_list.html" class="sidebar-link" data-text="Mailing Lists">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="sidebar-text"> Mailing list </span>
+                    </a>
+                </li>         
+                <li class="sidebar-item">
+                    <a href="createChallenge.html" class="sidebar-link" data-text="Challenges">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span class="sidebar-text">Challenges</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="champions.html" class="sidebar-link" data-text="Champions">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span class="sidebar-text">Champions</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="faq.html" class="sidebar-link" data-text="FAQ">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span class="sidebar-text">FAQ</span>
+                    </a>
+                </li>     
+            </ul>
+        </aside><!-- End Sidebar -->
+        
+        <!-- Main content -->
+        <div class="main main-section">
+            <!-- Main content area -->
+           
+            <main>
+                <section class="mailing-list">
+                <!-- Mailing List Section-->
+                <div class="container mt-4">
+                    <div class="row justify-content-center">
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                        <div class="card">
+                        <div class="card-body">
+                            <h1 class="card-title text-center mb-4">Mailing List</h1>
+                            <div class="form-group text-center generate-btns mb-3">
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary mr-2 list-option-btn"
+                                data-value="2"
+                            >
+                                2
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary mr-2 list-option-btn"
+                                data-value="3"
+                            >
+                                3
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary list-option-btn"
+                                data-value="4"
+                            >
+                                4
+                            </button>
+                            </div>
+        
+                            <!-- Newly Added Table -->
+                            <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead></thead>
+                                <tbody id="generated-emails">
+                                <!-- Generated email sets will be populated here -->
+                                </tbody>
+                            </table>
+                            </div>
+                            <!-- End of Newly Added Table -->
+                        </div>
+                        <!-- card-body -->
+                        </div>
+                        <!-- card -->
+                    </div>
+                    <!-- col-10 -->
+                    </div>
+                    <!--row-->
+                </div>
+                <!--container-->
+                </section>
+            </main>
+        
+            <!-- =============== Footer ================= -->
+            <footer id="footer">
+                <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 footer-contact">
+                        <img src="/public/images/logo/logo.png" class="footer-logo">
+                        <img src="/public/images/logo/typography.png" class="footer-typo">
+                        <div class="email my-5">
+                            <strong>Email:</strong> theweeklychallenge@example.com<br />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                            <li>
+                                <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
+                            </li>
+                             <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a href="about.html">About us</a>
+                          </li>
+                          <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a href="list-outreachy-applicants.html"
+                              >Outreachy Applicants</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mt-2 mt-lg-0">
+                        <ul>
+                          <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a href="team.html">Teams</a>
+                          </li>
+                          <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a href="rss_feed.html">RSS Feed</a>
+                          </li>
+                          <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a href="team-leader.html">Charts</a>
+                          </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                  <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Our Social Networks</h4>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fugit, suscipit?
+                    </p>
+                    <div class="social-links mt-3">
+                      <a
+                        href="https://twitter.com/perlwchallenge?lang=en"
+                        target="_blank"
+                        class="twitter"
+                        ><i class="bx bxl-twitter"></i
+                      ></a>
+                      <a
+                        href="https://www.facebook.com/groups/theweeklychallengegroup/"
+                        target="_blank"
+                        class="facebook"
+                        ><i class="bx bxl-facebook"></i
+                      ></a>
+                      <a href="#" class="instagram"
+                        ><i class="bx bxl-instagram"></i
+                      ></a>
+                      <a href="#" class="google-plus"
+                        ><i class="bx bxl-skype"></i
+                      ></a>
+                      <a href="#" class="linkedin"
+                        ><i class="bx bxl-linkedin"></i
+                      ></a>
+                    </div>
+                  </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="container-fluid footer-bottom clearfix">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>The Weekly Challenge</span></strong
+                    >. All Rights Reserved
+                </div>
+
+                </div>
+            </footer>
+            <!-- End Footer -->
+
         </div>
-        <!--container-->
-      </section>
-    </main>
+      </div>
 
-    <!-- Bootstrap Javascript --->
+    </div> <!--End Body Wrapper-->
+    <!-- Bootstrap Bundle with Popper -->
+
+     <!-- JavaScript to toggle between modes -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+          <!-- charts -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    type="text/javascript"
+    src="https://www.gstatic.com/charts/loader.js"
+  ></script>
 
-    <!-- custom javascript -->
-    <script src="/public//javascripts/admin.js"></script>
-    <script src="/public//javascripts/charts/chart1.js"></script>
-    <script src="/public//javascripts/charts/chart2.js"></script>
-    <script src="/public//javascripts/charts/chart3.js"></script>
-    <script src="/public//javascripts/charts/chart4.js"></script>
+    <!--Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Your custom script -->
+    <script src="/public/javascripts/dashboard-header-footer.js"></script>
+    <script src="/public/javascripts/user_dashboard.js"></script>
+    <script src="/public/javascripts/charts/user_dashboardchart1.js"></script>
+    <script src="/public/javascripts/admin_mailing_list.js"></script>
+    <script src="/public/javascripts/charts/chart1.js"></script>
+    <script src="/public/javascripts/charts/chart2.js"></script>
+    <script src="/public/javascripts/charts/chart3.js"></script>
+    <script src="/public/javascripts/charts/chart4.js"></script>
+    <script src="/public/javascripts/charts/chart5.js"></script>
+</body>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const emailAddresses = [
-          "example1@example.com",
-          "example2@example.com",
-          "example3@example.com",
-          "example4@example.com",
-          // Add more email addresses as needed
-        ];
-
-        const mailingListBody = document.getElementById("mailing-list-body");
-
-        function generateMailingList(option) {
-          const selectedEmails = [];
-          for (let i = 0; i < option; i++) {
-            const randomIndex = Math.floor(
-              Math.random() * emailAddresses.length,
-            );
-            selectedEmails.push(emailAddresses[randomIndex]);
-          }
-          appendGeneratedEmails(selectedEmails);
-        }
-
-        const generatedEmailLists = [];
-
-        function appendGeneratedEmails(emails) {
-          generatedEmailLists.push(emails);
-          updateGeneratedEmailsTable();
-        }
-
-        function updateGeneratedEmailsTable() {
-          const generatedEmailsElement =
-            document.getElementById("generated-emails");
-          generatedEmailsElement.innerHTML = "";
-          generatedEmailLists.forEach((emails) => {
-            const row = `<tr><td>${emails.join(", ")}</td><td><button id="copy-btn" class="btn btn-outline-secondary copy-generated-emails">Copy</button></td></tr>`;
-            generatedEmailsElement.innerHTML += row;
-          });
-
-          const copyButtons = document.querySelectorAll(
-            ".copy-generated-emails",
-          );
-          copyButtons.forEach((button, index) => {
-            button.addEventListener("click", function () {
-              copyGeneratedEmails(index);
-            });
-          });
-        }
-
-        function copyGeneratedEmails(index) {
-          const emailsToCopy = generatedEmailLists[index].join(", ");
-          navigator.clipboard
-            .writeText(emailsToCopy)
-            .then(() => {
-              alert("Generated emails copied to clipboard: " + emailsToCopy);
-            })
-            .catch((err) => {
-              console.error("Failed to copy emails to clipboard: ", err);
-            });
-        }
-
-        const listOptionBtns = document.querySelectorAll(".list-option-btn");
-        listOptionBtns.forEach((btn) => {
-          btn.addEventListener("click", function () {
-            const selectedOption = parseInt(btn.dataset.value);
-            generateMailingList(selectedOption);
-          });
-        });
-      });
-    </script>
-  </body>
 </html>

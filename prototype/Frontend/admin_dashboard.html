@@ -25,8 +25,10 @@
     <link rel="stylesheet" href="/public/css/user_dashboard.css">
     <!--Homepage style-->
     <link rel="stylesheet" href="/public/css/index.css">
+
+    <!-- Admin Dashbaord Styles -->
     <link rel="stylesheet" href="/public/css/admin_dashboard.css">
-    
+     
     <!-- Favicons -->
     <link href="/public/images/logo/logo.png" rel="icon" />
 
@@ -207,41 +209,11 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="chart.html" class="sidebar-link" data-text="Chart">
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <span class="sidebar-text">Chart</span>
+                    <a href="admin_mailing_list.html" class="sidebar-link" data-text="Mailing Lists">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="sidebar-text"> Mailing list </span>
                     </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="team.html" class="sidebar-link" data-text="Teams">
-                        <i class="fa-solid fa-layer-group"></i>
-                        <span class="sidebar-text">Teams</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="perl-review.html" class="sidebar-link" data-text="Perl/Review">
-                        <i class="fa-solid fa-magnifying-glass-dollar"></i>
-                        <span class="sidebar-text">Perl/Review</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="raku-review.html" class="sidebar-link" data-text="Raku/Review">
-                        <i class="fa-solid fa-magnifying-glass-location"></i>
-                        <span class="sidebar-text">Raku/Review</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="blogs.html" class="sidebar-link" data-text="Blogs">
-                        <i class="fa-solid fa-blog"></i>
-                        <span class="sidebar-text">Blogs</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="recap.html" class="sidebar-link" data-text="Recap">
-                        <i class="fa-solid fa-right-left"></i>
-                        <span class="sidebar-text">Recap</span>
-                    </a>
-                </li>
+                </li>         
                 <li class="sidebar-item">
                     <a href="createChallenge.html" class="sidebar-link" data-text="Challenges">
                         <i class="fa-solid fa-list-check"></i>
@@ -259,13 +231,7 @@
                         <i class="fa-solid fa-circle-question"></i>
                         <span class="sidebar-text">FAQ</span>
                     </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="contact.html" class="sidebar-link" data-text="Contact">
-                        <i class="fa-solid fa-comment"></i>
-                        <span class="sidebar-text">Contact</span>
-                    </a>
-                </li>
+                </li>     
             </ul>
         </aside><!-- End Sidebar -->
         
@@ -328,22 +294,12 @@
                                 <div class="card border-0">
                                     <div class="card-body py-4">
                                         <div class="stats-chart">
-                                            <h2> Current Challenges </h2>
-                                            <div class="d-flex justify-content-between align-items-center"> 
-                                                <h3>Name of Challenge(Task 1)</h3>
-                                                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
-                                            </div>
-                                            <hr />
-                                            <div class="d-flex justify-content-between align-items-center"> 
-                                                <h3>Name of Challenge(Task 2)</h3>
-                                                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
-                                            </div>
-                                            <hr />
+                                            <h3> Current Challenges </h3>
+                                            <div id="chart_div1"> </div> 
                                         </div>
                                     </div>
                                 </div>
                             </div> <!--- End Col-6-->
-                               
                         </div> <!-- End row  -->
 
                         <div class="row tiles mb-5">
@@ -535,6 +491,7 @@
     <script src="/public/javascripts/charts/chart2.js"></script>
     <script src="/public/javascripts/charts/chart3.js"></script>
     <script src="/public/javascripts/charts/chart4.js"></script>
+    <script src="/public/javascripts/charts/chart5.js"></script>
 </body>
 
 </html>
