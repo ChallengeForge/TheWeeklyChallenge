@@ -143,6 +143,8 @@ body {
 #header {
     width: 100%; 
     z-index: 1000; 
+    transition: all 0.5s;
+    padding: 15px 0;
 }
 
 .content-area {
@@ -195,11 +197,7 @@ body {
   }
 }
 
-#header {
-  transition: all 0.5s;
-  z-index: 997;
-  padding: 15px 0;
-}
+
 
 .acme-regular {
   font-family: "Acme", sans-serif;
@@ -373,14 +371,6 @@ body {
   visibility: visible;
 }
 
- /* .btn-primary{
-  width: 0 !important;
-  background: var(--bg-blue);
-  border: 1px solid black;
-  color: #000;
-}  */
-
-
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -521,13 +511,18 @@ body {
   /*--------------------------------------------------------------
   # Sidebar
   --------------------------------------------------------------*/
-  
+ aside {
+  position: relative;
+ } 
+
+ 
 #sidebar {
-  top: 60px; /* Change this value as needed */
+  top: 60px; 
   left: 0; 
   width: 70px; 
+  padding-top: 1rem;
   min-width: 70px;
-  position: sticky; /* Change position to fixed */
+  position: fixed; 
   height: 100vh;
   transition: all .25s ease-in-out;
   background-color: #92e3a9;
@@ -687,6 +682,8 @@ a.sidebar-link:hover {
 /* Main Area Starts Here */
 .content {
     background-color: whitesmoke; 
+    position: relative;
+    margin-left: 4rem;
 }
   
 .fa-regular {
@@ -779,6 +776,8 @@ table.table {
 
 
 #footer {
+    position: relative;
+    padding-left: 4.35rem;
     font-size: 14px;
     background:var(--girl);
   
@@ -908,6 +907,7 @@ table.table {
   }
   
   #footer .copyright {
+    margin-left: 2rem;
     float: left;
   }
   
@@ -921,7 +921,6 @@ table.table {
   }
   
   @media (max-width: 768px) {
-
     #sidebar.expand {
       width: 150px; 
       min-width: 260px;
