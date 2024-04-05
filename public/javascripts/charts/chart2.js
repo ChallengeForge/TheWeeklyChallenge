@@ -19,4 +19,7 @@ function drawChart() {
     document.getElementById("donutchart1"),
   );
   chart.draw(data, options);
+
+
+  
 }

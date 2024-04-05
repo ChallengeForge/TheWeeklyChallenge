@@ -1,0 +1,6 @@
+#sidebar {
+    overflow-y: scroll;
+}
+#sidebar.expand {
+    overflow-y: scroll; 
+}
