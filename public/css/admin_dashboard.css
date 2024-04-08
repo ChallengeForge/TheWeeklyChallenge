@@ -5,15 +5,29 @@
 }
    
   
-
-
 /*  Miling List page styles */
 .mailing-list {
     padding-top: 3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
     overflow: scroll;
     
-   
+  }
+
+  /* For create Challenge Page*/
+  .create-challenge {
+    padding-top: 3rem;
+    margin-bottom: 15rem;
+    overflow: scroll;
+/* 
+    @media screen and (max-width: 768px){
+        margin-bottom: 0;
+    } */
+    
+    @media screen and (max-width: 1024px){
+        margin-bottom: 15rem;
+        overflow: scroll; 
+    }
+
   }
 
   table {

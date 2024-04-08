@@ -517,7 +517,7 @@ body {
 #sidebar {
   top: 60px; 
   left: 0; 
-  width: 80px; 
+  width: 50px; 
   padding-top: 1rem;
   min-width: 70px;
   position: fixed; 
@@ -549,7 +549,7 @@ body {
   width: 210%;
   visibility: hidden;
   height: 100%;
-  padding-left: 5rem;
+  padding-left: 4rem;
   background-color: rgba(0, 0, 0, 0.5); /* Background color of the overlay */
   color: #fff; /* Text color */
   display: flex;
@@ -565,7 +565,6 @@ body {
 .sidebar-nav .sidebar-item a:hover::before {
   visibility: visible;
 }
-
 
 
 #sidebar.expand {
@@ -970,11 +969,11 @@ table.table {
   } 
   .view-btn{
     background-color: #007bff;
-    color: white;
-    width: 2rem;
-    border-radius: 5px;
-    padding: px ;
-    font-size: 15px;
+    color: white ;
+    width: 2rem !important;
+    border-radius: 5px !important;
+    padding: 20px !important;
+    font-size: 15px !important;
     border: none;
     cursor: pointer;
 }
