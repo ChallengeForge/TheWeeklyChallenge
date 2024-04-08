@@ -47,6 +47,10 @@ body {
   .card i{
       color: black;
   }
+
+  #sidebar a {
+    border: 2px solid #000;
+  }
   main.content {
       background-color: var(--bg-blue-hero);
   }  
@@ -93,7 +97,14 @@ body,
   #sidebar.expand
    {
       background-color: #c4c1c1;
+      border: none;
   }
+
+  #sidebar a {
+    text-decoration: none; 
+    border: 2px solid white;
+  }
+
   .btn-primary {
     background-color: var(--dark-btn);
     color: var(--text-color-def); 
@@ -518,7 +529,7 @@ body {
   width: 50px; 
   padding-top: 1rem;
   margin-top: 1.8rem;
-  min-width: 75px;
+  min-width: 76px;
   position: fixed; 
   height: 100vh;
   transition: all .25s ease-in-out;
@@ -535,7 +546,7 @@ body {
 
 #sidebar a {
     text-decoration: none; 
-    border: 1px solid #c4c1c1 ;
+    border: 2px solid #c4c1c1;
 }
 .sidebar-nav .sidebar-item a {
   position: relative;
@@ -555,6 +566,8 @@ body {
   padding-left: 6rem;
   background-color: rgba(0, 0, 0, 0.5); /* Background color of the overlay */
   color: #fff; /* Text color */
+  font-size: 2rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: flex-end; /* Align text to the right */
@@ -562,27 +575,25 @@ body {
   transition: all 0.3s ease;
   word-wrap: break-word;
   font-size: 0.8rem;
-  /* justify-content: flex-start; */
+  
   z-index: 1000;
 }
 
 .sidebar-nav .sidebar-item a:hover::before {
   visibility: visible;
-  z-index: 1000;
 }
-
 
 #sidebar.expand {
   width: 150px; /* Expanded width */
   min-width: 260px;
   background-color: #92e3a9; 
-  /* z-index: 1000;
-  position:static;
-  height: 100%; */
-
   z-index: 1000;
   position:fixed;
   height: 100vh;
+}
+
+#sidebar.expand a {
+  border: none;
 }
 
 #sidebar:not(.expand) .sidebar-logo,
@@ -963,6 +974,19 @@ table.table {
     }
   }
 
+  @media screen and (min-width: 1024px) and (max-width: 1280px) { /*for desktop screens (Nest Hub) */
+    body {
+      height: 100vh;
+    }
+    main {
+      margin-bottom: 15rem;
+    }
+    .main-content {
+      overflow-y: scroll;
+    }
+
+  }
+
    /*--------------------------------------------------------------
   # Helper Styles For dashboard related pages
   --------------------------------------------------------------*/
@@ -984,7 +1008,7 @@ table.table {
     cursor: pointer;
 }
 
-
+/* Create Challenge Page */
 @media screen and (min-width: 800px){
   .create-challenge {
     padding-top: 3rem;
