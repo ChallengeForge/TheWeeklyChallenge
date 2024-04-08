@@ -108,7 +108,6 @@ body,
       color: #121212;
   }
 }
-
   h1,
   h2,
   h3,
@@ -533,6 +532,7 @@ body {
 
 #sidebar a {
     text-decoration: none; 
+    border: 1px solid #c4c1c1 ;
 }
 .sidebar-nav .sidebar-item a {
   position: relative;
