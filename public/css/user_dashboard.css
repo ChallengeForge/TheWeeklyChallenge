@@ -517,7 +517,7 @@ body {
 #sidebar {
   top: 60px; 
   left: 0; 
-  width: 70px; 
+  width: 80px; 
   padding-top: 1rem;
   min-width: 70px;
   position: fixed; 
@@ -527,6 +527,7 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 999;
+  overflow-y: auto;
 }
 
 
@@ -545,10 +546,10 @@ body {
   position: absolute;
   top: 0;
   left: -100%; /* Initially position the text outside */
-  width: 100%;
+  width: 210%;
   visibility: hidden;
   height: 100%;
-  padding-left: 7rem;
+  padding-left: 5rem;
   background-color: rgba(0, 0, 0, 0.5); /* Background color of the overlay */
   color: #fff; /* Text color */
   display: flex;
@@ -556,12 +557,15 @@ body {
   justify-content: flex-end; /* Align text to the right */
   padding-right: 10px; /* Add some padding */
   transition: all 0.3s ease;
+  word-wrap: break-word;
+  font-size: 0.8rem;
+  justify-content: flex-start;
 }
 
 .sidebar-nav .sidebar-item a:hover::before {
-  left: 0; /* Slide the text in from the left */
   visibility: visible;
 }
+
 
 
 #sidebar.expand {
@@ -905,8 +909,9 @@ table.table {
   }
   
   #footer .copyright {
-    
+    position: relative;
     float: left;
+    z-index: 10000;
   }
   
   #footer .credits {
@@ -944,6 +949,14 @@ table.table {
     }
   }
 
+  @media (min-width: 820px) and (max-width: 1200px) {
+    #footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
 
    /*--------------------------------------------------------------
   # Helper Styles For dashboard related pages
