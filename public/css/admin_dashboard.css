@@ -17,17 +17,18 @@
   .create-challenge {
     padding-top: 3rem;
     margin-bottom: 15rem;
-    overflow: scroll;
+    overflow-y: scroll;
 /* 
     @media screen and (max-width: 768px){
         margin-bottom: 0;
     } */
     
-    @media screen and (max-width: 1024px){
-        margin-bottom: 15rem;
-        overflow: scroll; 
+    @media screen and (min-width: 768px){
+      padding-top: 3rem;
+      margin-top: -3rem;
+      
+      overflow: scroll; 
     }
-
   }
 
   table {
@@ -50,3 +51,5 @@
     background-color: #92e3a9;
     color: whitesmoke;
   }
+
+  

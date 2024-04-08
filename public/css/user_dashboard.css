@@ -979,3 +979,11 @@ table.table {
 }
 
 
+@media screen and (min-width: 800px){
+  .create-challenge {
+    padding-top: 3rem;
+    margin-bottom: 15rem;
+    overflow-y: scroll; 
+  }
+  
+}
