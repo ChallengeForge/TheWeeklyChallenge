@@ -124,71 +124,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css"
     />
 
-    <style>
-        .code-snippet {
-          background-color: #ffffff;
-        }
 
-        .copy-btn {
-          cursor: pointer;
-        }
-
-        .code-content {
-          text-align: left;
-          display: block;
-          margin-right: 2em;
-          width: 100%;
-        }
-
-        /* Optional: Add scrollbar styling */
-        .code-content::-webkit-scrollbar {
-          width: 8px;
-        }
-
-        .code-content::-webkit-scrollbar-thumb {
-          background-color: #6c757d;
-          border-radius: 4px;
-        }
-
-        .code-content::-webkit-scrollbar-track {
-          background-color: #f9f9f9;
-        }
-        @media (max-width: 768px) {
-            .code-content {
-                text-align: left;
-                display: block;
-                margin-right: 2em;
-                width: 100%;
-            }
-
-        /* .code-content pre {
-                margin-right: 6em;
-                width: 100%;
-            } */
-      }
-
-      @media screen and (max-width: 600px) {
-        .code-snippet {
-          margin-right: 2em;
-          padding-right: 6em;
-
-          display: block;
-
-          align-self: start;
-          /* overflow: scroll; */
-        }
-
-        @media screen and (max-width: 600px){
-             .code-snippet{
-                margin-right: 2em;
-                padding-right: 6em;
-
-                display: block;
-               align-self: start;
-                /* overflow: scroll; */
-            }
-        }
-    </style>
   </head>
 
   <body>
@@ -569,7 +505,7 @@
     </script>
 
     <script>
-      // Function to copy code snippet
+      /*  Function to copy code snippet */
       function copyCode() {
         var codeElement = document.querySelector(".code-content");
         var codeText = codeElement.textContent;
@@ -580,13 +516,12 @@
         });
         }
 
-        // Initialize syntax highlighting
+         /* Initialize syntax highlighting */
         document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelectorAll('pre code').forEach((block) => {
             hljs.highlightBlock(block);
         });
         });
-      });
     </script>
   </body>
 </html>
