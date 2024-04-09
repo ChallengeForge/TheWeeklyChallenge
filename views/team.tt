@@ -1,0 +1,291 @@
+    <!-- ================= Main Body ======================== -->
+    <div class="container-fluid py-5 main-section">
+      <div id="teamDiv" style="overflow-x: hidden">
+        <h2 class="text-center mb-5">Team Members</h2>
+        <div class="contactDetails team-rows-container mt-3">
+          <div class="row d-flex justify-content-around">
+            <div
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10"
+              style="display: flex; justify-content: center"
+            >
+              <div class="our-team">
+                <div class="pic">
+                  <img src="/public/images/blank_profile.svg" />
+                </div>
+                <div class="team-content">
+                  <h3 class="title">name</h3>
+                  <span class="post">description</span>
+                </div>
+                <ul class="social">
+                  <li
+                    class="d-flex flex-row justify-content-around align-item-center"
+                  >
+                    <a href="#"><i class="fa-regular fs-2 fa-envelope"></i></a>
+                    <a href="#"
+                      ><i class="fa fs-2 fa-envelope"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="fa-solid fs-2 fa-phone"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="fa-brands fs-2 fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10"
+              style="display: flex; justify-content: center"
+            >
+              <div class="our-team">
+                <div class="pic">
+                  <img src="/public/images/blank_profile.svg" />
+                </div>
+                <div class="team-content">
+                  <h3 class="title">Name</h3>
+                  <span class="post">description</span>
+                </div>
+                <ul class="social">
+                  <li
+                    class="d-flex flex-row justify-content-around align-item-center"
+                  >
+                    <a href="#"><i class="fa-regular fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fs-2 fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fs-2 fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
+              style="display: flex; justify-content: center"
+            >
+              <div class="our-team">
+                <div class="pic">
+                  <img src="/public/images/blank_profile.svg" />
+                </div>
+                <div class="team-content">
+                  <h3 class="title">Name</h3>
+                  <span class="post">Description</span>
+                </div>
+                <ul class="social">
+                  <li
+                    class="d-flex flex-row justify-content-around align-item-center"
+                  >
+                    <a href="#"><i class="fa-regular fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fs-2 fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fs-2 fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
+              style="display: flex; justify-content: center"
+            >
+              <div class="our-team">
+                <div class="pic">
+                  <img src="/public/images/blank_profile.svg" />
+                </div>
+                <div class="team-content">
+                  <h3 class="title">Name</h3>
+                  <span class="post">Description</span>
+                </div>
+                <ul class="social">
+                  <li
+                    class="d-flex flex-row justify-content-around align-item-center"
+                  >
+                    <a href="#"><i class="fa-regular fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fs-2 fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fs-2 fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
+              style="display: flex; justify-content: center"
+            >
+              <div class="our-team">
+                <div class="pic">
+                  <img src="/public/images/blank_profile.svg" />
+                </div>
+                <div class="team-content">
+                  <h3 class="title">Name</h3>
+                  <span class="post">Description</span>
+                </div>
+                <ul class="social">
+                  <li
+                    class="d-flex flex-row justify-content-around align-item-center"
+                  >
+                    <a href="#"><i class="fa-regular fs-2 fa-envelope"></i></a>
+                    <a href="#"
+                      ><i class="fa fs-2 fa-envelope"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fs-2 fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fs-2 fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
+              style="display: flex; justify-content: center"
+            >
+              <div class="our-team">
+                <div class="pic">
+                  <img src="/public/images/blank_profile.svg" />
+                </div>
+                <div class="team-content">
+                  <h3 class="title">Name</h3>
+                  <span class="post">Description</span>
+                </div>
+                <ul class="social">
+                  <li
+                    class="d-flex flex-row justify-content-around align-item-center"
+                  >
+                    <a href="#"><i class="fa-regular fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fs-2 fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fs-2 fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
+              style="display: flex; justify-content: center"
+            >
+              <div class="our-team">
+                <div class="pic">
+                  <img src="/public/images/blank_profile.svg" />
+                </div>
+                <div class="team-content">
+                  <h3 class="title">Name</h3>
+                  <span class="post">Description</span>
+                </div>
+                <ul class="social">
+                  <li
+                    class="d-flex flex-row justify-content-around align-item-center"
+                  >
+                    <a href="#"><i class="fa-regular fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fs-2 fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fs-2 fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-5 col-sm-10 mx-2"
+              style="display: flex; justify-content: center"
+            >
+              <div class="our-team">
+                <div class="pic">
+                  <img src="/public/images/blank_profile.svg" />
+                </div>
+                <div class="team-content">
+                  <h3 class="title">Name</h3>
+                  <span class="post">Description</span>
+                </div>
+                <ul class="social">
+                  <li
+                    class="d-flex flex-row justify-content-around align-item-center"
+                  >
+                    <a href="#"><i class="fa-regular fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa fs-2 fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fs-2 fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fs-2 fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End of row -->
+        </div>
+
+        <div class="container">
+          <!-- ========================== Pagination ============================= -->
+          <div class="row">
+            <div class="col">
+              <nav class="float-right" aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" id="prevPageBtn">Back</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" id="nextPageBtn">Forward</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!--End Container -->
+      </div>
+    </div>
+
+    <!-- ================ Preloader ========================= -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+        <script src="/public/javascripts/index.js"></script>
+
+    <!-- ===================== Pagination Script ===================== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const itemsPerPage = 5; // Number of items per page
+        let currentPage = 0; // Current page index
+
+        const teamDiv = document.getElementById("teamDiv");
+        const teamRowsContainer = document.querySelector(
+          ".team-rows-container"
+        );
+        const teamMembers = Array.from(
+          teamRowsContainer.querySelectorAll(".col-xl-2")
+        );
+
+        // Function to show items for a specific page
+        function showPage(pageIndex) {
+          const startIndex = pageIndex * itemsPerPage;
+          const endIndex = startIndex + itemsPerPage;
+          teamMembers.forEach((member, index) => {
+            member.style.display =
+              index >= startIndex && index < endIndex ? "flex" : "none";
+          });
+        }
+
+        // Function to handle next button click
+        document
+          .getElementById("nextPageBtn")
+          .addEventListener("click", function () {
+            currentPage = Math.min(
+              currentPage + 1,
+              Math.ceil(teamMembers.length / itemsPerPage) - 1
+            );
+            showPage(currentPage);
+          });
+
+        // Function to handle previous button click
+        document
+          .getElementById("prevPageBtn")
+          .addEventListener("click", function () {
+            currentPage = Math.max(currentPage - 1, 0);
+            showPage(currentPage);
+          });
+
+        // Initial page display
+        showPage(currentPage);
+      });
+    </script>

@@ -1,151 +1,227 @@
-
-<!--
-    Credit goes to the Ruby on Rails team for this page
-    has been heavily based on the default Rails page that is
-    built with a scaffolded application.
-
-    Thanks a lot to them for their work.
-
-    See Ruby on Rails if you want a kickass framework in Ruby:
-    http://www.rubyonrails.org/
--->
-
-<div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Join the community</h3>
-            <ul class="links">
-
-              <li><a href="https://perldancer.org/">PerlDancer Website</a></li>
-              <li><a href="https://twitter.com/PerlDancer/">Official Twitter</a></li>
-              <li><a href="https://github.com/PerlDancer/Dancer2/">GitHub Community</a></li>
-              <li><a href="https://lists.perldancer.org/mailman/listinfo/dancer-users">Mailing List</a></li>
-              <li><a href="irc://irc.perl.org/dancer">IRC</a></li>
-            </ul>
-          </li>
-
-          <li>
-            <h3>Browse the documentation</h3>
-
-            <ul class="links">
-              <li><a
-              href="https://metacpan.org/pod/Dancer2::Manual">Introduction</a></li>
-              <li><a href="https://metacpan.org/pod/Dancer2::Cookbook">Cookbook</a></li>
-              <li><a
-              href="https://metacpan.org/pod/Dancer2::Tutorial"
-              title="a tutorial to build a small blog engine with Dancer">Tutorial</a></li>
-              <li><a href="https://metacpan.org/pod/Dancer2::Manual::Deployment">Deployment</a></li>
-            </ul>
-          </li>
-
-          <li>
-            <h3>Your application's environment</h3>
-
-            <ul>
-                <li>Location: <span class="filepath">/Users/baimamboukar/Desktop/outreachy/TheWeeklyChallengeForge/PWC</span></li>
-                <li>Template engine: <span class="app-info"><% settings.template %></span></li>
-                <li>Logger: <span class="app-info"><% settings.logger %></span></li>
-                <li>Environment: <span class="app-info"><% settings.environment %></span></li>
-            </ul>
-
-          </li>
-        </ul>
-
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Perl is dancing</h1>
-          <h2>You&rsquo;ve joined the dance floor!</h2>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get dancing:</h2>
-
-          <h3><a href="#" id="about_env_link">About your application's environment</a></h3>
-
-          <div id="about-content" style="display: none;">
-            <table>
-                <tbody>
-                <tr>
-                    <td>Perl version</td>
-                    <td><span class="app-info"><% perl_version %></span></td>
-                </tr>
-                <tr>
-                    <td>Dancer2 version</td>
-                    <td><span class="app-info"><% dancer_version %></span></td>
-                </tr>
-                <tr>
-                    <td>Backend</td>
-                    <td><span class="app-info"><% settings.apphandler %></span></td>
-                </tr>
-                <tr>
-                    <td>Appdir</td>
-                    <td><span class="filepath">/Users/baimamboukar/Desktop/outreachy/TheWeeklyChallengeForge/PWC</span></td>
-                </tr>
-                <tr>
-                    <td>Template engine</td>
-                    <td><span class="app-info"><% settings.template %></span></td>
-                </tr>
-                <tr>
-                    <td>Logger engine</td>
-                    <td><span class="app-info"><% settings.logger %></span></td>
-                </tr>
-                <tr>
-                    <td>Running environment</td>
-                    <td><span class="app-info"><% settings.environment %></span></td>
-                </tr>
-                </tbody>
-            </table>
+    <!-- =================== Hero Section ============ -->
+    <section id="hero" class="d-flex align-items-center main-section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 task-box"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="container ms-lg-5 card task-card">
+              <h2>Task #1</h2>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aperiam odio
+              </h3>
+              <h2>Task #2</h2>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aperiam odio
+              </h3>
+            </div>
+            <div
+              class="d-flex justify-content-center justify-content-lg-start ms-lg-5 my-md-3"
+            >
+              <a href="sign-in.html" class="btn-get-started scrollto"
+                >Login/Sign up</a
+              >
+              <a
+                href="https://www.youtube.com/c/mohammadsajidanwar"
+                class="glightbox btn-watch-video"
+              >
+                <i class="bi bi-play-circle"></i>
+                <span>Youtube</span>
+              </a>
+            </div>
           </div>
 
-    <script type="text/javascript">
-    $('#about_env_link').click(function() {
-        $('#about-content').slideToggle('fast', function() {
-            // ok
-        });
-        return false;
-    });
-    </script>
-
-
-          <ol>
-            <li>
-              <h2>Tune your application</h2>
-
-              <p>
-              Your application is configured via a global configuration file,
-              <span class="filepath">config.yml</span> and an "environment" configuration file,
-              <span class="filepath">environments/development.yml</span>. Edit those files if you
-              want to change the settings of your application.
-              </p>
-            </li>
-
-            <li>
-              <h2>Add your own routes</h2>
-
-              <p>
-              The default route that displays this page can be removed,
-              it's just here to help you get started. The template used to
-              generate this content is located in
-              <span class="filepath">views/index.tt</span>.
-              You can add some routes to <span class="filepath">lib/PWC.pm</span>.
-              </p>
-            </li>
-
-            <li>
-              <h2>Enjoy web development again</h2>
-
-              <p>
-              Once you've made your changes, restart your standalone server
-              <span class="filepath">(bin/app.psgi)</span> and you're ready
-              to test your web application.
-              </p>
-            </li>
-
-          </ol>
+          <!-- Hero Image -->
+          <div
+            class="col-lg-6 order-1 order-lg-2 hero-img"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div
+              id="animation-container"
+              class="animated container-fluid anim-container"
+            ></div>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- ========== Recent Activity Cards ============ -->
+    <div class="main-section">
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients section-bg py-3">
+        <div class="container">
+          <div class="row d-flex justify-content-evenly" data-aos="zoom-in">
+            <div
+              class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2"
+            >
+              <a href="champions.html">
+                <div
+                  class="card d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="/images/icons/champion_icon.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <h5>Champions</h5>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2"
+            >
+              <a href="search_contributions.html">
+                <div
+                  class="card d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="/images/icons/code_2.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <h5>Contributions</h5>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2"
+            >
+              <a href="search_contributions.html">
+                <div
+                  class="card d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="/images/icons/guest_icon.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <h5 id="guest-contri">Guest Contributions</h5>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2"
+            >
+              <a href="perl-review.html">
+                <div
+                  class="card d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="/images/icons/perl.svg"
+                    alt=""
+                    class="img-fluid perl-img"
+                  />
+                  <h5>Perl Review</h5>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="d-flex align-items-center justify-content-center col-lg-2 col-md-3 col-8 mb-2"
+            >
+              <a href="raku-review.html">
+                <div
+                  class="card d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="/images/icons/raku.svg"
+                    alt=""
+                    class="img-fluid raku-img py-4"
+                  />
+                  <h5>Raku Review</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cliens Section -->
     </div>
+    <!-- End #main -->
+
+    <!-- ============== Preloader ================ -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <!-- ======================= Lottie JSON script here ======================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+    <script>
+      // Setting up Lottie
+      var lottiePath =
+        localStorage.getItem("lottie") &&
+        localStorage.getItem("lottie") === "blue"
+          ? "javascripts/lottiejson/purple.json"
+          : "javascripts/lottiejson/green.json";
+      var animationContainer = document.getElementById("animation-container");
+      var anim;
+      fetch(lottiePath)
+      .then(response => response.json()) 
+      .then(lottieObj => {
+        anim = bodymovin.loadAnimation({
+          container: animationContainer,
+          renderer: "svg", // You can also use 'canvas' or 'html'
+          loop: true, // Set to true if you want the animation to loop
+          autoplay: true,
+          animationData: lottieObj
+        });
+      });
+    </script>
+
+     <!-- JSON-LD TO OPTIMIZE SEO-->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "TheWeeklyChallenge",
+        "description": "A platform offering engaging weekly coding challenges to help developers of all skill levels hone their programming expertise, build a strong portfolio, and connect with a thriving developer community.",
+        "url": "https://TheWeeklyChallenge.org",
+        "maintainer": {
+          "@type": "Organization",
+          "name": "TheWeeklyChallenge.org Team"
+        },
+        "keywords": [
+          "weekly coding challenges",
+          "programming practice",
+          "skill development",
+          "developer community",
+          "Dancer2 backend",
+          "Perl and Raku",
+          "coding competitions"
+        ],
+        "sameAs": [
+          "https://www.facebook.com/TheWeeklyChallenge.org",
+          "https://twitter.com/TheWeeklyChallenge"
+        ],
+        "educationalProgram": [
+          {
+            "@type": "Course",
+            "name": "Weekly Coding Challenges",
+            "description": "A series of self-paced weekly coding challenges designed to improve problem-solving skills, explore new technologies, and build practical programming experience.",
+            "hasPrerequisite": [
+              {
+                "@type": "Skill",
+                "name": "Basic programming concepts"
+              }
+            ]
+          }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer service",
+          "email": "support@TheWeeklyChallenge.org",
+          "url": "https://TheWeeklyChallenge.org/contact"
+        }
+      }
+    </script>

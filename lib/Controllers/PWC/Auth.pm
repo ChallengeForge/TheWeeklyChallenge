@@ -1,8 +1,3 @@
-package Controllers::PWC::Auth;
-
-use Dancer2;
-
-
 get '/login' => sub {
    
     template 'login';

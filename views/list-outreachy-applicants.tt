@@ -1,0 +1,559 @@
+    <!-- ==================== Main Section ==================== -->
+    <div class="container mt-5 mb-5">
+      <h1 class="display-6">Outreachy Applicants</h1>
+
+      <div class="filter-container mb-3">
+        <input
+          type="search"
+          id="customSearchBox1"
+          class="form-control"
+          placeholder="Search for applicant..."
+        />
+      </div>
+
+      <div class="container-fluid table-responsive pb-3 border rounded pt-3">
+        <table
+          id="CourseAvailabilityTable"
+          class="table table-striped nowrap responsive"
+          style="width: 100%"
+        >
+          <thead>
+            <tr>
+              <th>#</th>
+              <!-- <th> Aqoonsi <span class="icon-arrow">&UpArrow;</span></th> -->
+              <th>Applicant ID</th>
+              <th>Full name</th>
+              <th>
+                <span class="material-symbols-outlined"> mail </span>
+              </th>
+              <th>
+                <span class="material-symbols-outlined"> phone_iphone </span>
+              </th>
+              <th>Sex</th>
+
+              <th>Status</th>
+
+              <th>
+                <span class="material-symbols-outlined"> info </span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1</td>
+              <td>25451</td>
+              <td>Fahad Mohamed Albasrawie</td>
+
+              <td>cabbaascadde55@gmail.com</td>
+
+              <td>+252616314492</td>
+
+              <td>Male</td>
+
+              <td>Active</td>
+
+              <td>
+                <div>
+                  <a
+                    href="#"
+                    role="button"
+                    id="applicant-more-info"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="text-muted"
+                  >
+                    <img
+                      src="https://lh3.googleusercontent.com/a/ACg8ocIAKucv2Q4a0yRtpFZP5YNgvnx0SdUyioWh9a5zLvb9oDw=s288-c-no"
+                      class="rounded-circle"
+                      height="35"
+                      alt="Black and White Portrait of a Man"
+                      loading="lazy"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu p-2 rounded"
+                    aria-labelledby="applicant-more-info"
+                  >
+                    <div class="container border border-2 mt-3 pt-3 rounded">
+                      <h4 class="display-9 text-black fs-6">Description</h4>
+                      <hr />
+                      <div class="mb-3 ps-0">
+                        <li class="text-center">
+                          <img
+                            src="https://lh3.googleusercontent.com/a/ACg8ocIAKucv2Q4a0yRtpFZP5YNgvnx0SdUyioWh9a5zLvb9oDw=s288-c-no"
+                            class="rounded-circle"
+                            height="50"
+                            alt="Black and White Portrait of a Man"
+                            loading="lazy"
+                          />
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold">Projects: </span>2
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold"
+                              >Contributions: </span
+                            >19
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold">Time: </span>Full
+                            time
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold"
+                              >Applicant Role: </span
+                            >Intern
+                          </a>
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Applicant 2 ====================== -->
+            <tr>
+              <td>#2</td>
+              <td>34563</td>
+              <td>Mohammad Sajid Anwar</td>
+
+              <td>Mohammad.Anwar@yahoo.com</td>
+
+              <td>+2521539655</td>
+
+              <td>Male</td>
+
+              <td>Active</td>
+
+              <td>
+                <div>
+                  <a
+                    href="#"
+                    role="button"
+                    id="applicant-more-info2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="text-muted"
+                  >
+                    <img
+                      src="https://avatars.githubusercontent.com/u/681195?v=4"
+                      class="rounded-circle"
+                      height="35"
+                      alt="Black and White Portrait of a Man"
+                      loading="lazy"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu p-2 rounded"
+                    aria-labelledby="applicant-more-info2"
+                  >
+                    <div class="container border border-2 mt-3 pt-3 rounded">
+                      <h4 class="display-9 text-black fs-6">Description</h4>
+                      <hr />
+                      <div class="mb-3 ps-0">
+                        <li class="text-center">
+                          <img
+                            src="https://avatars.githubusercontent.com/u/681195?v=4"
+                            class="rounded-circle"
+                            height="50"
+                            alt="Black and White Portrait of a Man"
+                            loading="lazy"
+                          />
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold">Projects: </span>55
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold"
+                              >Contributions: </span
+                            >1458
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold">Time: </span>Full
+                            time
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold"
+                              >Applicant Role: </span
+                            >Mentor
+                          </a>
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Applicant 3 ====================== -->
+            <tr>
+              <td>#3</td>
+              <td>54456</td>
+              <td>Soniya Prasad</td>
+
+              <td>Soniya.prased@yahoo.com</td>
+
+              <td>+7574564745</td>
+
+              <td>Female</td>
+
+              <td>Active</td>
+
+              <td>
+                <div>
+                  <a
+                    href="#"
+                    role="button"
+                    id="applicant-more-info2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="text-muted"
+                  >
+                    <img
+                      src="https://avatars.githubusercontent.com/u/63783532?v=4"
+                      class="rounded-circle"
+                      height="35"
+                      alt="Black and White Portrait of a Man"
+                      loading="lazy"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu p-2 rounded"
+                    aria-labelledby="applicant-more-info2"
+                  >
+                    <div class="container border border-2 mt-3 pt-3 rounded">
+                      <h4 class="display-9 text-black fs-6">Description</h4>
+                      <hr />
+                      <div class="mb-3 ps-0">
+                        <li class="text-center">
+                          <img
+                            src="https://avatars.githubusercontent.com/u/63783532?v=4"
+                            class="rounded-circle"
+                            height="50"
+                            alt="Black and White Portrait of a Man"
+                            loading="lazy"
+                          />
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold">Projects: </span>25
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold"
+                              >Contributions: </span
+                            >41
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold">Time: </span>Full
+                            time
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold"
+                              >Applicant Role: </span
+                            >Intern
+                          </a>
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Applicant 4 ====================== -->
+            <tr>
+              <td>#4</td>
+              <td>89076</td>
+              <td>himanshisrestha</td>
+
+              <td>himanshisrestha@yahoo.com</td>
+
+              <td>+2344567554</td>
+
+              <td>Female</td>
+
+              <td>Active</td>
+
+              <td>
+                <div>
+                  <a
+                    href="#"
+                    role="button"
+                    id="applicant-more-info2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="text-muted"
+                  >
+                    <img
+                      src="https://avatars.githubusercontent.com/u/135853264?v=4"
+                      class="rounded-circle"
+                      height="35"
+                      alt="Black and White Portrait of a Man"
+                      loading="lazy"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu p-2 rounded"
+                    aria-labelledby="applicant-more-info2"
+                  >
+                    <div class="container border border-2 mt-3 pt-3 rounded">
+                      <h4 class="display-9 text-black fs-6">Description</h4>
+                      <hr />
+                      <div class="mb-3 ps-0">
+                        <li class="text-center">
+                          <img
+                            src="https://avatars.githubusercontent.com/u/135853264?v=4"
+                            class="rounded-circle"
+                            height="50"
+                            alt="Black and White Portrait of a Man"
+                            loading="lazy"
+                          />
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold">Projects: </span>74
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold"
+                              >Contributions: </span
+                            >58
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold">Time: </span>Full
+                            time
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold"
+                              >Applicant Role: </span
+                            >Intern
+                          </a>
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Applicant 4 ====================== -->
+            <tr>
+              <td>#5</td>
+              <td>67443</td>
+              <td>Noubissi Viany</td>
+
+              <td>696607013@gmail.com</td>
+
+              <td>+2344566464</td>
+
+              <td>Male</td>
+
+              <td>Active</td>
+
+              <td>
+                <div>
+                  <a
+                    href="#"
+                    role="button"
+                    id="applicant-more-info2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="text-muted"
+                  >
+                    <img
+                      src="https://avatars.githubusercontent.com/u/95907776?v=4"
+                      class="rounded-circle"
+                      height="35"
+                      alt="Black and White Portrait of a Man"
+                      loading="lazy"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu p-2 rounded"
+                    aria-labelledby="applicant-more-info2"
+                  >
+                    <div class="container border border-2 mt-3 pt-3 rounded">
+                      <h4 class="display-9 text-black fs-6">Description</h4>
+                      <hr />
+                      <div class="mb-3 ps-0">
+                        <li class="text-center">
+                          <img
+                            src="https://avatars.githubusercontent.com/u/95907776?v=4"
+                            class="rounded-circle"
+                            height="50"
+                            alt="Black and White Portrait of a Man"
+                            loading="lazy"
+                          />
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold">Projects: </span>42
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold"
+                              >Contributions: </span
+                            >55
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold">Time: </span>Full
+                            time
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold"
+                              >Applicant Role: </span
+                            >Intern
+                          </a>
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Applicant 4 ====================== -->
+            <tr>
+              <td>#6</td>
+              <td>45634</td>
+              <td>BAIMAM BOUKAR JEAN JACQUES</td>
+
+              <td>BAIMAMBOUKARJEANJACQUES@gmail.com</td>
+
+              <td>+6546757664</td>
+
+              <td>Male</td>
+
+              <td>Active</td>
+
+              <td>
+                <div>
+                  <a
+                    href="#"
+                    role="button"
+                    id="applicant-more-info2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="text-muted"
+                  >
+                    <img
+                      src="https://avatars.githubusercontent.com/u/49169158?v=4"
+                      class="rounded-circle"
+                      height="35"
+                      alt="Black and White Portrait of a Man"
+                      loading="lazy"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu p-2 rounded"
+                    aria-labelledby="applicant-more-info2"
+                  >
+                    <div class="container border border-2 mt-3 pt-3 rounded">
+                      <h4 class="display-9 text-black fs-6">Description</h4>
+                      <hr />
+                      <div class="mb-3 ps-0">
+                        <li class="text-center">
+                          <img
+                            src="https://avatars.githubusercontent.com/u/49169158?v=4"
+                            class="rounded-circle"
+                            height="50"
+                            alt="Black and White Portrait of a Man"
+                            loading="lazy"
+                          />
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold">Projects: </span>42
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#">
+                            <span class="text-black fw-bold"
+                              >Contributions: </span
+                            >55
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold">Time: </span>Full
+                            time
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item ps-1" href="#"
+                            ><span class="text-black fw-bold"
+                              >Applicant Role: </span
+                            >Intern
+                          </a>
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>#</th>
+              <!-- <th> Aqoonsi <span class="icon-arrow">&UpArrow;</span></th> -->
+              <th>Applicant ID</th>
+              <th>Full name</th>
+              <th>
+                <span class="material-symbols-outlined"> mail </span>
+              </th>
+              <th>
+                <span class="material-symbols-outlined"> phone_iphone </span>
+              </th>
+              <th>Sex</th>
+
+              <th>Status</th>
+
+              <th>
+                <span class="material-symbols-outlined"> info </span>
+              </th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <!-- ============== Preloader ================ -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>

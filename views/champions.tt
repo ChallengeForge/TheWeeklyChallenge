@@ -1,0 +1,149 @@
+  <!-- ================= Main Body ======================== -->
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials main-section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Champions</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+            temporibus aut magnam quas dolorem labore hic quos consequuntur iure
+            nostrum.
+          </p>
+        </div>
+
+        <div
+          class="testimonials-slider swiper"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="interview.html" style="color: inherit">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec
+                    porttitora entum suscipit rhoncus. Accusantium quam,
+                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                    risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="/public/images/blank_profile.svg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Mustafa Aydin</h3>
+                  <h4>February - 2024</h4>
+                </div>
+              </a>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <a href="interview.html" style="color: inherit">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse
+                    labore quem cillum quid cillum eram malis quorum velit fore
+                    eram velit sunt aliqua noster fugiat irure amet legam anim
+                    culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="/public/images/blank_profile.svg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Nelo Tovar</h3>
+                  <h4>January - 2024</h4>
+                </div>
+              </a>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <a href="interview.html" style="color: inherit">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="/public/images/blank_profile.svg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Kjetil Skotheim</h3>
+                  <h4>December - 2023</h4>
+                </div>
+              </a>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <a href="interview.html" style="color: inherit">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                    multos export minim fugiat minim velit minim dolor enim duis
+                    veniam ipsum anim magna sunt elit fore quem dolore labore.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="/public/images/blank_profile.svg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Peter Meszaros</h3>
+                  <h4>November - 2023</h4>
+                </div></a
+              >
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <a href="interview.html" style="color: inherit">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure
+                    aliqua veniam tempor noster veniam enim culpa labore duis
+                    sunt culpa nulla illum cillum fugiat legam esse veniam
+                    culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="/public/images/blank_profile.svg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Packy Anderson</h3>
+                  <h4>October - 2023</h4>
+                </div>
+              </a>
+            </div>
+            <!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- ================ Preloader ========================= -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+<script src="/public/javascripts/index.js"></script>
+<script src="/public/javascripts/champion.js"></script>

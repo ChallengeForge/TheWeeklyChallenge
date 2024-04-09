@@ -203,18 +203,22 @@ function lottieRemover() {
 function lottiLoader(x = 0) {
   var lottiePath =
     x === 0
-      ? "/public/javascripts/lottiejson/green.json"
-      : "/public/javascripts/lottiejson/purple.json";
+      ? "/javascripts/lottiejson/green.json"
+      : "/javascripts/lottiejson/purple.json";
   var animationContainer = document.getElementById("animation-container");
   // Remove existing animation before loading new one
   lottieRemover();
 
-  anim = bodymovin.loadAnimation({
-    container: animationContainer,
-    renderer: "svg",
-    loop: true,
-    autoplay: true,
-    path: lottiePath,
+  fetch(lottiePath)
+  .then(response => response.json()) 
+  .then(lottieObj => {
+    anim = bodymovin.loadAnimation({
+      container: animationContainer,
+      renderer: "svg", // You can also use 'canvas' or 'html'
+      loop: true, // Set to true if you want the animation to loop
+      autoplay: true,
+      animationData: lottieObj
+    });
   });
 }
 

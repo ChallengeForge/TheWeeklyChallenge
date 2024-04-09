@@ -1,13 +1,244 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raku Review</title>
-  </head>
-  <body>
-    <center>
-      <h1>Raku Review - Perl Weekly Challenge Team</h1>
-    </center>
-  </body>
-</html>
+  <!-- Blog post list start -->
+    <section class="container mt-5 mb-5">
+      <!-- create new raku post button start -->
+      <div>
+        <a
+          href="new-raku.html"
+          class="btn btn-white shadow rounded-6 text-black bg-light p-3"
+        >
+          <span class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi fw-bold"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+              />
+            </svg>
+          </span>
+          C<span class="text-lowercase">reate new post</span>
+        </a>
+      </div>
+      <!-- create new blog post button start -->
+      <!-- Latest articles start -->
+      <div class="mt-2">
+        <div
+          class="row pt-3 row-cols-1 row-cols-md-2 row-cols-lg-3"
+          id="articleRows"
+        >
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">Raku Review #000</h6>
+
+                <div class="mb-3">
+                  The Weekly Challenge Forge- - PERL & RAKU Contiributors
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">Raku Review #000</h6>
+
+                <div class="mb-3">
+                  Outreachy | Internships supporting Diversity in Tech
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">Raku Review #000</h6>
+
+                <div class="mb-3">
+                  Past Outreachy Internships in 2023 those successfully
+                  accomplished
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">Raku Review #000</h6>
+
+                <div class="mb-3">
+                  Outreachy December 2022 to March 2023 Internships
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">Raku Review #000</h6>
+
+                <div class="mb-3">
+                  Consolidating and making reusable various react UI components
+                  from two user interfaces
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">Raku Review #000</h6>
+
+                <div class="mb-3">
+                  In Outreachy | Do I have to answer all the blog post prompt
+                  questions?
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">Raku Review #000</h6>
+
+                <div class="mb-3">
+                  Outreachy is working to improve the career development
+                  services we offer interns.
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">Raku Review #000</h6>
+
+                <div class="mb-3">
+                  The Outreachy organizers will provide blog post prompts via
+                  email.
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 col-display">
+            <div class="card border latest-article-cards">
+              <div class="card-body">
+                <h6 class="card-title text-muted">Raku Review #000</h6>
+
+                <div class="mb-3">
+                  Outreachy interns, mentors, and alums will have chat Outreachy
+                  Zulip chat server.
+                </div>
+                <a
+                  href="read-post.html"
+                  class="btn btn-primary btn-sm"
+                  style="background-color: #92e3a9; color: #000"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Latest articles end -->
+    </section>
+    <!-- ==================== Blogs Section  end ==================== -->
+
+    <!-- ============== Preloader ================ -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <div class="container">
+      <!-- ========================== Pagination ============================= -->
+      <div class="row">
+        <div class="col">
+          <nav class="float-right" aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" id="prevPageBtn">Back</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" id="nextPageBtn">Forward</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  <script src="/public/javascripts/blogs.js"></script>

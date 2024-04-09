@@ -1,0 +1,277 @@
+        <!-- Main content -->
+        <div class="main main-section">
+            <!-- Main content area -->
+            <main class="content px-3 py-4">
+                <div class="container-fluid">
+                    <div class="mb-4">
+                        <h3 class="fw-bold fs-4 mb-3 mt-3">User Dashboard</h3>
+                        <div class="row mb-5"> <!--- Row Charts-->
+                            <div class="col-12 col-xs-12 col-md-6 mb-3">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <div class="stats-chart">
+                                            <h2> My Contributions </h2>
+                                            <div id="my_contributions"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!--- End Col-6-->
+
+                            <div class="col-12 col-xs-12  col-md-6 mb-3">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <div class="stats-chart">
+                                            <h2> General Contributions </h2>
+                                            <div id="general_contributions"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!--- End Col-6-->
+                        </div><!--- End Row Charts-->
+
+
+                        <div class="row tiles mb-5">
+                            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                                <div class="card border-0 analytics-card">
+                                    <div class="card-body py-2 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-2">
+                                                Total Comments
+                                            </h5>
+                                            <div class="mb-0">
+                                                <span>
+                                                    5000
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-2">
+                                            <i class="fa-solid fa-message" style="font-size: 1.8rem;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                                <div class="card border-0 analytics-card">
+                                    <div class="card-body py-2 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-2">
+                                                Total Replies
+                                            </h5>
+                                            <div class="mb-0">
+                                                <span>
+                                                    5000
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-2">
+                                            <i class="fa-solid fa-reply" style="font-size: 1.8rem;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                                <div class="card border-0 analytics-card">
+                                    <div class="card-body py-2 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-2">
+                                                Notifications
+                                            </h5>
+                                            <div class="mb-0">
+                                                <span >
+                                                    5000
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-2">
+                                            <i class="fas fa-bell" style="font-size: 1.8rem;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                                <div class="card border-0 analytics-card">
+                                    <div class="card-body py-2 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-2">
+                                                Total Contributions
+                                            </h5>
+                                            <div class="mb-0">
+                                                <span>
+                                                    5000
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-2">
+                                            <i class="fa-solid fa-business-time" style="font-size: 1.8rem;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                                <div class="card border-0 analytics-card">
+                                    <div class="card-body py-2 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-2">
+                                                Achievements
+                                            </h5>
+                                            <div class="mb-0">
+                                                <span>
+                                                    5000
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-2">
+                                            <i class="fa-solid fa-trophy" style="font-size: 1.8rem;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--- End Row Dashboard Stats-->
+                        
+                        <!-- Beginning of contributions table -->
+
+                        <div class="row mt-5">
+
+                            <div class="col-md-6 col-sm-12 mt-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3 class="fs-4 my-3">Contributions </h3>
+                                        <div class="table-responsive-sm"> <!--Adds scrollbar to mobile table-->
+                                            <table class="table table-striped  table-container">
+                                                <thead>
+                                                    <tr class="highlight">
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">UserName</th>
+                                                        <th scope="col">Contribution Id</th>
+                                                        <th scope="col">Actions</th>
+    
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td> Priya </td>
+                                                        <td>#22322525</td>
+                                                        <td>
+                                                            <i class="fas fa-eye"></i> &nbsp;&nbsp;
+                                                            <i class="fas fa-comment"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td> Priya </td>
+                                                        <td>#22322525</td>
+                                                        <td>
+                                                            <i class="fas fa-eye"></i> &nbsp;&nbsp;
+                                                            <i class="fas fa-comment"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td> Priya </td>
+                                                        <td>#22322525</td>
+                                                        <td>
+                                                            <i class="fas fa-eye"></i> &nbsp;&nbsp;
+                                                            <i class="fas fa-comment"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td> Priya </td>
+                                                        <td>#22322525</td>
+                                                        <td>
+                                                            <i class="fas fa-eye"></i> &nbsp;&nbsp;
+                                                            <i class="fas fa-comment"></i>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td> Priya </td>
+                                                        <td>#22322525</td>
+                                                        <td>
+                                                            <i class="fas fa-eye"></i> &nbsp;&nbsp;
+                                                            <i class="fas fa-comment"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                        <div class="text-center ">
+                                            View All <span> <i class="fa-solid fa-arrow-right"></i> </span>
+                                        </div>
+                                    </div><!--End card body-->
+                                </div><!--End Card-->
+
+                            </div><!--End colmd-6- col-sm-12 -->
+
+                            <div class="col-md-6 col-sm-12 mt-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3 class="fs-4 my-3"> Recent Notifications</h3>
+
+                                        <hr>
+                                        <div class="notifications-content">
+                                            <div class="notification-image ">
+                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                                    <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
+                                                </a>
+                                            </div> <!-- End of Div image -->
+                                            <div class="notification-text ps-4">
+                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now
+                                            </div>
+                                        </div><hr> <!--End notification content-->
+
+                                        <div class="notifications-content">
+
+                                            <div class="notification-image ">
+                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                                    <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
+                                                </a>
+                                            </div> <!-- End of Div image -->
+                                            <div class="notification-text ps-4">
+                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now
+                                            </div>
+
+                                        </div><hr> <!--End notification content-->
+
+                                        <div class="notifications-content">
+                                            <div class="notification-image ">
+                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                                    <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
+                                                </a>
+                                            </div> <!-- End of Div image -->
+                                            <div class="notification-text ps-4">
+                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now
+                                            </div>
+
+                                        </div><hr> <!--End notification content-->
+
+                                        <div class="text-center">
+                                            View All <span> <i class="fa-solid fa-arrow-right"></i> </span>
+                                        </div>
+                                    </div> <!--End Div card Body-->
+                                </div><!--End Card-->
+                            </div><!--End of col-md-6-->
+                        </div> <!--End Row-->
+                    </div><!--End mb-3-->
+                </div>
+
+            </main>
+                      <!-- charts -->
+    <script
+    type="text/javascript"
+    src="https://www.gstatic.com/charts/loader.js"
+  ></script>
+
+    <!--Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Your custom script -->
+    <script src="/public/javascripts/dashboard-header-footer.js"></script>
+    <script src="/public/javascripts/user_dashboard.js"></script>
+    <script src="/public/javascripts/charts/user_dashboardchart1.js"></script>
+    <script src="/public/javascripts/charts/user_dashboardchart2.js"></script>

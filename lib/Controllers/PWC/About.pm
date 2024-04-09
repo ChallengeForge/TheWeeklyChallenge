@@ -1,10 +1,8 @@
-package Controllers::PWC::About;
-
-use Dancer2;
-
-
 get '/about' => sub {
-    template 'about';
+    # my $about =
+    # send_file('../prototype/Frontend/about.html', system_path => 1);
+    # # send_file "/css/admin.css"
+    template "about"
 };
 
 1;

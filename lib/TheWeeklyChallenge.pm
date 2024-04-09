@@ -3,14 +3,26 @@ use Dancer2;
 our $VERSION = '0.1';
 
 # Import Controllers
-use Controllers::PWC::Home;
-use Controllers::PWC::About;
-use Controllers::PWC::Auth;
-use Controllers::PWC::Team;
-use Controllers::PWC::Challenges;
-use Controllers::PWC::FAQs;
-use Controllers::PWC::RakuReview;
-use Controllers::PWC::PerlReview;
+require Controllers::PWC::Home;
+require Controllers::PWC::About;
+require Controllers::PWC::Auth;
+require Controllers::PWC::Team;
+require Controllers::PWC::Blogs;
+require Controllers::PWC::Challenges;
+require Controllers::PWC::Champions;
+require Controllers::PWC::FAQs;
+require Controllers::PWC::RakuReview;
+require Controllers::PWC::PerlReview;
+require Controllers::PWC::Logout;
+require Controllers::PWC::ListOutreachyApplicants;
+require Controllers::PWC::SearchContributions;
+require Controllers::PWC::Guest;
+require Controllers::PWC::GuestLeader;
+require Controllers::PWC::Teamleader;
+require Controllers::PWC::Contact;
+require Controllers::PWC::RssFeed;
+require Controllers::PWC::SignIn;
+require Controllers::PWC::UserDashboard;
 
 dance;
 
