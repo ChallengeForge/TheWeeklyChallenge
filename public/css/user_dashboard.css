@@ -528,8 +528,9 @@ body {
   left: 0; 
   width: 50px; 
   padding-top: 1rem;
+  padding-bottom: rem;
   margin-top: 1.8rem;
-  min-width: 76px;
+  min-width: 78px;
   position: fixed; 
   height: 100vh;
   transition: all .25s ease-in-out;
@@ -538,9 +539,9 @@ body {
   flex-direction: column;
   z-index: 999;
   overflow-y: auto;
-
+  
   @media screen and (max-width: 1024px){
-    margin-top: 0.9rem;
+    margin-top: 0.95rem;
   }
 }
 
@@ -552,7 +553,8 @@ body {
   position: relative;
   overflow: visible;
   white-space: nowrap; /* Ensure text doesn't wrap */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  transition: all 0.5s ease; /* Smooth transition for hover effect */
+  text-align: center;
 }
 
  .sidebar-nav .sidebar-item a::before {
@@ -564,23 +566,26 @@ body {
   visibility: hidden;
   height: 100%;
   padding-left: 6rem;
+
   background-color: rgba(0, 0, 0, 0.5); /* Background color of the overlay */
   color: #fff; /* Text color */
   font-size: 2rem;
   font-weight: 700;
   display: flex;
+  /* text-align: center; */
   align-items: center;
-  justify-content: flex-end; /* Align text to the right */
-   padding-right: 7px; 
+  justify-content: center; /* Align text to the right */
+  padding-right: 1.5rem; 
   transition: all 0.3s ease;
   word-wrap: break-word;
-  font-size: 0.8rem;
-  
+  font-size: 0.8rem;  
   z-index: 1000;
 }
 
-.sidebar-nav .sidebar-item a:hover::before {
+ .sidebar-nav .sidebar-item a:hover::before {
   visibility: visible;
+  padding-right: 1.6rem;
+  
 }
 
 #sidebar.expand {
