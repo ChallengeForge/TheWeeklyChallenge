@@ -18,5 +18,13 @@ function drawChart() {
   var chart = new google.visualization.PieChart(
     document.getElementById("donutchart2"),
   );
+
+  
+  // Redraw the chart when the window size changes
+  window.addEventListener('resize', function(){
+    chart.draw(data, options);
+  });
+
   chart.draw(data, options);
+  
 }

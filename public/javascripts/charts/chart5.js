@@ -34,15 +34,14 @@ function drawChart() {
   ]);
 
   var options = {
-    title: "Engagement Rates",
+    title: "Current Challenges",
     legend: { position: "none" },
   };
 
   var chart = new google.visualization.Histogram(
-    document.getElementById("chart_div"),
+    document.getElementById("chart_div1"),
   );
   chart.draw(data, options);
-
 
   // Redraw the chart when the window size changes
   window.addEventListener('resize', function(){

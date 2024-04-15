@@ -21,10 +21,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="/public/css/index.css">
+    <!--User Dashbaord Styles -->
     <link rel="stylesheet" href="/public/css/user_dashboard.css">
+    <!--Homepage style-->
+    <link rel="stylesheet" href="/public/css/index.css">
 
+    <!-- Admin Dashbaord Styles -->
+    <link rel="stylesheet" href="/public/css/admin_dashboard.css">
+     
+    <!-- Favicons -->
+    <link href="/public/images/logo/logo.png" rel="icon" />
 
     <!-- Font Awesome CDN -->
     <link
@@ -54,16 +60,15 @@
       rel="stylesheet"
     />
     <link
-      href="/public//css/helpercss/remixicon/remixicon.css"
+      href="/public/css/helpercss/remixicon/remixicon.css"
       rel="stylesheet"
     />
     <link href="/public/css/helpercss/swiper-bundle.min.css" rel="stylesheet" />
+    
+</head>
 
-  </head>
-
-  <body>
+<body>
     <div class="wrapper">
-
         <!-- ==================== Header =================== -->
         <header id="header" class="sticky-top border-bottom">
             <div class="container d-flex align-items-center">
@@ -165,123 +170,189 @@
               <!-- End Navbar -->
             </div>
         </header>
-  
-        <!-- End Header -->
+        <!-- ==================== End Header =================== -->
 
-        <div class="content-area">
-            <!-- Sidebar -->
-            <aside id="sidebar" class="sidebar">  
-                <ul class="sidebar-nav">
-                    <li class="sidebar-item">
-                        <button class="toggle-btn black" type="button">
+      <div class="content-area">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar">
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <button class="toggle-btn black" type="button">
                         <i class="fas fa-caret-right"></i>
-                        </button>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="user_dashboard.html" class="sidebar-link"  data-text="Dashboard">
-                            <i class="fa-solid fa-gauge"></i>
-                            <span class="sidebar-text">Dashboard</span>
-                        </a>
-                    </li> 
-                    <li class="sidebar-item">
-                        <a href="user_view_comment.html" class="sidebar-link" data-text="Comments">
-                        <i class="fas fa-comment"></i>
-                        <span class="sidebar-text">Comments</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item" >
-                        <a href="user_replies.html" class="sidebar-link text-center" data-text="Replies">
-                        <i class="fas fa-clipboard-list"></i>
-                        <span class="sidebar-text">Replies</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="user_notifications.html" class="sidebar-link" data-text="Notification">
-                        <i class="fas fa-bell"></i>
-                        <span class="sidebar-text">Notifications</span>
-                        </a>
-                    </li>
-                </ul>
-            </aside><!-- End Sidebar -->
-    
-            <!-- Main content -->
-            <div class="main main-section">
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admin_dashboard.html" class="sidebar-link"  data-text="Dashboard">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span class="sidebar-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="about.html" class="sidebar-link text-center " data-text="About">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span class="sidebar-text">About</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admin_mailing_list.html" class="sidebar-link" data-text="Mailing List">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="sidebar-text"> Mailing list </span>
+                    </a>
+                </li>         
+                <li class="sidebar-item">
+                    <a href="createChallenge.html" class="sidebar-link" data-text="Challenges">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span class="sidebar-text">Challenges</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="champions.html" class="sidebar-link" data-text="Champions">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span class="sidebar-text">Champions</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="faq.html" class="sidebar-link" data-text="FAQ">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span class="sidebar-text">FAQ</span>
+                    </a>
+                </li>     
+            </ul>
+        </aside><!-- End Sidebar -->
+        
+        <!-- Main content -->
+        <div class="main main-section">
+            <!-- Main content area -->
+            <main class="content px-3 py-4">
+                <div class="container-fluid">
+                    <div class="mb-4">
+                        <div class="row mb-5"> <!--- Row Charts-->
+                            <div class="col-12 col-xs-12 col-md-4 col-lg-4 mb-3">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <div class="stats-chart">
+                                            <h3>Contributors Count</h3>
+                                            <div id="my_contributions"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!--- End Col-6-->
 
-                <!-- Main content area -->
-                <main class="content px-3 py-4">
-                    <div class="container-fluid">
-                        <div class="mb-4">
-                        
-                            <!-- Beginning of Comments table -->
+                            <div class="col-12 col-xs-12 col-md-4 col-lg-4 mb-3">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <div class="stats-chart">
+                                            <h3> Challenge Participation </h3>
+                                            <div id="donutchart1"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!--- End Col-4-->
 
-                            <div class="row justify-content-center mt-5">
-
-                                <div class="col-1"></div> <!--Empty div for spacing-->
-
-                                <div class=" col-sm-12 col-md-10 col-lg-10  mt-4">
-                                    <div class="card">
-                                        <div class="card-body">
-
-                                            <div class="container mb-5">
-                                                <h3 class="mb-4"> Comments - PostLink - Week3 - Comments Page </h3>
-
-                                                <div class="comments">
-                                                <!-- Root Comment -->
-                                                <div class="comment">
-                                                    <div class="comment-header">
-                                                        <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
-                                                    <h5>User 1</h5>
-                                                    </div>
-                                                    <div class="comment-body">
-                                                    <p>This is the root comment. Reply to this!</p>
-                                                    <button class="btn btn-sm btn-primary reply-btn">Reply</button>
-                                                    </div>
-                                                    <!-- Nested Replies -->
-                                                    <div class="replies ms-5">
-                                                    <div class="comment">
-                                                        <div class="comment-header">
-                                                            <img src="../assets/misc/account.png" class="avatar img-fluid" alt="">
-                                                        <h5>User 2</h5>
-                                                        </div>
-                                                        <div class="comment-body">
-                                                        <p>This is a nested reply.</p>
-                                                        <button class="btn btn-sm btn-primary reply-btn">Reply</button>
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                                </div>
-
-                                                <!-- Comment Form -->
-                                                <div class="comment-form mt-5 ">
-                                                <h3>Add a Comment</h3>
-                                                <form id="commentForm">
-                                                    <div class="mb-3">
-                                                    <label for="comment-text" class="form-label">Comment</label>
-                                                    <textarea class="form-control" id="comment-text" rows="3" required></textarea>
-                                                    </div>
-                                                    <button type="submit" class="btn btn-primary mb-5">Submit</button>
-                                                </form>
-                                                </div>
-                                            </div>
-                                            <div class="text-center ">
-                                                <button class="btn btn-more rounded-5 btn-primary btn-shadow">View More <i class="fa-solid fa-caret-right"></i></button>
-                                            </div>
-                                        </div><!--End card body-->
-                                    </div><!--End Card-->
+                            <div class="col-12 col-xs-12 col-md-4 col-lg-4 mb-3">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <div class="stats-chart">
+                                            <h3> Competition Rates </h3>
+                                            <div id="donutchart2"> </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!--- End Col-4-->
 
 
+                        </div><!--- End Row Charts-->
 
-                                </div><!--col-sm-12 -->
+                        <div class="row mb-5">
+                            <div class="col-xs-12 col-md-6 col-lg-6 mb-3">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <div class="stats-chart">
+                                            <h3> Engagement Rates </h3>
+                                            <div id="chart_div"> </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!--- End Col-6-->
 
-                                <div class="col-2"></div> <!--Empty div for spacing-->
+                            <div class="col-xs-12 col-md-6 col-lg-6 mb-3">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <div class="stats-chart">
+                                            <h3> Current Challenges </h3>
+                                            <div id="chart_div1"> </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!--- End Col-6-->
+                        </div> <!-- End row  -->
 
-                            </div> <!--End Row-->
-                        </div><!--End mb-3-->
-                    </div>
-                </main>
+                        <div class="row tiles mb-5">
+                            <div class="col-12 col-md-3 col-lg-3 mb-4">
+                                <div class="card border-0 analytics-card">
+                                    <div class="card-body py-2 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-2">
+                                                Create New Challenges
+                                            </h5>
+                                        </div>
+                                        <p class="mb-2">
+                                            <i class="fa-solid fa-bars-progress" style="font-size: 1.8rem;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 col-lg-3 mb-4">
+                                <div class="card border-0 analytics-card">
+                                    <div class="card-body py-2 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-2">
+                                                Edit Existing Challenges
+                                            </h5>
+                                        </div>
+                                        <p class="mb-2">
+                                            <i class="fa-solid fa-pen-to-square" style="font-size: 1.8rem;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 col-lg-3 mb-4">
+                                <div class="card border-0 analytics-card">
+                                    <div class="card-body py-2 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-2">
+                                                New Members Request
+                                            </h5>
+                                        </div>
+                                        <p class="mb-2">
+                                            <i class="fas fa-users" style="font-size: 1.8rem;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 col-lg-3 mb-4">
+                                <div class="card border-0 analytics-card">
+                                    <div class="card-body py-2 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-2">
+                                                Go to Mailing List
+                                            </h5>
+                                        </div>
+                                        <p class="mb-2">
+                                            <i class="fa-solid fa-envelope" style="font-size: 1.8rem;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div> <!--- End Row Dashboard Stats-->
+                               
+                    </div><!--End mb-3-->
+                </div>
 
-                <!-- =============== Footer ================= -->
+            </main>
+
+            <!-- =============== Footer ================= -->
             <footer id="footer">
                 <div class="footer-top">
                 <div class="container">
@@ -376,33 +447,35 @@
             </footer>
             <!-- End Footer -->
 
-            </div>
-        </div> <!--End Main Content Area-->
+        </div>
+      </div>
 
-
-        </div> <!--End Body Wrapper-->
+    </div> <!--End Body Wrapper-->
     <!-- Bootstrap Bundle with Popper -->
+
+     <!-- JavaScript to toggle between modes -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+          <!-- charts -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    type="text/javascript"
+    src="https://www.gstatic.com/charts/loader.js"
+  ></script>
 
-     <!-- charts -->
-     <script
-     type="text/javascript"
-     src="https://www.gstatic.com/charts/loader.js"
-   ></script>
-
-    <!-- Jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <!--Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Your custom script -->
+    <script src="/public/javascripts/dashboard-header-footer.js"></script>
     <script src="/public/javascripts/user_dashboard.js"></script>
-    <script src="/public/javascripts/comment_reply.js"></script>
-
     <script src="/public/javascripts/charts/user_dashboardchart1.js"></script>
-    <script src="/public/javascripts/charts/user_dashboardchart2.js"></script>
+    <script src="/public/javascripts/charts/chart1.js"></script>
+    <script src="/public/javascripts/charts/chart2.js"></script>
+    <script src="/public/javascripts/charts/chart3.js"></script>
+    <script src="/public/javascripts/charts/chart4.js"></script>
+    <script src="/public/javascripts/charts/chart5.js"></script>
 </body>
 
 </html>
