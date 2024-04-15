@@ -10,15 +10,15 @@ hamBurger.addEventListener("click", function () {
 
 (function() {
 
-
     /**
    * Mobile nav toggle
    */
-  on("click", ".mobile-nav-toggle", function (e) {
-    select("#navbar").classList.toggle("navbar-mobile");
-    this.classList.toggle("bi-list");
-    this.classList.toggle("bi-x");
+    document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+      document.querySelector('#navbar').classList.toggle('navbar-mobile');
+      this.classList.toggle('bi-list');
+      this.classList.toggle('bi-x');
   });
+  
 
   /**
    * Mobile nav dropdowns activate
@@ -98,4 +98,27 @@ hamBurger.addEventListener("click", function () {
     // Initially set default mode
     setDefaultMode();
 
+
+   
+// Immediately invoked function expression (IIFE) to apply theme based on local storage
+(function () {
+  if (localStorage.getItem("theme")) {
+      if (localStorage.getItem("theme") === "dark") {
+          setDarkMode();
+      } else if (localStorage.getItem("theme") === "blue") {
+          setBlueMode();
+      } else {
+          setDefaultMode();
+      }
+  } else {
+      setDefaultMode();
+  }
+
+
+})();
+
+// Add event listeners for theme switching buttons
+document.getElementById('setdefaultMode').addEventListener('click', setDefaultMode);
+document.getElementById('darkMode').addEventListener('click', setDarkMode);
+document.getElementById('blueMode').addEventListener('click', setBlueMode);
 

@@ -658,7 +658,7 @@ a.sidebar-link:hover {
 }
 
 .sidebar-item {
-    position: relative;
+    position: relative;   
 }
 
 #sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
