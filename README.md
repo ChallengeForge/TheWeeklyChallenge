@@ -122,12 +122,13 @@ Ensure that the following dependencies are met:
 
 These dependencies should be installed and configured appropriately.
 
-3. **Install Dancer2::Plugin::Database**: This module integrates the Dancer2 web framework with your database.
+- Dancer2::Plugin::Database
+
+This module integrates the Dancer2 web framework with your database.
 
 ## Contributors
 
 [![](https://contrib.rocks/image?repo=ChallengeForge/TheWeeklyChallenge)](https://github.com/ChallengeForge/TheWeeklyChallenge/graphs/contributors)
 [![](https://contrib.rock-s/image?repo=ChallengeForge/TheWeeklyChallenge)](https://github.com/ChallengeForge/TheWeeklyChallenge/graphs/contributors)
 
-[![Join us on Slack](https://img.shields.io/badge/Join_us-Slack-informational?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/theweeklychal-udf4770/shared_invite/zt-2em4g2m29-WGd9LQc1YnNLyn_qHi6xLA)
 [![Visit Website](https://img.shields.io/badge/Visit_Website-brightgreen?style=for-the-badge)](https://theweeklychallenge.org)
