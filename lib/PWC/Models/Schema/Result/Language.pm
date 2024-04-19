@@ -1,6 +1,12 @@
-package Models::PWC::Schema::Result::Language;
+package PWC::Models::Schema::Result::Language;
 
+use strict;
+use warnings;
+
+use 5.030;
 use base qw/DBIx::Class::Core/;
+
+our $VERSION = '0.030';
 
 __PACKAGE__->table('languages');
 __PACKAGE__->add_columns(
@@ -14,6 +20,7 @@ __PACKAGE__->add_columns(
         is_nullable => 0,
     },
 );
+
 __PACKAGE__->set_primary_key('language_id');
 
 1;

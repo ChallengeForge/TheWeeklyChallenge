@@ -1,16 +1,25 @@
 #!/usr/bin/env perl
-BEGIN { $ENV{DANCER_APPHANDLER} = 'PSGI';}
+
+use 5.030;
 use Dancer2;
-use FindBin '$RealBin';
+use Path::This "$THISDIR";
 use Plack::Runner;
+
+our $VERSION = '0.0.1';
+
+BEGIN { local $ENV{DANCER_APPHANDLER} = 'PSGI'; }
 
 # For some reason Apache SetEnv directives don't propagate
 # correctly to the dispatchers, so forcing PSGI and env here
 # is safer.
-set apphandler => 'PSGI';
+
+set apphandler  => 'PSGI';
 set environment => 'production';
 
-my $psgi = path($RealBin, '..', 'bin', 'app.psgi');
-die "Unable to read startup script: $psgi" unless -r $psgi;
+my $psgi = path( $THISDIR, q{..}, q{bin}, q{pwc.psgi} );
+
+if ( !-r $psgi ) {
+    die "Unable to read startup script: $psgi\n";
+}
 
 Plack::Runner->run($psgi);

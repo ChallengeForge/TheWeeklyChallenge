@@ -1,6 +1,12 @@
-package Models::PWC::Schema::Result::Week;
+package PWC::Models::Schema::Result::Week;
 
+use strict;
+use warnings;
+
+use 5.030;
 use base qw/DBIx::Class::Core/;
+
+our $VERSION = '0.0.1';
 
 __PACKAGE__->table('weeks');
 __PACKAGE__->add_columns(
@@ -14,8 +20,7 @@ __PACKAGE__->add_columns(
         is_nullable => 0,
     },
 );
+
 __PACKAGE__->set_primary_key('week_id');
 
 1;
-
-

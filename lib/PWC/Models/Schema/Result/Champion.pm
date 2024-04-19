@@ -1,23 +1,30 @@
-package Models::PWC::Schema::Result::User;
+package PWC::Models::Schema::Result::Champion;
 
+use strict;
+use warnings;
+
+use 5.030;
 use base qw/DBIx::Class::Core/;
 
-__PACKAGE__->table('users');
+our $VERSION = '0.0.1';
+
+__PACKAGE__->table('champions');
 __PACKAGE__->add_columns(
-    user_id => {
+    champion_id => {
         data_type         => 'integer',
         is_auto_increment => 1,
     },
-    user_type => {
+    user_id => {
         data_type   => 'integer',
         is_nullable => 0,
     },
-    user_password => {
+    champion_title => {
         data_type   => 'varchar',
         size        => 255,
         is_nullable => 0,
     },
 );
-__PACKAGE__->set_primary_key('user_id');
+
+__PACKAGE__->set_primary_key('champion_id');
 
 1;

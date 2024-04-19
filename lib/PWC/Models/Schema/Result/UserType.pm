@@ -1,8 +1,12 @@
-# an instance of interacting with the user_types table in the database
+package PWC::Models::Schema::Result::UserType;
 
-package Models::PWC::Schema::Result::UserType;
+use strict;
+use warnings;
 
+use 5.030;
 use base qw/DBIx::Class::Core/;
+
+our $VERSION = '0.0.1';
 
 __PACKAGE__->table('user_types');
 __PACKAGE__->add_columns(
@@ -21,6 +25,7 @@ __PACKAGE__->add_columns(
         is_nullable => 1,
     },
 );
+
 __PACKAGE__->set_primary_key('user_type_id');
 
 1;

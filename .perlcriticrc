@@ -1,4 +1,13 @@
 # strictest level
 severity = brutal
+
 # highest verbosity
 verbose  = 11
+
+# Check all builtins except "print"
+[InputOutput::RequireCheckedSyscalls]
+functions = :builtins
+exclude_functions = print
+
+[ControlStructures::ProhibitDeepNests]
+max_nests = 7

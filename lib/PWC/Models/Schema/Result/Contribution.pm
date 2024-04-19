@@ -1,6 +1,12 @@
-package Models::PWC::Schema::Result::Contribution;
+package PWC::Models::Schema::Result::Contribution;
 
+use strict;
+use warnings;
+
+use 5.030;
 use base qw/DBIx::Class::Core/;
+
+our $VERSION = '0.0.1';
 
 __PACKAGE__->table('contributions');
 __PACKAGE__->add_columns(
@@ -25,6 +31,7 @@ __PACKAGE__->add_columns(
         is_nullable => 1,
     },
 );
+
 __PACKAGE__->set_primary_key('contribution_id');
 
 1;

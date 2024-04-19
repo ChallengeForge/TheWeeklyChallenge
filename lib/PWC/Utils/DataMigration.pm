@@ -1,14 +1,19 @@
 package PWC::Utils::DataMigration;
 
-use strict; use warnings;
+use strict;
+use warnings;
+use 5.030;
+use English qw( -no_match_vars );
 use Moo;
 use MooX::Options;
-use File::Find qw(finddepth);
-use File::Basename qw(basename);
-use File::Find::Rule qw(rule);
+use File::Find            qw(finddepth);
+use File::Basename        qw(basename);
+use File::Find::Rule      qw(rule);
 use File::Copy::Recursive qw(dircopy);
 use PWC::Utils;
 use PWC::Utils::DataMigration::Option;
+
+our $VERSION = '0.0.1';
 
 with 'PWC::Utils::DataMigration::Option';
 
@@ -17,114 +22,144 @@ sub run {
 
     $self->fetch_contributions;
     $self->process_contributions;
+
+    return;
 }
 
 sub fetch_contributions {
     my ($self) = @_;
 
-    my $source_dir = $self->source_dir;
-    my $restructure_folder = $self->dest_dir;
+    my $source_dir     = $self->source_dir;
+    my $dest_folder    = $self->dest_dir;
+    my $extension_file = $self->extension_file;
 
-    if (! -e $restructure_folder) {
-        mkdir $restructure_folder or die "Failed to create folder $restructure_folder: $!";
+    if ( !-e $dest_folder ) {
+        mkdir $dest_folder
+          or die "ERROR: Can't create folder $dest_folder: $OS_ERROR\n";
     }
 
     my $members_json_file = "$source_dir/members.json";
-    my $members_hash_ref = PWC::Utils::read_data($members_json_file);
-    my @member_nicks = keys %$members_hash_ref;
+    my $members_hash_ref  = PWC::Utils::read_data($members_json_file);
+    my @member_nicks      = keys %{$members_hash_ref};
 
-    my $programming_languages_extensions_file = "./programming_language_extensions.json";
-    $self->{programming_languages_extensions_ref} = PWC::Utils::read_data($programming_languages_extensions_file);
+    $self->{extension_ref} = PWC::Utils::read_data($extension_file);
 
     my $guests_json_file = "$source_dir/guests.json";
-    my $guests_hash_ref = PWC::Utils::read_data($guests_json_file);
-    my @guest_nicks = keys %$guests_hash_ref;
+    my $guests_hash_ref  = PWC::Utils::read_data($guests_json_file);
+    my @guest_nicks      = keys %{$guests_hash_ref};
 
-    my @nicks = (@member_nicks, @guest_nicks);
+    my @nicks = ( @member_nicks, @guest_nicks );
 
     $self->{nicks} = \@nicks;
+
+    return;
 }
 
 sub process_contributions {
     my ($self) = @_;
 
-    my $restructure_folder = $self->dest_dir;
-    my @weekly_challenge_folders = rule->directory->maxdepth(1)->name(qr/challenge-\d{3}/)->in($self->source_dir);
+    my $dest_folder = $self->dest_dir;
 
-    foreach my $nick (@{$self->{nicks}}) {
-        if ($nick =~ /\//) {
-            print "WARNING: $nick contains '/'";
+    if ( !-e $dest_folder ) {
+        mkdir $dest_folder
+          or die "ERROR: Can't create folder $dest_folder: $OS_ERROR\n";
+    }
+
+    my $rule_directory = rule->directory->maxdepth(1);
+    my @weekly_folders =
+      $rule_directory->name(qr/challenge-\d{3}/mxs)->in( $self->source_dir );
+
+    foreach my $nick ( @{ $self->{nicks} } ) {
+        if ( $nick =~ m/\//mxs ) {
+            print "WARN: $nick contains /";
         }
 
-        my $member_folder = "$restructure_folder/$nick";
+        my $member_new_folder = "$dest_folder/$nick";
 
-        if (! -e $member_folder) {
-            mkdir $member_folder or die "Failed to create folder $member_folder: $!";
+        if ( !-e $member_new_folder ) {
+            mkdir $member_new_folder
+              or die
+              "ERROR: Can't create folder $member_new_folder: $OS_ERROR\n";
         }
 
-        foreach my $weekly_challenge_folder (@weekly_challenge_folders) {
-            my $member_weekly_challenge_folder = "$weekly_challenge_folder/$nick";
+        foreach my $folder (@weekly_folders) {
+            my $member_folder = "$folder/$nick";
 
-            if (-e $member_weekly_challenge_folder) {
-                my @language_folders = rule->directory->maxdepth(1)->in($member_weekly_challenge_folder);
+            if ( -e $member_folder ) {
+                my @lang_folders =
+                  rule->directory->maxdepth(1)->in($member_folder);
 
-                shift(@language_folders);
+                shift @lang_folders;
 
-                foreach my $language_folder (@language_folders) {
-                    my $language_folder_name = basename($language_folder);
+                foreach my $lang_folder (@lang_folders) {
+                    my $lang_folder_name = basename($lang_folder);
 
-                    if (exists $self->{programming_languages_extensions_ref}{$language_folder_name}) {
-                        my $language_exts = $self->{programming_languages_extensions_ref}{$language_folder_name};
-                    
-                        my $copy_language_folder = 0;
+                    if ( exists $self->{extension_ref}->{$lang_folder_name} ) {
+                        my $lang_ext =
+                          $self->{extension_ref}->{$lang_folder_name};
+
+                        my $copy_lang_folder = 0;
 
                         finddepth(
                             sub {
-                                return if($_ eq '.' || $_ eq '..');
-                                if (-f $_) {
-                                    foreach my $ext (@$language_exts) {
-                                        if ($_ =~ /$ext$/) {
-                                            $copy_language_folder = 1;
-                                            last;
-                                        }
+                                return if ( $_ eq q{.} || $_ eq q{..} || -d );
+
+                                foreach my $ext ( @{$lang_ext} ) {
+                                    if (/$ext$/xms) {
+                                        $copy_lang_folder = 1;
+                                        last;
                                     }
                                 }
                             },
-                            $language_folder
+                            $lang_folder,
                         );
 
-                        if ($copy_language_folder) {
-                            my $weekly_challenge = basename($weekly_challenge_folder);
-                            if ($weekly_challenge !~ /challenge-(\d{3})/) {
-                                die "Something bad happened";
-                            }
-                            my $new_member_weekly_challenge_folder = "$member_folder/w$1";
-                            if (! -e $new_member_weekly_challenge_folder) {
-                                mkdir $new_member_weekly_challenge_folder or die "Failed to create folder $new_member_weekly_challenge_folder: $!";
-                                print "Created folder: $new_member_weekly_challenge_folder\n";
-                            }
-                            dircopy("$language_folder", "$new_member_weekly_challenge_folder/$language_folder_name") or die("$!\n");
-                            print "Copied folder: $language_folder to $new_member_weekly_challenge_folder/$language_folder_name\n";
+                        if ($copy_lang_folder) {
+                            _process_folder( $folder, $member_folder,
+                                $lang_folder, );
                         }
-                    } else {
-                        my $weekly_challenge = basename($weekly_challenge_folder);
-                        if ($weekly_challenge !~ /challenge-(\d{3})/) {
-                            die "Something bad happened";
-                        }
-                        my $new_member_weekly_challenge_folder = "$member_folder/w$1";
-                        if (! -e $new_member_weekly_challenge_folder) {
-                            mkdir $new_member_weekly_challenge_folder or die "Failed to create folder $new_member_weekly_challenge_folder: $!";
-                            print "Created folder: $new_member_weekly_challenge_folder\n";
-                        }
-                        dircopy("$language_folder", "$new_member_weekly_challenge_folder/$language_folder_name") or die("$!\n");
-                        print "Could not find $language_folder_name in programming_language_extensions.json, copying with no checks\n";
-                        print "Copied folder: $language_folder to $new_member_weekly_challenge_folder/$language_folder_name\n";
+                    }
+                    else {
+                        _process_folder( $folder, $member_folder,
+                            $lang_folder, );
+
+                        print "Could not find $lang_folder_name in "
+                          . q{programming_language_extensions.json,}
+                          . "{copying with no checks\n";
                     }
                 }
             }
         }
     }
+
+    return;
 }
 
+sub _process_folder {
+    my ( $folder, $member_folder, $lang_folder ) = @_;
+
+    my $weekly_folder    = basename($folder);
+    my $lang_folder_name = basename($lang_folder);
+
+    if ( $weekly_folder !~ /challenge-(\d{3})/mxs ) {
+        die "ERROR: Something bad happened.\n";
+    }
+
+    my $new_member_folder = "$member_folder/w$1";
+    if ( !-e $new_member_folder ) {
+        mkdir $new_member_folder
+          or die qq{ERROR: Can't create folder $new_member_folder: $OS_ERROR\n};
+
+        print "Created folder: $new_member_folder\n";
+    }
+
+    dircopy( "$lang_folder", "$new_member_folder/$lang_folder_name" )
+      or die "ERROR: $OS_ERROR\n";
+
+    print "Copied folder: $lang_folder to "
+      . "$new_member_folder/$lang_folder_name\n";
+
+    return;
+}
 
 1;

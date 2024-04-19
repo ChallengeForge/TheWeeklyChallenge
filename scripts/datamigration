@@ -1,9 +1,13 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
-use strict; use warnings;
+use strict;
+use warnings;
 
-use lib ("lib");
+use 5.030;
+use lib qw("lib");
 
 use PWC::Utils::DataMigration;
+
+our $VERSION = '0.0.1';
 
 PWC::Utils::DataMigration->new_with_options->run;

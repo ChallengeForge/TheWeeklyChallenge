@@ -1,11 +1,10 @@
-#!/usr/bin/env perl
+package PWC::Models::Schema::Result::Challenge;
 
 use strict;
 use warnings;
 
 use 5.030;
-use Test::More tests => 1;
 
 our $VERSION = '0.0.1';
 
-use_ok 'PWC';
+1;
