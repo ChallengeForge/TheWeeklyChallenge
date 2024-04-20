@@ -3,6 +3,7 @@
 use strict;
 use warnings FATAL => 'all';
 use Test::More tests => 1;
+use File::Temp       qw(tempdir);
 use File::Find::Rule qw(rule);
 
 use 5.030;
@@ -13,11 +14,16 @@ use PWC::Utils::DataMigration;
 
 our $VERSION = '0.0.1';
 
-my $source_dir = '../perlweeklychallenge-club/';
-my $dest_dir   = 'restructure';
+my $source_dir     = 't/';
+my $dest_dir       = tempdir( CLEANUP => 1 );
+my $extension_file = 'docs/language_extensions.json';
 
-PWC::Utils::DataMigration->new(
-    { source_dir => $source_dir, dest_dir => $dest_dir } )->run;
+PWC::Utils::DataMigration->new( {
+        source_dir     => $source_dir,
+        dest_dir       => $dest_dir,
+        extension_file => $extension_file,
+    },
+)->run;
 
 my %unique_nicks = ();
 

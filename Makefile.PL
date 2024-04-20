@@ -11,7 +11,7 @@ const my $EUMM_VER => '6.46';
 our $VERSION = '0.0.1';
 
 WriteMakefile(
-    NAME               => 'TheWeeklyChallenge',
+    NAME               => 'PWC',
     AUTHOR             => q{Mohammad Sajid Anwar <mohammad.anwar@yahoo.com>},
     VERSION_FROM       => 'lib/PWC.pm',
     LICENSE            => 'artistic_2',

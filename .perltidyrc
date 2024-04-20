@@ -1,4 +1,5 @@
 --backup-and-modify-in-place
+--backup-file-extension='/'
 --continuation-indentation=4
 --indent-columns=4
 --opening-brace-always-on-right

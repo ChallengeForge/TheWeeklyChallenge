@@ -12,8 +12,9 @@ environments/production.yml
 environments/development.yml
 t/001_base.t
 t/002_index_route.t
-t/datamigration/00-option.t
-t/datamigration/01-run.t
+t/003_datamigration_run.t
+t/members.json
+t/guests.json
 public/favicon.ico
 public/dispatch.cgi
 public/500.html

@@ -5,14 +5,10 @@ use Dancer2;
 
 our $VERSION = '0.0.1';
 
-# Import Controllers
 use PWC::Controllers::Home;
-use PWC::Controllers::About;
-use PWC::Controllers::Auth;
-use PWC::Controllers::Team;
-use PWC::Controllers::Challenge;
-use PWC::Controllers::FAQ;
-use PWC::Controllers::RakuReview;
-use PWC::Controllers::PerlReview;
+
+get q{/} => sub {
+    PWC::Controllers::Home::get_();
+};
 
 1;

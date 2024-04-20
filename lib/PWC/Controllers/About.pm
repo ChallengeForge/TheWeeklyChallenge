@@ -5,8 +5,8 @@ use Dancer2;
 
 our $VERSION = '0.0.1';
 
-get '/about' => sub {
-    template 'about';
-};
+sub get_ {
+    return template 'about';
+}
 
 1;

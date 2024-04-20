@@ -5,9 +5,9 @@ use Dancer2;
 
 our $VERSION = '0.0.1';
 
-get '/faqs' => sub {
+sub get_ {
     my $faqs = [];
-    template 'faqs' => { 'faqs' => $faqs };
-};
+    return template 'faqs' => { 'faqs' => $faqs };
+}
 
 1;
