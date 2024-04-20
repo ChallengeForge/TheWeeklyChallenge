@@ -23,16 +23,16 @@ my %unique_nicks = ();
 
 my $members_json_file = "$source_dir/members.json";
 my $members_hash_ref  = PWC::Utils::read_data($members_json_file);
-my @member_nicks      = keys %{$members_hash_ref};
+my @member_nicks      = keys %{ $members_hash_ref };
 
 my $guests_json_file = "$source_dir/guests.json";
 my $guests_hash_ref  = PWC::Utils::read_data($guests_json_file);
-my @guest_nicks      = keys %{$guests_hash_ref};
+my @guest_nicks      = keys %{ $guests_hash_ref };
 
 my @all_nicks = ( @member_nicks, @guest_nicks );
 
 foreach my $nick (@all_nicks) {
-    $unique_nicks{$nick} = 1;
+    $unique_nicks{ $nick } = 1;
 }
 
 my $unique_nicks_count = keys %unique_nicks;

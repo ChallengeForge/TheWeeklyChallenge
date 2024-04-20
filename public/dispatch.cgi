@@ -7,7 +7,7 @@ use Plack::Runner;
 
 our $VERSION = '0.0.1';
 
-BEGIN { local $ENV{DANCER_APPHANDLER} = 'PSGI'; }
+BEGIN { local $ENV{ DANCER_APPHANDLER } = 'PSGI'; }
 
 # For some reason Apache SetEnv directives don't propagate
 # correctly to the dispatchers, so forcing PSGI and env here

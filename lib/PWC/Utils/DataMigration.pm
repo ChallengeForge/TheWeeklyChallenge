@@ -35,22 +35,22 @@ sub fetch_contributions {
 
     if ( !-e $dest_folder ) {
         mkdir $dest_folder
-          or die "ERROR: Can't create folder $dest_folder: $OS_ERROR\n";
+            or die "ERROR: Can't create folder $dest_folder: $OS_ERROR\n";
     }
 
     my $members_json_file = "$source_dir/members.json";
     my $members_hash_ref  = PWC::Utils::read_data($members_json_file);
-    my @member_nicks      = keys %{$members_hash_ref};
+    my @member_nicks      = keys %{ $members_hash_ref };
 
-    $self->{extension_ref} = PWC::Utils::read_data($extension_file);
+    $self->{ extension_ref } = PWC::Utils::read_data($extension_file);
 
     my $guests_json_file = "$source_dir/guests.json";
     my $guests_hash_ref  = PWC::Utils::read_data($guests_json_file);
-    my @guest_nicks      = keys %{$guests_hash_ref};
+    my @guest_nicks      = keys %{ $guests_hash_ref };
 
     my @nicks = ( @member_nicks, @guest_nicks );
 
-    $self->{nicks} = \@nicks;
+    $self->{ nicks } = \@nicks;
 
     return;
 }
@@ -62,14 +62,14 @@ sub process_contributions {
 
     if ( !-e $dest_folder ) {
         mkdir $dest_folder
-          or die "ERROR: Can't create folder $dest_folder: $OS_ERROR\n";
+            or die "ERROR: Can't create folder $dest_folder: $OS_ERROR\n";
     }
 
     my $rule_directory = rule->directory->maxdepth(1);
     my @weekly_folders =
-      $rule_directory->name(qr/challenge-\d{3}/mxs)->in( $self->source_dir );
+        $rule_directory->name(qr/challenge-\d{3}/mxs)->in( $self->source_dir );
 
-    foreach my $nick ( @{ $self->{nicks} } ) {
+    foreach my $nick ( @{ $self->{ nicks } } ) {
         if ( $nick =~ m/\//mxs ) {
             print "WARN: $nick contains /";
         }
@@ -78,8 +78,8 @@ sub process_contributions {
 
         if ( !-e $member_new_folder ) {
             mkdir $member_new_folder
-              or die
-              "ERROR: Can't create folder $member_new_folder: $OS_ERROR\n";
+                or die
+                "ERROR: Can't create folder $member_new_folder: $OS_ERROR\n";
         }
 
         foreach my $folder (@weekly_folders) {
@@ -87,16 +87,18 @@ sub process_contributions {
 
             if ( -e $member_folder ) {
                 my @lang_folders =
-                  rule->directory->maxdepth(1)->in($member_folder);
+                    rule->directory->maxdepth(1)->in($member_folder);
 
                 shift @lang_folders;
 
                 foreach my $lang_folder (@lang_folders) {
                     my $lang_folder_name = basename($lang_folder);
 
-                    if ( exists $self->{extension_ref}->{$lang_folder_name} ) {
+                    if (
+                        exists $self->{ extension_ref }->{ $lang_folder_name } )
+                    {
                         my $lang_ext =
-                          $self->{extension_ref}->{$lang_folder_name};
+                            $self->{ extension_ref }->{ $lang_folder_name };
 
                         my $copy_lang_folder = 0;
 
@@ -104,7 +106,7 @@ sub process_contributions {
                             sub {
                                 return if ( $_ eq q{.} || $_ eq q{..} || -d );
 
-                                foreach my $ext ( @{$lang_ext} ) {
+                                foreach my $ext ( @{ $lang_ext } ) {
                                     if (/$ext$/xms) {
                                         $copy_lang_folder = 1;
                                         last;
@@ -124,8 +126,8 @@ sub process_contributions {
                             $lang_folder, );
 
                         print "Could not find $lang_folder_name in "
-                          . q{programming_language_extensions.json,}
-                          . "{copying with no checks\n";
+                            . q{programming_language_extensions.json,}
+                            . "{copying with no checks\n";
                     }
                 }
             }
@@ -148,16 +150,17 @@ sub _process_folder {
     my $new_member_folder = "$member_folder/w$1";
     if ( !-e $new_member_folder ) {
         mkdir $new_member_folder
-          or die qq{ERROR: Can't create folder $new_member_folder: $OS_ERROR\n};
+            or die
+            qq{ERROR: Can't create folder $new_member_folder: $OS_ERROR\n};
 
         print "Created folder: $new_member_folder\n";
     }
 
     dircopy( "$lang_folder", "$new_member_folder/$lang_folder_name" )
-      or die "ERROR: $OS_ERROR\n";
+        or die "ERROR: $OS_ERROR\n";
 
     print "Copied folder: $lang_folder to "
-      . "$new_member_folder/$lang_folder_name\n";
+        . "$new_member_folder/$lang_folder_name\n";
 
     return;
 }

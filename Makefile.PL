@@ -15,7 +15,7 @@ WriteMakefile(
     AUTHOR             => q{Mohammad Sajid Anwar <mohammad.anwar@yahoo.com>},
     VERSION_FROM       => 'lib/PWC.pm',
     LICENSE            => 'artistic_2',
-    EXE_FILES          => ['scripts/datamigration'],
+    EXE_FILES          => [ 'scripts/datamigration' ],
     MIN_PERL_VERSION   => 5.030,
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker' => 0,
@@ -40,101 +40,101 @@ WriteMakefile(
                         version => '0.0.1',
                     },
                     'PWC::Controllers::About' => {
-                        file    => ' lib/PWC/Controllers/About.pm',
+                        file    => 'lib/PWC/Controllers/About.pm',
                         version => '0.0.1',
                     },
                     'PWC::Controllers::Auth' => {
-                        file    => ' lib/PWC/Controllers/Auth.pm',
+                        file    => 'lib/PWC/Controllers/Auth.pm',
                         version => '0.0.1',
                     },
                     'PWC::Controllers::FAQ' => {
-                        file    => ' lib/PWC/Controllers/FAQ.pm',
+                        file    => 'lib/PWC/Controllers/FAQ.pm',
                         version => '0.0.1',
                     },
                     'PWC::Controllers::Home' => {
-                        file    => ' lib/PWC/Controllers/Home.pm',
+                        file    => 'lib/PWC/Controllers/Home.pm',
                         version => '0.0.1',
                     },
                     'PWC::Controllers::PerlReview' => {
-                        file    => ' lib/PWC/Controllers/PerlReview.pm',
+                        file    => 'lib/PWC/Controllers/PerlReview.pm',
                         version => '0.0.1',
                     },
                     'PWC::Controllers::RakuReview' => {
-                        file    => ' lib/PWC/Controllers/RakuReview.pm',
+                        file    => 'lib/PWC/Controllers/RakuReview.pm',
                         version => '0.0.1',
                     },
                     'PWC::Controllers::Team' => {
-                        file    => ' lib/PWC/Controllers/Team.pm',
+                        file    => 'lib/PWC/Controllers/Team.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema' => {
-                        file    => ' lib/PWC/Models/Schema.pm',
+                        file    => 'lib/PWC/Models/Schema.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::Challenge' => {
-                        file    => ' lib/PWC/Models/Schema/Result/Challenge.pm',
+                        file    => 'lib/PWC/Models/Schema/Result/Challenge.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::Champion' => {
-                        file    => ' lib/PWC/Models/Schema/Result/Champion.pm',
+                        file    => 'lib/PWC/Models/Schema/Result/Champion.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::Contribution' => {
-                        file => ' lib/PWC/Models/Schema/Result/Contribution.pm',
+                        file => 'lib/PWC/Models/Schema/Result/Contribution.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::Group' => {
-                        file    => ' lib/PWC/Models/Schema/Result/Group.pm',
+                        file    => 'lib/PWC/Models/Schema/Result/Group.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::InterviewQuestion' => {
                         file =>
-                          ' lib/PWC/Models/Schema/Result/IntrviewQuestion.pm',
+                            'lib/PWC/Models/Schema/Result/IntrviewQuestion.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::InterviewResponse' => {
                         file =>
-                          ' lib/PWC/Models/Schema/Result/InterviewResponse.pm',
+                            'lib/PWC/Models/Schema/Result/InterviewResponse.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::Language' => {
-                        file    => ' lib/PWC/Models/Schema/Result/Language.pm',
+                        file    => 'lib/PWC/Models/Schema/Result/Language.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::Permission' => {
-                        file => ' lib/PWC/Models/Schema/Result/Permission.pm',
+                        file    => 'lib/PWC/Models/Schema/Result/Permission.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::Role' => {
-                        file    => ' lib/PWC/Models/Schema/Result/Role.pm',
+                        file    => 'lib/PWC/Models/Schema/Result/Role.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::Team' => {
-                        file    => ' lib/PWC/Models/Schema/Result/Team.pm',
+                        file    => 'lib/PWC/Models/Schema/Result/Team.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::User' => {
-                        file    => ' lib/PWC/Models/Schema/Result/User.pm',
+                        file    => 'lib/PWC/Models/Schema/Result/User.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::UserType' => {
-                        file    => ' lib/PWC/Models/Schema/Result/UserType.pm',
+                        file    => 'lib/PWC/Models/Schema/Result/UserType.pm',
                         version => '0.0.1',
                     },
                     'PWC::Models::Schema::Result::Week' => {
-                        file    => ' lib/PWC/Models/Schema/Result/Week.pm',
+                        file    => 'lib/PWC/Models/Schema/Result/Week.pm',
                         version => '0.0.1',
                     },
                     'PWC::Utils' => {
-                        file    => ' lib/PWC/Utils.pm',
+                        file    => 'lib/PWC/Utils.pm',
                         version => '0.0.1',
                     },
                     'PWC::Utils::DataMigration' => {
-                        file    => ' lib/PWC/Utils/DataMigration.pm',
+                        file    => 'lib/PWC/Utils/DataMigration.pm',
                         version => '0.0.1',
                     },
                     'PWC::Utils::DataMigration::Option' => {
-                        file    => ' lib/PWC/Utils/DataMigration/Option.pm',
+                        file    => 'lib/PWC/Utils/DataMigration/Option.pm',
                         version => '0.0.1',
                     },
                 },
@@ -142,13 +142,13 @@ WriteMakefile(
                     repository => {
                         type => 'git',
                         url  =>
-'https://github.com/ChallengeForge/TheWeeklyChallenge.git',
+                            'https://github.com/ChallengeForge/TheWeeklyChallenge.git',
                         web =>
-'https://github.com/ChallengeForge/TheWeeklyChallenge',
+                            'https://github.com/ChallengeForge/TheWeeklyChallenge',
                     },
                 },
             },
-          )
+            )
         : ()
     ),
 );
