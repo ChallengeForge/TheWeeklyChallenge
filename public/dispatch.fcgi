@@ -2,7 +2,7 @@
 
 use 5.030;
 use Dancer2;
-use Path::This "$THISDIR";
+use Path::This qw($THISDIR);
 use Plack::Handler::FCGI;
 use English qw(-no_match_vars);
 

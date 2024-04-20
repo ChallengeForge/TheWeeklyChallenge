@@ -3,11 +3,11 @@
 use strict;
 use warnings;
 use 5.030;
-use Path::This "$THISDIR";
+use Path::This qw($THISDIR);
 use lib "$THISDIR/../lib";
 
 our $VERSION = '0.0.1';
 
-use TheWeeklyChallenge;
+use PWC;
 
-TheWeeklyChallenge->to_app;
+PWC->to_app;
