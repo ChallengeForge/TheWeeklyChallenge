@@ -6,6 +6,7 @@ Makefile.PL
 Dockerfile
 .dancer
 .perlcriticrc
+.perltidyrc
 bin/pwc.psgi
 environments/production.yml
 environments/development.yml
