@@ -15,4 +15,4 @@ RUN cpanm Dancer2 Plack --force
 EXPOSE 4000
 
 # Start the application using plackup
-CMD ["plackup", "-p", "4000", "bin/app.psgi"]
+CMD ["plackup", "-p", "4000", "bin/pwc.psgi"]
